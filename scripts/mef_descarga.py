@@ -26,14 +26,14 @@ def f(x):
     try: return float((x or "0").replace(",", ""))
     except ValueError: return 0.0
 
-def run(anio):
+def run(anio, intento=1):
     u = url(anio); out_mml = RAW / f"mef_mml_{anio}.csv"; out_dist = RAW / f"mef_distritos_{anio}.csv"
     req = urllib.request.Request(u, headers={"User-Agent": "como-esta-lima/1.0"})
     n = n_mml = 0; pliegos = set(); ejecutoras = set()
     dist = defaultdict(lambda: defaultdict(lambda: [0.0]*15))  # (ubigeo,nombre) -> funcion -> [pia,pim,dev, dev_m1..m12]
     t0 = time.time()
     try:
-        with urllib.request.urlopen(req, timeout=180) as resp:
+        with urllib.request.urlopen(req, timeout=600) as resp:
             rd = csv.reader(io.TextIOWrapper(resp, encoding="utf-8-sig", newline=""))
             head = next(rd)
             with open(out_mml, "w", newline="", encoding="utf-8") as fo:
@@ -41,8 +41,9 @@ def run(anio):
                 for r in rd:
                     n += 1
                     if len(r) < 73 or r[I_NIVEL].strip() != "M": continue
-                    pn = r[I_PLIEGO_N].upper()
-                    if "METROPOLITANA DE LIMA" in pn and "DISTRITAL" not in pn:
+                    # En gobiernos locales PLIEGO_NOMBRE viene en blanco: la MML se identifica por
+                    # ubigeo de la ejecutora 15-01-01 (Lima Cercado). Verificado 2026-09-13.
+                    if r[I_DPTO].strip() == "15" and r[I_PROV].strip() == "01" and r[I_DIST].strip() == "01":
                         w.writerow(r); n_mml += 1
                         pliegos.add(r[I_PLIEGO] + " " + r[I_PLIEGO_N]); ejecutoras.add(r[I_SEC_EJEC] + " " + r[I_EJEC_N])
                     if r[I_DPTO].strip() == "15" and r[I_PROV].strip() == "01":
@@ -56,6 +57,9 @@ def run(anio):
                 for fn, acc in fun.items(): w.writerow([anio, ub, dn, pl, fn] + [round(x, 2) for x in acc])
         res = dict(anio=anio, url=u, ok=True, filas_total=n, filas_mml=n_mml, pliegos=sorted(pliegos), ejecutoras=sorted(ejecutoras), fecha_descarga=date.today().isoformat(), segundos=round(time.time()-t0))
     except Exception as e:
+        if intento < 3:
+            print(f"[{anio}] error {e}; reintento {intento+1}/3", flush=True); time.sleep(30)
+            return run(anio, intento + 1)
         res = dict(anio=anio, url=u, ok=False, error=str(e), fecha_descarga=date.today().isoformat())
     log = RAW / "mef_log.json"
     data = json.loads(log.read_text()) if log.exists() else {}

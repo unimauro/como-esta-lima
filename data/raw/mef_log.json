@@ -1,0 +1,63 @@
+{
+ "2019": {
+  "anio": 2019,
+  "url": "https://fs.datosabiertos.mef.gob.pe/datastorefiles/2019-Gasto-Devengado.csv",
+  "ok": true,
+  "filas_total": 2169711,
+  "filas_mml": 0,
+  "pliegos": [],
+  "ejecutoras": [],
+  "fecha_descarga": "2026-09-12",
+  "segundos": 811
+ },
+ "2026": {
+  "anio": 2026,
+  "url": "https://fs.datosabiertos.mef.gob.pe/datastorefiles/2026-Gasto-Devengado-Mensual.csv",
+  "ok": true,
+  "filas_total": 2363902,
+  "filas_mml": 0,
+  "pliegos": [],
+  "ejecutoras": [],
+  "fecha_descarga": "2026-09-12",
+  "segundos": 834
+ },
+ "2020": {
+  "anio": 2020,
+  "url": "https://fs.datosabiertos.mef.gob.pe/datastorefiles/2020-Gasto-Devengado.csv",
+  "ok": true,
+  "filas_total": 2476032,
+  "filas_mml": 0,
+  "pliegos": [],
+  "ejecutoras": [],
+  "fecha_descarga": "2026-09-12",
+  "segundos": 1233
+ },
+ "2021": {
+  "anio": 2021,
+  "url": "https://fs.datosabiertos.mef.gob.pe/datastorefiles/2021-Gasto-Devengado.csv",
+  "ok": false,
+  "error": "The read operation timed out",
+  "fecha_descarga": "2026-09-13"
+ },
+ "2022": {
+  "anio": 2022,
+  "url": "https://fs.datosabiertos.mef.gob.pe/datastorefiles/2022-Gasto-Devengado.csv",
+  "ok": false,
+  "error": "<urlopen error [Errno 54] Connection reset by peer>",
+  "fecha_descarga": "2026-09-13"
+ },
+ "2024": {
+  "anio": 2024,
+  "url": "https://fs.datosabiertos.mef.gob.pe/datastorefiles/2024-Gasto-Devengado.csv",
+  "ok": false,
+  "error": "The read operation timed out",
+  "fecha_descarga": "2026-09-13"
+ },
+ "2023": {
+  "anio": 2023,
+  "url": "https://fs.datosabiertos.mef.gob.pe/datastorefiles/2023-Gasto-Devengado.csv",
+  "ok": false,
+  "error": "The read operation timed out",
+  "fecha_descarga": "2026-09-13"
+ }
+}
