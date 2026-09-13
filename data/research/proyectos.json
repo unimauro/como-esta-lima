@@ -243,6 +243,47 @@
     }
    ],
    "observaciones": "APP del MTC adjudicada en 2024 (por verificar); no es obra de la MML."
+  },
+  {
+   "id": "metropolitano-ampliacion-norte",
+   "nombre": "Ampliación del Metropolitano tramo norte (Naranjal–Chimpu Ocllo)",
+   "cui_invierte": null,
+   "tipo": "transporte",
+   "distritos": [
+    "Independencia",
+    "Comas",
+    "Carabayllo"
+   ],
+   "lat": -11.93,
+   "lon": -77.05,
+   "monto_soles": null,
+   "monto_fuente": null,
+   "concebido_por": "gestion_anterior",
+   "iniciado_por": "munoz",
+   "ejecutado_por": [
+    "munoz",
+    "romero",
+    "lopez_aliaga"
+   ],
+   "terminado_por": "lopez_aliaga",
+   "inaugurado_por": "lopez_aliaga",
+   "financiado_por": "MEF",
+   "fecha_inicio": "2021-02",
+   "fecha_termino": "2024-12",
+   "estado": "terminado",
+   "atribucion": "heredado_terminado",
+   "beneficiarios": null,
+   "fuentes": [
+    {
+     "nombre": "Wikipedia: Metropolitano (Lima)",
+     "url": "https://es.wikipedia.org/wiki/Metropolitano_(Lima)",
+     "fecha_consulta": "2026-09-13",
+     "metodologia": null,
+     "observaciones": "Wikipedia (secundaria) que cita fuente primaria indicada en observaciones; verificar contra la primaria.",
+     "tipo": "secundaria"
+    }
+   ],
+   "observaciones": "Presupuesto transferido por el Gobierno central (anuncio Vizcarra, marzo 2019). Obras iniciaron 04-02-2021 (Muñoz), con plazo original mediados 2022; apertura parcial 16-12-2023 (4 estaciones Comas) y llegada troncal a Chimpu Ocllo 21-12-2024. Algunas estaciones figuraban 'listas para operación' sin servicio en 2025. Operación a cargo de ATU. Monto y CUI pendientes."
   }
  ]
 }

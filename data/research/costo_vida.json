@@ -6,7 +6,7 @@
     {
       "id": "inflacion_anual_lima",
       "nombre": "Inflación anual Lima Metropolitana (dic/dic)",
-      "descripcion": "Variación % del IPC de Lima Metropolitana, diciembre respecto a diciembre del año anterior",
+      "descripcion": "Variación porcentual del Índice de Precios al Consumidor (IPC) de Lima Metropolitana, diciembre respecto a diciembre del año anterior (inflación anual). Para 2026: variación acumulada enero-agosto 2026.",
       "unidad": "%",
       "mejor_si": "baja",
       "competencia": "externo",
@@ -16,56 +16,73 @@
       "serie": [
         {
           "anio": 2019,
-          "valor": null,
+          "valor": 1.9,
           "parcial": false,
-          "nota": "pendiente"
+          "nota": null
         },
         {
           "anio": 2020,
-          "valor": null,
+          "valor": 1.97,
           "parcial": false,
-          "nota": "pendiente"
+          "nota": null
         },
         {
           "anio": 2021,
-          "valor": null,
+          "valor": 6.43,
           "parcial": false,
-          "nota": "pendiente"
+          "nota": null
         },
         {
           "anio": 2022,
-          "valor": null,
+          "valor": 8.46,
           "parcial": false,
-          "nota": "pendiente"
+          "nota": "Máximo del periodo: mayor inflación anual desde 1996."
         },
         {
           "anio": 2023,
-          "valor": null,
+          "valor": 3.24,
           "parcial": false,
-          "nota": "pendiente"
+          "nota": null
         },
         {
           "anio": 2024,
-          "valor": null,
+          "valor": 1.97,
           "parcial": false,
-          "nota": "pendiente"
+          "nota": null
         },
         {
           "anio": 2025,
-          "valor": null,
+          "valor": 1.51,
           "parcial": false,
-          "nota": "pendiente"
+          "nota": "Inflación anual 2025 dentro del rango meta del BCRP (1%-3%)."
         },
         {
           "anio": 2026,
-          "valor": null,
+          "valor": 4.16,
           "parcial": true,
-          "nota": "pendiente"
+          "nota": "Acumulada enero-agosto 2026 (4,16%); la variación a 12 meses en agosto 2026 fue 4,44%. Parcial."
         }
       ],
-      "fuentes": [],
-      "discrepancias": null,
-      "nota": "pendiente"
+      "fuentes": [
+        {
+          "nombre": "BCRP - Serie PN01273PM: Índice de precios Lima Metropolitana (var% 12 meses) - IPC",
+          "url": "https://estadisticas.bcrp.gob.pe/estadisticas/series/mensuales/resultados/PN01273PM/html",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "IPC de Lima Metropolitana elaborado por INEI (base dic-2021=100), variación porcentual respecto al mismo mes del año anterior; dato de diciembre = inflación dic/dic.",
+          "observaciones": "Consultado vía API JSON https://estadisticas.bcrp.gob.pe/estadisticas/series/api/PN01273PM/json/2018-12/2026-8/esp",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "BCRP - Serie PN01272PM: Índice de precios Lima Metropolitana (var% acumulada) - IPC",
+          "url": "https://estadisticas.bcrp.gob.pe/estadisticas/series/mensuales/resultados/PN01272PM/html",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Variación acumulada del IPC de Lima Metropolitana desde diciembre del año anterior.",
+          "observaciones": "Usada para la cifra parcial 2026 (enero-agosto).",
+          "tipo": "primaria"
+        }
+      ],
+      "discrepancias": "El INEI publica el IPC con dos decimales; BCRP replica la misma serie (valores redondeados aquí a 2 decimales). Inflación acumulada 2019-2025 en Lima: aprox. 27,8%, similar al aumento nominal del ingreso promedio (27,9%), es decir, el ingreso real promedio de 2025 es prácticamente igual al de 2019.",
+      "nota": "El IPC de Lima Metropolitana es el indicador oficial de inflación del Perú (meta BCRP 1%-3%). Responsabilidad exclusivamente externa (BCRP/contexto macro), no municipal. 2026 muestra un rebote inflacionario (4,4% a 12 meses en agosto)."
     },
     {
       "id": "ingreso_promedio_mensual",
@@ -482,130 +499,148 @@
     {
       "id": "precio_m2_departamento",
       "nombre": "Precio de venta por m² de departamento (Lima)",
-      "descripcion": "Precio promedio de venta por m² de departamentos en Lima Metropolitana",
-      "unidad": "US$/m²",
+      "descripcion": "Precio medio de oferta por m² de departamentos en Lima (índice Urbania), soles corrientes por m², valor de noviembre de cada año.",
+      "unidad": "S/ por m²",
       "mejor_si": "baja",
       "competencia": "compartida",
       "responsable_principal": "Mercado / MVCS / MML",
-      "confiabilidad": "alta",
+      "confiabilidad": "media",
       "ambito": "Lima Metropolitana",
       "serie": [
         {
           "anio": 2019,
-          "valor": null,
+          "valor": 5742,
           "parcial": false,
-          "nota": "pendiente"
+          "nota": "nov-2019"
         },
         {
           "anio": 2020,
-          "valor": null,
+          "valor": 6209,
           "parcial": false,
-          "nota": "pendiente"
+          "nota": "nov-2020"
         },
         {
           "anio": 2021,
-          "valor": null,
+          "valor": 6681,
           "parcial": false,
-          "nota": "pendiente"
+          "nota": "nov-2021"
         },
         {
           "anio": 2022,
-          "valor": null,
+          "valor": 6626,
           "parcial": false,
-          "nota": "pendiente"
+          "nota": "nov-2022"
         },
         {
           "anio": 2023,
-          "valor": null,
+          "valor": 6647,
           "parcial": false,
-          "nota": "pendiente"
+          "nota": "nov-2023"
         },
         {
           "anio": 2024,
-          "valor": null,
+          "valor": 6744,
           "parcial": false,
-          "nota": "pendiente"
+          "nota": "nov-2024"
         },
         {
           "anio": 2025,
-          "valor": null,
+          "valor": 6806,
           "parcial": false,
-          "nota": "pendiente"
+          "nota": "nov-2025: S/ 6 806/m²; +0,9% acumulado en 2025 (caída real de 0,4%). Zona más cara: San Isidro Financiero (S/ 7 079/m² en 'precio' zonal); departamento típico de 100 m² = S/ 653 mil."
         },
         {
           "anio": 2026,
           "valor": null,
           "parcial": true,
-          "nota": "pendiente"
+          "nota": "Informe 2026 no obtenido (sitio con bloqueo anti-bot)."
         }
       ],
-      "fuentes": [],
-      "discrepancias": null,
-      "nota": "pendiente"
+      "fuentes": [
+        {
+          "nombre": "Urbania - Índice de Venta & Alquiler, Informe de mercado Lima, Noviembre 2025 (gráfico 'Precio medio de la ciudad. Evolución', serie may-2017 a nov-2025)",
+          "url": "https://urbania.pe/blog/indice-urbania/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Precio medio de oferta por m² de departamentos anunciados en Urbania (Lima), calculado mensualmente con el índice Urbania (Properati/Navent); es precio de lista, no de transacción.",
+          "observaciones": "Valores anuales leídos de las etiquetas del gráfico de evolución mensual (noviembre de cada año para venta; mayo de cada año para alquiler, salvo 2025 = noviembre). Reportes mensuales previos no descargables (bloqueo Cloudflare).",
+          "tipo": "secundaria"
+        }
+      ],
+      "discrepancias": "Urbania mide precios de oferta en soles; el BCRP publica precio de venta en US$/m² para Lima Top/Moderna (mediana, trimestral) con niveles distintos por metodología y cobertura de distritos. Otras fuentes (CAPECO, TINSA) usan precios de proyectos nuevos.",
+      "nota": "Precio de lista promedio para toda Lima. Entre nov-2019 y nov-2025 el precio subió 18,5% nominal en soles, por debajo de la inflación acumulada del periodo (~27,8%), es decir, cayó en términos reales. Competencia compartida: la MML y municipios influyen vía zonificación y licencias, pero el precio es de mercado."
     },
     {
       "id": "alquiler_promedio_departamento",
       "nombre": "Alquiler promedio mensual de departamento (Lima)",
-      "descripcion": "Alquiler mensual promedio de departamentos en Lima Metropolitana",
-      "unidad": "S/",
+      "descripcion": "Alquiler mensual medio de oferta de un departamento de 100 m² (3 habitaciones) en Lima según índice Urbania, soles corrientes; valor de mayo de cada año (2025 = noviembre).",
+      "unidad": "S/ por mes (depto. 100 m²)",
       "mejor_si": "baja",
       "competencia": "compartida",
       "responsable_principal": "Mercado / MVCS / MML",
-      "confiabilidad": "alta",
+      "confiabilidad": "media",
       "ambito": "Lima Metropolitana",
       "serie": [
         {
           "anio": 2019,
-          "valor": null,
+          "valor": 2524,
           "parcial": false,
-          "nota": "pendiente"
+          "nota": "may-2019"
         },
         {
           "anio": 2020,
-          "valor": null,
+          "valor": 2626,
           "parcial": false,
-          "nota": "pendiente"
+          "nota": "may-2020"
         },
         {
           "anio": 2021,
-          "valor": null,
+          "valor": 2527,
           "parcial": false,
-          "nota": "pendiente"
+          "nota": "may-2021"
         },
         {
           "anio": 2022,
-          "valor": null,
+          "valor": 2719,
           "parcial": false,
-          "nota": "pendiente"
+          "nota": "may-2022"
         },
         {
           "anio": 2023,
-          "valor": null,
+          "valor": 2853,
           "parcial": false,
-          "nota": "pendiente"
+          "nota": "may-2023"
         },
         {
           "anio": 2024,
-          "valor": null,
+          "valor": 2961,
           "parcial": false,
-          "nota": "pendiente"
+          "nota": "may-2024"
         },
         {
           "anio": 2025,
-          "valor": null,
+          "valor": 3185,
           "parcial": false,
-          "nota": "pendiente"
+          "nota": "nov-2025: S/ 3 185; +3,7% acumulado en 2025 y +5,0% interanual. Depto. de 2 habitaciones (60 m²): S/ 2 087 (35 S/ por m²). Más caro: San Isidro Financiero S/ 4 734; más barato: Los Olivos Norte S/ 1 444."
         },
         {
           "anio": 2026,
           "valor": null,
           "parcial": true,
-          "nota": "pendiente"
+          "nota": "No obtenido."
         }
       ],
-      "fuentes": [],
-      "discrepancias": null,
-      "nota": "pendiente"
+      "fuentes": [
+        {
+          "nombre": "Urbania - Índice de Venta & Alquiler, Informe de mercado Lima, Noviembre 2025 (gráfico 'Precio medio de la ciudad. Evolución', serie may-2017 a nov-2025)",
+          "url": "https://urbania.pe/blog/indice-urbania/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Precio medio de oferta por m² de departamentos anunciados en Urbania (Lima), calculado mensualmente con el índice Urbania (Properati/Navent); es precio de lista, no de transacción.",
+          "observaciones": "Valores anuales leídos de las etiquetas del gráfico de evolución mensual (noviembre de cada año para venta; mayo de cada año para alquiler, salvo 2025 = noviembre). Reportes mensuales previos no descargables (bloqueo Cloudflare).",
+          "tipo": "secundaria"
+        }
+      ],
+      "discrepancias": "Serie leída de gráfico (etiquetas en mayo) mientras la de venta usa noviembre; comparar tendencias, no meses exactos.",
+      "nota": "Rentabilidad bruta anual alquiler/precio nov-2025: 5,25% (19,1 años para repagar). Alquiler +26% nominal entre may-2019 y nov-2025, cerca de la inflación acumulada."
     },
     {
       "id": "deficit_habitacional",

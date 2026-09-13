@@ -196,5 +196,307 @@
       "nota": "pendiente"
     }
   ],
-  "por_distrito": []
+  "por_distrito": [
+    {
+      "ubigeo": "150101",
+      "distrito": "Lima",
+      "anio": 2019,
+      "poblacion": 269769,
+      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
+    },
+    {
+      "ubigeo": "150102",
+      "distrito": "Ancón",
+      "anio": 2019,
+      "poblacion": 76357,
+      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
+    },
+    {
+      "ubigeo": "150103",
+      "distrito": "Ate",
+      "anio": 2019,
+      "poblacion": 652900,
+      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
+    },
+    {
+      "ubigeo": "150104",
+      "distrito": "Barranco",
+      "anio": 2019,
+      "poblacion": 35745,
+      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
+    },
+    {
+      "ubigeo": "150105",
+      "distrito": "Breña",
+      "anio": 2019,
+      "poblacion": 92153,
+      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
+    },
+    {
+      "ubigeo": "150106",
+      "distrito": "Carabayllo",
+      "anio": 2019,
+      "poblacion": 380890,
+      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
+    },
+    {
+      "ubigeo": "150107",
+      "distrito": "Chaclacayo",
+      "anio": 2019,
+      "poblacion": 43897,
+      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
+    },
+    {
+      "ubigeo": "150108",
+      "distrito": "Chorrillos",
+      "anio": 2019,
+      "poblacion": 349855,
+      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
+    },
+    {
+      "ubigeo": "150109",
+      "distrito": "Cieneguilla",
+      "anio": 2019,
+      "poblacion": 37815,
+      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
+    },
+    {
+      "ubigeo": "150110",
+      "distrito": "Comas",
+      "anio": 2019,
+      "poblacion": 566314,
+      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
+    },
+    {
+      "ubigeo": "150111",
+      "distrito": "El Agustino",
+      "anio": 2019,
+      "poblacion": 218277,
+      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
+    },
+    {
+      "ubigeo": "150112",
+      "distrito": "Independencia",
+      "anio": 2019,
+      "poblacion": 221551,
+      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
+    },
+    {
+      "ubigeo": "150113",
+      "distrito": "Jesús María",
+      "anio": 2019,
+      "poblacion": 80377,
+      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
+    },
+    {
+      "ubigeo": "150114",
+      "distrito": "La Molina",
+      "anio": 2019,
+      "poblacion": 157820,
+      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
+    },
+    {
+      "ubigeo": "150115",
+      "distrito": "La Victoria",
+      "anio": 2019,
+      "poblacion": 188900,
+      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
+    },
+    {
+      "ubigeo": "150116",
+      "distrito": "Lince",
+      "anio": 2019,
+      "poblacion": 59213,
+      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
+    },
+    {
+      "ubigeo": "150117",
+      "distrito": "Los Olivos",
+      "anio": 2019,
+      "poblacion": 349100,
+      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
+    },
+    {
+      "ubigeo": "150118",
+      "distrito": "Lurigancho",
+      "anio": 2019,
+      "poblacion": 271822,
+      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
+    },
+    {
+      "ubigeo": "150119",
+      "distrito": "Lurín",
+      "anio": 2019,
+      "poblacion": 104770,
+      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
+    },
+    {
+      "ubigeo": "150120",
+      "distrito": "Magdalena del Mar",
+      "anio": 2019,
+      "poblacion": 63856,
+      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
+    },
+    {
+      "ubigeo": "150121",
+      "distrito": "Pueblo Libre",
+      "anio": 2019,
+      "poblacion": 92250,
+      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
+    },
+    {
+      "ubigeo": "150122",
+      "distrito": "Miraflores",
+      "anio": 2019,
+      "poblacion": 106735,
+      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
+    },
+    {
+      "ubigeo": "150123",
+      "distrito": "Pachacamac",
+      "anio": 2019,
+      "poblacion": 134104,
+      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
+    },
+    {
+      "ubigeo": "150124",
+      "distrito": "Pucusana",
+      "anio": 2019,
+      "poblacion": 16032,
+      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
+    },
+    {
+      "ubigeo": "150125",
+      "distrito": "Puente Piedra",
+      "anio": 2019,
+      "poblacion": 379550,
+      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
+    },
+    {
+      "ubigeo": "150126",
+      "distrito": "Punta Hermosa",
+      "anio": 2019,
+      "poblacion": 19966,
+      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
+    },
+    {
+      "ubigeo": "150127",
+      "distrito": "Punta Negra",
+      "anio": 2019,
+      "poblacion": 7955,
+      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
+    },
+    {
+      "ubigeo": "150128",
+      "distrito": "Rímac",
+      "anio": 2019,
+      "poblacion": 179892,
+      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
+    },
+    {
+      "ubigeo": "150129",
+      "distrito": "San Bartolo",
+      "anio": 2019,
+      "poblacion": 8442,
+      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
+    },
+    {
+      "ubigeo": "150130",
+      "distrito": "San Borja",
+      "anio": 2019,
+      "poblacion": 125183,
+      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
+    },
+    {
+      "ubigeo": "150131",
+      "distrito": "San Isidro",
+      "anio": 2019,
+      "poblacion": 66878,
+      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
+    },
+    {
+      "ubigeo": "150132",
+      "distrito": "San Juan de Lurigancho",
+      "anio": 2019,
+      "poblacion": 1152258,
+      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
+    },
+    {
+      "ubigeo": "150133",
+      "distrito": "San Juan de Miraflores",
+      "anio": 2019,
+      "poblacion": 408538,
+      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
+    },
+    {
+      "ubigeo": "150134",
+      "distrito": "San Luis",
+      "anio": 2019,
+      "poblacion": 55688,
+      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
+    },
+    {
+      "ubigeo": "150135",
+      "distrito": "San Martín de Porres",
+      "anio": 2019,
+      "poblacion": 729268,
+      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
+    },
+    {
+      "ubigeo": "150136",
+      "distrito": "San Miguel",
+      "anio": 2019,
+      "poblacion": 169282,
+      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
+    },
+    {
+      "ubigeo": "150137",
+      "distrito": "Santa Anita",
+      "anio": 2019,
+      "poblacion": 218514,
+      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
+    },
+    {
+      "ubigeo": "150138",
+      "distrito": "Santa María del Mar",
+      "anio": 2019,
+      "poblacion": 1106,
+      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
+    },
+    {
+      "ubigeo": "150139",
+      "distrito": "Santa Rosa",
+      "anio": 2019,
+      "poblacion": 34361,
+      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
+    },
+    {
+      "ubigeo": "150140",
+      "distrito": "Santiago de Surco",
+      "anio": 2019,
+      "poblacion": 397082,
+      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
+    },
+    {
+      "ubigeo": "150141",
+      "distrito": "Surquillo",
+      "anio": 2019,
+      "poblacion": 99397,
+      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
+    },
+    {
+      "ubigeo": "150142",
+      "distrito": "Villa El Salvador",
+      "anio": 2019,
+      "poblacion": 420278,
+      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
+    },
+    {
+      "ubigeo": "150143",
+      "distrito": "Villa María del Triunfo",
+      "anio": 2019,
+      "poblacion": 432835,
+      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
+    }
+  ]
 }

@@ -1,46 +1,1179 @@
 {
   "dimension": "servicios_ambiente",
   "fecha_corte": "2026-09-12",
-  "resumen_hallazgos": "EN CONSTRUCCIÓN: esqueleto de indicadores; series en null hasta completar cada uno.",
+  "resumen_hallazgos": "EN CONSTRUCCIÓN. Completado con material local: residuos (INEI/SIGERSOL 2019-2023), agua y alcantarillado (INEI-ENAPRES 2019-2023 y SUNASS 2019-2023), áreas verdes RENAMU (2022-2023), percepción LCV (áreas verdes, aire, alumbrado 2021, ciudad para vivir 2019 y 2025), PM2.5 2025 (AAP/IQAir). Pendiente web: IQAir 2019-2024, SEDAPAL 2024, SERPAR/árboles, espacios públicos MML.",
   "indicadores": [
-    {"id": "pm25_promedio_anual", "nombre": "PM2.5 promedio anual (Lima)", "descripcion": "Concentración media anual de material particulado fino PM2.5 en Lima, según agregación IQAir de estaciones de monitoreo", "unidad": "µg/m³", "mejor_si": "baja", "competencia": "compartida", "responsable_principal": "MINAM / SENAMHI / DIGESA / MML / municipios distritales", "confiabilidad": "media", "ambito": "Lima Metropolitana",
-     "serie": [{"anio": 2019, "valor": null, "parcial": false, "nota": null},{"anio": 2020, "valor": null, "parcial": false, "nota": null},{"anio": 2021, "valor": null, "parcial": false, "nota": null},{"anio": 2022, "valor": null, "parcial": false, "nota": null},{"anio": 2023, "valor": null, "parcial": false, "nota": null},{"anio": 2024, "valor": null, "parcial": false, "nota": null},{"anio": 2025, "valor": null, "parcial": false, "nota": null},{"anio": 2026, "valor": null, "parcial": true, "nota": "pendiente"}],
-     "fuentes": [], "discrepancias": null, "nota": "pendiente"},
-    {"id": "areas_verdes_m2_hab", "nombre": "Áreas verdes urbanas por habitante (Lima Metropolitana)", "descripcion": "Superficie de áreas verdes urbanas públicas por habitante", "unidad": "m²/hab", "mejor_si": "sube", "competencia": "compartida", "responsable_principal": "MML (SERPAR, Cercado) / municipios distritales", "confiabilidad": "media", "ambito": "Lima Metropolitana",
-     "serie": [{"anio": 2019, "valor": null, "parcial": false, "nota": null},{"anio": 2020, "valor": null, "parcial": false, "nota": null},{"anio": 2021, "valor": null, "parcial": false, "nota": null},{"anio": 2022, "valor": null, "parcial": false, "nota": null},{"anio": 2023, "valor": null, "parcial": false, "nota": null},{"anio": 2024, "valor": null, "parcial": false, "nota": null},{"anio": 2025, "valor": null, "parcial": false, "nota": null},{"anio": 2026, "valor": null, "parcial": true, "nota": "pendiente"}],
-     "fuentes": [], "discrepancias": null, "nota": "pendiente"},
-    {"id": "serpar_parques_arboles", "nombre": "Parques zonales SERPAR y árboles plantados por gestión", "descripcion": "Hectáreas de parques zonales administrados por SERPAR y árboles plantados según la MML", "unidad": "árboles / ha", "mejor_si": "sube", "competencia": "mml", "responsable_principal": "MML - SERPAR", "confiabilidad": "baja", "ambito": "Lima Metropolitana",
-     "serie": [{"anio": 2019, "valor": null, "parcial": false, "nota": null},{"anio": 2020, "valor": null, "parcial": false, "nota": null},{"anio": 2021, "valor": null, "parcial": false, "nota": null},{"anio": 2022, "valor": null, "parcial": false, "nota": null},{"anio": 2023, "valor": null, "parcial": false, "nota": null},{"anio": 2024, "valor": null, "parcial": false, "nota": null},{"anio": 2025, "valor": null, "parcial": false, "nota": null},{"anio": 2026, "valor": null, "parcial": true, "nota": "pendiente"}],
-     "fuentes": [], "discrepancias": null, "nota": "pendiente"},
-    {"id": "residuos_generados_t_dia", "nombre": "Residuos sólidos municipales generados (Lima Metropolitana)", "descripcion": "Toneladas diarias de residuos sólidos municipales generados en la provincia de Lima", "unidad": "t/día", "mejor_si": "baja", "competencia": "compartida", "responsable_principal": "Municipios distritales / MML / MINAM", "confiabilidad": "media", "ambito": "Provincia de Lima",
-     "serie": [{"anio": 2019, "valor": null, "parcial": false, "nota": null},{"anio": 2020, "valor": null, "parcial": false, "nota": null},{"anio": 2021, "valor": null, "parcial": false, "nota": null},{"anio": 2022, "valor": null, "parcial": false, "nota": null},{"anio": 2023, "valor": null, "parcial": false, "nota": null},{"anio": 2024, "valor": null, "parcial": false, "nota": null},{"anio": 2025, "valor": null, "parcial": false, "nota": null},{"anio": 2026, "valor": null, "parcial": true, "nota": "pendiente"}],
-     "fuentes": [], "discrepancias": null, "nota": "pendiente"},
-    {"id": "residuos_pct_relleno_sanitario", "nombre": "Residuos dispuestos en relleno sanitario (%)", "descripcion": "Porcentaje de residuos sólidos municipales recolectados que se disponen en rellenos sanitarios autorizados", "unidad": "%", "mejor_si": "sube", "competencia": "compartida", "responsable_principal": "Municipios distritales / MML / MINAM", "confiabilidad": "media", "ambito": "Provincia de Lima",
-     "serie": [{"anio": 2019, "valor": null, "parcial": false, "nota": null},{"anio": 2020, "valor": null, "parcial": false, "nota": null},{"anio": 2021, "valor": null, "parcial": false, "nota": null},{"anio": 2022, "valor": null, "parcial": false, "nota": null},{"anio": 2023, "valor": null, "parcial": false, "nota": null},{"anio": 2024, "valor": null, "parcial": false, "nota": null},{"anio": 2025, "valor": null, "parcial": false, "nota": null},{"anio": 2026, "valor": null, "parcial": true, "nota": "pendiente"}],
-     "fuentes": [], "discrepancias": null, "nota": "pendiente"},
-    {"id": "cobertura_agua_potable", "nombre": "Cobertura de agua potable por red pública (Lima Metropolitana)", "descripcion": "Porcentaje de población/hogares con acceso a agua por red pública", "unidad": "%", "mejor_si": "sube", "competencia": "otra_entidad", "responsable_principal": "SEDAPAL (MVCS)", "confiabilidad": "alta", "ambito": "Lima Metropolitana",
-     "serie": [{"anio": 2019, "valor": null, "parcial": false, "nota": null},{"anio": 2020, "valor": null, "parcial": false, "nota": null},{"anio": 2021, "valor": null, "parcial": false, "nota": null},{"anio": 2022, "valor": null, "parcial": false, "nota": null},{"anio": 2023, "valor": null, "parcial": false, "nota": null},{"anio": 2024, "valor": null, "parcial": false, "nota": null},{"anio": 2025, "valor": null, "parcial": false, "nota": null},{"anio": 2026, "valor": null, "parcial": true, "nota": "pendiente"}],
-     "fuentes": [], "discrepancias": null, "nota": "pendiente"},
-    {"id": "cobertura_alcantarillado", "nombre": "Cobertura de alcantarillado por red pública (Lima Metropolitana)", "descripcion": "Porcentaje de población/hogares con acceso a alcantarillado por red pública", "unidad": "%", "mejor_si": "sube", "competencia": "otra_entidad", "responsable_principal": "SEDAPAL (MVCS)", "confiabilidad": "alta", "ambito": "Lima Metropolitana",
-     "serie": [{"anio": 2019, "valor": null, "parcial": false, "nota": null},{"anio": 2020, "valor": null, "parcial": false, "nota": null},{"anio": 2021, "valor": null, "parcial": false, "nota": null},{"anio": 2022, "valor": null, "parcial": false, "nota": null},{"anio": 2023, "valor": null, "parcial": false, "nota": null},{"anio": 2024, "valor": null, "parcial": false, "nota": null},{"anio": 2025, "valor": null, "parcial": false, "nota": null},{"anio": 2026, "valor": null, "parcial": true, "nota": "pendiente"}],
-     "fuentes": [], "discrepancias": null, "nota": "pendiente"},
-    {"id": "lcv_satisfaccion_limpieza", "nombre": "Satisfacción con la limpieza pública (Lima Cómo Vamos)", "descripcion": "% de limeños satisfechos con el servicio de limpieza pública / recojo de basura", "unidad": "%", "mejor_si": "sube", "competencia": "compartida", "responsable_principal": "Municipios distritales / MML", "confiabilidad": "media", "ambito": "Lima Metropolitana",
-     "serie": [{"anio": 2019, "valor": null, "parcial": false, "nota": null},{"anio": 2020, "valor": null, "parcial": false, "nota": null},{"anio": 2021, "valor": null, "parcial": false, "nota": null},{"anio": 2022, "valor": null, "parcial": false, "nota": null},{"anio": 2023, "valor": null, "parcial": false, "nota": null},{"anio": 2024, "valor": null, "parcial": false, "nota": null},{"anio": 2025, "valor": null, "parcial": false, "nota": null},{"anio": 2026, "valor": null, "parcial": true, "nota": "pendiente"}],
-     "fuentes": [], "discrepancias": null, "nota": "pendiente"},
-    {"id": "lcv_satisfaccion_areas_verdes", "nombre": "Satisfacción con parques y áreas verdes (Lima Cómo Vamos)", "descripcion": "% de limeños satisfechos con parques y áreas verdes", "unidad": "%", "mejor_si": "sube", "competencia": "compartida", "responsable_principal": "MML (SERPAR) / municipios distritales", "confiabilidad": "media", "ambito": "Lima Metropolitana",
-     "serie": [{"anio": 2019, "valor": null, "parcial": false, "nota": null},{"anio": 2020, "valor": null, "parcial": false, "nota": null},{"anio": 2021, "valor": null, "parcial": false, "nota": null},{"anio": 2022, "valor": null, "parcial": false, "nota": null},{"anio": 2023, "valor": null, "parcial": false, "nota": null},{"anio": 2024, "valor": null, "parcial": false, "nota": null},{"anio": 2025, "valor": null, "parcial": false, "nota": null},{"anio": 2026, "valor": null, "parcial": true, "nota": "pendiente"}],
-     "fuentes": [], "discrepancias": null, "nota": "pendiente"},
-    {"id": "lcv_satisfaccion_alumbrado", "nombre": "Satisfacción con el alumbrado público (Lima Cómo Vamos)", "descripcion": "% de limeños satisfechos con el alumbrado público", "unidad": "%", "mejor_si": "sube", "competencia": "otra_entidad", "responsable_principal": "Concesionarias eléctricas / municipios", "confiabilidad": "media", "ambito": "Lima Metropolitana",
-     "serie": [{"anio": 2019, "valor": null, "parcial": false, "nota": null},{"anio": 2020, "valor": null, "parcial": false, "nota": null},{"anio": 2021, "valor": null, "parcial": false, "nota": null},{"anio": 2022, "valor": null, "parcial": false, "nota": null},{"anio": 2023, "valor": null, "parcial": false, "nota": null},{"anio": 2024, "valor": null, "parcial": false, "nota": null},{"anio": 2025, "valor": null, "parcial": false, "nota": null},{"anio": 2026, "valor": null, "parcial": true, "nota": "pendiente"}],
-     "fuentes": [], "discrepancias": null, "nota": "pendiente"},
-    {"id": "lcv_satisfaccion_aire", "nombre": "Satisfacción con la calidad del aire (Lima Cómo Vamos)", "descripcion": "% de limeños satisfechos con la calidad del aire", "unidad": "%", "mejor_si": "sube", "competencia": "compartida", "responsable_principal": "MINAM / MML / ATU", "confiabilidad": "media", "ambito": "Lima Metropolitana",
-     "serie": [{"anio": 2019, "valor": null, "parcial": false, "nota": null},{"anio": 2020, "valor": null, "parcial": false, "nota": null},{"anio": 2021, "valor": null, "parcial": false, "nota": null},{"anio": 2022, "valor": null, "parcial": false, "nota": null},{"anio": 2023, "valor": null, "parcial": false, "nota": null},{"anio": 2024, "valor": null, "parcial": false, "nota": null},{"anio": 2025, "valor": null, "parcial": false, "nota": null},{"anio": 2026, "valor": null, "parcial": true, "nota": "pendiente"}],
-     "fuentes": [], "discrepancias": null, "nota": "pendiente"},
-    {"id": "lcv_satisfaccion_lima_vivir", "nombre": "Satisfacción con Lima como lugar para vivir (Lima Cómo Vamos)", "descripcion": "% de limeños satisfechos con Lima como ciudad para vivir", "unidad": "%", "mejor_si": "sube", "competencia": "compartida", "responsable_principal": "MML / Gobierno nacional / municipios", "confiabilidad": "media", "ambito": "Lima Metropolitana",
-     "serie": [{"anio": 2019, "valor": null, "parcial": false, "nota": null},{"anio": 2020, "valor": null, "parcial": false, "nota": null},{"anio": 2021, "valor": null, "parcial": false, "nota": null},{"anio": 2022, "valor": null, "parcial": false, "nota": null},{"anio": 2023, "valor": null, "parcial": false, "nota": null},{"anio": 2024, "valor": null, "parcial": false, "nota": null},{"anio": 2025, "valor": null, "parcial": false, "nota": null},{"anio": 2026, "valor": null, "parcial": true, "nota": "pendiente"}],
-     "fuentes": [], "discrepancias": null, "nota": "pendiente"},
-    {"id": "espacios_publicos_recuperados_mml", "nombre": "Espacios públicos recuperados por la MML", "descripcion": "Espacios públicos recuperados/intervenidos por la MML (Centro Histórico, Rímac, Costa Verde) según cifras oficiales por gestión", "unidad": "espacios (conteo)", "mejor_si": "sube", "competencia": "mml", "responsable_principal": "MML (PROLIMA, EMILIMA, Gerencia de Servicios a la Ciudad)", "confiabilidad": "baja", "ambito": "Lima Metropolitana",
-     "serie": [{"anio": 2019, "valor": null, "parcial": false, "nota": null},{"anio": 2020, "valor": null, "parcial": false, "nota": null},{"anio": 2021, "valor": null, "parcial": false, "nota": null},{"anio": 2022, "valor": null, "parcial": false, "nota": null},{"anio": 2023, "valor": null, "parcial": false, "nota": null},{"anio": 2024, "valor": null, "parcial": false, "nota": null},{"anio": 2025, "valor": null, "parcial": false, "nota": null},{"anio": 2026, "valor": null, "parcial": true, "nota": "pendiente"}],
-     "fuentes": [], "discrepancias": null, "nota": "pendiente"}
+    {
+      "id": "pm25_promedio_anual",
+      "nombre": "PM2.5 promedio anual en Lima (IQAir)",
+      "descripcion": "Concentración media anual de material particulado fino PM2.5 en la ciudad de Lima según el World Air Quality Report de IQAir, que agrega estaciones gubernamentales (SENAMHI/DIGESA) y sensores de bajo costo.",
+      "unidad": "µg/m³",
+      "mejor_si": "baja",
+      "competencia": "compartida",
+      "responsable_principal": "MINAM / SENAMHI / DIGESA / MML / ATU / municipios distritales",
+      "confiabilidad": "media",
+      "ambito": "Lima Metropolitana",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": null,
+          "parcial": false,
+          "nota": "PENDIENTE: no se pudo acceder a la ficha de IQAir (bloqueo anti-bot); pendiente verificación web"
+        },
+        {
+          "anio": 2020,
+          "valor": null,
+          "parcial": false,
+          "nota": "idem"
+        },
+        {
+          "anio": 2021,
+          "valor": null,
+          "parcial": false,
+          "nota": "idem"
+        },
+        {
+          "anio": 2022,
+          "valor": null,
+          "parcial": false,
+          "nota": "idem"
+        },
+        {
+          "anio": 2023,
+          "valor": null,
+          "parcial": false,
+          "nota": "idem"
+        },
+        {
+          "anio": 2024,
+          "valor": null,
+          "parcial": false,
+          "nota": "idem"
+        },
+        {
+          "anio": 2025,
+          "valor": 18.5,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": "sin dato anual"
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "Asociación Automotriz del Perú (AAP), 'Perú es el país con peor calidad de aire en América Latina', mayo 2026 (resume el World Air Quality Report 2025 de IQAir)",
+          "url": "https://aap.org.pe/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Cita el promedio anual PM2.5 2025 de IQAir: Perú 19.1 (2024: 17.1); Lima 18.5 µg/m³ en 2025; distritos: Santa Anita 33, Pachacámac 31.8, Puente Piedra 28.9, Comas 28.7, SJL 27.1, San Borja 26.5.",
+          "observaciones": "Fuente secundaria (gremio) que cita a IQAir; archivo local pdf/aap_aire2026.txt",
+          "tipo": "secundaria"
+        },
+        {
+          "nombre": "INEI, Anuario de Estadísticas Ambientales 2024, cuadro 12 (SENAMHI): PM2.5 mensual por estación, provincia de Lima 2022",
+          "url": "https://www.inei.gob.pe/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Promedios mensuales por estación SENAMHI (San Borja, Campo de Marte, Santa Anita, VMT, SJL, SMP, Carabayllo, Puente Piedra). No publica promedio ciudad.",
+          "observaciones": "Sin dato 2020 por pandemia; sirve de contraste, no de serie",
+          "tipo": "primaria"
+        }
+      ],
+      "discrepancias": "IQAir agrega estaciones oficiales y sensores de bajo costo; SENAMHI/DIGESA publican por estación sin promedio ciudad. Los valores por distrito de IQAir 2025 (26-33 µg/m³) superan ampliamente el promedio ciudad (18.5).",
+      "nota": "Serie 2019-2024 pendiente de verificar en IQAir (la página devolvió un checkpoint de seguridad). ECA nacional anual PM2.5 = 25 µg/m³ (DS 003-2017-MINAM); guía OMS 2021 = 5 µg/m³."
+    },
+    {
+      "id": "areas_verdes_conservadas_m2",
+      "nombre": "Áreas verdes en espacios públicos conservadas por municipalidades (Lima Metropolitana)",
+      "descripcion": "Metros cuadrados de áreas verdes en espacios públicos (plazas, parques, parques zonales, jardines/óvalos, bermas, alamedas) cuya conservación está a cargo de las 43 municipalidades de Lima Metropolitana, según RENAMU.",
+      "unidad": "m²",
+      "mejor_si": "sube",
+      "competencia": "compartida",
+      "responsable_principal": "Municipios distritales (parques locales) / MML-SERPAR (parques zonales) / MML (Cercado)",
+      "confiabilidad": "media",
+      "ambito": "Lima Metropolitana",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": null,
+          "parcial": false,
+          "nota": "No consultado en anuarios anteriores (pendiente)"
+        },
+        {
+          "anio": 2020,
+          "valor": null,
+          "parcial": false,
+          "nota": "idem"
+        },
+        {
+          "anio": 2021,
+          "valor": null,
+          "parcial": false,
+          "nota": "idem"
+        },
+        {
+          "anio": 2022,
+          "valor": 27819852,
+          "parcial": false,
+          "nota": "Anuario 2023 (RENAMU 2022)"
+        },
+        {
+          "anio": 2023,
+          "valor": 27819852,
+          "parcial": false,
+          "nota": "Anuario 2024 (RENAMU 2023): cifra idéntica a la de 2022 al decimal (27 819 852,3), lo que sugiere repetición de datos por INEI"
+        },
+        {
+          "anio": 2024,
+          "valor": null,
+          "parcial": false,
+          "nota": "Anuario 2025 no consultado"
+        },
+        {
+          "anio": 2025,
+          "valor": null,
+          "parcial": false,
+          "nota": "sin dato"
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": "sin dato"
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "INEI, Anuario de Estadísticas Ambientales 2024, Componente 6, cuadro 7 'Conservación de áreas verdes en espacios públicos a cargo de la municipalidad, según departamento, 2023'",
+          "url": "https://www.inei.gob.pe/media/MenuRecursivo/publicaciones_digitales/Est/Lib1990/libro.pdf",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Registro Nacional de Municipalidades (RENAMU), autodeclarado por 43 municipalidades. Desglose 2023 Lima Metropolitana: plazas 583 387; parques 16 842 163; parques zonales y zoológicos 71 917; jardines/óvalos 1 506 928; bermas 8 178 298; alamedas 637 160.",
+          "observaciones": "Archivo local pdf/inei_anuario2024.txt; URL del PDF a confirmar",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "INEI, Anuario de Estadísticas Ambientales 2023, Componente 6, cuadro 7 (2022)",
+          "url": "https://www.inei.gob.pe/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "RENAMU 2022. Lima Metropolitana: 27 819 852,3 m²",
+          "observaciones": "Archivo local pdf/inei_anuario2023_cap06.txt",
+          "tipo": "primaria"
+        }
+      ],
+      "discrepancias": "El rubro 'parques zonales y zoológicos' (71 917 m²) es muy inferior a la superficie real de los parques zonales de SERPAR (cientos de ha), lo que indica que la MML/SERPAR no reporta esa superficie en RENAMU. El total no equivale al inventario de áreas verdes de la ciudad.",
+      "nota": "No se halló una serie oficial anual de m²/hab para Lima Metropolitana; dividir 27,8 millones de m² entre ~10 millones de habitantes daría ~2,8 m²/hab, pero es un cálculo propio, no cifra oficial. La OMS recomienda 9 m²/hab."
+    },
+    {
+      "id": "serpar_parques_arboles",
+      "nombre": "Parques zonales SERPAR y árboles plantados por gestión (MML)",
+      "descripcion": "Hectáreas de parques zonales administrados por SERPAR y árboles plantados según cifras oficiales de la MML",
+      "unidad": "árboles plantados / ha",
+      "mejor_si": "sube",
+      "competencia": "mml",
+      "responsable_principal": "MML - SERPAR",
+      "confiabilidad": "baja",
+      "ambito": "Lima Metropolitana",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": null,
+          "parcial": false,
+          "nota": "PENDIENTE búsqueda web"
+        },
+        {
+          "anio": 2020,
+          "valor": null,
+          "parcial": false,
+          "nota": "PENDIENTE búsqueda web"
+        },
+        {
+          "anio": 2021,
+          "valor": null,
+          "parcial": false,
+          "nota": "PENDIENTE búsqueda web"
+        },
+        {
+          "anio": 2022,
+          "valor": null,
+          "parcial": false,
+          "nota": "PENDIENTE búsqueda web"
+        },
+        {
+          "anio": 2023,
+          "valor": null,
+          "parcial": false,
+          "nota": "PENDIENTE búsqueda web"
+        },
+        {
+          "anio": 2024,
+          "valor": null,
+          "parcial": false,
+          "nota": "PENDIENTE búsqueda web"
+        },
+        {
+          "anio": 2025,
+          "valor": null,
+          "parcial": false,
+          "nota": "PENDIENTE búsqueda web"
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": "PENDIENTE búsqueda web"
+        }
+      ],
+      "fuentes": [],
+      "discrepancias": null,
+      "nota": "Pendiente."
+    },
+    {
+      "id": "residuos_generados_t_dia",
+      "nombre": "Residuos sólidos municipales generados diariamente (provincia de Lima)",
+      "descripcion": "Toneladas por día de residuos sólidos municipales (domiciliarios, comerciales y de limpieza pública) generados en los 43 distritos de la provincia de Lima, estimadas por MINAM (SIGERSOL) y reportadas por INEI.",
+      "unidad": "t/día",
+      "mejor_si": "baja",
+      "competencia": "compartida",
+      "responsable_principal": "Municipios distritales (recolección) / MML (Cercado y disposición) / MINAM (SIGERSOL)",
+      "confiabilidad": "media",
+      "ambito": "Provincia de Lima",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": 9901.1,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2020,
+          "valor": 10632.6,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2021,
+          "valor": 10371.2,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2022,
+          "valor": 9866.0,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2023,
+          "valor": 10478.7,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2024,
+          "valor": null,
+          "parcial": false,
+          "nota": "Anuario 2025 no consultado; pendiente"
+        },
+        {
+          "anio": 2025,
+          "valor": null,
+          "parcial": false,
+          "nota": "sin dato"
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": "sin dato"
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "INEI, Anuario de Estadísticas Ambientales 2024, cuadro 5 'Residuos sólidos municipales generados diariamente en la provincia de Lima, según distrito, 2017-2023' y cuadro 3 (toneladas anuales)",
+          "url": "https://www.inei.gob.pe/media/MenuRecursivo/publicaciones_digitales/Est/Lib1990/libro.pdf",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Estimación a partir de estudios de caracterización y SIGERSOL (MINAM) y Gerencia de Servicios a la Ciudad y Gestión Ambiental de la MML. Totales anuales (t): 2019 3 613 906; 2020 3 880 894; 2021 3 862 551; 2022 3 584 173; 2023 3 824 813 (+6,7% vs 2022).",
+          "observaciones": "Archivo local pdf/inei_anuario2024.txt. Mayores generadores 2023: SJL 1 018 t/día, SMP 797, Ate 687.",
+          "tipo": "primaria"
+        }
+      ],
+      "discrepancias": "Los totales anuales de residuos 'generados' y de residuos 'controlados en rellenos' del mismo anuario no son consistentes entre sí (ver indicador residuos_relleno_sanitario_t).",
+      "nota": "Serie estimada, no medida; cambios distritales bruscos (p. ej., Comas 2022) reflejan reportes municipales incompletos."
+    },
+    {
+      "id": "residuos_relleno_sanitario_t",
+      "nombre": "Residuos sólidos municipales de la provincia de Lima dispuestos en rellenos sanitarios",
+      "descripcion": "Toneladas anuales de residuos sólidos municipales de los 43 distritos controladas en rellenos sanitarios autorizados (Huaycoloro, Portillo Grande, Modelo del Callao, El Zapallal hasta su clausura, Proyecto Ecológico Trapiche desde 2023), según SIGERSOL/MML.",
+      "unidad": "t/año",
+      "mejor_si": "sube",
+      "competencia": "compartida",
+      "responsable_principal": "Municipios distritales / MML / MINAM",
+      "confiabilidad": "baja",
+      "ambito": "Provincia de Lima",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": 3654132,
+          "parcial": false,
+          "nota": "Ratio dispuesto/generado = 101,1% (cálculo propio; >100% revela inconsistencia entre fuentes)"
+        },
+        {
+          "anio": 2020,
+          "valor": 3533403,
+          "parcial": false,
+          "nota": "ratio 91,0% (cálculo propio)"
+        },
+        {
+          "anio": 2021,
+          "valor": 3880240,
+          "parcial": false,
+          "nota": "ratio 100,5% (cálculo propio)"
+        },
+        {
+          "anio": 2022,
+          "valor": 1144590,
+          "parcial": false,
+          "nota": "Cifra claramente incompleta (equivale a 31,9% de lo generado); el cuadro 11 del mismo anuario reporta 5 389 140 t ingresadas a rellenos en 2022 (municipal + no municipal)"
+        },
+        {
+          "anio": 2023,
+          "valor": 3719937,
+          "parcial": false,
+          "nota": "ratio 97,3% (cálculo propio); coincide con el total del cuadro 11 (3 719 937 t), que INEI describe como municipal + no municipal"
+        },
+        {
+          "anio": 2024,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2025,
+          "valor": null,
+          "parcial": false,
+          "nota": "sin dato"
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": "sin dato"
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "INEI, Anuario de Estadísticas Ambientales 2024, cuadro 5 'Residuos sólidos municipales controlados en los rellenos sanitarios de la provincia de Lima, según distrito, 2017-2023' y cuadro 11 'Ingreso mensual de residuos sólidos de la provincia de Lima en los rellenos sanitarios, 2017-2023'",
+          "url": "https://www.inei.gob.pe/media/MenuRecursivo/publicaciones_digitales/Est/Lib1990/libro.pdf",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Reporte anual de los distritos vía SIGERSOL (MINAM) y División de Gestión de Residuos Sólidos de la MML; excluye residuos de construcción y desmonte.",
+          "observaciones": "Archivo local pdf/inei_anuario2024.txt",
+          "tipo": "primaria"
+        }
+      ],
+      "discrepancias": "El porcentaje de residuos que llega a relleno sanitario NO puede calcularse de forma confiable: los ratios dispuesto/generado superan 100% en 2019 y 2021, y 2022 tiene solo 1,14 millones t (reporte incompleto). El texto del anuario dice que el ingreso a rellenos en 2023 (3,72 millones t, municipal + no municipal) cayó 31,0% respecto a 2022 (5,39 millones t).",
+      "nota": "Se registra el tonelaje dispuesto en lugar de un porcentaje; el % a relleno se deja como cálculo propio en las notas por año."
+    },
+    {
+      "id": "cobertura_agua_red_publica_inei",
+      "nombre": "Población con agua por red pública (INEI-ENAPRES, Lima Metropolitana)",
+      "descripcion": "Porcentaje de la población de los 43 distritos de Lima Metropolitana que consume agua proveniente de red pública (dentro o fuera de la vivienda, pilón/grifo público), según la Encuesta Nacional de Programas Presupuestales.",
+      "unidad": "%",
+      "mejor_si": "sube",
+      "competencia": "otra_entidad",
+      "responsable_principal": "SEDAPAL (MVCS); regulador SUNASS",
+      "confiabilidad": "alta",
+      "ambito": "Lima Metropolitana",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": 96.8,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2020,
+          "valor": 95.6,
+          "parcial": false,
+          "nota": "Año de pandemia; ENAPRES con levantamiento parcial"
+        },
+        {
+          "anio": 2021,
+          "valor": 93.9,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2022,
+          "valor": 93.1,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2023,
+          "valor": 93.7,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2024,
+          "valor": null,
+          "parcial": false,
+          "nota": "Informe INEI 2024 publica año móvil oct-2023/set-2024; el anexo llega a 2023"
+        },
+        {
+          "anio": 2025,
+          "valor": null,
+          "parcial": false,
+          "nota": "sin dato"
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": "sin dato"
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "INEI, 'Perú: Formas de Acceso al Agua y Saneamiento Básico' (informe técnico, ed. 2024), anexo cuadro 01, 2015-2023",
+          "url": "https://www.inei.gob.pe/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "ENAPRES; fila 'Lima Metropolitana 2/' (43 distritos). Fila 'Lima Metropolitana y Callao': 2019 96,9; 2020 95,8; 2021 94,2; 2022 93,5; 2023 94,0.",
+          "observaciones": "Archivo local pdf/inei_agua2024.txt",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "INEI, 'Perú: Formas de Acceso al Agua y Saneamiento Básico' (ed. 2020), anexo cuadro 01, 2013-2019",
+          "url": "https://www.inei.gob.pe/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "ENAPRES. Lima Metropolitana 2019: 96,9% (fila incluye Callao según nota del cuadro).",
+          "observaciones": "Archivo local pdf/inei_agua2020.txt",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "INEI, 'Perú: Formas de Acceso al Agua y Saneamiento Básico' (ed. 2023), anexo cuadro 01, 2013-2022",
+          "url": "https://www.inei.gob.pe/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "ENAPRES; mismos valores 2019-2022.",
+          "observaciones": "Archivo local pdf/inei_agua2023.txt",
+          "tipo": "primaria"
+        }
+      ],
+      "discrepancias": "SUNASS/SEDAPAL reportan 93,2% (2019) a 93,9% (2023) de cobertura sobre la población administrada, con tendencia estable/creciente; INEI (encuesta a hogares, población total) muestra caída de 96,8% a 93,1-93,7% entre 2019 y 2022-2023. Difieren universo y método.",
+      "nota": "La caída post-2020 coincide con la expansión de asentamientos en laderas sin red. Indicador complementario: agua todos los días las 24 horas en Lima Metropolitana: 2019 85,3%; 2020 83,1; 2021 87,2; 2022 83,2; 2023 83,1."
+    },
+    {
+      "id": "cobertura_alcantarillado_inei",
+      "nombre": "Población con acceso a red pública de alcantarillado (INEI-ENAPRES, Lima Metropolitana)",
+      "descripcion": "Porcentaje de la población de los 43 distritos de Lima Metropolitana con conexión a red pública de alcantarillado dentro o fuera de la vivienda (dentro del edificio).",
+      "unidad": "%",
+      "mejor_si": "sube",
+      "competencia": "otra_entidad",
+      "responsable_principal": "SEDAPAL (MVCS); regulador SUNASS",
+      "confiabilidad": "alta",
+      "ambito": "Lima Metropolitana",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": 96.3,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2020,
+          "valor": 94.4,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2021,
+          "valor": 91.3,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2022,
+          "valor": 90.5,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2023,
+          "valor": 91.0,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2024,
+          "valor": null,
+          "parcial": false,
+          "nota": "anexo INEI llega a 2023"
+        },
+        {
+          "anio": 2025,
+          "valor": null,
+          "parcial": false,
+          "nota": "sin dato"
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": "sin dato"
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "INEI, 'Perú: Formas de Acceso al Agua y Saneamiento Básico' (ed. 2024), anexo cuadro 8, 2015-2023",
+          "url": "https://www.inei.gob.pe/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "ENAPRES; fila 'Lima Metropolitana 2/'. Fila Lima Metropolitana y Callao: 2019 96,2; 2020 94,4; 2021 91,8; 2022 90,9; 2023 91,2.",
+          "observaciones": "Archivo local pdf/inei_agua2024.txt",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "INEI, ed. 2020, anexo cuadro 10, 2012-2019",
+          "url": "https://www.inei.gob.pe/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Lima Metropolitana 2019: 96,0% (fila con Callao)",
+          "observaciones": "Archivo local pdf/inei_agua2020.txt",
+          "tipo": "primaria"
+        }
+      ],
+      "discrepancias": "SUNASS reporta cobertura de alcantarillado de SEDAPAL 90,65% (2019) a 91,40% (2023), estable; INEI muestra caída de 5 puntos 2019-2022.",
+      "nota": "Caída significativa (** 95%) entre 2015 y 2023 según INEI."
+    },
+    {
+      "id": "cobertura_sedapal_sunass",
+      "nombre": "Cobertura de agua potable y alcantarillado de SEDAPAL (SUNASS)",
+      "descripcion": "Porcentaje de la población bajo el ámbito de administración de SEDAPAL (Lima y Callao) abastecida con agua potable, según el Benchmarking Regulatorio de SUNASS. La cobertura de alcantarillado se registra en la nota de cada año.",
+      "unidad": "%",
+      "mejor_si": "sube",
+      "competencia": "otra_entidad",
+      "responsable_principal": "SEDAPAL (MVCS)",
+      "confiabilidad": "alta",
+      "ambito": "Lima y Callao",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": 93.2,
+          "parcial": false,
+          "nota": "alcantarillado 90,65%"
+        },
+        {
+          "anio": 2020,
+          "valor": 93.05,
+          "parcial": false,
+          "nota": "alcantarillado 90,54%"
+        },
+        {
+          "anio": 2021,
+          "valor": 93.42,
+          "parcial": false,
+          "nota": "alcantarillado 90,94%"
+        },
+        {
+          "anio": 2022,
+          "valor": 93.77,
+          "parcial": false,
+          "nota": "alcantarillado 91,36%"
+        },
+        {
+          "anio": 2023,
+          "valor": 93.9,
+          "parcial": false,
+          "nota": "alcantarillado 91,40%. SEDAPAL declaró a la Defensoría (2024) una cobertura de agua de 91,49% con 990 599 personas sin servicio, menor a la de SUNASS (93,89%, 652 095 personas sin servicio)"
+        },
+        {
+          "anio": 2024,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente (Benchmarking 2025 / Memoria SEDAPAL 2024)"
+        },
+        {
+          "anio": 2025,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": "sin dato"
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "Defensoría del Pueblo, informe sobre el servicio de agua potable y saneamiento en Lima y Callao (2025), gráfico 'Cobertura de agua potable y alcantarillado de Sedapal S.A., periodo 2006-2023', elaborado con los Benchmarking Regulatorios 2006-2024 de SUNASS",
+          "url": "https://www.defensoria.gob.pe/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Población abastecida / población administrada por SEDAPAL. Población administrada 2023: 10 683 315; abastecida de agua: 10 031 220; conexiones de agua: 1 648 683.",
+          "observaciones": "Archivo local pdf/defensoria_agua2025.txt",
+          "tipo": "secundaria"
+        },
+        {
+          "nombre": "SEDAPAL, Memoria Anual 2023 (citada por la Defensoría)",
+          "url": "https://www.sedapal.com.pe/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Población con agua potable pasó de 7,4 millones (2004) a 10,7 millones (2023); alcantarillado de 6,9 a 10,6 millones.",
+          "observaciones": "Cifras absolutas, no porcentajes",
+          "tipo": "secundaria"
+        }
+      ],
+      "discrepancias": "Ver indicadores INEI: la encuesta a hogares da valores más altos en 2019 (96,8%) pero decrecientes; SUNASS mide sobre población administrada y muestra estabilidad. La propia SEDAPAL declaró a la Defensoría 91,49% en 2024 vs 93,89% de SUNASS.",
+      "nota": "Población administrada creció más de 200 mil personas/año desde 2015 mientras las conexiones crecieron ~15 mil/año (2019-2023), lo que la Defensoría interpreta como estancamiento del cierre de brechas."
+    },
+    {
+      "id": "lcv_satisfaccion_limpieza",
+      "nombre": "Satisfacción con el recojo de basura / limpieza pública (Lima Cómo Vamos)",
+      "descripcion": "% de habitantes satisfechos con el sistema de recojo de basura. Complementariamente, % que menciona 'la limpieza pública / acumulación de basura' entre los tres principales problemas de la ciudad.",
+      "unidad": "%",
+      "mejor_si": "sube",
+      "competencia": "compartida",
+      "responsable_principal": "Municipios distritales (recolección) / MML (Cercado, disposición final)",
+      "confiabilidad": "media",
+      "ambito": "Lima y Callao",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": null,
+          "parcial": false,
+          "nota": "Satisfacción con recojo de basura solo por zonas: Lima Centro 21,6%, Lima Norte 13,8%, Lima Este 8,5%, Lima Sur 6,9% (no se halló el total Lima en el texto extraído). Limpieza pública fue el 4.º problema de la ciudad."
+        },
+        {
+          "anio": 2020,
+          "valor": null,
+          "parcial": false,
+          "nota": "Lima Cómo Vamos no aplicó encuesta en 2020 (pandemia)"
+        },
+        {
+          "anio": 2021,
+          "valor": null,
+          "parcial": false,
+          "nota": "Sin pregunta de satisfacción; limpieza pública/acumulación de basura mencionada como problema por 34,3% (2.º problema)"
+        },
+        {
+          "anio": 2022,
+          "valor": null,
+          "parcial": false,
+          "nota": "Problema mencionado por 31,0%"
+        },
+        {
+          "anio": 2023,
+          "valor": null,
+          "parcial": false,
+          "nota": "Problema mencionado por 34,9% (2.º problema)"
+        },
+        {
+          "anio": 2024,
+          "valor": null,
+          "parcial": false,
+          "nota": "Problema mencionado por 29,3%"
+        },
+        {
+          "anio": 2025,
+          "valor": null,
+          "parcial": false,
+          "nota": "Problema mencionado por 20,3% (edición 15, enero 2026)"
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": "sin dato"
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "Lima Cómo Vamos, 'Lima y Callao según sus habitantes' — informe de percepción 2019 (Décimo informe)",
+          "url": "https://www.limacomovamos.org/informes/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Encuesta de percepción ciudadana (IOP-PUCP hasta 2019; Ipsos/propia después), ~1 100-1 500 encuestas en Lima Metropolitana y Callao; escala 1-5, 'satisfecho' = 4-5.",
+          "observaciones": "Archivo local lcv2019.txt. ",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "Lima Cómo Vamos, 'Lima y Callao según sus habitantes' — informe de percepción 2021",
+          "url": "https://www.limacomovamos.org/informes/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Encuesta de percepción ciudadana (IOP-PUCP hasta 2019; Ipsos/propia después), ~1 100-1 500 encuestas en Lima Metropolitana y Callao; escala 1-5, 'satisfecho' = 4-5.",
+          "observaciones": "Archivo local lcv2021.txt. ",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "Lima Cómo Vamos, 'Lima y Callao según sus habitantes' — informe de percepción 2022",
+          "url": "https://www.limacomovamos.org/informes/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Encuesta de percepción ciudadana (IOP-PUCP hasta 2019; Ipsos/propia después), ~1 100-1 500 encuestas en Lima Metropolitana y Callao; escala 1-5, 'satisfecho' = 4-5.",
+          "observaciones": "Archivo local lcv2022.txt. ",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "Lima Cómo Vamos, 'Lima y Callao según sus habitantes' — informe de percepción 2023 (Edición 13)",
+          "url": "https://www.limacomovamos.org/informes/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Encuesta de percepción ciudadana (IOP-PUCP hasta 2019; Ipsos/propia después), ~1 100-1 500 encuestas en Lima Metropolitana y Callao; escala 1-5, 'satisfecho' = 4-5.",
+          "observaciones": "Archivo local lcv2023.txt. ",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "Lima Cómo Vamos, 'Lima y Callao según sus habitantes' — informe de percepción 2024 (Edición 14)",
+          "url": "https://www.limacomovamos.org/informes/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Encuesta de percepción ciudadana (IOP-PUCP hasta 2019; Ipsos/propia después), ~1 100-1 500 encuestas en Lima Metropolitana y Callao; escala 1-5, 'satisfecho' = 4-5.",
+          "observaciones": "Archivo local lcv2024.txt. ",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "Lima Cómo Vamos, 'Lima y Callao según sus habitantes' — informe de percepción 2025 (Edición 15)",
+          "url": "https://www.limacomovamos.org/informes/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Encuesta de percepción ciudadana (IOP-PUCP hasta 2019; Ipsos/propia después), ~1 100-1 500 encuestas en Lima Metropolitana y Callao; escala 1-5, 'satisfecho' = 4-5.",
+          "observaciones": "Archivo local lcv2025.txt. ",
+          "tipo": "primaria"
+        }
+      ],
+      "discrepancias": null,
+      "nota": "No existe serie comparable de satisfacción con el servicio de limpieza en las ediciones 2021-2025 extraídas; se usa como proxy la mención como problema principal (mejor_si baja para ese proxy)."
+    },
+    {
+      "id": "lcv_satisfaccion_areas_verdes",
+      "nombre": "Satisfacción con el estado de las áreas verdes y la cantidad de árboles (Lima Cómo Vamos)",
+      "descripcion": "% de habitantes satisfechos (4-5 en escala de 1 a 5) con el estado de las áreas verdes y la cantidad de árboles de la ciudad.",
+      "unidad": "%",
+      "mejor_si": "sube",
+      "competencia": "compartida",
+      "responsable_principal": "Municipios distritales / MML-SERPAR",
+      "confiabilidad": "media",
+      "ambito": "Lima y Callao",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": 22.0,
+          "parcial": false,
+          "nota": "Solo Lima (sin Callao); insatisfechos 47,3%"
+        },
+        {
+          "anio": 2020,
+          "valor": null,
+          "parcial": false,
+          "nota": "sin encuesta (pandemia)"
+        },
+        {
+          "anio": 2021,
+          "valor": null,
+          "parcial": false,
+          "nota": "No se halló la cifra en el texto extraído del informe 2021"
+        },
+        {
+          "anio": 2022,
+          "valor": 26.3,
+          "parcial": false,
+          "nota": "insatisfechos 42,2%"
+        },
+        {
+          "anio": 2023,
+          "valor": 26.2,
+          "parcial": false,
+          "nota": "insatisfechos 45,2%"
+        },
+        {
+          "anio": 2024,
+          "valor": 20.6,
+          "parcial": false,
+          "nota": "insatisfechos 49,5%"
+        },
+        {
+          "anio": 2025,
+          "valor": 21.1,
+          "parcial": false,
+          "nota": "insatisfechos 48,6%"
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": "sin dato"
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "Lima Cómo Vamos, 'Lima y Callao según sus habitantes' — informe de percepción 2019 (Décimo informe)",
+          "url": "https://www.limacomovamos.org/informes/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Encuesta de percepción ciudadana (IOP-PUCP hasta 2019; Ipsos/propia después), ~1 100-1 500 encuestas en Lima Metropolitana y Callao; escala 1-5, 'satisfecho' = 4-5.",
+          "observaciones": "Archivo local lcv2019.txt. Tabla 'Ambiente': Lima satisfecho 22,0%.",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "Lima Cómo Vamos, 'Lima y Callao según sus habitantes' — informe de percepción 2022",
+          "url": "https://www.limacomovamos.org/informes/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Encuesta de percepción ciudadana (IOP-PUCP hasta 2019; Ipsos/propia después), ~1 100-1 500 encuestas en Lima Metropolitana y Callao; escala 1-5, 'satisfecho' = 4-5.",
+          "observaciones": "Archivo local lcv2022.txt. Pregunta: '¿Cómo califica su nivel de satisfacción con el estado de las áreas verdes y la cantidad de árboles?' Total 2022: insatisfecho 42,2 / ni 30,6 / satisfecho 26,3.",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "Lima Cómo Vamos, 'Lima y Callao según sus habitantes' — informe de percepción 2023 (Edición 13)",
+          "url": "https://www.limacomovamos.org/informes/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Encuesta de percepción ciudadana (IOP-PUCP hasta 2019; Ipsos/propia después), ~1 100-1 500 encuestas en Lima Metropolitana y Callao; escala 1-5, 'satisfecho' = 4-5.",
+          "observaciones": "Archivo local lcv2023.txt. Total 2023: 45,2 / 28,4 / 26,2.",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "Lima Cómo Vamos, 'Lima y Callao según sus habitantes' — informe de percepción 2024 (Edición 14)",
+          "url": "https://www.limacomovamos.org/informes/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Encuesta de percepción ciudadana (IOP-PUCP hasta 2019; Ipsos/propia después), ~1 100-1 500 encuestas en Lima Metropolitana y Callao; escala 1-5, 'satisfecho' = 4-5.",
+          "observaciones": "Archivo local lcv2024.txt. Total 2024: 49,5 / 29,6 / 20,6.",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "Lima Cómo Vamos, 'Lima y Callao según sus habitantes' — informe de percepción 2025 (Edición 15)",
+          "url": "https://www.limacomovamos.org/informes/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Encuesta de percepción ciudadana (IOP-PUCP hasta 2019; Ipsos/propia después), ~1 100-1 500 encuestas en Lima Metropolitana y Callao; escala 1-5, 'satisfecho' = 4-5.",
+          "observaciones": "Archivo local lcv2025.txt. Total 2025: 48,6 / 30,1 / 21,1.",
+          "tipo": "primaria"
+        }
+      ],
+      "discrepancias": "Otra pregunta (satisfacción con 'los parques y áreas verdes de uso público' en la batería de aspectos de la ciudad) da satisfechos: 2022 23,5%; 2023 22,4%; 2024 n.d.; 2025 21,4%.",
+      "nota": "2019 cubre solo Lima; desde 2022 el total incluye Callao. Tendencia: leve mejora 2022-2023 y caída en 2024-2025."
+    },
+    {
+      "id": "lcv_satisfaccion_alumbrado",
+      "nombre": "Satisfacción con el alumbrado público (Lima Cómo Vamos)",
+      "descripcion": "% de habitantes satisfechos con el servicio de alumbrado público.",
+      "unidad": "%",
+      "mejor_si": "sube",
+      "competencia": "otra_entidad",
+      "responsable_principal": "Concesionarias eléctricas (Luz del Sur, Pluz/Enel) bajo supervisión de Osinergmin; municipios coordinan",
+      "confiabilidad": "media",
+      "ambito": "Lima y Callao",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": null,
+          "parcial": false,
+          "nota": "No se halló la pregunta en el texto extraído"
+        },
+        {
+          "anio": 2020,
+          "valor": null,
+          "parcial": false,
+          "nota": "sin encuesta"
+        },
+        {
+          "anio": 2021,
+          "valor": 48.1,
+          "parcial": false,
+          "nota": "Lima Centro 57%, Lima Norte 37,3%"
+        },
+        {
+          "anio": 2022,
+          "valor": null,
+          "parcial": false,
+          "nota": "pregunta no incluida en el informe extraído"
+        },
+        {
+          "anio": 2023,
+          "valor": null,
+          "parcial": false,
+          "nota": "idem"
+        },
+        {
+          "anio": 2024,
+          "valor": null,
+          "parcial": false,
+          "nota": "idem"
+        },
+        {
+          "anio": 2025,
+          "valor": null,
+          "parcial": false,
+          "nota": "idem"
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": "sin dato"
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "Lima Cómo Vamos, 'Lima y Callao según sus habitantes' — informe de percepción 2021",
+          "url": "https://www.limacomovamos.org/informes/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Encuesta de percepción ciudadana (IOP-PUCP hasta 2019; Ipsos/propia después), ~1 100-1 500 encuestas en Lima Metropolitana y Callao; escala 1-5, 'satisfecho' = 4-5.",
+          "observaciones": "Archivo local lcv2021.txt. Sección 'Condiciones en la vivienda': 48,1% satisfecho con el alumbrado público.",
+          "tipo": "primaria"
+        }
+      ],
+      "discrepancias": null,
+      "nota": "Solo un año disponible; no permite serie."
+    },
+    {
+      "id": "lcv_satisfaccion_aire",
+      "nombre": "Satisfacción con la calidad del aire (Lima Cómo Vamos)",
+      "descripcion": "% de habitantes satisfechos (4-5) con la calidad del aire de la ciudad.",
+      "unidad": "%",
+      "mejor_si": "sube",
+      "competencia": "compartida",
+      "responsable_principal": "MINAM / MML / ATU / municipios",
+      "confiabilidad": "media",
+      "ambito": "Lima y Callao",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": 13.0,
+          "parcial": false,
+          "nota": "Solo Lima; insatisfechos 56,3%"
+        },
+        {
+          "anio": 2020,
+          "valor": null,
+          "parcial": false,
+          "nota": "sin encuesta"
+        },
+        {
+          "anio": 2021,
+          "valor": 21.3,
+          "parcial": false,
+          "nota": "insatisfechos 49,7%"
+        },
+        {
+          "anio": 2022,
+          "valor": 22.3,
+          "parcial": false,
+          "nota": "insatisfechos 46,9%"
+        },
+        {
+          "anio": 2023,
+          "valor": 16.9,
+          "parcial": false,
+          "nota": "insatisfechos 53,0%"
+        },
+        {
+          "anio": 2024,
+          "valor": 16.7,
+          "parcial": false,
+          "nota": "insatisfechos 54,0%; contaminación del aire = principal problema ambiental"
+        },
+        {
+          "anio": 2025,
+          "valor": 18.0,
+          "parcial": false,
+          "nota": "insatisfechos 46,8%"
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": "sin dato"
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "Lima Cómo Vamos, 'Lima y Callao según sus habitantes' — informe de percepción 2019 (Décimo informe)",
+          "url": "https://www.limacomovamos.org/informes/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Encuesta de percepción ciudadana (IOP-PUCP hasta 2019; Ipsos/propia después), ~1 100-1 500 encuestas en Lima Metropolitana y Callao; escala 1-5, 'satisfecho' = 4-5.",
+          "observaciones": "Archivo local lcv2019.txt. ",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "Lima Cómo Vamos, 'Lima y Callao según sus habitantes' — informe de percepción 2021",
+          "url": "https://www.limacomovamos.org/informes/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Encuesta de percepción ciudadana (IOP-PUCP hasta 2019; Ipsos/propia después), ~1 100-1 500 encuestas en Lima Metropolitana y Callao; escala 1-5, 'satisfecho' = 4-5.",
+          "observaciones": "Archivo local lcv2021.txt. ",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "Lima Cómo Vamos, 'Lima y Callao según sus habitantes' — informe de percepción 2022",
+          "url": "https://www.limacomovamos.org/informes/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Encuesta de percepción ciudadana (IOP-PUCP hasta 2019; Ipsos/propia después), ~1 100-1 500 encuestas en Lima Metropolitana y Callao; escala 1-5, 'satisfecho' = 4-5.",
+          "observaciones": "Archivo local lcv2022.txt. ",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "Lima Cómo Vamos, 'Lima y Callao según sus habitantes' — informe de percepción 2023 (Edición 13)",
+          "url": "https://www.limacomovamos.org/informes/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Encuesta de percepción ciudadana (IOP-PUCP hasta 2019; Ipsos/propia después), ~1 100-1 500 encuestas en Lima Metropolitana y Callao; escala 1-5, 'satisfecho' = 4-5.",
+          "observaciones": "Archivo local lcv2023.txt. ",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "Lima Cómo Vamos, 'Lima y Callao según sus habitantes' — informe de percepción 2024 (Edición 14)",
+          "url": "https://www.limacomovamos.org/informes/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Encuesta de percepción ciudadana (IOP-PUCP hasta 2019; Ipsos/propia después), ~1 100-1 500 encuestas en Lima Metropolitana y Callao; escala 1-5, 'satisfecho' = 4-5.",
+          "observaciones": "Archivo local lcv2024.txt. ",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "Lima Cómo Vamos, 'Lima y Callao según sus habitantes' — informe de percepción 2025 (Edición 15)",
+          "url": "https://www.limacomovamos.org/informes/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Encuesta de percepción ciudadana (IOP-PUCP hasta 2019; Ipsos/propia después), ~1 100-1 500 encuestas en Lima Metropolitana y Callao; escala 1-5, 'satisfecho' = 4-5.",
+          "observaciones": "Archivo local lcv2025.txt. ",
+          "tipo": "primaria"
+        }
+      ],
+      "discrepancias": null,
+      "nota": "2019 solo Lima; 2021 en adelante Lima y Callao. Mejora en 2021-2022 (menor tráfico por pandemia) y retroceso desde 2023."
+    },
+    {
+      "id": "lcv_satisfaccion_lima_vivir",
+      "nombre": "Satisfacción con Lima como ciudad para vivir (Lima Cómo Vamos)",
+      "descripcion": "% de habitantes que se declaran satisfechos con Lima (y Callao desde 2025) como ciudad/lugar para vivir.",
+      "unidad": "%",
+      "mejor_si": "sube",
+      "competencia": "compartida",
+      "responsable_principal": "MML / Gobierno nacional / municipios distritales",
+      "confiabilidad": "media",
+      "ambito": "Lima y Callao",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": 37.5,
+          "parcial": false,
+          "nota": "Solo Lima: satisfecho 37,5%, insatisfecho 21,7%, punto medio 40,8%. Callao: 39% satisfecho"
+        },
+        {
+          "anio": 2020,
+          "valor": null,
+          "parcial": false,
+          "nota": "sin encuesta"
+        },
+        {
+          "anio": 2021,
+          "valor": null,
+          "parcial": false,
+          "nota": "Pregunta no reportada en el informe extraído"
+        },
+        {
+          "anio": 2022,
+          "valor": null,
+          "parcial": false,
+          "nota": "idem"
+        },
+        {
+          "anio": 2023,
+          "valor": null,
+          "parcial": false,
+          "nota": "idem"
+        },
+        {
+          "anio": 2024,
+          "valor": null,
+          "parcial": false,
+          "nota": "idem"
+        },
+        {
+          "anio": 2025,
+          "valor": 29.0,
+          "parcial": false,
+          "nota": "Lima y Callao: satisfecho 29,0%, insatisfecho 37,9%, punto medio 32,9%. Lima Norte 14,3% satisfecho; Lima Centro 53,3% insatisfecho"
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": "sin dato"
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "Lima Cómo Vamos, 'Lima y Callao según sus habitantes' — informe de percepción 2019 (Décimo informe)",
+          "url": "https://www.limacomovamos.org/informes/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Encuesta de percepción ciudadana (IOP-PUCP hasta 2019; Ipsos/propia después), ~1 100-1 500 encuestas en Lima Metropolitana y Callao; escala 1-5, 'satisfecho' = 4-5.",
+          "observaciones": "Archivo local lcv2019.txt. 'Índice de satisfacción con la ciudad'.",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "Lima Cómo Vamos, 'Lima y Callao según sus habitantes' — informe de percepción 2025 (Edición 15)",
+          "url": "https://www.limacomovamos.org/informes/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Encuesta de percepción ciudadana (IOP-PUCP hasta 2019; Ipsos/propia después), ~1 100-1 500 encuestas en Lima Metropolitana y Callao; escala 1-5, 'satisfecho' = 4-5.",
+          "observaciones": "Archivo local lcv2025.txt. Sección 'Lima y Callao como ciudades para vivir'.",
+          "tipo": "primaria"
+        }
+      ],
+      "discrepancias": null,
+      "nota": "Comparabilidad limitada: 2019 solo Lima; 2025 Lima y Callao. Caída de 8,5 puntos en satisfacción y aumento de 16 puntos en insatisfacción entre 2019 y 2025."
+    },
+    {
+      "id": "espacios_publicos_recuperados_mml",
+      "nombre": "Espacios públicos recuperados por la MML",
+      "descripcion": "Espacios públicos recuperados/intervenidos por la MML (Centro Histórico, Rímac, Costa Verde) según cifras oficiales por gestión",
+      "unidad": "espacios (conteo)",
+      "mejor_si": "sube",
+      "competencia": "mml",
+      "responsable_principal": "MML (PROLIMA, EMILIMA, Gerencia de Servicios a la Ciudad)",
+      "confiabilidad": "baja",
+      "ambito": "Lima Metropolitana",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": null,
+          "parcial": false,
+          "nota": "PENDIENTE búsqueda web"
+        },
+        {
+          "anio": 2020,
+          "valor": null,
+          "parcial": false,
+          "nota": "PENDIENTE búsqueda web"
+        },
+        {
+          "anio": 2021,
+          "valor": null,
+          "parcial": false,
+          "nota": "PENDIENTE búsqueda web"
+        },
+        {
+          "anio": 2022,
+          "valor": null,
+          "parcial": false,
+          "nota": "PENDIENTE búsqueda web"
+        },
+        {
+          "anio": 2023,
+          "valor": null,
+          "parcial": false,
+          "nota": "PENDIENTE búsqueda web"
+        },
+        {
+          "anio": 2024,
+          "valor": null,
+          "parcial": false,
+          "nota": "PENDIENTE búsqueda web"
+        },
+        {
+          "anio": 2025,
+          "valor": null,
+          "parcial": false,
+          "nota": "PENDIENTE búsqueda web"
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": "PENDIENTE búsqueda web"
+        }
+      ],
+      "fuentes": [],
+      "discrepancias": null,
+      "nota": "Pendiente."
+    }
   ]
 }

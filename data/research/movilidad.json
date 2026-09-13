@@ -1,24 +1,1531 @@
 {
   "dimension": "movilidad",
   "fecha_corte": "2026-09-12",
-  "resumen_hallazgos": "ESQUELETO: investigación en curso (2026-09-13). Series aún en null.",
+  "resumen_hallazgos": "Congestión: TomTom muestra que el tiempo para recorrer 10 km en el centro de Lima pasó de ~25 min (2021) a ~35 min (2025) y las horas perdidas en hora punta de 130 (2022) a 195 (2025), tras la caída pandémica (209 h en 2019). El nivel de congestión en % no es comparable entre ediciones (3 metodologías). Transporte masivo: Línea 1 pasó de 170,3 M (2019) a 70 M (2020) y a 201,5 M (2025), récord histórico (Ositran); Línea 2 opera 5 estaciones desde dic-2023 con 17,9 M de pasajeros en 2025. Seguridad vial: fallecidos en provincia de Lima subieron de 351 (2021) a 431 (2023) y 429 (2024); siniestros en región Lima cayeron a 29 mil en 2020 y volvieron a ~44 mil en 2023–2024. LCV: insatisfacción con el transporte público estable en 60–65 %; 65 % usaba transporte público colectivo en 2019. No se obtuvo serie verificable para Metropolitano y corredores (ATU), INRIX, km de ciclovías, parque automotor ni tarifa de Línea 1: quedan en null. Presupuesto de búsqueda web de la sesión agotado (WebSearch 200/200) y buscadores vía curl bloqueados.",
   "indicadores": [
-    {"id": "tomtom_nivel_congestion", "nombre": "Nivel de congestión TomTom (Lima)", "descripcion": "Tiempo extra promedio de viaje respecto a flujo libre (%), TomTom Traffic Index", "unidad": "%", "mejor_si": "baja", "competencia": "compartida", "responsable_principal": "MML / ATU / municipios distritales", "confiabilidad": "alta", "ambito": "Lima Metropolitana", "serie": [{"anio": 2019, "valor": null, "parcial": false, "nota": null}, {"anio": 2020, "valor": null, "parcial": false, "nota": null}, {"anio": 2021, "valor": null, "parcial": false, "nota": null}, {"anio": 2022, "valor": null, "parcial": false, "nota": null}, {"anio": 2023, "valor": null, "parcial": false, "nota": null}, {"anio": 2024, "valor": null, "parcial": false, "nota": null}, {"anio": 2025, "valor": null, "parcial": false, "nota": null}, {"anio": 2026, "valor": null, "parcial": true, "nota": null}], "fuentes": [], "discrepancias": null, "nota": null},
-    {"id": "tomtom_minutos_10km", "nombre": "Tiempo por 10 km en hora punta TomTom (Lima)", "descripcion": "Minutos promedio para recorrer 10 km", "unidad": "minutos", "mejor_si": "baja", "competencia": "compartida", "responsable_principal": "MML / ATU / municipios distritales", "confiabilidad": "alta", "ambito": "Lima Metropolitana", "serie": [{"anio": 2019, "valor": null, "parcial": false, "nota": null}, {"anio": 2020, "valor": null, "parcial": false, "nota": null}, {"anio": 2021, "valor": null, "parcial": false, "nota": null}, {"anio": 2022, "valor": null, "parcial": false, "nota": null}, {"anio": 2023, "valor": null, "parcial": false, "nota": null}, {"anio": 2024, "valor": null, "parcial": false, "nota": null}, {"anio": 2025, "valor": null, "parcial": false, "nota": null}, {"anio": 2026, "valor": null, "parcial": true, "nota": null}], "fuentes": [], "discrepancias": null, "nota": null},
-    {"id": "inrix_horas_perdidas", "nombre": "Horas perdidas en congestión por conductor (INRIX)", "descripcion": "Horas anuales perdidas por conductor, INRIX Global Traffic Scorecard", "unidad": "horas/año", "mejor_si": "baja", "competencia": "compartida", "responsable_principal": "MML / ATU", "confiabilidad": "media", "ambito": "Lima Metropolitana", "serie": [{"anio": 2019, "valor": null, "parcial": false, "nota": null}, {"anio": 2020, "valor": null, "parcial": false, "nota": null}, {"anio": 2021, "valor": null, "parcial": false, "nota": null}, {"anio": 2022, "valor": null, "parcial": false, "nota": null}, {"anio": 2023, "valor": null, "parcial": false, "nota": null}, {"anio": 2024, "valor": null, "parcial": false, "nota": null}, {"anio": 2025, "valor": null, "parcial": false, "nota": null}, {"anio": 2026, "valor": null, "parcial": true, "nota": null}], "fuentes": [], "discrepancias": null, "nota": null},
-    {"id": "lcv_tiempo_viaje", "nombre": "Tiempo promedio de viaje (Lima Cómo Vamos)", "descripcion": "Minutos promedio del viaje principal, encuesta LCV", "unidad": "minutos", "mejor_si": "baja", "competencia": "compartida", "responsable_principal": "MML / ATU", "confiabilidad": "media", "ambito": "Lima Metropolitana", "serie": [{"anio": 2019, "valor": null, "parcial": false, "nota": null}, {"anio": 2020, "valor": null, "parcial": false, "nota": null}, {"anio": 2021, "valor": null, "parcial": false, "nota": null}, {"anio": 2022, "valor": null, "parcial": false, "nota": null}, {"anio": 2023, "valor": null, "parcial": false, "nota": null}, {"anio": 2024, "valor": null, "parcial": false, "nota": null}, {"anio": 2025, "valor": null, "parcial": false, "nota": null}, {"anio": 2026, "valor": null, "parcial": true, "nota": null}], "fuentes": [], "discrepancias": null, "nota": null},
-    {"id": "lcv_viajes_mas_1h", "nombre": "% de personas con viaje principal > 1 hora (LCV)", "descripcion": "Porcentaje cuyo viaje cotidiano dura más de una hora", "unidad": "%", "mejor_si": "baja", "competencia": "compartida", "responsable_principal": "MML / ATU", "confiabilidad": "media", "ambito": "Lima Metropolitana", "serie": [{"anio": 2019, "valor": null, "parcial": false, "nota": null}, {"anio": 2020, "valor": null, "parcial": false, "nota": null}, {"anio": 2021, "valor": null, "parcial": false, "nota": null}, {"anio": 2022, "valor": null, "parcial": false, "nota": null}, {"anio": 2023, "valor": null, "parcial": false, "nota": null}, {"anio": 2024, "valor": null, "parcial": false, "nota": null}, {"anio": 2025, "valor": null, "parcial": false, "nota": null}, {"anio": 2026, "valor": null, "parcial": true, "nota": null}], "fuentes": [], "discrepancias": null, "nota": null},
-    {"id": "lcv_pct_transporte_publico", "nombre": "% de viajes en transporte público (LCV)", "descripcion": "Porcentaje que usa transporte público como modo principal", "unidad": "%", "mejor_si": "sube", "competencia": "otra_entidad", "responsable_principal": "ATU", "confiabilidad": "media", "ambito": "Lima Metropolitana", "serie": [{"anio": 2019, "valor": null, "parcial": false, "nota": null}, {"anio": 2020, "valor": null, "parcial": false, "nota": null}, {"anio": 2021, "valor": null, "parcial": false, "nota": null}, {"anio": 2022, "valor": null, "parcial": false, "nota": null}, {"anio": 2023, "valor": null, "parcial": false, "nota": null}, {"anio": 2024, "valor": null, "parcial": false, "nota": null}, {"anio": 2025, "valor": null, "parcial": false, "nota": null}, {"anio": 2026, "valor": null, "parcial": true, "nota": null}], "fuentes": [], "discrepancias": null, "nota": null},
-    {"id": "lcv_satisfaccion_transporte", "nombre": "Satisfacción con el transporte público (LCV)", "descripcion": "% satisfecho con el transporte público", "unidad": "%", "mejor_si": "sube", "competencia": "otra_entidad", "responsable_principal": "ATU", "confiabilidad": "media", "ambito": "Lima Metropolitana", "serie": [{"anio": 2019, "valor": null, "parcial": false, "nota": null}, {"anio": 2020, "valor": null, "parcial": false, "nota": null}, {"anio": 2021, "valor": null, "parcial": false, "nota": null}, {"anio": 2022, "valor": null, "parcial": false, "nota": null}, {"anio": 2023, "valor": null, "parcial": false, "nota": null}, {"anio": 2024, "valor": null, "parcial": false, "nota": null}, {"anio": 2025, "valor": null, "parcial": false, "nota": null}, {"anio": 2026, "valor": null, "parcial": true, "nota": null}], "fuentes": [], "discrepancias": null, "nota": null},
-    {"id": "pasajeros_metropolitano", "nombre": "Pasajeros anuales del Metropolitano", "descripcion": "Validaciones/viajes anuales en el sistema BRT Metropolitano", "unidad": "millones de viajes", "mejor_si": "sube", "competencia": "otra_entidad", "responsable_principal": "ATU", "confiabilidad": "media", "ambito": "Lima Metropolitana", "serie": [{"anio": 2019, "valor": null, "parcial": false, "nota": null}, {"anio": 2020, "valor": null, "parcial": false, "nota": null}, {"anio": 2021, "valor": null, "parcial": false, "nota": null}, {"anio": 2022, "valor": null, "parcial": false, "nota": null}, {"anio": 2023, "valor": null, "parcial": false, "nota": null}, {"anio": 2024, "valor": null, "parcial": false, "nota": null}, {"anio": 2025, "valor": null, "parcial": false, "nota": null}, {"anio": 2026, "valor": null, "parcial": true, "nota": null}], "fuentes": [], "discrepancias": null, "nota": null},
-    {"id": "pasajeros_corredores", "nombre": "Pasajeros anuales de los Corredores Complementarios", "descripcion": "Viajes anuales en corredores Rojo, Azul, Morado, Verde (y Amarillo)", "unidad": "millones de viajes", "mejor_si": "sube", "competencia": "otra_entidad", "responsable_principal": "ATU", "confiabilidad": "media", "ambito": "Lima Metropolitana", "serie": [{"anio": 2019, "valor": null, "parcial": false, "nota": null}, {"anio": 2020, "valor": null, "parcial": false, "nota": null}, {"anio": 2021, "valor": null, "parcial": false, "nota": null}, {"anio": 2022, "valor": null, "parcial": false, "nota": null}, {"anio": 2023, "valor": null, "parcial": false, "nota": null}, {"anio": 2024, "valor": null, "parcial": false, "nota": null}, {"anio": 2025, "valor": null, "parcial": false, "nota": null}, {"anio": 2026, "valor": null, "parcial": true, "nota": null}], "fuentes": [], "discrepancias": null, "nota": null},
-    {"id": "pasajeros_linea1", "nombre": "Pasajeros anuales Línea 1 del Metro de Lima", "descripcion": "Pasajeros transportados por año, Línea 1 (Ositran)", "unidad": "millones de pasajeros", "mejor_si": "sube", "competencia": "otra_entidad", "responsable_principal": "MTC / ATU / Ositran", "confiabilidad": "alta", "ambito": "Lima Metropolitana", "serie": [{"anio": 2019, "valor": null, "parcial": false, "nota": null}, {"anio": 2020, "valor": null, "parcial": false, "nota": null}, {"anio": 2021, "valor": null, "parcial": false, "nota": null}, {"anio": 2022, "valor": null, "parcial": false, "nota": null}, {"anio": 2023, "valor": null, "parcial": false, "nota": null}, {"anio": 2024, "valor": null, "parcial": false, "nota": null}, {"anio": 2025, "valor": null, "parcial": false, "nota": null}, {"anio": 2026, "valor": null, "parcial": true, "nota": null}], "fuentes": [], "discrepancias": null, "nota": null},
-    {"id": "linea2_estaciones_operacion", "nombre": "Estaciones de la Línea 2 en operación", "descripcion": "Número de estaciones de la Línea 2 abiertas al público al cierre de cada año", "unidad": "estaciones", "mejor_si": "sube", "competencia": "otra_entidad", "responsable_principal": "MTC / ATU", "confiabilidad": "alta", "ambito": "Lima y Callao", "serie": [{"anio": 2019, "valor": null, "parcial": false, "nota": null}, {"anio": 2020, "valor": null, "parcial": false, "nota": null}, {"anio": 2021, "valor": null, "parcial": false, "nota": null}, {"anio": 2022, "valor": null, "parcial": false, "nota": null}, {"anio": 2023, "valor": null, "parcial": false, "nota": null}, {"anio": 2024, "valor": null, "parcial": false, "nota": null}, {"anio": 2025, "valor": null, "parcial": false, "nota": null}, {"anio": 2026, "valor": null, "parcial": true, "nota": null}], "fuentes": [], "discrepancias": null, "nota": null},
-    {"id": "km_ciclovias", "nombre": "Kilómetros de ciclovías en Lima Metropolitana", "descripcion": "Red de ciclovías acumulada", "unidad": "km", "mejor_si": "sube", "competencia": "compartida", "responsable_principal": "MML / municipios distritales", "confiabilidad": "media", "ambito": "Lima Metropolitana", "serie": [{"anio": 2019, "valor": null, "parcial": false, "nota": null}, {"anio": 2020, "valor": null, "parcial": false, "nota": null}, {"anio": 2021, "valor": null, "parcial": false, "nota": null}, {"anio": 2022, "valor": null, "parcial": false, "nota": null}, {"anio": 2023, "valor": null, "parcial": false, "nota": null}, {"anio": 2024, "valor": null, "parcial": false, "nota": null}, {"anio": 2025, "valor": null, "parcial": false, "nota": null}, {"anio": 2026, "valor": null, "parcial": true, "nota": null}], "fuentes": [], "discrepancias": null, "nota": null},
-    {"id": "fallecidos_siniestros", "nombre": "Fallecidos en siniestros de tránsito (Lima Metropolitana)", "descripcion": "Personas fallecidas en siniestros viales por año", "unidad": "personas", "mejor_si": "baja", "competencia": "compartida", "responsable_principal": "MML / PNP / ONSV-MTC / municipios", "confiabilidad": "alta", "ambito": "Lima Metropolitana", "serie": [{"anio": 2019, "valor": null, "parcial": false, "nota": null}, {"anio": 2020, "valor": null, "parcial": false, "nota": null}, {"anio": 2021, "valor": null, "parcial": false, "nota": null}, {"anio": 2022, "valor": null, "parcial": false, "nota": null}, {"anio": 2023, "valor": null, "parcial": false, "nota": null}, {"anio": 2024, "valor": null, "parcial": false, "nota": null}, {"anio": 2025, "valor": null, "parcial": false, "nota": null}, {"anio": 2026, "valor": null, "parcial": true, "nota": null}], "fuentes": [], "discrepancias": null, "nota": null},
-    {"id": "siniestros_transito", "nombre": "Siniestros de tránsito (Lima Metropolitana)", "descripcion": "Número de siniestros viales registrados por año", "unidad": "siniestros", "mejor_si": "baja", "competencia": "compartida", "responsable_principal": "MML / PNP / ONSV-MTC / municipios", "confiabilidad": "alta", "ambito": "Lima Metropolitana", "serie": [{"anio": 2019, "valor": null, "parcial": false, "nota": null}, {"anio": 2020, "valor": null, "parcial": false, "nota": null}, {"anio": 2021, "valor": null, "parcial": false, "nota": null}, {"anio": 2022, "valor": null, "parcial": false, "nota": null}, {"anio": 2023, "valor": null, "parcial": false, "nota": null}, {"anio": 2024, "valor": null, "parcial": false, "nota": null}, {"anio": 2025, "valor": null, "parcial": false, "nota": null}, {"anio": 2026, "valor": null, "parcial": true, "nota": null}], "fuentes": [], "discrepancias": null, "nota": null},
-    {"id": "parque_automotor", "nombre": "Parque automotor de Lima Metropolitana", "descripcion": "Vehículos registrados en circulación (SUNARP/MTC-INEI)", "unidad": "vehículos", "mejor_si": "baja", "competencia": "externo", "responsable_principal": "MTC / SUNARP", "confiabilidad": "media", "ambito": "Lima Metropolitana", "serie": [{"anio": 2019, "valor": null, "parcial": false, "nota": null}, {"anio": 2020, "valor": null, "parcial": false, "nota": null}, {"anio": 2021, "valor": null, "parcial": false, "nota": null}, {"anio": 2022, "valor": null, "parcial": false, "nota": null}, {"anio": 2023, "valor": null, "parcial": false, "nota": null}, {"anio": 2024, "valor": null, "parcial": false, "nota": null}, {"anio": 2025, "valor": null, "parcial": false, "nota": null}, {"anio": 2026, "valor": null, "parcial": true, "nota": null}], "fuentes": [], "discrepancias": null, "nota": null},
-    {"id": "tarifa_metropolitano", "nombre": "Tarifa adulto del Metropolitano (ruta troncal)", "descripcion": "Tarifa general vigente al cierre del año", "unidad": "soles", "mejor_si": "baja", "competencia": "otra_entidad", "responsable_principal": "ATU", "confiabilidad": "alta", "ambito": "Lima Metropolitana", "serie": [{"anio": 2019, "valor": null, "parcial": false, "nota": null}, {"anio": 2020, "valor": null, "parcial": false, "nota": null}, {"anio": 2021, "valor": null, "parcial": false, "nota": null}, {"anio": 2022, "valor": null, "parcial": false, "nota": null}, {"anio": 2023, "valor": null, "parcial": false, "nota": null}, {"anio": 2024, "valor": null, "parcial": false, "nota": null}, {"anio": 2025, "valor": null, "parcial": false, "nota": null}, {"anio": 2026, "valor": null, "parcial": true, "nota": null}], "fuentes": [], "discrepancias": null, "nota": null},
-    {"id": "tarifa_linea1", "nombre": "Tarifa adulto de la Línea 1 del Metro", "descripcion": "Tarifa general vigente al cierre del año", "unidad": "soles", "mejor_si": "baja", "competencia": "otra_entidad", "responsable_principal": "MTC / ATU", "confiabilidad": "alta", "ambito": "Lima Metropolitana", "serie": [{"anio": 2019, "valor": null, "parcial": false, "nota": null}, {"anio": 2020, "valor": null, "parcial": false, "nota": null}, {"anio": 2021, "valor": null, "parcial": false, "nota": null}, {"anio": 2022, "valor": null, "parcial": false, "nota": null}, {"anio": 2023, "valor": null, "parcial": false, "nota": null}, {"anio": 2024, "valor": null, "parcial": false, "nota": null}, {"anio": 2025, "valor": null, "parcial": false, "nota": null}, {"anio": 2026, "valor": null, "parcial": true, "nota": null}], "fuentes": [], "discrepancias": null, "nota": null}
+    {
+      "id": "tomtom_nivel_congestion",
+      "nombre": "Nivel de congestión TomTom (Lima)",
+      "descripcion": "Porcentaje de tiempo extra de viaje respecto a condiciones de flujo libre, promedio anual, según TomTom Traffic Index (centro urbano de Lima).",
+      "unidad": "%",
+      "mejor_si": "baja",
+      "competencia": "compartida",
+      "responsable_principal": "MML / ATU / municipios distritales",
+      "confiabilidad": "media",
+      "ambito": "Lima Metropolitana",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": 57,
+          "parcial": false,
+          "nota": "Edición 2019 (metodología antigua). Ranking mundial no capturado."
+        },
+        {
+          "anio": 2020,
+          "valor": 42,
+          "parcial": false,
+          "nota": "-15 pp vs 2019 (pandemia)."
+        },
+        {
+          "anio": 2021,
+          "valor": 42,
+          "parcial": false,
+          "nota": "Sin cambio vs 2020; puesto 19 mundial."
+        },
+        {
+          "anio": 2022,
+          "valor": null,
+          "parcial": false,
+          "nota": "La edición 2022 no publicó nivel de congestión para Lima, solo tiempo por 10 km (ver tomtom_minutos_10km)."
+        },
+        {
+          "anio": 2023,
+          "valor": 61,
+          "parcial": false,
+          "nota": "Edición 2023, centro urbano, todos los días (JSON de la página: congestionLevel 61). La edición 2024 reexpresó 2023 como 41 % con otra metodología."
+        },
+        {
+          "anio": 2024,
+          "valor": 47,
+          "parcial": false,
+          "nota": "Edición 2024 (centro urbano): 47 %, +6 pp vs 2023 reexpresado; puesto 9 mundial por congestión."
+        },
+        {
+          "anio": 2025,
+          "valor": 69.3,
+          "parcial": false,
+          "nota": "Edición 2025, nueva metodología: 69,3 %, +0,8 pp vs 2024 reexpresado (68,5 %). No comparable con ediciones previas."
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": "Edición 2026 se publica en 2027."
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "TomTom Traffic Index 2025 – Lima",
+          "url": "https://www.tomtom.com/traffic-index/lima-traffic/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Datos GPS anónimos de flota TomTom; congestión = tiempo extra vs flujo libre.",
+          "observaciones": "Página consultada y guardada como tomtom_lima.html",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "TomTom Traffic Index ediciones 2019–2024 – Lima (capturas archivadas)",
+          "url": "https://web.archive.org/web/2020*/https://www.tomtom.com/en_gb/traffic-index/lima-traffic/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Misma fuente, ediciones anteriores capturadas vía Wayback (tt_2020..2025).",
+          "observaciones": "Cada edición cambia baseline; TomTom reexpresa el año previo.",
+          "tipo": "primaria"
+        }
+      ],
+      "discrepancias": "2023: 61 % (edición 2023) vs 41 % (reexpresado en edición 2024). 2024: 47 % (edición 2024) vs 68,5 % (reexpresado en edición 2025).",
+      "nota": "Tres bloques metodológicos no comparables entre sí: 2019–2021, 2023–2024 y 2025. Para tendencia usar tomtom_minutos_10km y tomtom_horas_perdidas."
+    },
+    {
+      "id": "tomtom_minutos_10km",
+      "nombre": "Tiempo promedio para recorrer 10 km (TomTom, centro de Lima)",
+      "descripcion": "Minutos promedio anuales para un viaje de 10 km en el centro urbano de Lima, todos los días y horas, TomTom Traffic Index.",
+      "unidad": "minutos",
+      "mejor_si": "baja",
+      "competencia": "compartida",
+      "responsable_principal": "MML / ATU / municipios distritales",
+      "confiabilidad": "alta",
+      "ambito": "Lima Metropolitana",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": null,
+          "parcial": false,
+          "nota": "Métrica no publicada en ediciones 2019–2020."
+        },
+        {
+          "anio": 2020,
+          "valor": null,
+          "parcial": false,
+          "nota": "Métrica no publicada en ediciones 2019–2020."
+        },
+        {
+          "anio": 2021,
+          "valor": 25.2,
+          "parcial": false,
+          "nota": "25 min 10 s (dato 2021 reportado como año previo en la edición 2022)."
+        },
+        {
+          "anio": 2022,
+          "valor": 27.2,
+          "parcial": false,
+          "nota": "27 min 10 s; puesto 8 mundial."
+        },
+        {
+          "anio": 2023,
+          "valor": 28.5,
+          "parcial": false,
+          "nota": "28 min 30 s; puesto 5 mundial."
+        },
+        {
+          "anio": 2024,
+          "valor": 33.2,
+          "parcial": false,
+          "nota": "33 min 12 s; puesto 7 mundial por tiempo de viaje. La edición 2025 lo reexpresa como 33 min 31 s."
+        },
+        {
+          "anio": 2025,
+          "valor": 34.9,
+          "parcial": false,
+          "nota": "34 min 53 s; velocidad media en hora punta 12,7 km/h."
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": "Edición 2026 se publica en 2027."
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "TomTom Traffic Index 2025 – Lima",
+          "url": "https://www.tomtom.com/traffic-index/lima-traffic/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Tiempo de viaje por 10 km a partir de datos GPS.",
+          "observaciones": "tomtom_lima.html",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "TomTom Traffic Index ediciones 2022–2024 – Lima",
+          "url": "https://web.archive.org/web/2020*/https://www.tomtom.com/en_gb/traffic-index/lima-traffic/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Ediciones capturadas (tt_20230301, tt_20240301, tt_20250301).",
+          "observaciones": "",
+          "tipo": "primaria"
+        }
+      ],
+      "discrepancias": "2024: 33 min 12 s (edición 2024) vs 33 min 31 s (reexpresado en edición 2025).",
+      "nota": "Serie más comparable de TomTom; aun así cada edición recalcula el año previo."
+    },
+    {
+      "id": "tomtom_horas_perdidas",
+      "nombre": "Horas perdidas al año en hora punta (TomTom, Lima)",
+      "descripcion": "Tiempo extra anual que pierde un conductor en horas punta (mañana y tarde) por congestión, según TomTom Traffic Index.",
+      "unidad": "horas/año",
+      "mejor_si": "baja",
+      "competencia": "compartida",
+      "responsable_principal": "MML / ATU / municipios distritales",
+      "confiabilidad": "media",
+      "ambito": "Lima Metropolitana",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": 209,
+          "parcial": false,
+          "nota": "209 h (8 días 17 h)."
+        },
+        {
+          "anio": 2020,
+          "valor": 135,
+          "parcial": false,
+          "nota": "135 h."
+        },
+        {
+          "anio": 2021,
+          "valor": 131,
+          "parcial": false,
+          "nota": "131 h."
+        },
+        {
+          "anio": 2022,
+          "valor": 130,
+          "parcial": false,
+          "nota": "130 h (viaje de 10 km)."
+        },
+        {
+          "anio": 2023,
+          "valor": 157,
+          "parcial": false,
+          "nota": "157 h. Edición 2024 reexpresa 2023 en ~137 h."
+        },
+        {
+          "anio": 2024,
+          "valor": 155,
+          "parcial": false,
+          "nota": "155 h. Edición 2025 reexpresa 2024 en ~180 h."
+        },
+        {
+          "anio": 2025,
+          "valor": 195,
+          "parcial": false,
+          "nota": "195 h (8 días 3 h)."
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": "Edición 2026 se publica en 2027."
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "TomTom Traffic Index – Lima (ediciones 2019–2025)",
+          "url": "https://www.tomtom.com/traffic-index/lima-traffic/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Suma anual de tiempo extra en hora punta vs flujo libre.",
+          "observaciones": "Ediciones 2019–2024 vía capturas archivadas.",
+          "tipo": "primaria"
+        }
+      ],
+      "discrepancias": "Los valores reexpresados en la edición siguiente difieren (2023: 157 vs ~137; 2024: 155 vs ~180).",
+      "nota": "Cambios metodológicos en 2022 (tiempo por 10 km) y 2025 (nuevo baseline)."
+    },
+    {
+      "id": "inrix_horas_perdidas",
+      "nombre": "Horas perdidas en congestión por conductor (INRIX)",
+      "descripcion": "Horas anuales perdidas por conductor según INRIX Global Traffic Scorecard.",
+      "unidad": "horas/año",
+      "mejor_si": "baja",
+      "competencia": "compartida",
+      "responsable_principal": "MML / ATU",
+      "confiabilidad": "baja",
+      "ambito": "Lima Metropolitana",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2020,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2021,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2022,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2023,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2024,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2025,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": null
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "INRIX Global Traffic Scorecard",
+          "url": "https://inrix.com/scorecard/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Datos de flotas y dispositivos conectados.",
+          "observaciones": "La página pública no muestra el listado de ciudades; no se pudo confirmar que Lima esté incluida.",
+          "tipo": "primaria"
+        }
+      ],
+      "discrepancias": null,
+      "nota": "No se encontró cifra INRIX para Lima en la consulta (búsqueda en Gestión sin resultados; portal INRIX sin listado accesible). Usar tomtom_horas_perdidas como sustituto."
+    },
+    {
+      "id": "lcv_tiempo_viaje",
+      "nombre": "Tiempo promedio de viaje al trabajo/estudio (Lima Cómo Vamos)",
+      "descripcion": "Minutos promedio del viaje principal según la Encuesta Lima Cómo Vamos.",
+      "unidad": "minutos",
+      "mejor_si": "baja",
+      "competencia": "compartida",
+      "responsable_principal": "MML / ATU",
+      "confiabilidad": "baja",
+      "ambito": "Lima Metropolitana",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2020,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2021,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2022,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2023,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2024,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2025,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": null
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "Encuesta Lima Cómo Vamos 2019–2025",
+          "url": "https://www.limacomovamos.org/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Encuesta de percepción ciudadana (muestra Lima y Callao).",
+          "observaciones": "Informes 2019, 2021–2025 revisados; ninguno publica minutos promedio.",
+          "tipo": "primaria"
+        }
+      ],
+      "discrepancias": null,
+      "nota": "LCV no reporta minutos promedio en los informes públicos revisados; solo distribuciones por rango (ver lcv_viajes_mas_1h)."
+    },
+    {
+      "id": "lcv_viajes_mas_1h",
+      "nombre": "% de personas cuyo viaje al trabajo/estudio dura más de 1 hora (LCV)",
+      "descripcion": "Porcentaje de limeños que declara que su viaje cotidiano al trabajo o estudio toma más de una hora.",
+      "unidad": "%",
+      "mejor_si": "baja",
+      "competencia": "compartida",
+      "responsable_principal": "MML / ATU",
+      "confiabilidad": "media",
+      "ambito": "Provincia de Lima",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": 28.8,
+          "parcial": false,
+          "nota": "28,8 % Lima; 23,6 % Callao. 33 % percibió que su tiempo de viaje aumentó vs año anterior."
+        },
+        {
+          "anio": 2020,
+          "valor": null,
+          "parcial": false,
+          "nota": "No hubo encuesta 2020 (pandemia)."
+        },
+        {
+          "anio": 2021,
+          "valor": null,
+          "parcial": false,
+          "nota": "Dato no publicado en el informe 2021 revisado."
+        },
+        {
+          "anio": 2022,
+          "valor": null,
+          "parcial": false,
+          "nota": "No hallado en informe 2022."
+        },
+        {
+          "anio": 2023,
+          "valor": null,
+          "parcial": false,
+          "nota": "No hallado en informe 2023."
+        },
+        {
+          "anio": 2024,
+          "valor": null,
+          "parcial": false,
+          "nota": "No hallado en informe 2024."
+        },
+        {
+          "anio": 2025,
+          "valor": null,
+          "parcial": false,
+          "nota": "No hallado en informe 2025."
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": "Sin encuesta a la fecha de corte."
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "Encuesta Lima Cómo Vamos 2019 (X Informe)",
+          "url": "https://www.limacomovamos.org/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Encuesta de percepción, Lima y Callao.",
+          "observaciones": "PDF descargado (lcv2019); sección 'Tiempo y principal destino de viaje'.",
+          "tipo": "primaria"
+        }
+      ],
+      "discrepancias": null,
+      "nota": "Solo 2019 disponible; la pregunta no se repitió con el mismo formato en informes posteriores."
+    },
+    {
+      "id": "lcv_pct_transporte_publico",
+      "nombre": "% que usa transporte público colectivo para ir a trabajar/estudiar (LCV)",
+      "descripcion": "Suma de bus, combi/cúster, colectivo, Metropolitano, Metro de Lima y corredores como modo principal del viaje al trabajo (o al estudio en 2019), Encuesta Lima Cómo Vamos.",
+      "unidad": "%",
+      "mejor_si": "sube",
+      "competencia": "otra_entidad",
+      "responsable_principal": "ATU",
+      "confiabilidad": "media",
+      "ambito": "Lima Metropolitana",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": 65.3,
+          "parcial": false,
+          "nota": "Publicado por LCV: 65,3 % (bus 27,9; combi 25,4; Metropolitano 3,9; colectivo 2,9; Metro y corredores el resto)."
+        },
+        {
+          "anio": 2020,
+          "valor": null,
+          "parcial": false,
+          "nota": "Sin encuesta."
+        },
+        {
+          "anio": 2021,
+          "valor": 45.2,
+          "parcial": false,
+          "nota": "Pregunta distinta ('principal forma de movilizarse durante la pandemia'): combi 20,9 + bus 14,0 + colectivo 4,3 + Metropolitano 3,2 + Metro 2,3 + corredores 0,5. Antes de la pandemia la misma suma daba 58,2 %."
+        },
+        {
+          "anio": 2022,
+          "valor": 68.2,
+          "parcial": false,
+          "nota": "Cálculo propio viaje al trabajo: bus 31,1 + combi 28,4 + colectivo 3,3 + Metro 2,2 + Metropolitano 2,0 + corredores 1,2."
+        },
+        {
+          "anio": 2023,
+          "valor": 60.1,
+          "parcial": false,
+          "nota": "Cálculo propio viaje al trabajo: combi 26,8 + bus 25,7 + colectivo 2,7 + Metropolitano 2,7 + Metro 2,2; fila de corredores no hallada."
+        },
+        {
+          "anio": 2024,
+          "valor": 66.7,
+          "parcial": false,
+          "nota": "Cálculo propio viaje al trabajo: combi 32,1 + bus 24,8 + Metropolitano 3,6 + colectivo 3,2 + Metro 3,0; corredores no hallado."
+        },
+        {
+          "anio": 2025,
+          "valor": 77.1,
+          "parcial": false,
+          "nota": "Cálculo propio viaje al trabajo: combi 45,5 + bus 22,6 + colectivo 3,6 + Metropolitano 2,8 + Metro 2,6; corredores no hallado. Salto de combi (45,5 %) sugiere cambio de categorías."
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": "Sin encuesta a la fecha de corte."
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "Encuesta Lima Cómo Vamos 2019, 2021, 2022, 2024",
+          "url": "https://www.limacomovamos.org/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Encuesta de percepción; tablas de modo de viaje por motivo.",
+          "observaciones": "PDFs descargados; URLs individuales 2019/2021/2022/2024 no registradas.",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "Encuesta Lima Cómo Vamos 2023",
+          "url": "http://www.limacomovamos.org/wp-content/uploads/2024/09/EncuestaLCV2023.pdf",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Ídem.",
+          "observaciones": "",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "Encuesta Lima Cómo Vamos 2025",
+          "url": "https://www.limacomovamos.org/wp-content/uploads/2026/01/EncuestaLCV2025.pdf",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Ídem.",
+          "observaciones": "",
+          "tipo": "primaria"
+        }
+      ],
+      "discrepancias": "2021 usa una pregunta general de movilidad, no el viaje al trabajo.",
+      "nota": "Valores 2022–2025 son sumas propias de filas de la tabla LCV; pueden omitir corredores (<1,5 pp)."
+    },
+    {
+      "id": "lcv_satisfaccion_transporte",
+      "nombre": "% satisfecho con el transporte público (LCV)",
+      "descripcion": "Porcentaje de encuestados satisfechos con el transporte público como aspecto de la calidad de vida, Encuesta Lima Cómo Vamos.",
+      "unidad": "%",
+      "mejor_si": "sube",
+      "competencia": "otra_entidad",
+      "responsable_principal": "ATU",
+      "confiabilidad": "media",
+      "ambito": "Lima Metropolitana",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": null,
+          "parcial": false,
+          "nota": "Pregunta distinta en 2019 (satisfacción con cómo la MML atiende el transporte público: 6,9 % satisfecho, 61,2 % insatisfecho)."
+        },
+        {
+          "anio": 2020,
+          "valor": null,
+          "parcial": false,
+          "nota": "Sin encuesta."
+        },
+        {
+          "anio": 2021,
+          "valor": 9.0,
+          "parcial": false,
+          "nota": "Insatisfecho 63,7 %."
+        },
+        {
+          "anio": 2022,
+          "valor": 7.0,
+          "parcial": false,
+          "nota": "Insatisfecho 64,5 %."
+        },
+        {
+          "anio": 2023,
+          "valor": 11.4,
+          "parcial": false,
+          "nota": "Insatisfecho 60,9 %."
+        },
+        {
+          "anio": 2024,
+          "valor": null,
+          "parcial": false,
+          "nota": "Solo legible el % insatisfecho: 60,3 %."
+        },
+        {
+          "anio": 2025,
+          "valor": 12.4,
+          "parcial": false,
+          "nota": "Insatisfecho 60,3 %."
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": "Sin encuesta a la fecha de corte."
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "Encuesta Lima Cómo Vamos 2021–2025",
+          "url": "https://www.limacomovamos.org/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Encuesta de percepción; pregunta de satisfacción con aspectos de la ciudad.",
+          "observaciones": "Ver PDFs 2023 y 2025 en URLs específicas.",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "Encuesta Lima Cómo Vamos 2023",
+          "url": "http://www.limacomovamos.org/wp-content/uploads/2024/09/EncuestaLCV2023.pdf",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "",
+          "observaciones": "",
+          "tipo": "primaria"
+        }
+      ],
+      "discrepancias": null,
+      "nota": "Insatisfacción se mantiene en 60–65 % todo el periodo."
+    },
+    {
+      "id": "pasajeros_metropolitano",
+      "nombre": "Pasajeros anuales del Metropolitano",
+      "descripcion": "Validaciones/viajes anuales en el BRT Metropolitano (troncal y alimentadores).",
+      "unidad": "millones de viajes",
+      "mejor_si": "sube",
+      "competencia": "otra_entidad",
+      "responsable_principal": "ATU",
+      "confiabilidad": "baja",
+      "ambito": "Lima Metropolitana",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2020,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2021,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2022,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2023,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2024,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2025,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": null
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "ATU – Noticias e informes",
+          "url": "https://www.gob.pe/institucion/atu/noticias",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Cifras difundidas por ATU en notas de prensa.",
+          "observaciones": "Búsqueda en gob.pe no devolvió notas con cifras anuales; Andina devolvió 404.",
+          "tipo": "primaria"
+        }
+      ],
+      "discrepancias": null,
+      "nota": "No se obtuvo serie anual verificable dentro del presupuesto de consultas. Pendiente: boletín estadístico ATU o pedido de acceso a la información."
+    },
+    {
+      "id": "pasajeros_corredores",
+      "nombre": "Pasajeros anuales de los Corredores Complementarios",
+      "descripcion": "Viajes anuales en corredores Rojo, Azul, Morado y Verde.",
+      "unidad": "millones de viajes",
+      "mejor_si": "sube",
+      "competencia": "otra_entidad",
+      "responsable_principal": "ATU",
+      "confiabilidad": "baja",
+      "ambito": "Lima Metropolitana",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2020,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2021,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2022,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2023,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2024,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2025,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": null
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "ATU – Noticias e informes",
+          "url": "https://www.gob.pe/institucion/atu/noticias",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "",
+          "observaciones": "Sin cifras anuales halladas.",
+          "tipo": "primaria"
+        }
+      ],
+      "discrepancias": null,
+      "nota": "Sin serie verificable; misma limitación que pasajeros_metropolitano."
+    },
+    {
+      "id": "pasajeros_linea1",
+      "nombre": "Pasajeros anuales Línea 1 del Metro de Lima",
+      "descripcion": "Tráfico anual de pasajeros de la Línea 1 según informes de desempeño de Ositran.",
+      "unidad": "millones de pasajeros",
+      "mejor_si": "sube",
+      "competencia": "otra_entidad",
+      "responsable_principal": "MTC / ATU / Ositran",
+      "confiabilidad": "alta",
+      "ambito": "Lima Metropolitana",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": 170.3,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2020,
+          "valor": 70.0,
+          "parcial": false,
+          "nota": "Caída 59 % por inmovilización COVID-19; aforo 17 % hasta dic-2020."
+        },
+        {
+          "anio": 2021,
+          "valor": 81.2,
+          "parcial": false,
+          "nota": "Aforo 37 % todo el año."
+        },
+        {
+          "anio": 2022,
+          "valor": 129.6,
+          "parcial": false,
+          "nota": "Aforo 100 % desde abril 2022."
+        },
+        {
+          "anio": 2023,
+          "valor": 171.9,
+          "parcial": false,
+          "nota": "Supera nivel prepandemia."
+        },
+        {
+          "anio": 2024,
+          "valor": 191.1,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2025,
+          "valor": 201.5,
+          "parcial": false,
+          "nota": "+5,5 % vs 2024."
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": "Informe 2026 se publica en 2027."
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "Ositran – Informe de desempeño 2025, Línea 1 del Metro de Lima",
+          "url": "https://www.ositran.gob.pe/anterior/wp-content/uploads/2018/04/informe-desempeno-linea-1-2025.pdf",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Registros del concesionario (GyM Ferrovías) supervisados por Ositran.",
+          "observaciones": "Informes 2019–2024 descargados de la misma serie (l1_2019..l1_2024); URL 2025 verificada (HTTP 200).",
+          "tipo": "primaria"
+        }
+      ],
+      "discrepancias": null,
+      "nota": "Serie consistente y oficial."
+    },
+    {
+      "id": "linea2_estaciones_operacion",
+      "nombre": "Estaciones de la Línea 2 en operación",
+      "descripcion": "Número de estaciones de la Línea 2 abiertas al público al cierre de cada año.",
+      "unidad": "estaciones",
+      "mejor_si": "sube",
+      "competencia": "otra_entidad",
+      "responsable_principal": "MTC / ATU",
+      "confiabilidad": "alta",
+      "ambito": "Lima y Callao",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": 0,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2020,
+          "valor": 0,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2021,
+          "valor": 0,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2022,
+          "valor": 0,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2023,
+          "valor": 5,
+          "parcial": false,
+          "nota": "Etapa 1A (Evitamiento–Mercado Santa Anita, 5 estaciones) inició marcha blanca el 21-dic-2023."
+        },
+        {
+          "anio": 2024,
+          "valor": 5,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2025,
+          "valor": 5,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2026,
+          "valor": 5,
+          "parcial": true,
+          "nota": "Parcial: 5 estaciones a ago-2026; Etapa 1B prevista 2029 (fuente secundaria)."
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "Ositran – Informe de desempeño 2025, Línea 2",
+          "url": "https://www.ositran.gob.pe/anterior/wp-content/uploads/2018/04/informe-desempeno-linea-2-2025.pdf",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "",
+          "observaciones": "Confirma operación de la Etapa 1A.",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "Wikipedia – Línea 2 del Metro de Lima y Callao",
+          "url": "https://es.wikipedia.org/wiki/L%C3%ADnea_2_del_Metro_de_Lima_y_Callao",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "",
+          "observaciones": "Consultada en agosto 2026: '5 en operación, 22 en construcción'.",
+          "tipo": "secundaria"
+        }
+      ],
+      "discrepancias": null,
+      "nota": "Obra bajo concesión APP del MTC; no es competencia de la MML."
+    },
+    {
+      "id": "pasajeros_linea2",
+      "nombre": "Pasajeros anuales Línea 2 (Etapa 1A)",
+      "descripcion": "Tráfico anual de pasajeros de la Etapa 1A de la Línea 2 según Ositran.",
+      "unidad": "millones de pasajeros",
+      "mejor_si": "sube",
+      "competencia": "otra_entidad",
+      "responsable_principal": "MTC / ATU / Ositran",
+      "confiabilidad": "alta",
+      "ambito": "Lima y Callao",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": 0,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2020,
+          "valor": 0,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2021,
+          "valor": 0,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2022,
+          "valor": 0,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2023,
+          "valor": 0.115,
+          "parcial": false,
+          "nota": "115 221 pasajeros (solo del 21 al 31 de diciembre)."
+        },
+        {
+          "anio": 2024,
+          "valor": 13.0,
+          "parcial": false,
+          "nota": "13 046 248 pasajeros."
+        },
+        {
+          "anio": 2025,
+          "valor": 17.9,
+          "parcial": false,
+          "nota": "17 885 395 pasajeros; octubre fue el mes pico (1,8 M)."
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": "Sin cierre anual."
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "Ositran – Informe de desempeño 2025, Línea 2",
+          "url": "https://www.ositran.gob.pe/anterior/wp-content/uploads/2018/04/informe-desempeno-linea-2-2025.pdf",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Registros del concesionario supervisados por Ositran.",
+          "observaciones": "Cuadro 'Total de pasajeros'.",
+          "tipo": "primaria"
+        }
+      ],
+      "discrepancias": null,
+      "nota": "Servicio gratuito/marcha blanca durante parte del periodo; la demanda no es comparable con Línea 1."
+    },
+    {
+      "id": "km_ciclovias",
+      "nombre": "Kilómetros de ciclovías en Lima Metropolitana",
+      "descripcion": "Longitud acumulada de la red de ciclovías.",
+      "unidad": "km",
+      "mejor_si": "sube",
+      "competencia": "compartida",
+      "responsable_principal": "MML / municipios distritales",
+      "confiabilidad": "baja",
+      "ambito": "Lima Metropolitana",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2020,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2021,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2022,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2023,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2024,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2025,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": null
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "MML – 'Municipalidad de Lima proyecta construir 147 km de ciclovías por S/ 102 millones' (9-nov-2019)",
+          "url": "https://www.munlima.gob.pe/2019/11/09/municipalidad-de-lima-proyecta-construir-147-kilometros-de-ciclovias-por-s-102-millones/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "",
+          "observaciones": "Anuncio de proyecto, no stock de red.",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "MML – acuerdo con KfW para 114 km de ciclovías (29-nov-2021)",
+          "url": "https://www.munlima.gob.pe/2021/11/29/municipalidad-de-lima-y-cooperacion-financiera-alemana-firman-acuerdo-para-ejecutar-114-km-de-ciclovias-en-la-capital/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "",
+          "observaciones": "Anuncio de financiamiento.",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "MML – mantenimiento de 25 km de ciclovías en 8 distritos (27-dic-2020)",
+          "url": "https://www.munlima.gob.pe/2020/12/27/municipalidad-de-lima-realizo-mantenimiento-de-25-kilometros-de-ciclovias-en-8-distritos-de-la-capital/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "",
+          "observaciones": "",
+          "tipo": "primaria"
+        }
+      ],
+      "discrepancias": null,
+      "nota": "No se halló una cifra oficial de red total por año; las notas de la MML solo reportan anuncios y tramos. Pendiente: inventario de ciclovías de la Gerencia de Movilidad Urbana o dato LCV."
+    },
+    {
+      "id": "fallecidos_siniestros",
+      "nombre": "Fallecidos en siniestros de tránsito (Provincia de Lima, ONSV)",
+      "descripcion": "Personas fallecidas en siniestros de tránsito ocurridos en la provincia de Lima, según microdatos de siniestros fatales de la PNP (UPIAT) publicados por el ONSV.",
+      "unidad": "personas",
+      "mejor_si": "baja",
+      "competencia": "compartida",
+      "responsable_principal": "MML / PNP / ONSV-MTC / municipios distritales",
+      "confiabilidad": "alta",
+      "ambito": "Provincia de Lima",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": null,
+          "parcial": false,
+          "nota": "Microdatos ONSV inician en 2021; ver fallecidos_siniestros_region_lima_pnp para 2019–2020."
+        },
+        {
+          "anio": 2020,
+          "valor": null,
+          "parcial": false,
+          "nota": "Ídem."
+        },
+        {
+          "anio": 2021,
+          "valor": 351,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2022,
+          "valor": 373,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2023,
+          "valor": 431,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2024,
+          "valor": 429,
+          "parcial": false,
+          "nota": "Preliminar."
+        },
+        {
+          "anio": 2025,
+          "valor": 105,
+          "parcial": true,
+          "nota": "PARCIAL: el archivo solo contiene registros hasta abril 2025 (105 fallecidos ene–abr). No es cifra anual."
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": "Sin datos."
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "ONSV – Registro de siniestros de tránsito fatales 2021–2025 (preliminar), UPIAT-PNP",
+          "url": "https://www.onsv.gob.pe/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Conteo propio de 'cantidad de fallecidos' filtrando departamento=LIMA y provincia=LIMA.",
+          "observaciones": "Archivo onsv_fatales.xlsx descargado del portal ONSV; URL exacta del archivo no registrada.",
+          "tipo": "primaria"
+        }
+      ],
+      "discrepancias": "Lima + Callao: 401 (2021), 413 (2022), 460 (2023), 450 (2024).",
+      "nota": "Siniestros fatales en provincia de Lima: 340 (2021), 359 (2022), 409 (2023), 412 (2024)."
+    },
+    {
+      "id": "fallecidos_siniestros_region_lima_pnp",
+      "nombre": "Fallecidos en siniestros de tránsito (región Lima, anuarios PNP)",
+      "descripcion": "Fallecidos por siniestros de tránsito en la región policial Lima (incluye provincias del departamento), según Anuarios Estadísticos Policiales compilados por el ONSV.",
+      "unidad": "personas",
+      "mejor_si": "baja",
+      "competencia": "compartida",
+      "responsable_principal": "PNP / ONSV-MTC / MML",
+      "confiabilidad": "media",
+      "ambito": "Departamento de Lima",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": 676,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2020,
+          "valor": 482,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2021,
+          "valor": 586,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2022,
+          "valor": 604,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2023,
+          "valor": 640,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2024,
+          "valor": 570,
+          "parcial": false,
+          "nota": "Preliminar."
+        },
+        {
+          "anio": 2025,
+          "valor": null,
+          "parcial": false,
+          "nota": "No disponible en la compilación (solo ene–oct 2025 de siniestros, no de fallecidos por región)."
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": "Sin datos."
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "ONSV – Compilación histórica de siniestralidad (Anuarios Estadísticos PNP), hoja FALLECIDOS",
+          "url": "https://www.onsv.gob.pe/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Suma propia de columnas por sexo y edad para la fila LIMA.",
+          "observaciones": "Archivo onsv_hist.xlsx.",
+          "tipo": "primaria"
+        }
+      ],
+      "discrepancias": "Para 2021–2024 esta serie (región Lima) supera a la de provincia de Lima (ONSV microdatos) en ~170–235 personas por incluir provincias y distinta fuente de registro.",
+      "nota": "Ámbito más amplio que Lima Metropolitana."
+    },
+    {
+      "id": "siniestros_transito",
+      "nombre": "Siniestros de tránsito registrados (región Lima, PNP)",
+      "descripcion": "Número de siniestros de tránsito registrados por la PNP en la región policial Lima por año.",
+      "unidad": "siniestros",
+      "mejor_si": "baja",
+      "competencia": "compartida",
+      "responsable_principal": "PNP / ONSV-MTC / MML / municipios",
+      "confiabilidad": "media",
+      "ambito": "Departamento de Lima",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": 49832,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2020,
+          "valor": 29185,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2021,
+          "valor": 35848,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2022,
+          "valor": 41111,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2023,
+          "valor": 44995,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2024,
+          "valor": 43786,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2025,
+          "valor": null,
+          "parcial": false,
+          "nota": "Ene–oct 2025 preliminar: 37 324 (no anualizado)."
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": "Sin datos."
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "ONSV – Compilación histórica, hoja 'SINIESTROS AÑO REGIÓN' (Anuarios Estadísticos PNP)",
+          "url": "https://www.onsv.gob.pe/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Registro policial de siniestros.",
+          "observaciones": "onsv_hist.xlsx.",
+          "tipo": "primaria"
+        }
+      ],
+      "discrepancias": null,
+      "nota": "Incluye siniestros sin víctimas; sensible a subregistro y a cambios de cobertura policial."
+    },
+    {
+      "id": "parque_automotor",
+      "nombre": "Parque automotor de Lima Metropolitana",
+      "descripcion": "Vehículos registrados / parque vehicular estimado en Lima.",
+      "unidad": "vehículos",
+      "mejor_si": "baja",
+      "competencia": "externo",
+      "responsable_principal": "MTC / SUNARP / INEI",
+      "confiabilidad": "baja",
+      "ambito": "Lima Metropolitana",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2020,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2021,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2022,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2023,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2024,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2025,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": null
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "MTC – Estadísticas de transporte terrestre (parque vehicular estimado por departamento)",
+          "url": "https://www.mtc.gob.pe/estadisticas/transportes.html",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "",
+          "observaciones": "La página capturada solo lista series hasta 2018.",
+          "tipo": "primaria"
+        }
+      ],
+      "discrepancias": null,
+      "nota": "No se obtuvo serie 2019–2025 dentro del presupuesto de consultas. Pendiente: INEI Compendio Estadístico Lima o SUNARP."
+    },
+    {
+      "id": "tarifa_metropolitano",
+      "nombre": "Tarifa adulto del Metropolitano (servicio troncal)",
+      "descripcion": "Tarifa general vigente al cierre del año para el servicio troncal, en soles.",
+      "unidad": "soles",
+      "mejor_si": "baja",
+      "competencia": "otra_entidad",
+      "responsable_principal": "ATU",
+      "confiabilidad": "media",
+      "ambito": "Lima Metropolitana",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": 2.5,
+          "parcial": false,
+          "nota": "Tarifa previa al alza de julio 2022 (fuente secundaria)."
+        },
+        {
+          "anio": 2020,
+          "valor": 2.5,
+          "parcial": false,
+          "nota": "Ídem."
+        },
+        {
+          "anio": 2021,
+          "valor": 2.5,
+          "parcial": false,
+          "nota": "Ídem."
+        },
+        {
+          "anio": 2022,
+          "valor": 3.2,
+          "parcial": false,
+          "nota": "Alza a S/ 3,20 vigente desde el 16-jul-2022 (El Comercio 18-jul-2022, citado por Wikipedia)."
+        },
+        {
+          "anio": 2023,
+          "valor": 3.2,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2024,
+          "valor": 3.2,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2025,
+          "valor": 3.2,
+          "parcial": false,
+          "nota": "Desde nov-2025 el alimentador Villa El Salvador pasó a S/ 3,50 (troncal sin cambio)."
+        },
+        {
+          "anio": 2026,
+          "valor": 3.2,
+          "parcial": true,
+          "nota": "Parcial: sin cambios reportados a la fecha de corte."
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "Wikipedia – Metropolitano (Lima), sección Tarifas",
+          "url": "https://es.wikipedia.org/wiki/Metropolitano_(Lima)",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "",
+          "observaciones": "Cita El Comercio 18-jul-2022 'Servicio del Metropolitano sube sus pasajes'. Verificar con resolución ATU.",
+          "tipo": "secundaria"
+        }
+      ],
+      "discrepancias": null,
+      "nota": "Tarifa integrada troncal+alimentador S/ 3,50. Valores 2019–2021 inferidos de la nota del alza; confirmar con fuente ATU/Protransporte."
+    },
+    {
+      "id": "tarifa_linea1",
+      "nombre": "Tarifa adulto de la Línea 1 del Metro",
+      "descripcion": "Tarifa general vigente al cierre del año, en soles.",
+      "unidad": "soles",
+      "mejor_si": "baja",
+      "competencia": "otra_entidad",
+      "responsable_principal": "MTC / ATU",
+      "confiabilidad": "baja",
+      "ambito": "Lima Metropolitana",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2020,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2021,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2022,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2023,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2024,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2025,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": null
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "Ositran – Informe de desempeño 2025, Línea 1",
+          "url": "https://www.ositran.gob.pe/anterior/wp-content/uploads/2018/04/informe-desempeno-linea-1-2025.pdf",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "",
+          "observaciones": "No se extrajo la tarifa del informe en esta consulta.",
+          "tipo": "primaria"
+        }
+      ],
+      "discrepancias": null,
+      "nota": "Sin fuente verificada en esta consulta; se cree que la tarifa general se mantuvo en S/ 1,50 todo el periodo, pero no se registra sin fuente."
+    }
   ]
 }

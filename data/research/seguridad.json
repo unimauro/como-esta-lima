@@ -1,7 +1,7 @@
 {
   "dimension": "seguridad",
   "fecha_corte": "2026-09-12",
-  "resumen_hallazgos": "Avance: ENAPRES (victimización, percepción, denuncia) y Lima Cómo Vamos completados desde boletines INEI e informes LCV locales. Pendiente: homicidios, extorsión, RENAMU, MML Cercado, estados de emergencia.",
+  "resumen_hallazgos": "SEGURIDAD OBJETIVA (ENAPRES-INEI, semestre jul-dic de cada año): victimización en Lima Metropolitana 32,6% (ago19-ene20) → 26,8% (2020) → 22,5% (2021) → 25,9% (2022); desde 2023 INEI publica Lima Metropolitana + Callao: 32,5% (2023) → 29,3% (2024) → 25,5% (2025) → 26,0% (feb-jul 2026). Ruptura de comparabilidad 2022/2023 (ámbito y tentativas de extorsión). Denuncia: 14-21% de víctimas. Víctimas con arma de fuego (LM+Callao): 14,8 (2023), 13,1 (2024), 13,8 (jul-dic 2025), 10,9 (feb-jul 2026) por 100 hab. SEGURIDAD PERCIBIDA: percepción de inseguridad ENAPRES 90,3% (2019) → 93,0% (2021, máximo) → 84,9% (jul-dic 2025) → 87,0% (feb-jul 2026); Lima Cómo Vamos: inseguridad principal problema 72,8% (2021) → 80,2% (2024) → 75,2% (2025); se siente inseguro 63,2% (2019) → 79,6% (2023) → 78,3% (2025). NO OBTENIDO (null + nota): homicidios Lima Metropolitana (solo tasa nacional INEI 9,3 → 10,1 → 10,7 en 2023-2025), extorsión anual LM (solo IV Trim 2024 = 2 555 y 2025 = 12 701 vía RPP), serenos RENAMU 2019-2025 (línea base 12 181 en 2016 y 11 607 en 2018), recursos de serenazgo MML-Cercado, cadena de estados de emergencia 2023-2025. Limitación: presupuesto de búsquedas web agotado en la sesión (WebSearch 200/200; Bing/DDG degradados); homicidios y RENAMU quedan como pendientes prioritarios.",
   "indicadores": [
     {
       "id": "enapres_victimizacion",
@@ -309,54 +309,63 @@
           "anio": 2019,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "Sin cifra verificada para Lima Metropolitana en el material consultado."
         },
         {
           "anio": 2020,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "Sin cifra verificada para Lima Metropolitana en el material consultado."
         },
         {
           "anio": 2021,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "Sin cifra verificada para Lima Metropolitana en el material consultado."
         },
         {
           "anio": 2022,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "Sin cifra verificada para Lima Metropolitana en el material consultado."
         },
         {
           "anio": 2023,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "Sin cifra verificada para Lima Metropolitana en el material consultado."
         },
         {
           "anio": 2024,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "Sin cifra verificada para Lima Metropolitana en el material consultado."
         },
         {
           "anio": 2025,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "Sin cifra verificada para Lima Metropolitana en el material consultado."
         },
         {
           "anio": 2026,
           "valor": null,
           "parcial": true,
-          "nota": null
+          "nota": "Sin cifra verificada para Lima Metropolitana en el material consultado."
         }
       ],
-      "fuentes": [],
-      "discrepancias": null,
-      "nota": "Pendiente de investigación."
+      "fuentes": [
+        {
+          "nombre": "Diario Correo - 'Homicidios en el Perú superaron el umbral crítico: INEI hace balance' (25-ene-2026)",
+          "url": "https://diariocorreo.pe/peru/homicidios-en-el-peru-superaron-el-umbral-critico-inei-hace-balance-de-imparable-criminalidad-noticia/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Nota periodística que cita al jefe del INEI; tasas nacionales de homicidios por 100 mil hab. (INEI-CEIC/SINADEF)",
+          "observaciones": "Solo cifras nacionales: 2021 8,6; 2023 9,3; 2024 10,1; 2025 10,7 (preliminar). Sin desagregación para Lima Metropolitana.",
+          "tipo": "secundaria"
+        }
+      ],
+      "discrepancias": "El Gobierno (PNP/INEI, dic-2025) presentó una 'disminución' de homicidios 2025 vs 2024 que medios (El Comercio 9-jul-2026, La República 6-jul-2026) cuestionan por inconsistencias en registros PNP; INEI reporta tasa nacional al alza (10,1 → 10,7).",
+      "nota": "No se logró acceder dentro del presupuesto de consultas a la publicación INEI 'Homicidios en el Perú, contándolos uno a uno' (serie 2011-2024) ni al Comité Estadístico Interinstitucional de la Criminalidad (CEIC), que son la fuente oficial de la tasa por provincia/ciudad. Los buscadores web quedaron agotados/bloqueados en esta sesión. Referencia nacional (INEI, vía Diario Correo 25-ene-2026): 8,6 (2021), 9,3 (2023), 10,1 (2024) y 10,7 (2025, preliminar) homicidios por 100 mil hab. PENDIENTE: completar con el cuadro 'Lima Metropolitana' / 'provincia de Lima' de la publicación INEI (datacrim.inei.gob.pe o biblioteca virtual INEI)."
     },
     {
       "id": "homicidios_numero",
@@ -373,54 +382,63 @@
           "anio": 2019,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "Sin cifra verificada para Lima Metropolitana en el material consultado."
         },
         {
           "anio": 2020,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "Sin cifra verificada para Lima Metropolitana en el material consultado."
         },
         {
           "anio": 2021,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "Sin cifra verificada para Lima Metropolitana en el material consultado."
         },
         {
           "anio": 2022,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "Sin cifra verificada para Lima Metropolitana en el material consultado."
         },
         {
           "anio": 2023,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "Sin cifra verificada para Lima Metropolitana en el material consultado."
         },
         {
           "anio": 2024,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "Sin cifra verificada para Lima Metropolitana en el material consultado."
         },
         {
           "anio": 2025,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "Sin cifra verificada para Lima Metropolitana en el material consultado."
         },
         {
           "anio": 2026,
           "valor": null,
           "parcial": true,
-          "nota": null
+          "nota": "Sin cifra verificada para Lima Metropolitana en el material consultado."
         }
       ],
-      "fuentes": [],
-      "discrepancias": null,
-      "nota": "Pendiente de investigación."
+      "fuentes": [
+        {
+          "nombre": "Diario Correo - 'Homicidios en el Perú superaron el umbral crítico: INEI hace balance' (25-ene-2026)",
+          "url": "https://diariocorreo.pe/peru/homicidios-en-el-peru-superaron-el-umbral-critico-inei-hace-balance-de-imparable-criminalidad-noticia/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Nota periodística que cita al jefe del INEI; tasas nacionales de homicidios por 100 mil hab. (INEI-CEIC/SINADEF)",
+          "observaciones": "Solo cifras nacionales: 2021 8,6; 2023 9,3; 2024 10,1; 2025 10,7 (preliminar). Sin desagregación para Lima Metropolitana.",
+          "tipo": "secundaria"
+        }
+      ],
+      "discrepancias": "El Gobierno (PNP/INEI, dic-2025) presentó una 'disminución' de homicidios 2025 vs 2024 que medios (El Comercio 9-jul-2026, La República 6-jul-2026) cuestionan por inconsistencias en registros PNP; INEI reporta tasa nacional al alza (10,1 → 10,7).",
+      "nota": "No se logró acceder dentro del presupuesto de consultas a la publicación INEI 'Homicidios en el Perú, contándolos uno a uno' (serie 2011-2024) ni al Comité Estadístico Interinstitucional de la Criminalidad (CEIC), que son la fuente oficial de la tasa por provincia/ciudad. Los buscadores web quedaron agotados/bloqueados en esta sesión. Referencia nacional (INEI, vía Diario Correo 25-ene-2026): 8,6 (2021), 9,3 (2023), 10,1 (2024) y 10,7 (2025, preliminar) homicidios por 100 mil hab. PENDIENTE: completar con el cuadro 'Lima Metropolitana' / 'provincia de Lima' de la publicación INEI (datacrim.inei.gob.pe o biblioteca virtual INEI)."
     },
     {
       "id": "extorsion_denuncias",
@@ -430,61 +448,94 @@
       "mejor_si": "baja",
       "competencia": "otra_entidad",
       "responsable_principal": "MININTER / PNP",
-      "confiabilidad": "media",
+      "confiabilidad": "baja",
       "ambito": "Lima Metropolitana",
       "serie": [
         {
           "anio": 2019,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "Sin total anual para Lima Metropolitana en el material. Referencia ENAPRES ago 2019-ene 2020: 0,4 víctimas de secuestro/extorsión por 100 hab. (nacional urbano)."
         },
         {
           "anio": 2020,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "No disponible en el material consultado."
         },
         {
           "anio": 2021,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "No disponible en el material consultado."
         },
         {
           "anio": 2022,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "No disponible en el material consultado."
         },
         {
           "anio": 2023,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "No disponible en el material consultado."
         },
         {
           "anio": 2024,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "Solo IV Trimestre 2024: 2 555 denuncias en Lima Metropolitana (INEI/SIDPOL). No se obtuvo el total anual."
         },
         {
           "anio": 2025,
-          "valor": null,
+          "valor": 12701,
           "parcial": false,
-          "nota": null
+          "nota": "Denuncias policiales por extorsión en Lima Metropolitana 2025 según informe de RPP (fuente secundaria, datos vía acceso a la información). No verificado contra publicación INEI."
         },
         {
           "anio": 2026,
           "valor": null,
           "parcial": true,
-          "nota": null
+          "nota": "Parcial: 1er semestre 2026 (Ministerio Público) distritos fiscales Lima Norte+Centro+Sur = 3 829 y Lima Este > 1 800; no comparable con denuncias policiales (SIDPOL)."
         }
       ],
-      "fuentes": [],
-      "discrepancias": null,
-      "nota": "Pendiente de investigación."
+      "fuentes": [
+        {
+          "nombre": "INEI - Estadísticas de la Criminalidad, Seguridad Ciudadana y Violencia, IV Trimestre 2024 (Informe Técnico)",
+          "url": "https://www.inei.gob.pe/media/MenuRecursivo/boletines/boletin_seguridad_ivt24.pdf",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Registros administrativos MININTER - SIDPOL (denuncias policiales); Lima Metropolitana = 43 distritos",
+          "observaciones": "Gráfico 1.3 y 1.6: IV Trim 2024 LM = 2 555 denuncias por extorsión (21,7% del total nacional 11 789); distritos con más denuncias: Lima (356), SJL (325), Comas (238).",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "RPP - 'Desde el 2024 hubo más de 50 mil denuncias por extorsión, pero solo 700 condenas' (2-jun-2026)",
+          "url": "https://rpp.pe/peru/actualidad/desde-el-2024-hubo-mas-de-50-mil-denuncias-por-extorsion-pero-solo-700-condenas-informe-noticia-1691206",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Informe periodístico con datos obtenidos por acceso a la información (PNP, Ministerio Público, Poder Judicial)",
+          "observaciones": "Lima Metropolitana 2025: 12 701 denuncias policiales por extorsión; 108 acusaciones fiscales; 115 sentencias. Nacional ene-2024 a abr-2026: 53 958 denuncias.",
+          "tipo": "secundaria"
+        },
+        {
+          "nombre": "El Comercio - 'Cifras de inseguridad en duda: denuncias por extorsión subieron 2% en el cuarto trimestre del 2025' (26-ene-2026)",
+          "url": "https://elcomercio.pe/economia/peru/cifras-de-inseguridad-en-duda-denuncias-por-extorsion-subieron-2-en-el-cuarto-trimestre-del-2025-noticia/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Compara cifras PNP/INEI vs Ministerio Público",
+          "observaciones": "IV Trim 2025 nacional: PNP/INEI 5 494 denuncias (-12,5% vs IV Trim 2024) vs Ministerio Público +2%. 2025: 82,4 denuncias por 100 mil hab. (+25,6% vs 2024, más de 5 veces la tasa de 2019). Lima concentra 46,7% de las denuncias nacionales.",
+          "tipo": "secundaria"
+        },
+        {
+          "nombre": "Perú Informa - 'Zona de Lima Metropolitana cuenta con el mayor índice de extorsiones tras registrarse 13,800 denuncias' (5-set-2026)",
+          "url": "https://www.peruinforma.com/zona-de-lima-metropolitana-cuenta-con-el-mayor-indice-de-extorsiones-tras-registrarse-13800-denuncias/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Cita al Observatorio de Criminalidad del Ministerio Público (denuncias fiscales, no policiales)",
+          "observaciones": "Ene-jul 2026 nacional: más de 13 800 denuncias; 1er semestre 2026: distritos fiscales Lima Norte + Lima Centro + Lima Sur = 3 829; Lima Este > 1 800.",
+          "tipo": "secundaria"
+        }
+      ],
+      "discrepancias": "IV Trim 2025 nacional: PNP/INEI reporta -12,5% mientras el Ministerio Público reporta +2% (El Comercio, 26-ene-2026); medios (El Comercio 9-jul-2026, La República 6-jul-2026) señalan inconsistencias en el balance PNP 2026.",
+      "nota": "Dos registros no comparables: denuncias policiales (PNP-SIDPOL, publicadas por INEI en boletines trimestrales) y denuncias fiscales (Observatorio de Criminalidad del Ministerio Público). Además, INEI recuerda que menos del 20% de víctimas denuncia, por lo que la serie mide en parte propensión a denunciar. La tasa de extorsión de ENAPRES (víctimas por 100 hab., Lima y Callao) fue 1,2 (jul-dic 2023), 0,9 (jul-dic 2024), 1,3 (feb-jul 2025) y 1,2 (feb-jul 2026). PENDIENTE: totales anuales LM 2019-2024 desde boletines trimestrales INEI 'Estadísticas de la Criminalidad' o datos abiertos MININTER."
     },
     {
       "id": "serenos_lima_metropolitana",
@@ -501,54 +552,71 @@
           "anio": 2019,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "RENAMU del año no consultado (no accesible dentro del presupuesto de red); ver nota."
         },
         {
           "anio": 2020,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "RENAMU del año no consultado (no accesible dentro del presupuesto de red); ver nota."
         },
         {
           "anio": 2021,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "RENAMU del año no consultado (no accesible dentro del presupuesto de red); ver nota."
         },
         {
           "anio": 2022,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "RENAMU del año no consultado (no accesible dentro del presupuesto de red); ver nota."
         },
         {
           "anio": 2023,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "RENAMU del año no consultado (no accesible dentro del presupuesto de red); ver nota."
         },
         {
           "anio": 2024,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "RENAMU del año no consultado (no accesible dentro del presupuesto de red); ver nota."
         },
         {
           "anio": 2025,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "RENAMU del año no consultado (no accesible dentro del presupuesto de red); ver nota."
         },
         {
           "anio": 2026,
           "valor": null,
           "parcial": true,
-          "nota": null
+          "nota": "RENAMU del año no consultado (no accesible dentro del presupuesto de red); ver nota."
         }
       ],
-      "fuentes": [],
+      "fuentes": [
+        {
+          "nombre": "INEI - Nota de prensa 'Hay más de 26 mil efectivos de serenazgo municipal a nivel nacional' (RENAMU 2016)",
+          "url": "https://m.inei.gob.pe/prensa/noticias/hay-mas-de-26-mil-efectivos-de-serenazgo-municipal-a-nivel-nacional-9496/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Registro Nacional de Municipalidades (RENAMU); efectivos de serenazgo declarados por cada municipalidad",
+          "observaciones": "A junio 2016: Lima Metropolitana 12 181 serenos (+7,8% vs dic-2015); nacional 26 690. Cámaras 2016: provincia de Lima 2 278 de 4 609 nacionales (57,8%).",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "INEI - Nota de prensa 'Número de cámaras de videovigilancia aumentó 44,2% en las municipalidades del país' (RENAMU 2018)",
+          "url": "https://m.inei.gob.pe/prensa/noticias/numero-de-camaras-de-videovigilancia-aumento-442-en-las-municipalidades-del-pais-durante-este-ano-11272/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "RENAMU 2018 (al 31 de marzo de 2018)",
+          "observaciones": "Lima Metropolitana: 11 607 serenos (44,5% del total nacional 26 089); LM concentra 53,0% de las 7 547 cámaras operativas del país (~4 000). Distritos con más cámaras: Santiago de Surco (551), Ventanilla (350), Miraflores (304).",
+          "tipo": "primaria"
+        }
+      ],
       "discrepancias": null,
-      "nota": "Pendiente de investigación."
+      "nota": "Línea base previa al periodo: 12 181 serenos (jun-2016) y 11 607 (mar-2018) en los 43 distritos de Lima Metropolitana (RENAMU). Las notas de prensa RENAMU 2019-2025 no pudieron consultarse (el sitio m.inei.gob.pe devolvió respuesta vacía por certificado y los buscadores estaban agotados). PENDIENTE: 'Perú: Indicadores de Gestión Municipal' (INEI, anual) cuadro 'Efectivos de serenazgo según departamento/provincia'. Competencia compartida: cada distrito financia su serenazgo; la MML solo cubre el Cercado."
     },
     {
       "id": "mml_cercado_serenos",
@@ -565,54 +633,71 @@
           "anio": 2019,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "Sin cifra oficial de serenos de la MML para el Cercado verificada en el material."
         },
         {
           "anio": 2020,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "Sin cifra oficial de serenos de la MML para el Cercado verificada en el material."
         },
         {
           "anio": 2021,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "Sin cifra oficial de serenos de la MML para el Cercado verificada en el material."
         },
         {
           "anio": 2022,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "Sin cifra oficial de serenos de la MML para el Cercado verificada en el material."
         },
         {
           "anio": 2023,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "Sin cifra oficial de serenos de la MML para el Cercado verificada en el material."
         },
         {
           "anio": 2024,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "Sin cifra oficial de serenos de la MML para el Cercado verificada en el material."
         },
         {
           "anio": 2025,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "Sin cifra oficial de serenos de la MML para el Cercado verificada en el material."
         },
         {
           "anio": 2026,
           "valor": null,
           "parcial": true,
-          "nota": null
+          "nota": "Sin cifra oficial de serenos de la MML para el Cercado verificada en el material."
         }
       ],
-      "fuentes": [],
+      "fuentes": [
+        {
+          "nombre": "La República - 'Serenazgo de la Municipalidad de Lima comenzará a usar pistolas eléctricas desde el 29 de marzo: agentes contarán con 200 armas' (27-mar-2026)",
+          "url": "https://larepublica.pe/sociedad/2026/03/27/serenazgo-de-la-municipalidad-de-lima-comenzara-a-usar-pistolas-electricas-desde-el-29-de-marzo-agentes-contaran-con-200-armas-1207071",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Nota periodística (titular vía Bing News RSS; el cuerpo no pudo descargarse: HTTP 404/403)",
+          "observaciones": "Indica 200 pistolas eléctricas para el serenazgo de la MML (gestión Reggiardo), sin número total de serenos.",
+          "tipo": "secundaria"
+        },
+        {
+          "nombre": "Perú21 - 'Cámaras de la Municipalidad de Lima permiten desarticular a la banda criminal Los Vilches' (7-set-2026)",
+          "url": "https://peru21.pe/lima/camaras-de-la-municipalidad-de-lima-permiten-desarticular-la-banda-criminal-los-vilches/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Nota periodística (titular/resumen vía Bing News RSS)",
+          "observaciones": "Menciona el Centro de Control de Operaciones (CECOP) de la MML; sin cifra de cámaras.",
+          "tipo": "secundaria"
+        }
+      ],
       "discrepancias": null,
-      "nota": "Pendiente de investigación."
+      "nota": "No se obtuvo una serie oficial de serenos de la Gerencia de Seguridad Ciudadana de la MML. El archivo 'cercado2023.txt' del material resultó ser el informe de residuos sólidos del Cercado (CAMET 2023), no el plan de seguridad; los HTML de gob.pe descargados no contenían texto (renderizado por JavaScript). PENDIENTE: Plan de Acción Distrital de Seguridad Ciudadana del Cercado de Lima (CODISEC-MML, anual 2019-2026, diagnóstico de recursos: serenos, cámaras, unidades móviles), RENAMU (municipalidad 'Lima' provincial) y notas de munlima.gob.pe. Hitos cualitativos: 200 pistolas eléctricas para serenos MML desde 29-mar-2026 (Reggiardo)."
     },
     {
       "id": "mml_cercado_camaras",
@@ -629,54 +714,71 @@
           "anio": 2019,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "Sin cifra oficial de cámaras de la MML para el Cercado verificada en el material."
         },
         {
           "anio": 2020,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "Sin cifra oficial de cámaras de la MML para el Cercado verificada en el material."
         },
         {
           "anio": 2021,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "Sin cifra oficial de cámaras de la MML para el Cercado verificada en el material."
         },
         {
           "anio": 2022,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "Sin cifra oficial de cámaras de la MML para el Cercado verificada en el material."
         },
         {
           "anio": 2023,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "Sin cifra oficial de cámaras de la MML para el Cercado verificada en el material."
         },
         {
           "anio": 2024,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "Sin cifra oficial de cámaras de la MML para el Cercado verificada en el material."
         },
         {
           "anio": 2025,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "Sin cifra oficial de cámaras de la MML para el Cercado verificada en el material."
         },
         {
           "anio": 2026,
           "valor": null,
           "parcial": true,
-          "nota": null
+          "nota": "Sin cifra oficial de cámaras de la MML para el Cercado verificada en el material."
         }
       ],
-      "fuentes": [],
+      "fuentes": [
+        {
+          "nombre": "La República - 'Serenazgo de la Municipalidad de Lima comenzará a usar pistolas eléctricas desde el 29 de marzo: agentes contarán con 200 armas' (27-mar-2026)",
+          "url": "https://larepublica.pe/sociedad/2026/03/27/serenazgo-de-la-municipalidad-de-lima-comenzara-a-usar-pistolas-electricas-desde-el-29-de-marzo-agentes-contaran-con-200-armas-1207071",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Nota periodística (titular vía Bing News RSS; el cuerpo no pudo descargarse: HTTP 404/403)",
+          "observaciones": "Indica 200 pistolas eléctricas para el serenazgo de la MML (gestión Reggiardo), sin número total de serenos.",
+          "tipo": "secundaria"
+        },
+        {
+          "nombre": "Perú21 - 'Cámaras de la Municipalidad de Lima permiten desarticular a la banda criminal Los Vilches' (7-set-2026)",
+          "url": "https://peru21.pe/lima/camaras-de-la-municipalidad-de-lima-permiten-desarticular-la-banda-criminal-los-vilches/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Nota periodística (titular/resumen vía Bing News RSS)",
+          "observaciones": "Menciona el Centro de Control de Operaciones (CECOP) de la MML; sin cifra de cámaras.",
+          "tipo": "secundaria"
+        }
+      ],
       "discrepancias": null,
-      "nota": "Pendiente de investigación."
+      "nota": "No se obtuvo una serie oficial de cámaras de la Gerencia de Seguridad Ciudadana de la MML. El archivo 'cercado2023.txt' del material resultó ser el informe de residuos sólidos del Cercado (CAMET 2023), no el plan de seguridad; los HTML de gob.pe descargados no contenían texto (renderizado por JavaScript). PENDIENTE: Plan de Acción Distrital de Seguridad Ciudadana del Cercado de Lima (CODISEC-MML, anual 2019-2026, diagnóstico de recursos: serenos, cámaras, unidades móviles), RENAMU (municipalidad 'Lima' provincial) y notas de munlima.gob.pe. Hitos cualitativos: 200 pistolas eléctricas para serenos MML desde 29-mar-2026 (Reggiardo)."
     },
     {
       "id": "mml_cercado_vehiculos",
@@ -693,54 +795,71 @@
           "anio": 2019,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "Sin cifra oficial de vehículos de la MML para el Cercado verificada en el material."
         },
         {
           "anio": 2020,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "Sin cifra oficial de vehículos de la MML para el Cercado verificada en el material."
         },
         {
           "anio": 2021,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "Sin cifra oficial de vehículos de la MML para el Cercado verificada en el material."
         },
         {
           "anio": 2022,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "Sin cifra oficial de vehículos de la MML para el Cercado verificada en el material."
         },
         {
           "anio": 2023,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "Sin cifra oficial de vehículos de la MML para el Cercado verificada en el material."
         },
         {
           "anio": 2024,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "Sin cifra oficial de vehículos de la MML para el Cercado verificada en el material."
         },
         {
           "anio": 2025,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "Sin cifra oficial de vehículos de la MML para el Cercado verificada en el material."
         },
         {
           "anio": 2026,
           "valor": null,
           "parcial": true,
-          "nota": null
+          "nota": "Sin cifra oficial de vehículos de la MML para el Cercado verificada en el material."
         }
       ],
-      "fuentes": [],
+      "fuentes": [
+        {
+          "nombre": "La República - 'Serenazgo de la Municipalidad de Lima comenzará a usar pistolas eléctricas desde el 29 de marzo: agentes contarán con 200 armas' (27-mar-2026)",
+          "url": "https://larepublica.pe/sociedad/2026/03/27/serenazgo-de-la-municipalidad-de-lima-comenzara-a-usar-pistolas-electricas-desde-el-29-de-marzo-agentes-contaran-con-200-armas-1207071",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Nota periodística (titular vía Bing News RSS; el cuerpo no pudo descargarse: HTTP 404/403)",
+          "observaciones": "Indica 200 pistolas eléctricas para el serenazgo de la MML (gestión Reggiardo), sin número total de serenos.",
+          "tipo": "secundaria"
+        },
+        {
+          "nombre": "Perú21 - 'Cámaras de la Municipalidad de Lima permiten desarticular a la banda criminal Los Vilches' (7-set-2026)",
+          "url": "https://peru21.pe/lima/camaras-de-la-municipalidad-de-lima-permiten-desarticular-la-banda-criminal-los-vilches/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Nota periodística (titular/resumen vía Bing News RSS)",
+          "observaciones": "Menciona el Centro de Control de Operaciones (CECOP) de la MML; sin cifra de cámaras.",
+          "tipo": "secundaria"
+        }
+      ],
       "discrepancias": null,
-      "nota": "Pendiente de investigación."
+      "nota": "No se obtuvo una serie oficial de vehículos de la Gerencia de Seguridad Ciudadana de la MML. El archivo 'cercado2023.txt' del material resultó ser el informe de residuos sólidos del Cercado (CAMET 2023), no el plan de seguridad; los HTML de gob.pe descargados no contenían texto (renderizado por JavaScript). PENDIENTE: Plan de Acción Distrital de Seguridad Ciudadana del Cercado de Lima (CODISEC-MML, anual 2019-2026, diagnóstico de recursos: serenos, cámaras, unidades móviles), RENAMU (municipalidad 'Lima' provincial) y notas de munlima.gob.pe. Hitos cualitativos: 200 pistolas eléctricas para serenos MML desde 29-mar-2026 (Reggiardo)."
     },
     {
       "id": "lcv_inseguridad_principal_problema",
@@ -972,7 +1091,7 @@
       "id": "estados_emergencia",
       "nombre": "Estados de emergencia por seguridad en Lima Metropolitana",
       "descripcion": "Número de declaratorias/prórrogas de estado de emergencia por inseguridad vigentes en Lima Metropolitana por año (nota cualitativa).",
-      "unidad": "declaratorias",
+      "unidad": "nota cualitativa (número de decretos)",
       "mejor_si": "baja",
       "competencia": "otra_entidad",
       "responsable_principal": "PCM / MININTER (gobierno nacional)",
@@ -983,54 +1102,87 @@
           "anio": 2019,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "Sin declaratoria por inseguridad en Lima Metropolitana identificada en el material (no verificado)."
         },
         {
           "anio": 2020,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "Estados de emergencia 2020-2021 fueron por COVID-19 (no por inseguridad); no se cuentan."
         },
         {
           "anio": 2021,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "Ver 2020."
         },
         {
           "anio": 2022,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "No verificado en el material."
         },
         {
           "anio": 2023,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "No verificado con fuente en esta sesión (pendiente: declaratorias por distritos de Lima desde set-2023)."
         },
         {
           "anio": 2024,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "No verificado con fuente en esta sesión (pendiente: declaratoria Lima Metropolitana y Callao por 60 días, set-2024, y prórrogas)."
         },
         {
           "anio": 2025,
           "valor": null,
           "parcial": false,
-          "nota": null
+          "nota": "No verificado con fuente en esta sesión (pendiente: declaratorias mar-2025 y oct-2025 y prórrogas)."
         },
         {
           "anio": 2026,
           "valor": null,
           "parcial": true,
-          "nota": null
+          "nota": "Vigente de forma casi continua: prórroga 60 días (abr-2026), prórroga 60 días desde 28-jun-2026, nueva declaratoria D.S. 123-2026-PCM por 60 días (28-ago-2026). Conteo exacto de decretos pendiente."
         }
       ],
-      "fuentes": [],
+      "fuentes": [
+        {
+          "nombre": "El Peruano - 'Gobierno prorroga emergencia en Lima y Callao para enfrentar a la criminalidad' (25-jun-2026)",
+          "url": "https://elperuano.pe/noticia/298751-gobierno-prorroga-emergencia-en-lima-y-callao-para-enfrentar-a-la-criminalidad",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Diario oficial (nota informativa sobre decreto supremo)",
+          "observaciones": "Prórroga por 60 días a partir del 28 de junio de 2026 del estado de emergencia en Lima Metropolitana y Callao.",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "El Peruano - 'Declaran estado de emergencia en Lima y Callao por 60 días para reforzar la lucha contra el crimen' (28-ago-2026)",
+          "url": "https://elperuano.pe/noticia/303540-declaran-estado-de-emergencia-en-lima-y-callao-por-60-dias-para-reforzar-la-lucha-contra-el-crimen",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Diario oficial",
+          "observaciones": "Nueva declaratoria por 60 días (D.S. N° 123-2026-PCM, publicado 28-ago-2026); PNP mantiene el control del orden interno con apoyo de las FF.AA.",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "Andina - 'Gobierno declara estado de emergencia en Lima Metropolitana y Callao por 60 días' (27-ago-2026)",
+          "url": "https://andina.pe/agencia/noticia-gobierno-declara-estado-emergencia-lima-metropolitana-y-callao-60-dias-1089478.aspx",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Agencia oficial de noticias",
+          "observaciones": "Confirma la declaratoria de 60 días (ago-oct 2026).",
+          "tipo": "secundaria"
+        },
+        {
+          "nombre": "Expreso - 'Estado de emergencia se amplía 60 días en Lima y Callao' (29-abr-2026)",
+          "url": "https://www.expreso.com.pe/actualidad/estado-de-emergencia-se-amplia-60-dias-en-lima-y-callao-que-libertades-se-mantienen/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Nota periodística (titular vía Bing News RSS; cuerpo no accesible: HTTP 403)",
+          "observaciones": "Ampliación por 60 días adicionales (abr-jun 2026).",
+          "tipo": "secundaria"
+        }
+      ],
       "discrepancias": null,
-      "nota": "Pendiente de investigación."
+      "nota": "Indicador cualitativo. Lima Metropolitana y Callao han estado bajo estado de emergencia por criminalidad (PNP con apoyo de FF.AA., restricción de libertad de reunión y tránsito) de forma casi ininterrumpida en 2026 según El Peruano/Andina. PENDIENTE: reconstruir la cadena 2023-2025 (decretos supremos PCM y prórrogas) desde El Peruano/normas.gob.pe. Competencia del gobierno nacional (PCM/MININTER), no de la MML."
     }
   ]
 }
