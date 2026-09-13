@@ -32,8 +32,9 @@ def run(anio, intento=1):
     n = n_mml = 0; pliegos = set(); ejecutoras = set()
     dist = defaultdict(lambda: defaultdict(lambda: [0.0]*15))  # (ubigeo,nombre) -> funcion -> [pia,pim,dev, dev_m1..m12]
     t0 = time.time()
+    local = RAW / f"tmp_{anio}.csv"  # si scripts/mef_bajar.sh ya descargó el CSV completo, se lee local
     try:
-        with urllib.request.urlopen(req, timeout=600) as resp:
+        with (open(local, "rb") if local.exists() else urllib.request.urlopen(req, timeout=600)) as resp:
             rd = csv.reader(io.TextIOWrapper(resp, encoding="utf-8-sig", newline=""))
             head = next(rd)
             with open(out_mml, "w", newline="", encoding="utf-8") as fo:

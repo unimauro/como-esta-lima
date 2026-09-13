@@ -4,60 +4,119 @@
   "url": "https://fs.datosabiertos.mef.gob.pe/datastorefiles/2019-Gasto-Devengado.csv",
   "ok": true,
   "filas_total": 2169711,
-  "filas_mml": 0,
-  "pliegos": [],
-  "ejecutoras": [],
-  "fecha_descarga": "2026-09-12",
-  "segundos": 811
+  "filas_mml": 4264,
+  "pliegos": [
+   "   "
+  ],
+  "ejecutoras": [
+   "301250 MUNICIPALIDAD METROPOLITANA DE LIMA"
+  ],
+  "fecha_descarga": "2026-09-13",
+  "segundos": 22
  },
  "2026": {
   "anio": 2026,
   "url": "https://fs.datosabiertos.mef.gob.pe/datastorefiles/2026-Gasto-Devengado-Mensual.csv",
   "ok": true,
   "filas_total": 2363902,
-  "filas_mml": 0,
-  "pliegos": [],
-  "ejecutoras": [],
-  "fecha_descarga": "2026-09-12",
-  "segundos": 834
+  "filas_mml": 3962,
+  "pliegos": [
+   "   "
+  ],
+  "ejecutoras": [
+   "301250 MUNICIPALIDAD METROPOLITANA DE LIMA"
+  ],
+  "fecha_descarga": "2026-09-13",
+  "segundos": 24
  },
  "2020": {
   "anio": 2020,
   "url": "https://fs.datosabiertos.mef.gob.pe/datastorefiles/2020-Gasto-Devengado.csv",
   "ok": true,
   "filas_total": 2476032,
-  "filas_mml": 0,
-  "pliegos": [],
-  "ejecutoras": [],
-  "fecha_descarga": "2026-09-12",
-  "segundos": 1233
+  "filas_mml": 5703,
+  "pliegos": [
+   "   "
+  ],
+  "ejecutoras": [
+   "301250 MUNICIPALIDAD METROPOLITANA DE LIMA"
+  ],
+  "fecha_descarga": "2026-09-13",
+  "segundos": 23
+ },
+ "2025": {
+  "anio": 2025,
+  "url": "https://fs.datosabiertos.mef.gob.pe/datastorefiles/2025-Gasto-Devengado-Mensual.csv",
+  "ok": true,
+  "filas_total": 2807170,
+  "filas_mml": 4430,
+  "pliegos": [
+   "   "
+  ],
+  "ejecutoras": [
+   "301250 MUNICIPALIDAD METROPOLITANA DE LIMA"
+  ],
+  "fecha_descarga": "2026-09-13",
+  "segundos": 26
  },
  "2021": {
   "anio": 2021,
   "url": "https://fs.datosabiertos.mef.gob.pe/datastorefiles/2021-Gasto-Devengado.csv",
-  "ok": false,
-  "error": "The read operation timed out",
-  "fecha_descarga": "2026-09-13"
- },
- "2022": {
-  "anio": 2022,
-  "url": "https://fs.datosabiertos.mef.gob.pe/datastorefiles/2022-Gasto-Devengado.csv",
-  "ok": false,
-  "error": "<urlopen error [Errno 54] Connection reset by peer>",
-  "fecha_descarga": "2026-09-13"
+  "ok": true,
+  "filas_total": 2462065,
+  "filas_mml": 5382,
+  "pliegos": [
+   "   "
+  ],
+  "ejecutoras": [
+   "301250 MUNICIPALIDAD METROPOLITANA DE LIMA"
+  ],
+  "fecha_descarga": "2026-09-13",
+  "segundos": 22
  },
  "2024": {
   "anio": 2024,
   "url": "https://fs.datosabiertos.mef.gob.pe/datastorefiles/2024-Gasto-Devengado.csv",
-  "ok": false,
-  "error": "The read operation timed out",
-  "fecha_descarga": "2026-09-13"
+  "ok": true,
+  "filas_total": 2789753,
+  "filas_mml": 3957,
+  "pliegos": [
+   "   "
+  ],
+  "ejecutoras": [
+   "301250 MUNICIPALIDAD METROPOLITANA DE LIMA"
+  ],
+  "fecha_descarga": "2026-09-13",
+  "segundos": 26
+ },
+ "2022": {
+  "anio": 2022,
+  "url": "https://fs.datosabiertos.mef.gob.pe/datastorefiles/2022-Gasto-Devengado.csv",
+  "ok": true,
+  "filas_total": 2620993,
+  "filas_mml": 4222,
+  "pliegos": [
+   "   "
+  ],
+  "ejecutoras": [
+   "301250 MUNICIPALIDAD METROPOLITANA DE LIMA"
+  ],
+  "fecha_descarga": "2026-09-13",
+  "segundos": 23
  },
  "2023": {
   "anio": 2023,
   "url": "https://fs.datosabiertos.mef.gob.pe/datastorefiles/2023-Gasto-Devengado.csv",
-  "ok": false,
-  "error": "The read operation timed out",
-  "fecha_descarga": "2026-09-13"
+  "ok": true,
+  "filas_total": 2739423,
+  "filas_mml": 3432,
+  "pliegos": [
+   "   "
+  ],
+  "ejecutoras": [
+   "301250 MUNICIPALIDAD METROPOLITANA DE LIMA"
+  ],
+  "fecha_descarga": "2026-09-13",
+  "segundos": 24
  }
 }

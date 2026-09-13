@@ -56,7 +56,7 @@ def procesar_anio(path: Path):
                            ("fuente", I_FF_N), ("categoria", I_CAT_N)):
                 g = grupos[k][r[idx].strip().title()]
                 g["pim"] += pim; g["dev"] += dev
-            if r[I_TIPO_ACT].strip() == "3" or r[I_TIPO_ACT].strip() == "2":  # 2/3 = proyectos (inversión)
+            if r[I_TIPO_ACT].strip().upper() == "PROYECTO":  # inversión (proyectos Invierte.pe)
                 inversiones["pim"] += pim; inversiones["dev"] += dev
             gen = r[I_GEN].strip()
             if gen in ("1", "5-21", "21") or "PERSONAL Y OBLIGACIONES" in r[I_GEN_N].upper():
