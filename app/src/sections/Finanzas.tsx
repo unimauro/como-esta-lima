@@ -25,10 +25,18 @@ export function Finanzas() {
   const corte = mef.mes_corte_2026
   const datos = anios.map((a) => ({ anio: a.anio, PIA: a.pia, PIM: a.pim, Devengado: a.devengado, Girado: a.girado, ejec: a.ejecucion_pct, parcial: a.parcial, corte: a.dev_hasta_mes_corte, corriente: a.corriente.dev, capital: a.capital.dev, deuda: a.servicio_deuda.dev }))
   const completos = datos.filter((d) => !d.parcial)
-  const claves = Array.from(new Set(anios.flatMap((a) => (a[`por_${vista}` as 'por_funcion'] ?? []).slice(0, 8).map((x) => x.nombre))))
+  // Top 6 categorías por devengado acumulado 2019–2026 + "Otros" (paleta categórica limitada)
+  const acum = new Map<string, number>()
+  for (const a of anios) for (const x of a[`por_${vista}` as 'por_funcion'] ?? []) acum.set(x.nombre, (acum.get(x.nombre) ?? 0) + x.dev)
+  const top = Array.from(acum.entries()).sort((a, b) => b[1] - a[1]).slice(0, 6).map(([k]) => k)
+  const claves = [...top, 'Otros']
   const comp = anios.map((a) => {
-    const row: Record<string, number | string> = { anio: a.anio }
-    for (const k of claves) row[k] = (a[`por_${vista}` as 'por_funcion'] ?? []).find((x) => x.nombre === k)?.dev ?? 0
+    const row: Record<string, number | string> = { anio: a.anio, Otros: 0 }
+    for (const x of a[`por_${vista}` as 'por_funcion'] ?? []) {
+      if (top.includes(x.nombre)) row[x.nombre] = x.dev
+      else row.Otros = (row.Otros as number) + x.dev
+    }
+    for (const k of top) row[k] = row[k] ?? 0
     return row
   })
   const seq = ['var(--s-seq-7)', 'var(--s-seq-6)', 'var(--s-seq-5)', 'var(--s-seq-4)', 'var(--s-seq-3)', 'var(--s-seq-2)', 'var(--s-seq-1)', 'var(--color-arena)']
@@ -75,7 +83,7 @@ export function Finanzas() {
                 <XAxis dataKey="anio" axisLine={false} tickLine={false} />
                 <YAxis width={70} axisLine={false} tickLine={false} tickFormatter={(v) => soles(v).replace('S/ ', '')} />
                 <Tooltip content={<TT />} cursor={{ fill: 'var(--bg-3)' }} />
-                <Legend />
+                <Legend formatter={(v) => <span style={{ color: 'var(--ink-2)' }}>{v}</span>} />
                 <Bar dataKey="PIM" fill="var(--s-seq-2)" radius={[4, 4, 0, 0]} isAnimationActive={false} />
                 <Bar dataKey="Devengado" fill="var(--s-seq-5)" radius={[4, 4, 0, 0]} isAnimationActive={false}>
                   {datos.map((d) => <Cell key={d.anio} fillOpacity={d.parcial ? 0.45 : 1} />)}
@@ -114,11 +122,12 @@ export function Finanzas() {
                 <XAxis dataKey="mes" axisLine={false} tickLine={false} />
                 <YAxis width={70} axisLine={false} tickLine={false} tickFormatter={(v) => soles(v).replace('S/ ', '')} />
                 <Tooltip content={<TT />} />
-                <Legend />
-                {anios.map((a, i) => (
-                  <Line key={a.anio} dataKey={String(a.anio)} stroke={a.parcial ? 'var(--s-la)' : seq[Math.min(i, seq.length - 1)]} strokeWidth={a.parcial ? 3 : 1.5} dot={false} isAnimationActive={false}
-                    strokeDasharray={a.parcial ? undefined : undefined} connectNulls />
-                ))}
+                <Legend formatter={(v) => <span style={{ color: 'var(--ink-2)' }}>{v}</span>} />
+                {anios.map((a) => {
+                  const ultimoCerrado = anios.filter((x) => !x.parcial).at(-1)?.anio
+                  const destacado = a.parcial || a.anio === ultimoCerrado
+                  return <Line key={a.anio} dataKey={String(a.anio)} stroke={a.parcial ? 'var(--s-la)' : a.anio === ultimoCerrado ? 'var(--s-munoz)' : 'var(--ink-3)'} strokeWidth={destacado ? 3 : 1.25} strokeOpacity={destacado ? 1 : 0.55} dot={false} isAnimationActive={false} connectNulls />
+                })}
               </LineChart>
             </ResponsiveContainer>
           </div>
@@ -134,7 +143,7 @@ export function Finanzas() {
                 <XAxis dataKey="anio" axisLine={false} tickLine={false} />
                 <YAxis width={70} axisLine={false} tickLine={false} tickFormatter={(v) => soles(v).replace('S/ ', '')} />
                 <Tooltip content={<TT />} cursor={{ fill: 'var(--bg-3)' }} />
-                <Legend />
+                <Legend formatter={(v) => <span style={{ color: 'var(--ink-2)' }}>{v}</span>} />
                 <Bar dataKey="corriente" name="Gasto corriente" stackId="a" fill="var(--s-seq-2)" stroke="var(--bg-2)" strokeWidth={2} isAnimationActive={false} />
                 <Bar dataKey="capital" name="Gasto de capital" stackId="a" fill="var(--s-seq-5)" stroke="var(--bg-2)" strokeWidth={2} isAnimationActive={false} />
                 <Bar dataKey="deuda" name="Servicio de deuda" stackId="a" fill="var(--color-arena)" stroke="var(--bg-2)" strokeWidth={2} radius={[4, 4, 0, 0]} isAnimationActive={false} />
@@ -158,12 +167,12 @@ export function Finanzas() {
               <XAxis dataKey="anio" axisLine={false} tickLine={false} />
               <YAxis width={70} axisLine={false} tickLine={false} tickFormatter={(v) => soles(v).replace('S/ ', '')} />
               <Tooltip content={<TT />} cursor={{ fill: 'var(--bg-3)' }} />
-              <Legend />
-              {claves.map((k, i) => <Bar key={k} dataKey={k} stackId="a" fill={seq[i % seq.length]} stroke="var(--bg-2)" strokeWidth={2} isAnimationActive={false} />)}
+              <Legend formatter={(v) => <span style={{ color: 'var(--ink-2)' }}>{v}</span>} />
+              {claves.map((k, i) => <Bar key={k} dataKey={k} stackId="a" fill={k === 'Otros' ? 'var(--ink-3)' : seq[i % seq.length]} stroke="var(--bg-2)" strokeWidth={2} isAnimationActive={false} />)}
             </BarChart>
           </ResponsiveContainer>
         </div>
-        <p className="text-xs faint mt-2 mb-0">Se muestran las 8 mayores categorías por PIM de cada año; los nombres son los del clasificador MEF.</p>
+        <p className="text-xs faint mt-2 mb-0">Se muestran las 6 categorías con mayor devengado acumulado 2019–2026 y el resto agrupado en Otros; los nombres son los del clasificador MEF.</p>
       </section>
 
       <section>

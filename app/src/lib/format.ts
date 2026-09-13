@@ -14,7 +14,7 @@ export function fmt(n: number | null | undefined, decimals = 1): string {
 export function soles(n: number | null | undefined): string {
   if (n === null || n === undefined) return 's/d'
   const m = n / 1e6
-  if (Math.abs(m) >= 1000) return `S/ ${nf1.format(m / 1000)} mil M`
+  if (Math.abs(m) < 1) return `S/ ${nf0.format(n)}`
   return `S/ ${nf1.format(m)} M`
 }
 
