@@ -1,0 +1,1036 @@
+{
+  "dimension": "seguridad",
+  "fecha_corte": "2026-09-12",
+  "resumen_hallazgos": "Avance: ENAPRES (victimización, percepción, denuncia) y Lima Cómo Vamos completados desde boletines INEI e informes LCV locales. Pendiente: homicidios, extorsión, RENAMU, MML Cercado, estados de emergencia.",
+  "indicadores": [
+    {
+      "id": "enapres_victimizacion",
+      "nombre": "% de población víctima de algún hecho delictivo (Lima Metropolitana)",
+      "descripcion": "Porcentaje de la población de 15 y más años que fue víctima de algún hecho delictivo en los últimos 12 meses (ENAPRES, seguridad objetiva).",
+      "unidad": "%",
+      "mejor_si": "baja",
+      "competencia": "otra_entidad",
+      "responsable_principal": "MININTER / PNP (política criminal, gobierno nacional); serenazgo compartido MML-distritos",
+      "confiabilidad": "alta",
+      "ambito": "Lima Metropolitana (2019-2022) / Lima Metropolitana y Callao (2023-2026)",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": 32.6,
+          "parcial": false,
+          "nota": "Semestre agosto 2019 - enero 2020, Lima Metropolitana (Ago 2018-Ene 2019: 29,3%). No se dispone del semestre jul-dic 2019 en el material."
+        },
+        {
+          "anio": 2020,
+          "valor": 26.8,
+          "parcial": false,
+          "nota": "Semestre jul-dic 2020, Lima Metropolitana (año de pandemia)."
+        },
+        {
+          "anio": 2021,
+          "valor": 22.5,
+          "parcial": false,
+          "nota": "Semestre jul-dic 2021, Lima Metropolitana."
+        },
+        {
+          "anio": 2022,
+          "valor": 25.9,
+          "parcial": false,
+          "nota": "Semestre jul-dic 2022 (preliminar), Lima Metropolitana."
+        },
+        {
+          "anio": 2023,
+          "valor": 32.5,
+          "parcial": false,
+          "nota": "Semestre jul-dic 2023, ámbito Lima Metropolitana y Callao (nuevo ámbito INEI; incluye tentativas de extorsión)."
+        },
+        {
+          "anio": 2024,
+          "valor": 29.3,
+          "parcial": false,
+          "nota": "Semestre jul-dic 2024 (preliminar), Lima Metropolitana y Callao."
+        },
+        {
+          "anio": 2025,
+          "valor": 25.5,
+          "parcial": false,
+          "nota": "Semestre jul-dic 2025, Lima Metropolitana y Callao."
+        },
+        {
+          "anio": 2026,
+          "valor": 26.0,
+          "parcial": true,
+          "nota": "Semestre móvil feb-jul 2026 (preliminar), Lima Metropolitana y Callao. Ene-Jun 2026: 27,2%."
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "INEI - Estadísticas de Seguridad Ciudadana, semestre agosto 2019 - enero 2020 (Informe Técnico N°2, marzo 2020)",
+          "url": "https://www.inei.gob.pe/media/MenuRecursivo/boletines/boletin_seguridad_ciudadana_agosto2019_enero2020.pdf",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "ENAPRES, población urbana de 15 y más años; muestra semestral; Lima Metropolitana = 43 distritos de la provincia de Lima (cuadro por ciudades de 20 mil a más hab.)",
+          "observaciones": "Cuadro N°70 (victimización), cuadro vigilancia y percepción por ciudades.",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "INEI - Estadísticas de Seguridad Ciudadana, semestre julio - diciembre 2022 (Informe Técnico N°1, marzo 2023)",
+          "url": "https://www.inei.gob.pe/media/MenuRecursivo/boletines/estadisticas_de_seguridad_ciudadana_jul_dic_2022.pdf",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "ENAPRES; cuadros por tamaño de centros poblados urbanos, columna 'Lima Metropolitana 1/' (43 distritos, sin Callao); series de semestres móviles Jul-Dic 2020, 2021 y 2022",
+          "observaciones": "Se tomaron los semestres móviles julio-diciembre de cada año.",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "INEI - Estadísticas de Seguridad Ciudadana, semestre móvil julio - diciembre 2024 (Informe Técnico N°1, febrero 2025)",
+          "url": "https://www.inei.gob.pe/media/MenuRecursivo/boletines/boletin_seguridad_jul_dic2024.pdf",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "ENAPRES; desde 2023 INEI publica el ámbito 'Lima Metropolitana y la Provincia Constitucional del Callao' en conjunto; el indicador de victimización incluye tentativas de extorsión",
+          "observaciones": "Cuadro resumen y cuadro N°01 (series Jul 2023-Dic 2023 a Jul 2024-Dic 2024).",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "INEI - Estadísticas de Seguridad Ciudadana, semestre móvil febrero - julio 2026 (Informe Técnico, setiembre 2026)",
+          "url": "https://www.inei.gob.pe/media/MenuRecursivo/boletines/boletin-seguridad-ciudadana-feb-jul-2026.pdf",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "ENAPRES; ámbito 'Lima Metropolitana y la Provincia Constitucional del Callao'; series de semestres móviles Feb 2025-Jul 2025 a Feb 2026-Jul 2026 (incluye Jul 2025-Dic 2025)",
+          "observaciones": "Datos 2026 preliminares (P/).",
+          "tipo": "primaria"
+        }
+      ],
+      "discrepancias": "Otros semestres del mismo año difieren: Nov 2019-Abr 2020 = 31,6% y Nov 2020-Abr 2021 = 23,2% (boletín nov20-abr21). Se eligió el semestre jul-dic por consistencia.",
+      "nota": "Serie de semestres móviles ENAPRES: para cada año se toma el semestre julio-diciembre que cierra el año (2019: agosto 2019-enero 2020, único disponible en el material). RUPTURA DE COMPARABILIDAD: hasta 2022 el ámbito es 'Lima Metropolitana' (43 distritos); desde 2023 INEI publica 'Lima Metropolitana y Provincia Constitucional del Callao' en conjunto y el indicador incluye tentativas de extorsión. 2026 es el semestre febrero-julio 2026 (preliminar). Datos 2020-2021 afectados por pandemia (menor movilidad)."
+    },
+    {
+      "id": "enapres_percepcion_inseguridad",
+      "nombre": "% de población con percepción de inseguridad (Lima Metropolitana)",
+      "descripcion": "Porcentaje de la población de 15 y más años que cree que será víctima de algún hecho delictivo en los próximos 12 meses (ENAPRES, seguridad percibida).",
+      "unidad": "%",
+      "mejor_si": "baja",
+      "competencia": "otra_entidad",
+      "responsable_principal": "MININTER / PNP; serenazgo compartido MML-distritos",
+      "confiabilidad": "alta",
+      "ambito": "Lima Metropolitana (2019-2022) / Lima Metropolitana y Callao (2023-2026)",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": 90.3,
+          "parcial": false,
+          "nota": "Semestre ago 2019 - ene 2020, Lima Metropolitana (Ago 2018-Ene 2019: 91,8%)."
+        },
+        {
+          "anio": 2020,
+          "valor": 89.7,
+          "parcial": false,
+          "nota": "Semestre jul-dic 2020, Lima Metropolitana."
+        },
+        {
+          "anio": 2021,
+          "valor": 93.0,
+          "parcial": false,
+          "nota": "Semestre jul-dic 2021, Lima Metropolitana (máximo de la serie)."
+        },
+        {
+          "anio": 2022,
+          "valor": 89.4,
+          "parcial": false,
+          "nota": "Semestre jul-dic 2022 (preliminar), Lima Metropolitana."
+        },
+        {
+          "anio": 2023,
+          "valor": 86.6,
+          "parcial": false,
+          "nota": "Semestre jul-dic 2023, Lima Metropolitana y Callao."
+        },
+        {
+          "anio": 2024,
+          "valor": 88.1,
+          "parcial": false,
+          "nota": "Semestre jul-dic 2024 (preliminar), Lima Metropolitana y Callao."
+        },
+        {
+          "anio": 2025,
+          "valor": 84.9,
+          "parcial": false,
+          "nota": "Semestre jul-dic 2025, Lima Metropolitana y Callao."
+        },
+        {
+          "anio": 2026,
+          "valor": 87.0,
+          "parcial": true,
+          "nota": "Semestre móvil feb-jul 2026 (preliminar), Lima Metropolitana y Callao."
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "INEI - Estadísticas de Seguridad Ciudadana, semestre agosto 2019 - enero 2020 (Informe Técnico N°2, marzo 2020)",
+          "url": "https://www.inei.gob.pe/media/MenuRecursivo/boletines/boletin_seguridad_ciudadana_agosto2019_enero2020.pdf",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "ENAPRES, población urbana de 15 y más años; muestra semestral; Lima Metropolitana = 43 distritos de la provincia de Lima (cuadro por ciudades de 20 mil a más hab.)",
+          "observaciones": "Cuadro N°70 (victimización), cuadro vigilancia y percepción por ciudades.",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "INEI - Estadísticas de Seguridad Ciudadana, semestre noviembre 2020 - abril 2021",
+          "url": "https://www.inei.gob.pe/media/MenuRecursivo/boletines/boletin_seguridad_nov20_abr21.pdf",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "ENAPRES; cuadro por región natural y departamento con Lima Metropolitana (1/) desagregada",
+          "observaciones": "Compara Nov 2019-Abr 2020 vs Nov 2020-Abr 2021.",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "INEI - Estadísticas de Seguridad Ciudadana, semestre julio - diciembre 2022 (Informe Técnico N°1, marzo 2023)",
+          "url": "https://www.inei.gob.pe/media/MenuRecursivo/boletines/estadisticas_de_seguridad_ciudadana_jul_dic_2022.pdf",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "ENAPRES; cuadros por tamaño de centros poblados urbanos, columna 'Lima Metropolitana 1/' (43 distritos, sin Callao); series de semestres móviles Jul-Dic 2020, 2021 y 2022",
+          "observaciones": "Se tomaron los semestres móviles julio-diciembre de cada año.",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "INEI - Estadísticas de Seguridad Ciudadana, semestre móvil julio - diciembre 2024 (Informe Técnico N°1, febrero 2025)",
+          "url": "https://www.inei.gob.pe/media/MenuRecursivo/boletines/boletin_seguridad_jul_dic2024.pdf",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "ENAPRES; desde 2023 INEI publica el ámbito 'Lima Metropolitana y la Provincia Constitucional del Callao' en conjunto; el indicador de victimización incluye tentativas de extorsión",
+          "observaciones": "Cuadro resumen y cuadro N°01 (series Jul 2023-Dic 2023 a Jul 2024-Dic 2024).",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "INEI - Estadísticas de Seguridad Ciudadana, semestre móvil febrero - julio 2026 (Informe Técnico, setiembre 2026)",
+          "url": "https://www.inei.gob.pe/media/MenuRecursivo/boletines/boletin-seguridad-ciudadana-feb-jul-2026.pdf",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "ENAPRES; ámbito 'Lima Metropolitana y la Provincia Constitucional del Callao'; series de semestres móviles Feb 2025-Jul 2025 a Feb 2026-Jul 2026 (incluye Jul 2025-Dic 2025)",
+          "observaciones": "Datos 2026 preliminares (P/).",
+          "tipo": "primaria"
+        }
+      ],
+      "discrepancias": "Nov 2020-Abr 2021 = 90,7% vs jul-dic 2020 = 89,7%: distintos semestres móviles.",
+      "nota": "Serie de semestres móviles ENAPRES: para cada año se toma el semestre julio-diciembre que cierra el año (2019: agosto 2019-enero 2020, único disponible en el material). RUPTURA DE COMPARABILIDAD: hasta 2022 el ámbito es 'Lima Metropolitana' (43 distritos); desde 2023 INEI publica 'Lima Metropolitana y Provincia Constitucional del Callao' en conjunto y el indicador incluye tentativas de extorsión. 2026 es el semestre febrero-julio 2026 (preliminar). Datos 2020-2021 afectados por pandemia (menor movilidad). Indicador complementario 'inseguridad al caminar solo de noche en su barrio' (LM+Callao): 60,8% (jul-dic 2023), 59,8% (jul-dic 2024), 60,8% (jul-dic 2025), 59,1% (feb-jul 2026)."
+    },
+    {
+      "id": "enapres_denuncia",
+      "nombre": "% de víctimas que denunció el hecho delictivo (Lima Metropolitana)",
+      "descripcion": "Porcentaje de víctimas de algún hecho delictivo que denunciaron el hecho (ENAPRES).",
+      "unidad": "%",
+      "mejor_si": "sube",
+      "competencia": "otra_entidad",
+      "responsable_principal": "MININTER / PNP / Ministerio Público",
+      "confiabilidad": "alta",
+      "ambito": "Lima Metropolitana (2019-2022) / Lima Metropolitana y Callao (2023-2026)",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": null,
+          "parcial": false,
+          "nota": "No disponible desagregado para Lima Metropolitana en los boletines revisados (ago 2019-ene 2020)."
+        },
+        {
+          "anio": 2020,
+          "valor": null,
+          "parcial": false,
+          "nota": "Primer dato disponible con Lima Metropolitana desagregada: oct 2020-mar 2021 = 16,1%. Sin semestre jul-dic 2020."
+        },
+        {
+          "anio": 2021,
+          "valor": 14.2,
+          "parcial": false,
+          "nota": "Semestre jul-dic 2021, Lima Metropolitana."
+        },
+        {
+          "anio": 2022,
+          "valor": 17.6,
+          "parcial": false,
+          "nota": "Semestre jul-dic 2022 (preliminar), Lima Metropolitana."
+        },
+        {
+          "anio": 2023,
+          "valor": 16.6,
+          "parcial": false,
+          "nota": "Semestre jul-dic 2023, Lima Metropolitana y Callao."
+        },
+        {
+          "anio": 2024,
+          "valor": 15.8,
+          "parcial": false,
+          "nota": "Semestre jul-dic 2024 (preliminar), Lima Metropolitana y Callao."
+        },
+        {
+          "anio": 2025,
+          "valor": 21.2,
+          "parcial": false,
+          "nota": "Semestre jul-dic 2025, Lima Metropolitana y Callao."
+        },
+        {
+          "anio": 2026,
+          "valor": 18.5,
+          "parcial": true,
+          "nota": "Semestre móvil feb-jul 2026 (preliminar), Lima Metropolitana y Callao."
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "INEI - Estadísticas de Seguridad Ciudadana, semestre julio - diciembre 2022 (Informe Técnico N°1, marzo 2023)",
+          "url": "https://www.inei.gob.pe/media/MenuRecursivo/boletines/estadisticas_de_seguridad_ciudadana_jul_dic_2022.pdf",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "ENAPRES; cuadros por tamaño de centros poblados urbanos, columna 'Lima Metropolitana 1/' (43 distritos, sin Callao); series de semestres móviles Jul-Dic 2020, 2021 y 2022",
+          "observaciones": "Se tomaron los semestres móviles julio-diciembre de cada año.",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "INEI - Estadísticas de Seguridad Ciudadana, semestre móvil julio - diciembre 2024 (Informe Técnico N°1, febrero 2025)",
+          "url": "https://www.inei.gob.pe/media/MenuRecursivo/boletines/boletin_seguridad_jul_dic2024.pdf",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "ENAPRES; desde 2023 INEI publica el ámbito 'Lima Metropolitana y la Provincia Constitucional del Callao' en conjunto; el indicador de victimización incluye tentativas de extorsión",
+          "observaciones": "Cuadro resumen y cuadro N°01 (series Jul 2023-Dic 2023 a Jul 2024-Dic 2024).",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "INEI - Estadísticas de Seguridad Ciudadana, semestre móvil febrero - julio 2026 (Informe Técnico, setiembre 2026)",
+          "url": "https://www.inei.gob.pe/media/MenuRecursivo/boletines/boletin-seguridad-ciudadana-feb-jul-2026.pdf",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "ENAPRES; ámbito 'Lima Metropolitana y la Provincia Constitucional del Callao'; series de semestres móviles Feb 2025-Jul 2025 a Feb 2026-Jul 2026 (incluye Jul 2025-Dic 2025)",
+          "observaciones": "Datos 2026 preliminares (P/).",
+          "tipo": "primaria"
+        }
+      ],
+      "discrepancias": null,
+      "nota": "Serie de semestres móviles ENAPRES: para cada año se toma el semestre julio-diciembre que cierra el año (2019: agosto 2019-enero 2020, único disponible en el material). RUPTURA DE COMPARABILIDAD: hasta 2022 el ámbito es 'Lima Metropolitana' (43 distritos); desde 2023 INEI publica 'Lima Metropolitana y Provincia Constitucional del Callao' en conjunto y el indicador incluye tentativas de extorsión. 2026 es el semestre febrero-julio 2026 (preliminar). Datos 2020-2021 afectados por pandemia (menor movilidad). Denuncia = registrada ante PNP en cuaderno de ocurrencias, atestado o acta. Alrededor de 8 de cada 10 víctimas no denuncia."
+    },
+    {
+      "id": "homicidios_tasa",
+      "nombre": "Tasa de homicidios (Lima Metropolitana)",
+      "descripcion": "Muertes violentas asociadas a hechos delictivos dolosos por cada 100 mil habitantes (INEI-CEIC, Homicidios en el Perú).",
+      "unidad": "por 100 mil hab.",
+      "mejor_si": "baja",
+      "competencia": "otra_entidad",
+      "responsable_principal": "MININTER / PNP / Ministerio Público",
+      "confiabilidad": "alta",
+      "ambito": "Lima Metropolitana",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2020,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2021,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2022,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2023,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2024,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2025,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": null
+        }
+      ],
+      "fuentes": [],
+      "discrepancias": null,
+      "nota": "Pendiente de investigación."
+    },
+    {
+      "id": "homicidios_numero",
+      "nombre": "Número de homicidios (Lima Metropolitana)",
+      "descripcion": "Número de muertes violentas asociadas a hechos delictivos dolosos (INEI-CEIC).",
+      "unidad": "personas",
+      "mejor_si": "baja",
+      "competencia": "otra_entidad",
+      "responsable_principal": "MININTER / PNP / Ministerio Público",
+      "confiabilidad": "alta",
+      "ambito": "Lima Metropolitana",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2020,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2021,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2022,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2023,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2024,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2025,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": null
+        }
+      ],
+      "fuentes": [],
+      "discrepancias": null,
+      "nota": "Pendiente de investigación."
+    },
+    {
+      "id": "extorsion_denuncias",
+      "nombre": "Denuncias por extorsión (Lima Metropolitana)",
+      "descripcion": "Denuncias registradas por el delito de extorsión (SIDPOL-PNP / INEI).",
+      "unidad": "denuncias",
+      "mejor_si": "baja",
+      "competencia": "otra_entidad",
+      "responsable_principal": "MININTER / PNP",
+      "confiabilidad": "media",
+      "ambito": "Lima Metropolitana",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2020,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2021,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2022,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2023,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2024,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2025,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": null
+        }
+      ],
+      "fuentes": [],
+      "discrepancias": null,
+      "nota": "Pendiente de investigación."
+    },
+    {
+      "id": "serenos_lima_metropolitana",
+      "nombre": "Serenos en Lima Metropolitana (RENAMU)",
+      "descripcion": "Número de serenos de las municipalidades de la provincia de Lima según el Registro Nacional de Municipalidades (RENAMU).",
+      "unidad": "personas",
+      "mejor_si": "sube",
+      "competencia": "compartida",
+      "responsable_principal": "MML y municipalidades distritales",
+      "confiabilidad": "alta",
+      "ambito": "Provincia de Lima",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2020,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2021,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2022,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2023,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2024,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2025,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": null
+        }
+      ],
+      "fuentes": [],
+      "discrepancias": null,
+      "nota": "Pendiente de investigación."
+    },
+    {
+      "id": "mml_cercado_serenos",
+      "nombre": "Serenos de la MML (Cercado de Lima)",
+      "descripcion": "Efectivos de serenazgo de la Municipalidad Metropolitana de Lima para el Cercado.",
+      "unidad": "personas",
+      "mejor_si": "sube",
+      "competencia": "mml",
+      "responsable_principal": "MML - Gerencia de Seguridad Ciudadana",
+      "confiabilidad": "media",
+      "ambito": "Cercado de Lima",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2020,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2021,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2022,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2023,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2024,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2025,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": null
+        }
+      ],
+      "fuentes": [],
+      "discrepancias": null,
+      "nota": "Pendiente de investigación."
+    },
+    {
+      "id": "mml_cercado_camaras",
+      "nombre": "Cámaras de videovigilancia de la MML (Cercado de Lima)",
+      "descripcion": "Cámaras de videovigilancia operativas de la MML en el Cercado.",
+      "unidad": "cámaras",
+      "mejor_si": "sube",
+      "competencia": "mml",
+      "responsable_principal": "MML - Gerencia de Seguridad Ciudadana",
+      "confiabilidad": "media",
+      "ambito": "Cercado de Lima",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2020,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2021,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2022,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2023,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2024,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2025,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": null
+        }
+      ],
+      "fuentes": [],
+      "discrepancias": null,
+      "nota": "Pendiente de investigación."
+    },
+    {
+      "id": "mml_cercado_vehiculos",
+      "nombre": "Vehículos de serenazgo de la MML (Cercado de Lima)",
+      "descripcion": "Unidades móviles (camionetas, autos, motos) de serenazgo de la MML.",
+      "unidad": "vehículos",
+      "mejor_si": "sube",
+      "competencia": "mml",
+      "responsable_principal": "MML - Gerencia de Seguridad Ciudadana",
+      "confiabilidad": "media",
+      "ambito": "Cercado de Lima",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2020,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2021,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2022,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2023,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2024,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2025,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": null
+        }
+      ],
+      "fuentes": [],
+      "discrepancias": null,
+      "nota": "Pendiente de investigación."
+    },
+    {
+      "id": "lcv_inseguridad_principal_problema",
+      "nombre": "Inseguridad ciudadana como principal problema (Lima Cómo Vamos)",
+      "descripcion": "Porcentaje de limeños que señalan la inseguridad/delincuencia como uno de los principales problemas de la ciudad (encuesta Lima Cómo Vamos).",
+      "unidad": "%",
+      "mejor_si": "baja",
+      "competencia": "compartida",
+      "responsable_principal": "MML / distritos / MININTER",
+      "confiabilidad": "media",
+      "ambito": "Lima Metropolitana",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": null,
+          "parcial": false,
+          "nota": "El informe 2019 indica que 'supera el 80%' en Lima Metropolitana, sin cifra exacta en el texto extraído; se deja null."
+        },
+        {
+          "anio": 2020,
+          "valor": null,
+          "parcial": false,
+          "nota": "Lima Cómo Vamos no publicó la encuesta anual comparable en 2020 (pandemia); no disponible en el material."
+        },
+        {
+          "anio": 2021,
+          "valor": 72.8,
+          "parcial": false,
+          "nota": "Encuesta 2021, Lima."
+        },
+        {
+          "anio": 2022,
+          "valor": 76.5,
+          "parcial": false,
+          "nota": "Encuesta 2022, Lima."
+        },
+        {
+          "anio": 2023,
+          "valor": 70.9,
+          "parcial": false,
+          "nota": "Encuesta 2023, Lima."
+        },
+        {
+          "anio": 2024,
+          "valor": 80.2,
+          "parcial": false,
+          "nota": "Encuesta 2024, Lima (el gráfico muestra 70,9% de 2023 como referencia y 80,2% en 2024)."
+        },
+        {
+          "anio": 2025,
+          "valor": 75.2,
+          "parcial": false,
+          "nota": "Encuesta 2025 (aplicada 5-21 dic 2025), Lima."
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": "Encuesta 2026 aún no publicada al corte."
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "Lima Cómo Vamos - Encuesta Lima Cómo Vamos 2019 (Informe de percepción sobre calidad de vida)",
+          "url": "https://www.limacomovamos.org/wp-content/uploads/2019/11/Encuesta-2019_.pdf",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Encuesta de percepción en hogares de Lima Metropolitana y Callao, población de 18 y más años, ~1 000+ casos, aplicada a fin de año; pregunta: 'tres problemas más importantes que afectan la calidad de vida en la ciudad'",
+          "observaciones": "Cifra para Lima Metropolitana; el informe agrupa Lima y Callao en algunos cuadros.",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "Lima Cómo Vamos - Encuesta Lima Cómo Vamos 2021 (Informe de percepción sobre calidad de vida)",
+          "url": "https://www.limacomovamos.org/wp-content/uploads/2022/01/EncuestaLimaComoVamos_2021.pdf",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Encuesta de percepción en hogares de Lima Metropolitana y Callao, población de 18 y más años, ~1 000+ casos, aplicada a fin de año; pregunta: 'tres problemas más importantes que afectan la calidad de vida en la ciudad'",
+          "observaciones": "Cifra para Lima Metropolitana; el informe agrupa Lima y Callao en algunos cuadros.",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "Lima Cómo Vamos - Encuesta Lima Cómo Vamos 2022 (Informe de percepción sobre calidad de vida)",
+          "url": "https://www.limacomovamos.org/wp-content/uploads/2023/03/Encuesta-Lima-Como-Vamos-2022.pdf",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Encuesta de percepción en hogares de Lima Metropolitana y Callao, población de 18 y más años, ~1 000+ casos, aplicada a fin de año; pregunta: 'tres problemas más importantes que afectan la calidad de vida en la ciudad'",
+          "observaciones": "Cifra para Lima Metropolitana; el informe agrupa Lima y Callao en algunos cuadros.",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "Lima Cómo Vamos - Encuesta Lima Cómo Vamos 2023 (Informe de percepción sobre calidad de vida)",
+          "url": "https://www.limacomovamos.org/wp-content/uploads/2024/01/Encuesta-Lima-Como-Vamos-2023.pdf",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Encuesta de percepción en hogares de Lima Metropolitana y Callao, población de 18 y más años, ~1 000+ casos, aplicada a fin de año; pregunta: 'tres problemas más importantes que afectan la calidad de vida en la ciudad'",
+          "observaciones": "Cifra para Lima Metropolitana; el informe agrupa Lima y Callao en algunos cuadros.",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "Lima Cómo Vamos - Encuesta Lima Cómo Vamos 2024 (Informe de percepción sobre calidad de vida)",
+          "url": "https://www.limacomovamos.org/wp-content/uploads/2025/01/Encuesta-Lima-Como-Vamos-2024.pdf",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Encuesta de percepción en hogares de Lima Metropolitana y Callao, población de 18 y más años, ~1 000+ casos, aplicada a fin de año; pregunta: 'tres problemas más importantes que afectan la calidad de vida en la ciudad'",
+          "observaciones": "Cifra para Lima Metropolitana; el informe agrupa Lima y Callao en algunos cuadros.",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "Lima Cómo Vamos - Encuesta Lima Cómo Vamos 2025 (Informe de percepción sobre calidad de vida)",
+          "url": "https://www.limacomovamos.org/wp-content/uploads/2026/02/Encuesta-Lima-Como-Vamos-2025.pdf",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Encuesta de percepción en hogares de Lima Metropolitana y Callao, población de 18 y más años, ~1 000+ casos, aplicada a fin de año; pregunta: 'tres problemas más importantes que afectan la calidad de vida en la ciudad'",
+          "observaciones": "Cifra para Lima Metropolitana; el informe agrupa Lima y Callao en algunos cuadros.",
+          "tipo": "primaria"
+        }
+      ],
+      "discrepancias": "En 2024 el gráfico del informe imprime dos cifras (70,9% y 80,2%); la tabla por nivel socioeconómico confirma 80,2% como total 2024.",
+      "nota": "Pregunta de menciones múltiples (tres problemas). La inseguridad es el primer problema todos los años desde 2010. Las URL de los PDF son las de descarga habituales de limacomovamos.org; los textos se extrajeron de los PDF locales lcv2019-lcv2025."
+    },
+    {
+      "id": "lcv_se_siente_inseguro",
+      "nombre": "% que se siente inseguro en la ciudad (Lima Cómo Vamos)",
+      "descripcion": "Porcentaje de limeños que se sienten inseguros en Lima (encuesta Lima Cómo Vamos).",
+      "unidad": "%",
+      "mejor_si": "baja",
+      "competencia": "compartida",
+      "responsable_principal": "MML / distritos / MININTER",
+      "confiabilidad": "media",
+      "ambito": "Lima Metropolitana (2019) / Lima y Callao (2022-2025)",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": 63.2,
+          "parcial": false,
+          "nota": "Encuesta 2019: 63,2% de limeños se sintió inseguro en la ciudad (Callao 56,3%)."
+        },
+        {
+          "anio": 2020,
+          "valor": null,
+          "parcial": false,
+          "nota": "Sin encuesta anual comparable en 2020."
+        },
+        {
+          "anio": 2021,
+          "valor": null,
+          "parcial": false,
+          "nota": "La encuesta 2021 preguntó por seguridad en el barrio durante la cuarentena, no comparable; se deja null."
+        },
+        {
+          "anio": 2022,
+          "valor": 76.0,
+          "parcial": false,
+          "nota": "Encuesta 2022: total Lima y Callao 'inseguro' 76,0% (Lima Centro 66,7%, Lima Norte 80,4%, Lima Sur 80,8%, Lima Este 78,4%)."
+        },
+        {
+          "anio": 2023,
+          "valor": 79.6,
+          "parcial": false,
+          "nota": "Encuesta 2023: 79,6% de limeños y chalacos se sienten inseguros (escala 1-5, valores 1-2)."
+        },
+        {
+          "anio": 2024,
+          "valor": 77.4,
+          "parcial": false,
+          "nota": "Encuesta 2024: 77,4% (escala 1-5, valores 1-2)."
+        },
+        {
+          "anio": 2025,
+          "valor": 78.3,
+          "parcial": false,
+          "nota": "Encuesta 2025: 78,3% (escala 1-5, valores 1-2)."
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": "Encuesta 2026 aún no publicada al corte."
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "Lima Cómo Vamos - Encuesta Lima Cómo Vamos 2019 (Informe de percepción sobre calidad de vida)",
+          "url": "https://www.limacomovamos.org/wp-content/uploads/2019/11/Encuesta-2019_.pdf",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Encuesta de percepción en hogares de Lima Metropolitana y Callao, población de 18 y más años, ~1 000+ casos, aplicada a fin de año; pregunta: 'tres problemas más importantes que afectan la calidad de vida en la ciudad'",
+          "observaciones": "Cifra para Lima Metropolitana; el informe agrupa Lima y Callao en algunos cuadros.",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "Lima Cómo Vamos - Encuesta Lima Cómo Vamos 2021 (Informe de percepción sobre calidad de vida)",
+          "url": "https://www.limacomovamos.org/wp-content/uploads/2022/01/EncuestaLimaComoVamos_2021.pdf",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Encuesta de percepción en hogares de Lima Metropolitana y Callao, población de 18 y más años, ~1 000+ casos, aplicada a fin de año; pregunta: 'tres problemas más importantes que afectan la calidad de vida en la ciudad'",
+          "observaciones": "Cifra para Lima Metropolitana; el informe agrupa Lima y Callao en algunos cuadros.",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "Lima Cómo Vamos - Encuesta Lima Cómo Vamos 2022 (Informe de percepción sobre calidad de vida)",
+          "url": "https://www.limacomovamos.org/wp-content/uploads/2023/03/Encuesta-Lima-Como-Vamos-2022.pdf",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Encuesta de percepción en hogares de Lima Metropolitana y Callao, población de 18 y más años, ~1 000+ casos, aplicada a fin de año; pregunta: 'tres problemas más importantes que afectan la calidad de vida en la ciudad'",
+          "observaciones": "Cifra para Lima Metropolitana; el informe agrupa Lima y Callao en algunos cuadros.",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "Lima Cómo Vamos - Encuesta Lima Cómo Vamos 2023 (Informe de percepción sobre calidad de vida)",
+          "url": "https://www.limacomovamos.org/wp-content/uploads/2024/01/Encuesta-Lima-Como-Vamos-2023.pdf",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Encuesta de percepción en hogares de Lima Metropolitana y Callao, población de 18 y más años, ~1 000+ casos, aplicada a fin de año; pregunta: 'tres problemas más importantes que afectan la calidad de vida en la ciudad'",
+          "observaciones": "Cifra para Lima Metropolitana; el informe agrupa Lima y Callao en algunos cuadros.",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "Lima Cómo Vamos - Encuesta Lima Cómo Vamos 2024 (Informe de percepción sobre calidad de vida)",
+          "url": "https://www.limacomovamos.org/wp-content/uploads/2025/01/Encuesta-Lima-Como-Vamos-2024.pdf",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Encuesta de percepción en hogares de Lima Metropolitana y Callao, población de 18 y más años, ~1 000+ casos, aplicada a fin de año; pregunta: 'tres problemas más importantes que afectan la calidad de vida en la ciudad'",
+          "observaciones": "Cifra para Lima Metropolitana; el informe agrupa Lima y Callao en algunos cuadros.",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "Lima Cómo Vamos - Encuesta Lima Cómo Vamos 2025 (Informe de percepción sobre calidad de vida)",
+          "url": "https://www.limacomovamos.org/wp-content/uploads/2026/02/Encuesta-Lima-Como-Vamos-2025.pdf",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Encuesta de percepción en hogares de Lima Metropolitana y Callao, población de 18 y más años, ~1 000+ casos, aplicada a fin de año; pregunta: 'tres problemas más importantes que afectan la calidad de vida en la ciudad'",
+          "observaciones": "Cifra para Lima Metropolitana; el informe agrupa Lima y Callao en algunos cuadros.",
+          "tipo": "primaria"
+        }
+      ],
+      "discrepancias": null,
+      "nota": "Cambio de escala: 2019 usa categorías (inseguro / ni seguro ni inseguro / seguro); desde 2023 escala 1-5 donde 1-2 = inseguro. Desde 2022 el total reportado es Lima y Callao."
+    },
+    {
+      "id": "estados_emergencia",
+      "nombre": "Estados de emergencia por seguridad en Lima Metropolitana",
+      "descripcion": "Número de declaratorias/prórrogas de estado de emergencia por inseguridad vigentes en Lima Metropolitana por año (nota cualitativa).",
+      "unidad": "declaratorias",
+      "mejor_si": "baja",
+      "competencia": "otra_entidad",
+      "responsable_principal": "PCM / MININTER (gobierno nacional)",
+      "confiabilidad": "media",
+      "ambito": "Lima Metropolitana",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2020,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2021,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2022,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2023,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2024,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2025,
+          "valor": null,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": null
+        }
+      ],
+      "fuentes": [],
+      "discrepancias": null,
+      "nota": "Pendiente de investigación."
+    }
+  ]
+}

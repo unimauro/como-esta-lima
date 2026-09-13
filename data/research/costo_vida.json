@@ -1,0 +1,812 @@
+{
+  "dimension": "costo_vida",
+  "fecha_corte": "2026-09-12",
+  "resumen_hallazgos": "En elaboración.",
+  "indicadores": [
+    {
+      "id": "inflacion_anual_lima",
+      "nombre": "Inflación anual Lima Metropolitana (dic/dic)",
+      "descripcion": "Variación % del IPC de Lima Metropolitana, diciembre respecto a diciembre del año anterior",
+      "unidad": "%",
+      "mejor_si": "baja",
+      "competencia": "externo",
+      "responsable_principal": "BCRP / INEI",
+      "confiabilidad": "alta",
+      "ambito": "Lima Metropolitana",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2020,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2021,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2022,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2023,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2024,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2025,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": "pendiente"
+        }
+      ],
+      "fuentes": [],
+      "discrepancias": null,
+      "nota": "pendiente"
+    },
+    {
+      "id": "ingreso_promedio_mensual",
+      "nombre": "Ingreso promedio mensual (Lima Metropolitana)",
+      "descripcion": "Ingreso promedio mensual nominal proveniente del trabajo (ocupación principal y secundaria) de la PEA ocupada de Lima Metropolitana, promedio anual, soles corrientes. 2026 = trimestre móvil may-jun-jul.",
+      "unidad": "S/",
+      "mejor_si": "sube",
+      "competencia": "externo",
+      "responsable_principal": "INEI / MTPE",
+      "confiabilidad": "alta",
+      "ambito": "Lima Metropolitana",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": 1735.9,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2020,
+          "valor": 1607.4,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2021,
+          "valor": 1586.8,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2022,
+          "valor": null,
+          "parcial": false,
+          "nota": "Sin promedio anual publicado por INEI para 2022 (transición EPE→EPEN); ver nota. La nota de prensa de feb-2023 reporta +10,0% interanual en el trimestre nov22-ene23 sin valor anual."
+        },
+        {
+          "anio": 2023,
+          "valor": 1909.8,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2024,
+          "valor": 2035.4,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2025,
+          "valor": 2220.0,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2026,
+          "valor": 2312.6,
+          "parcial": true,
+          "nota": "Trimestre móvil mayo-junio-julio 2026: S/ 2 312,6 (+4,6% vs may-jul 2025 = S/ 2 211,6)."
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "INEI - Informe Técnico Situación del Mercado Laboral en Lima Metropolitana N°01 enero 2026 (anual ene-dic 2025 y trimestre móvil oct-nov-dic 2025)",
+          "url": "https://www.gob.pe/institucion/inei/informes-publicaciones?sheet=1&sort_by=recent&term=Situaci%C3%B3n%20del%20Mercado%20Laboral%20en%20Lima%20Metropolitana",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Encuesta Permanente de Empleo (EPE) 2019-2021 y Encuesta Permanente de Empleo Nacional (EPEN) 2022-2025; muestra 4800 viviendas/trimestre en Lima y Callao; cuadros anuales 'Años 2019-2025'.",
+          "observaciones": "El cuadro anual del INEI omite la columna 2022 (año de transición EPE→EPEN con retorno a entrevistas presenciales); valores 2022 tomados de nota de prensa del trimestre nov2022-ene2023 cuando se indica.",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "INEI - Informe Técnico Situación del Mercado Laboral en Lima Metropolitana N°8 agosto 2026 (trimestre móvil may-jun-jul 2026)",
+          "url": "https://www.gob.pe/institucion/inei/informes-publicaciones?sheet=1&sort_by=recent&term=Situaci%C3%B3n%20del%20Mercado%20Laboral%20en%20Lima%20Metropolitana",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "EPEN, trimestre móvil mayo-junio-julio 2026 comparado con mismo trimestre 2023-2025.",
+          "observaciones": "Dato 2026 es parcial (trimestre móvil), no comparable estrictamente con los promedios anuales.",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "INEI - Nota de prensa N°020 (15-feb-2023): Población ocupada de Lima Metropolitana alcanzó 5 millones 93 mil personas de noviembre 2022 a enero 2023",
+          "url": "https://m.inei.gob.pe/prensa/noticias/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "EPEN trimestre móvil nov2022-dic2022-ene2023.",
+          "observaciones": "Usado como proxy del año 2022 porque el cuadro anual del INEI no publica 2022.",
+          "tipo": "primaria"
+        }
+      ],
+      "discrepancias": null,
+      "nota": "Valores nominales; para poder adquisitivo real contrastar con inflación (indicador inflacion_anual_lima). 2025 vs 2019: +27,9% nominal. Hombres 2025: S/ 2 504,6; mujeres: S/ 1 873,3."
+    },
+    {
+      "id": "tasa_desempleo",
+      "nombre": "Tasa de desempleo (Lima Metropolitana)",
+      "descripcion": "Tasa de desempleo: PEA desocupada / PEA, promedio anual (enero-diciembre) para Lima Metropolitana (43 distritos de la Provincia de Lima). 2026 = trimestre móvil may-jun-jul.",
+      "unidad": "%",
+      "mejor_si": "baja",
+      "competencia": "externo",
+      "responsable_principal": "INEI / MTPE",
+      "confiabilidad": "alta",
+      "ambito": "Lima Metropolitana",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": 6.6,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2020,
+          "valor": 13.0,
+          "parcial": false,
+          "nota": "Año de pandemia; EPE con entrevistas telefónicas."
+        },
+        {
+          "anio": 2021,
+          "valor": 10.7,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2022,
+          "valor": 8.0,
+          "parcial": false,
+          "nota": "Trimestre móvil nov2022-ene2023 (8,0%), no promedio anual; Sin promedio anual publicado por INEI para 2022 (transición EPE→EPEN); ver nota."
+        },
+        {
+          "anio": 2023,
+          "valor": 6.8,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2024,
+          "valor": 6.4,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2025,
+          "valor": 5.9,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2026,
+          "valor": 4.7,
+          "parcial": true,
+          "nota": "Trimestre móvil mayo-junio-julio 2026 (4,7%); mismo trimestre 2025 fue 6,1%."
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "INEI - Informe Técnico Situación del Mercado Laboral en Lima Metropolitana N°01 enero 2026 (anual ene-dic 2025 y trimestre móvil oct-nov-dic 2025)",
+          "url": "https://www.gob.pe/institucion/inei/informes-publicaciones?sheet=1&sort_by=recent&term=Situaci%C3%B3n%20del%20Mercado%20Laboral%20en%20Lima%20Metropolitana",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Encuesta Permanente de Empleo (EPE) 2019-2021 y Encuesta Permanente de Empleo Nacional (EPEN) 2022-2025; muestra 4800 viviendas/trimestre en Lima y Callao; cuadros anuales 'Años 2019-2025'.",
+          "observaciones": "El cuadro anual del INEI omite la columna 2022 (año de transición EPE→EPEN con retorno a entrevistas presenciales); valores 2022 tomados de nota de prensa del trimestre nov2022-ene2023 cuando se indica.",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "INEI - Informe Técnico Situación del Mercado Laboral en Lima Metropolitana N°8 agosto 2026 (trimestre móvil may-jun-jul 2026)",
+          "url": "https://www.gob.pe/institucion/inei/informes-publicaciones?sheet=1&sort_by=recent&term=Situaci%C3%B3n%20del%20Mercado%20Laboral%20en%20Lima%20Metropolitana",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "EPEN, trimestre móvil mayo-junio-julio 2026 comparado con mismo trimestre 2023-2025.",
+          "observaciones": "Dato 2026 es parcial (trimestre móvil), no comparable estrictamente con los promedios anuales.",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "INEI - Nota de prensa N°020 (15-feb-2023): Población ocupada de Lima Metropolitana alcanzó 5 millones 93 mil personas de noviembre 2022 a enero 2023",
+          "url": "https://m.inei.gob.pe/prensa/noticias/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "EPEN trimestre móvil nov2022-dic2022-ene2023.",
+          "observaciones": "Usado como proxy del año 2022 porque el cuadro anual del INEI no publica 2022.",
+          "tipo": "primaria"
+        }
+      ],
+      "discrepancias": "Promedio anual 2025 = 5,9% vs trimestre oct-nov-dic 2025 = 5,0%: el INEI publica ambos; se usa el promedio anual para la serie.",
+      "nota": "Serie anual INEI 2019-2025 (cuadro 11-A). EPE (2019-2021) y EPEN (2022-2025) tienen diseño muestral distinto; el INEI las presenta como serie continua pero advierte la diferencia de fuente. 2026 es parcial."
+    },
+    {
+      "id": "empleo_informal_pct",
+      "nombre": "Empleo informal (%)",
+      "descripcion": "Proporción de la PEA ocupada con empleo informal",
+      "unidad": "%",
+      "mejor_si": "baja",
+      "competencia": "externo",
+      "responsable_principal": "INEI / MTPE",
+      "confiabilidad": "alta",
+      "ambito": "Lima Metropolitana",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2020,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2021,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2022,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2023,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2024,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2025,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": "pendiente"
+        }
+      ],
+      "fuentes": [],
+      "discrepancias": null,
+      "nota": "pendiente"
+    },
+    {
+      "id": "empleo_adecuado_pct",
+      "nombre": "Empleo adecuado (%)",
+      "descripcion": "Población adecuadamente empleada como % de la PEA (no de la PEA ocupada) de Lima Metropolitana, promedio anual. Empleo adecuado = trabaja 35+ horas con ingreso ≥ ingreso mínimo referencial, o menos horas sin desear trabajar más. 2026 = trimestre móvil may-jun-jul.",
+      "unidad": "%",
+      "mejor_si": "sube",
+      "competencia": "externo",
+      "responsable_principal": "INEI / MTPE",
+      "confiabilidad": "alta",
+      "ambito": "Lima Metropolitana",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": 60.3,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2020,
+          "valor": 46.1,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2021,
+          "valor": 46.1,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2022,
+          "valor": null,
+          "parcial": false,
+          "nota": "Sin promedio anual publicado por INEI para 2022 (transición EPE→EPEN); ver nota."
+        },
+        {
+          "anio": 2023,
+          "valor": 54.7,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2024,
+          "valor": 56.1,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2025,
+          "valor": 61.3,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2026,
+          "valor": 62.2,
+          "parcial": true,
+          "nota": "Trimestre móvil mayo-junio-julio 2026 (62,2%); mismo trimestre 2025 fue 61,3%."
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "INEI - Informe Técnico Situación del Mercado Laboral en Lima Metropolitana N°01 enero 2026 (anual ene-dic 2025 y trimestre móvil oct-nov-dic 2025)",
+          "url": "https://www.gob.pe/institucion/inei/informes-publicaciones?sheet=1&sort_by=recent&term=Situaci%C3%B3n%20del%20Mercado%20Laboral%20en%20Lima%20Metropolitana",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "Encuesta Permanente de Empleo (EPE) 2019-2021 y Encuesta Permanente de Empleo Nacional (EPEN) 2022-2025; muestra 4800 viviendas/trimestre en Lima y Callao; cuadros anuales 'Años 2019-2025'.",
+          "observaciones": "El cuadro anual del INEI omite la columna 2022 (año de transición EPE→EPEN con retorno a entrevistas presenciales); valores 2022 tomados de nota de prensa del trimestre nov2022-ene2023 cuando se indica.",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "INEI - Informe Técnico Situación del Mercado Laboral en Lima Metropolitana N°8 agosto 2026 (trimestre móvil may-jun-jul 2026)",
+          "url": "https://www.gob.pe/institucion/inei/informes-publicaciones?sheet=1&sort_by=recent&term=Situaci%C3%B3n%20del%20Mercado%20Laboral%20en%20Lima%20Metropolitana",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "EPEN, trimestre móvil mayo-junio-julio 2026 comparado con mismo trimestre 2023-2025.",
+          "observaciones": "Dato 2026 es parcial (trimestre móvil), no comparable estrictamente con los promedios anuales.",
+          "tipo": "primaria"
+        }
+      ],
+      "discrepancias": "Trimestre oct-nov-dic 2025 = 62,5% vs promedio anual 2025 = 61,3%; se usa el anual.",
+      "nota": "Complemento: subempleo 2025 = 32,8% de la PEA (6,0% por horas, 26,8% por ingresos). Tasa de ocupación 2025 = 94,1%. Cambio de encuesta EPE→EPEN en 2022."
+    },
+    {
+      "id": "pobreza_monetaria",
+      "nombre": "Pobreza monetaria (Lima Metropolitana)",
+      "descripcion": "Incidencia de la pobreza monetaria total (% de la población cuyo gasto per cápita no cubre la canasta básica de consumo) en Lima Metropolitana (43 distritos de la Provincia de Lima). Serie re-estimada por INEI con metodología actualizada (informe mayo 2026).",
+      "unidad": "%",
+      "mejor_si": "baja",
+      "competencia": "externo",
+      "responsable_principal": "INEI / MIDIS / MEF",
+      "confiabilidad": "alta",
+      "ambito": "Lima Metropolitana",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": 14.2,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2020,
+          "valor": 26.6,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2021,
+          "valor": 24.4,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2022,
+          "valor": 26.9,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2023,
+          "valor": 28.1,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2024,
+          "valor": 27.6,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2025,
+          "valor": 26.8,
+          "parcial": false,
+          "nota": "Intervalo de confianza 24,2%-29,4%; C.V. 4,9%; variación 2025/2024 de -0,8 pp no significativa (P>t 0,6)."
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": "No disponible: la ENAHO 2026 se publica en mayo 2027."
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "INEI - Informe Técnico: Perú, Evolución de la Pobreza Monetaria 2016-2025 (mayo 2026), cuadro de incidencia por departamento y cuadro 'Evolución de la línea de pobreza total según dominios 2016-2025'",
+          "url": "https://cdn.www.gob.pe/uploads/document/file/9911234/8087825-informe-tecnico-de-pobreza-monetaria-2016-2025.pdf",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "ENAHO 2016-2025 con metodología actualizada (nueva canasta y año base); serie 2016-2025 re-estimada de forma comparable. Lima Metropolitana = 43 distritos de la Provincia de Lima.",
+          "observaciones": "Las cifras de años anteriores fueron re-estimadas con la metodología actualizada; no coinciden necesariamente con las publicadas originalmente.",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "INEI - Nota de prensa: Pobreza monetaria alcanzó al 30,1% de la población del país durante el año 2020 (mayo 2021)",
+          "url": "https://www.gob.pe/institucion/inei/noticias/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "ENAHO 2020, metodología anterior (base 2010).",
+          "observaciones": "Cifra original: Lima Metropolitana pasó de 14,2% (2019) a 27,5% (2020).",
+          "tipo": "primaria"
+        },
+        {
+          "nombre": "INEI / Comisión Consultiva - Presentación pobreza monetaria 2023 (mayo 2024)",
+          "url": "https://www.gob.pe/institucion/inei/noticias/",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "ENAHO 2023, metodología anterior.",
+          "observaciones": "Cifra original 2023 Lima Metropolitana: 28,1%.",
+          "tipo": "primaria"
+        }
+      ],
+      "discrepancias": "Metodología anterior vs actualizada: 2020 fue publicado originalmente como 27,5% (nota INEI mayo 2021) y ahora figura 26,6%; 2023 se mantiene en 28,1%. Nacional 2025: 25,7%. Pobreza extrema LM 2025: 3,6% (2024: 3,3%).",
+      "nota": "INEI actualizó en 2026 la metodología (canasta y población de referencia) y re-estimó 2016-2025; usar solo esta serie para comparar años. La pobreza en Lima casi se duplicó en 2020 y no ha vuelto al nivel prepandemia (14,2% en 2019)."
+    },
+    {
+      "id": "precio_m2_departamento",
+      "nombre": "Precio de venta por m² de departamento (Lima)",
+      "descripcion": "Precio promedio de venta por m² de departamentos en Lima Metropolitana",
+      "unidad": "US$/m²",
+      "mejor_si": "baja",
+      "competencia": "compartida",
+      "responsable_principal": "Mercado / MVCS / MML",
+      "confiabilidad": "alta",
+      "ambito": "Lima Metropolitana",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2020,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2021,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2022,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2023,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2024,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2025,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": "pendiente"
+        }
+      ],
+      "fuentes": [],
+      "discrepancias": null,
+      "nota": "pendiente"
+    },
+    {
+      "id": "alquiler_promedio_departamento",
+      "nombre": "Alquiler promedio mensual de departamento (Lima)",
+      "descripcion": "Alquiler mensual promedio de departamentos en Lima Metropolitana",
+      "unidad": "S/",
+      "mejor_si": "baja",
+      "competencia": "compartida",
+      "responsable_principal": "Mercado / MVCS / MML",
+      "confiabilidad": "alta",
+      "ambito": "Lima Metropolitana",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2020,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2021,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2022,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2023,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2024,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2025,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": "pendiente"
+        }
+      ],
+      "fuentes": [],
+      "discrepancias": null,
+      "nota": "pendiente"
+    },
+    {
+      "id": "deficit_habitacional",
+      "nombre": "Déficit habitacional (Lima)",
+      "descripcion": "Déficit habitacional (cuantitativo + cualitativo), número de viviendas",
+      "unidad": "viviendas",
+      "mejor_si": "baja",
+      "competencia": "compartida",
+      "responsable_principal": "MVCS / MML / municipios",
+      "confiabilidad": "alta",
+      "ambito": "Lima Metropolitana",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2020,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2021,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2022,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2023,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2024,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2025,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": "pendiente"
+        }
+      ],
+      "fuentes": [],
+      "discrepancias": null,
+      "nota": "pendiente"
+    },
+    {
+      "id": "linea_pobreza_per_capita",
+      "nombre": "Línea de pobreza per cápita mensual (Lima Metropolitana)",
+      "descripcion": "Valor mensual per cápita de la canasta básica de consumo (línea de pobreza total) para el dominio Lima Metropolitana y Provincia Constitucional del Callao, soles corrientes.",
+      "unidad": "S/",
+      "mejor_si": "baja",
+      "competencia": "externo",
+      "responsable_principal": "INEI",
+      "confiabilidad": "alta",
+      "ambito": "Lima y Callao",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": 441,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2020,
+          "valor": 449,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2021,
+          "valor": 470,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2022,
+          "valor": 510,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2023,
+          "valor": 546,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2024,
+          "valor": 559,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2025,
+          "valor": 568,
+          "parcial": false,
+          "nota": null
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": "Se publica con la ENAHO 2026 en mayo 2027."
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "INEI - Informe Técnico: Perú, Evolución de la Pobreza Monetaria 2016-2025 (mayo 2026), cuadro de incidencia por departamento y cuadro 'Evolución de la línea de pobreza total según dominios 2016-2025'",
+          "url": "https://cdn.www.gob.pe/uploads/document/file/9911234/8087825-informe-tecnico-de-pobreza-monetaria-2016-2025.pdf",
+          "fecha_consulta": "2026-09-13",
+          "metodologia": "ENAHO 2016-2025 con metodología actualizada (nueva canasta y año base); serie 2016-2025 re-estimada de forma comparable. Lima Metropolitana = 43 distritos de la Provincia de Lima.",
+          "observaciones": "Las cifras de años anteriores fueron re-estimadas con la metodología actualizada; no coinciden necesariamente con las publicadas originalmente.",
+          "tipo": "primaria"
+        }
+      ],
+      "discrepancias": null,
+      "nota": "Línea nacional 2025: S/ 462 (hogar de 4: S/ 1 848); línea de pobreza extrema nacional 2025: S/ 260. La línea de Lima creció 28,8% entre 2019 y 2025 (metodología actualizada). Para un hogar de 4 en Lima equivale a S/ 2 272 mensuales en 2025."
+    },
+    {
+      "id": "tarifa_metropolitano",
+      "nombre": "Tarifa del Metropolitano (troncal, adulto)",
+      "descripcion": "Tarifa general adulto en la troncal del Metropolitano",
+      "unidad": "S/",
+      "mejor_si": "baja",
+      "competencia": "otra_entidad",
+      "responsable_principal": "ATU",
+      "confiabilidad": "alta",
+      "ambito": "Lima Metropolitana",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2020,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2021,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2022,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2023,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2024,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2025,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": "pendiente"
+        }
+      ],
+      "fuentes": [],
+      "discrepancias": null,
+      "nota": "pendiente"
+    }
+  ]
+}

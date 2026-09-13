@@ -1,0 +1,200 @@
+{
+  "dimension": "demografia",
+  "fecha_corte": "2026-09-12",
+  "resumen_hallazgos": "En elaboración.",
+  "indicadores": [
+    {
+      "id": "poblacion_lima_metropolitana",
+      "nombre": "Población de Lima Metropolitana",
+      "descripcion": "Población total estimada/proyectada al 30 de junio, Provincia de Lima (43 distritos)",
+      "unidad": "habitantes",
+      "mejor_si": "sube",
+      "competencia": "externo",
+      "responsable_principal": "INEI",
+      "confiabilidad": "alta",
+      "ambito": "Provincia de Lima",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2020,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2021,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2022,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2023,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2024,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2025,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": "pendiente"
+        }
+      ],
+      "fuentes": [],
+      "discrepancias": null,
+      "nota": "pendiente"
+    },
+    {
+      "id": "tasa_crecimiento_poblacional",
+      "nombre": "Tasa de crecimiento poblacional anual",
+      "descripcion": "Variación % anual de la población de la Provincia de Lima",
+      "unidad": "%",
+      "mejor_si": "sube",
+      "competencia": "externo",
+      "responsable_principal": "INEI",
+      "confiabilidad": "alta",
+      "ambito": "Provincia de Lima",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2020,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2021,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2022,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2023,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2024,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2025,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": "pendiente"
+        }
+      ],
+      "fuentes": [],
+      "discrepancias": null,
+      "nota": "pendiente"
+    },
+    {
+      "id": "poblacion_venezolana_lima",
+      "nombre": "Población venezolana en Lima (contexto)",
+      "descripcion": "Personas venezolanas residentes en Lima Metropolitana y Callao",
+      "unidad": "personas",
+      "mejor_si": "sube",
+      "competencia": "externo",
+      "responsable_principal": "INEI / Migraciones / R4V",
+      "confiabilidad": "alta",
+      "ambito": "Lima y Callao",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2020,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2021,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2022,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2023,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2024,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2025,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente"
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": "pendiente"
+        }
+      ],
+      "fuentes": [],
+      "discrepancias": null,
+      "nota": "pendiente"
+    }
+  ],
+  "por_distrito": []
+}

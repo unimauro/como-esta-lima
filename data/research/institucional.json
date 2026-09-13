@@ -1,0 +1,593 @@
+{
+  "dimension": "institucional",
+  "fecha_corte": "2026-09-12",
+  "resumen_hallazgos": "EN CONSTRUCCIÓN: esqueleto inicial, series por completar.",
+  "indicadores": [
+    {
+      "id": "aprobacion_alcalde_lima",
+      "nombre": "Aprobación del alcalde de Lima (Ipsos)",
+      "descripcion": "% de limeños que aprueba la gestión del alcalde de Lima en la encuesta Ipsos del mes indicado",
+      "unidad": "%",
+      "mejor_si": "sube",
+      "competencia": "mml",
+      "responsable_principal": "Alcalde de Lima",
+      "confiabilidad": "alta",
+      "ambito": "Lima Metropolitana",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2020,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2021,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2022,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2023,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2024,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2025,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": "pendiente de verificación"
+        }
+      ],
+      "fuentes": [],
+      "discrepancias": null,
+      "nota": "Esqueleto: series pendientes de completar."
+    },
+    {
+      "id": "lcv_satisfaccion_gestion_mml",
+      "nombre": "Satisfacción con la gestión de la MML (Lima Cómo Vamos)",
+      "descripcion": "% de encuestados satisfechos o muy satisfechos con la gestión de la Municipalidad Metropolitana de Lima",
+      "unidad": "%",
+      "mejor_si": "sube",
+      "competencia": "mml",
+      "responsable_principal": "MML",
+      "confiabilidad": "alta",
+      "ambito": "Lima Metropolitana",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2020,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2021,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2022,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2023,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2024,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2025,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": "pendiente de verificación"
+        }
+      ],
+      "fuentes": [],
+      "discrepancias": null,
+      "nota": "Esqueleto: series pendientes de completar."
+    },
+    {
+      "id": "lcv_lima_mejora",
+      "nombre": "Percepción de que Lima ha mejorado (Lima Cómo Vamos)",
+      "descripcion": "% que considera que la calidad de vida en Lima mejoró en el último año",
+      "unidad": "%",
+      "mejor_si": "sube",
+      "competencia": "compartida",
+      "responsable_principal": "MML / Gobierno nacional / municipios",
+      "confiabilidad": "alta",
+      "ambito": "Lima Metropolitana",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2020,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2021,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2022,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2023,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2024,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2025,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": "pendiente de verificación"
+        }
+      ],
+      "fuentes": [],
+      "discrepancias": null,
+      "nota": "Esqueleto: series pendientes de completar."
+    },
+    {
+      "id": "lcv_satisfaccion_vivir_lima",
+      "nombre": "Satisfacción con vivir en Lima (Lima Cómo Vamos)",
+      "descripcion": "% satisfecho o muy satisfecho con vivir en Lima",
+      "unidad": "%",
+      "mejor_si": "sube",
+      "competencia": "compartida",
+      "responsable_principal": "MML / Gobierno nacional / municipios",
+      "confiabilidad": "alta",
+      "ambito": "Lima Metropolitana",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2020,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2021,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2022,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2023,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2024,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2025,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": "pendiente de verificación"
+        }
+      ],
+      "fuentes": [],
+      "discrepancias": null,
+      "nota": "Esqueleto: series pendientes de completar."
+    },
+    {
+      "id": "lcv_principal_problema",
+      "nombre": "Principal problema de Lima (Lima Cómo Vamos)",
+      "descripcion": "% que menciona el problema más citado (indicado en nota) entre los principales problemas de la ciudad",
+      "unidad": "%",
+      "mejor_si": "baja",
+      "competencia": "compartida",
+      "responsable_principal": "MML / Gobierno nacional",
+      "confiabilidad": "alta",
+      "ambito": "Lima Metropolitana",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2020,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2021,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2022,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2023,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2024,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2025,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": "pendiente de verificación"
+        }
+      ],
+      "fuentes": [],
+      "discrepancias": null,
+      "nota": "Esqueleto: series pendientes de completar."
+    },
+    {
+      "id": "deuda_mml_saldo",
+      "nombre": "Saldo de deuda de la MML",
+      "descripcion": "Saldo total de deuda financiera de la Municipalidad Metropolitana de Lima al cierre del año",
+      "unidad": "millones de soles",
+      "mejor_si": "baja",
+      "competencia": "mml",
+      "responsable_principal": "MML (Gerencia de Finanzas)",
+      "confiabilidad": "media",
+      "ambito": "Provincia de Lima",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2020,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2021,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2022,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2023,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2024,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2025,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": "pendiente de verificación"
+        }
+      ],
+      "fuentes": [],
+      "discrepancias": null,
+      "nota": "Esqueleto: series pendientes de completar."
+    },
+    {
+      "id": "bonos_mml_emitidos",
+      "nombre": "Bonos emitidos por la MML",
+      "descripcion": "Monto nominal de bonos colocados por la MML en el año",
+      "unidad": "millones de soles",
+      "mejor_si": "baja",
+      "competencia": "mml",
+      "responsable_principal": "MML",
+      "confiabilidad": "alta",
+      "ambito": "Provincia de Lima",
+      "serie": [
+        {
+          "anio": 2023,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2024,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2025,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": "pendiente de verificación"
+        }
+      ],
+      "fuentes": [],
+      "discrepancias": null,
+      "nota": "Esqueleto: series pendientes de completar."
+    },
+    {
+      "id": "personal_mml",
+      "nombre": "Personal de la MML",
+      "descripcion": "Número de trabajadores de la MML (todas las modalidades) según Portal de Transparencia",
+      "unidad": "personas",
+      "mejor_si": "baja",
+      "competencia": "mml",
+      "responsable_principal": "MML",
+      "confiabilidad": "media",
+      "ambito": "Provincia de Lima",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2020,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2021,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2022,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2023,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2024,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2025,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": "pendiente de verificación"
+        }
+      ],
+      "fuentes": [],
+      "discrepancias": null,
+      "nota": "Esqueleto: series pendientes de completar."
+    },
+    {
+      "id": "contraloria_informes_mml",
+      "nombre": "Informes de control de la Contraloría sobre la MML",
+      "descripcion": "Número de informes de control (servicios de control posterior y simultáneo) emitidos sobre la MML en el año",
+      "unidad": "informes",
+      "mejor_si": "baja",
+      "competencia": "otra_entidad",
+      "responsable_principal": "Contraloría General de la República",
+      "confiabilidad": "media",
+      "ambito": "Provincia de Lima",
+      "serie": [
+        {
+          "anio": 2019,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2020,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2021,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2022,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2023,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2024,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2025,
+          "valor": null,
+          "parcial": false,
+          "nota": "pendiente de verificación"
+        },
+        {
+          "anio": 2026,
+          "valor": null,
+          "parcial": true,
+          "nota": "pendiente de verificación"
+        }
+      ],
+      "fuentes": [],
+      "discrepancias": null,
+      "nota": "Esqueleto: series pendientes de completar."
+    }
+  ],
+  "gestiones": [
+    {
+      "id": "munoz",
+      "alcalde": "Jorge Muñoz Wells",
+      "inicio": "2019-01-01",
+      "fin": null,
+      "nota": "Vacado; fecha exacta pendiente de verificar (JNE/El Peruano).",
+      "fuentes": []
+    },
+    {
+      "id": "romero",
+      "alcalde": "Miguel Romero Sotelo",
+      "inicio": null,
+      "fin": "2022-12-31",
+      "nota": "Gestión transitoria tras vacancia de Muñoz; fecha exacta de asunción pendiente.",
+      "fuentes": []
+    },
+    {
+      "id": "lopez_aliaga",
+      "alcalde": "Rafael López Aliaga Cazorla",
+      "inicio": "2023-01-01",
+      "fin": null,
+      "nota": "Pendiente verificar renuncia para candidatura presidencial 2026.",
+      "fuentes": []
+    },
+    {
+      "id": "reggiardo",
+      "alcalde": "Renzo Reggiardo Barreto",
+      "inicio": null,
+      "fin": null,
+      "nota": "Pendiente verificar asunción como alcalde tras renuncia de López Aliaga.",
+      "fuentes": []
+    }
+  ]
+}
