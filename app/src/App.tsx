@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Nav, SECCIONES } from './components/Nav'
 import { Inicio } from './sections/Inicio'
 import { Finanzas } from './sections/Finanzas'
+import { Personal } from './sections/Personal'
 import { Dimension } from './sections/Dimension'
 import { Obras } from './sections/Obras'
 import { Promesas } from './sections/Promesas'
@@ -47,6 +48,7 @@ export default function App() {
       <main className="wrap pb-16">
         {sec === 'inicio' && <Inicio onIr={ir} />}
         {sec === 'finanzas' && <Finanzas />}
+        {sec === 'personal' && <Personal />}
         {['movilidad', 'seguridad', 'costo_vida', 'servicios_ambiente', 'institucional'].includes(sec) && <Dimension id={sec} />}
         {sec === 'obras' && <Obras />}
         {sec === 'promesas' && <Promesas />}

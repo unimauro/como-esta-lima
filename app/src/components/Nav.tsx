@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 export const SECCIONES: { id: string; nombre: string }[] = [
   { id: 'inicio', nombre: '¿Cómo está Lima?' },
   { id: 'finanzas', nombre: 'Finanzas MML' },
+  { id: 'personal', nombre: 'Personal y economía' },
   { id: 'movilidad', nombre: 'Movilidad' },
   { id: 'seguridad', nombre: 'Seguridad' },
   { id: 'costo_vida', nombre: 'Costo de vida' },

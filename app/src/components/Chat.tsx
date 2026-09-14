@@ -1,7 +1,8 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { indicadores, mef, proyectos, gestiones, FECHA_CORTE } from '../data'
 import { cambioTotal } from '../lib/trend'
-import { valorConUnidad, soles, signed } from '../lib/format'
+import { valorConUnidad, soles, signed, fmt } from '../lib/format'
+import personal from '../data/personal_mml.json'
 
 // Gateway ai.tunky.net: valida el Origin (unimauro.github.io permitido) y exige X-Client-Token.
 // Token público por diseño (cliente), revocable por proyecto.
@@ -21,6 +22,9 @@ function construirContexto(): string {
     const cambio = c.abs !== null ? ` (${i.unidad.trim() === '%' ? signed(c.abs, ' pp') : signed(c.pct, '%')} desde ${c.desde?.anio})` : ''
     lineas.push(`- ${i.nombre}${i.contexto ? ' [contexto]' : ''}: ${valorConUnidad(ult.valor, i.unidad)} (${ult.anio})${cambio}. Competencia: ${i.competencia}.`)
   }
+  const per = personal as unknown as { total_actual: number; planilla_mensual_actual: number; por_regimen: Record<string, number>; periodo_actual: string; top_dependencias: { dependencia: string; n: number }[]; contratos: { monto_total: number; n: number } | null }
+  const regimenes = Object.entries(per.por_regimen).map(([r, n]) => `${r} ${n}`).join(', ')
+  lineas.push(`Personal MML (Portal de Transparencia, ${per.periodo_actual}): ${fmt(per.total_actual, 0)} servidores publicados (${regimenes}), planilla mensual ${soles(per.planilla_mensual_actual)}. Más personal en: ${per.top_dependencias.slice(0, 3).map((d) => `${d.dependencia} (${d.n})`).join(', ')}. Es una vista parcial (sobre todo CAS; no incluye a todo el personal). ${per.contratos ? `Contrataciones registradas: ${soles(per.contratos.monto_total)} en ${per.contratos.n} adjudicaciones.` : ''}`)
   lineas.push(`Proyectos/obras en base: ${proyectos.length}.`)
   return lineas.join('\n')
 }
