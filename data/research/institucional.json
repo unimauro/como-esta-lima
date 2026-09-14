@@ -1,848 +1,844 @@
 {
-  "dimension": "institucional",
-  "fecha_corte": "2026-09-12",
-  "resumen_hallazgos": "EN CONSTRUCCIÓN. Hallado: aprobación Ipsos 2023-2026 (López Aliaga cayó de ~39% a 24% en dic-2024; Reggiardo 38-42% en 2025-26); LCV problema principal (inseguridad 70.9%-87.8%), satisfacción con vivir en Lima 37.5% (2019) → 29% (2025, Lima+Callao); deuda MML de S/ 1,788 mill. (2019) a S/ 3,454 mill. (2024) por tres emisiones de bonos (S/ 3,755 mill. 2023-2025). No hallado: LCV dejó de medir gestión MML tras 2019; 'Lima mejora' no existe en LCV.",
-  "indicadores": [
+ "dimension": "institucional",
+ "fecha_corte": "2026-09-12",
+ "resumen_hallazgos": "EN CONSTRUCCIÓN. Hallado: aprobación Ipsos 2023-2026 (López Aliaga cayó de ~39% a 24% en dic-2024; Reggiardo 38-42% en 2025-26); LCV problema principal (inseguridad 70.9%-87.8%), satisfacción con vivir en Lima 37.5% (2019) → 29% (2025, Lima+Callao); deuda MML de S/ 1,788 mill. (2019) a S/ 3,454 mill. (2024) por tres emisiones de bonos (S/ 3,755 mill. 2023-2025). No hallado: LCV dejó de medir gestión MML tras 2019; 'Lima mejora' no existe en LCV.",
+ "indicadores": [
+  {
+   "id": "aprobacion_alcalde_lima",
+   "nombre": "Aprobación del alcalde de Lima (Ipsos)",
+   "descripcion": "% de limeños que aprueba la gestión del alcalde de Lima según Ipsos Perú. Se toma la medición de diciembre de cada año (o la última disponible). Alcalde vigente en cada fecha indicado en nota.",
+   "unidad": "%",
+   "mejor_si": "sube",
+   "competencia": "mml",
+   "responsable_principal": "Alcalde de Lima",
+   "confiabilidad": "alta",
+   "ambito": "Lima Metropolitana",
+   "serie": [
     {
-      "id": "aprobacion_alcalde_lima",
-      "nombre": "Aprobación del alcalde de Lima (Ipsos)",
-      "descripcion": "% de limeños que aprueba la gestión del alcalde de Lima según Ipsos Perú. Se toma la medición de diciembre de cada año (o la última disponible). Alcalde vigente en cada fecha indicado en nota.",
-      "unidad": "%",
-      "mejor_si": "sube",
-      "competencia": "mml",
-      "responsable_principal": "Alcalde de Lima",
-      "confiabilidad": "alta",
-      "ambito": "Lima Metropolitana",
-      "serie": [
-        {
-          "anio": 2019,
-          "valor": null,
-          "parcial": false,
-          "nota": "Jorge Muñoz. Pendiente: no se localizó PDF de Ipsos con la cifra de dic-2019."
-        },
-        {
-          "anio": 2020,
-          "valor": null,
-          "parcial": false,
-          "nota": "Jorge Muñoz. Pendiente."
-        },
-        {
-          "anio": 2021,
-          "valor": null,
-          "parcial": false,
-          "nota": "Jorge Muñoz. Pendiente."
-        },
-        {
-          "anio": 2022,
-          "valor": null,
-          "parcial": false,
-          "nota": "Miguel Romero (alcalde transitorio desde abr-2022). Ipsos no publicó serie regular de aprobación de Romero en los PDFs revisados."
-        },
-        {
-          "anio": 2023,
-          "valor": 39,
-          "parcial": false,
-          "nota": "Rafael López Aliaga, Ipsos dic-2023 (desaprueba 53%, no precisa 8%). Serie mensual 2023 (aprueba): ene 39, mar 36, may 44*, jul 40, ago 44*, set 40, nov 38, dic 39 (*lectura de gráfico, ver nota)."
-        },
-        {
-          "anio": 2024,
-          "valor": 24,
-          "parcial": false,
-          "nota": "Rafael López Aliaga, Ipsos dic-2024 (desaprueba 70%, no precisa 6%). Mínimo de la serie. Lecturas 2024 (aprueba): ene 36, feb 37, abr 31, may 32, jun 30, sep 32, oct 30, nov 33, ago 25, dic 24."
-        },
-        {
-          "anio": 2025,
-          "valor": 38,
-          "parcial": false,
-          "nota": "Renzo Reggiardo, Ipsos dic-2025 (desaprueba 45%, no precisa 17%). López Aliaga: ene-2025 35%, feb-2025 36% (desaprueba 56%). Reggiardo: oct-2025 39%, nov-2025 41%, dic-2025 38%."
-        },
-        {
-          "anio": 2026,
-          "valor": 42,
-          "parcial": true,
-          "nota": "Renzo Reggiardo, Ipsos jul-2026 (desaprueba 44%, no precisa 14%). Mensual 2026 (aprueba): ene 39, feb 42, mar 42, abr 37, may 41, jun 40, jul 42."
-        }
-      ],
-      "fuentes": [
-        {
-          "nombre": "Ipsos Perú – Bus Express / Opinión Data, febrero 2025 (Evaluación en Lima: aprobación de Rafael López Aliaga, serie ene-2023 a feb-2025)",
-          "url": "https://www.ipsos.com/es-pe/encuesta-de-opinion-febrero-2025",
-          "fecha_consulta": "2026-09-13",
-          "metodologia": "Encuesta cara a cara en Lima, ~450 entrevistados, margen ±4.6%",
-          "observaciones": "PDF descargado; la serie mensual 2023-2025 se leyó del gráfico de la p.16-17",
-          "tipo": "primaria"
-        },
-        {
-          "nombre": "Ipsos Perú – Bus Express, enero 2026 (Encuesta en Lima: aprobación de Renzo Reggiardo)",
-          "url": "https://www.ipsos.com/es-pe/encuesta-de-opinion-enero-2026",
-          "fecha_consulta": "2026-09-13",
-          "metodologia": "Encuesta en Lima, 463 entrevistados",
-          "observaciones": "Serie oct-2025 a ene-2026",
-          "tipo": "primaria"
-        },
-        {
-          "nombre": "Ipsos Perú – Bus Express, julio 2026 (Encuesta en Lima: aprobación de Renzo Reggiardo)",
-          "url": "https://www.ipsos.com/es-pe/encuesta-de-opinion-julio-2026",
-          "fecha_consulta": "2026-09-13",
-          "metodologia": "Encuesta en Lima, 460 entrevistados",
-          "observaciones": "Serie oct-2025 a jul-2026",
-          "tipo": "primaria"
-        }
-      ],
-      "discrepancias": "Lima Cómo Vamos 2019 (IOP-PUCP) midió a Jorge Muñoz con otra escala: 20.3% buena/muy buena, 30.2% mala/muy mala, 43.9% ni buena ni mala (no comparable con 'aprueba/desaprueba' de Ipsos).",
-      "nota": "Los valores 2023-2024 se leyeron del gráfico de serie del PDF de Ipsos feb-2025 (pdftotext); los meses con asterisco tienen ambigüedad de lectura. Los valores de dic-2025 y 2026 provienen de las tablas y gráficos de los PDF ene-2026 y jul-2026. 2019-2022 quedan pendientes de fuente primaria."
+     "anio": 2019,
+     "valor": null,
+     "parcial": false,
+     "nota": "Jorge Muñoz. Pendiente: no se localizó PDF de Ipsos con la cifra de dic-2019."
     },
     {
-      "id": "lcv_satisfaccion_gestion_mml",
-      "nombre": "Evaluación positiva de la gestión de la MML (Lima Cómo Vamos)",
-      "descripcion": "% que califica como buena o muy buena la gestión de la Municipalidad Metropolitana de Lima",
-      "unidad": "%",
-      "mejor_si": "sube",
-      "competencia": "mml",
-      "responsable_principal": "MML",
-      "confiabilidad": "media",
-      "ambito": "Lima Metropolitana",
-      "serie": [
-        {
-          "anio": 2019,
-          "valor": 16.3,
-          "parcial": false,
-          "nota": "Buena/muy buena 16.3%; mala/muy mala 32.8%; ni buena ni mala 45.9%. Gestión del alcalde Muñoz: 20.3% buena, 30.2% mala."
-        },
-        {
-          "anio": 2020,
-          "valor": null,
-          "parcial": false,
-          "nota": "No hubo encuesta LCV en 2020."
-        },
-        {
-          "anio": 2021,
-          "valor": null,
-          "parcial": false,
-          "nota": "El informe 2021 no incluye evaluación de la gestión de la MML."
-        },
-        {
-          "anio": 2022,
-          "valor": null,
-          "parcial": false,
-          "nota": "El informe 2022 no incluye evaluación de la gestión de la MML."
-        },
-        {
-          "anio": 2023,
-          "valor": null,
-          "parcial": false,
-          "nota": "El informe 2023 no incluye evaluación de la gestión de la MML."
-        },
-        {
-          "anio": 2024,
-          "valor": null,
-          "parcial": false,
-          "nota": "El informe 2024 no incluye evaluación de la gestión de la MML."
-        },
-        {
-          "anio": 2025,
-          "valor": null,
-          "parcial": false,
-          "nota": "El informe 2025 no incluye evaluación de la gestión de la MML."
-        },
-        {
-          "anio": 2026,
-          "valor": null,
-          "parcial": true,
-          "nota": "Sin dato."
-        }
-      ],
-      "fuentes": [
-        {
-          "nombre": "Lima Cómo Vamos – Encuesta Lima Cómo Vamos 2019 (Informe de percepción sobre calidad de vida)",
-          "url": "https://www.limacomovamos.org/wp-content/uploads/2019/11/Encuesta-2019_.pdf",
-          "fecha_consulta": "2026-09-13",
-          "metodologia": "IOP-PUCP, 1,920 entrevistas en Lima (400 en Callao), ±2.24%, Lima reportada por separado.",
-          "observaciones": null,
-          "tipo": "primaria"
-        },
-        {
-          "nombre": "Lima Cómo Vamos – Encuesta Lima Cómo Vamos 2021 (Informe de percepción sobre calidad de vida)",
-          "url": "https://www.limacomovamos.org/wp-content/uploads/2022/01/Encuesta-Lima-Como-Vamos-2021.pdf",
-          "fecha_consulta": "2026-09-13",
-          "metodologia": "DATUM, 1,100 encuestas Lima+Callao, 17-25 set 2021. Desde 2021 los resultados se reportan para Lima y Callao en conjunto (no comparables con 2010-2019).",
-          "observaciones": null,
-          "tipo": "primaria"
-        },
-        {
-          "nombre": "Lima Cómo Vamos – Encuesta Lima Cómo Vamos 2022 (Informe de percepción sobre calidad de vida)",
-          "url": "https://www.limacomovamos.org/wp-content/uploads/2023/01/Encuesta-Lima-Como-Vamos-2022.pdf",
-          "fecha_consulta": "2026-09-13",
-          "metodologia": "DATUM, 1,123 encuestas Lima+Callao, 4-12 oct 2022.",
-          "observaciones": null,
-          "tipo": "primaria"
-        },
-        {
-          "nombre": "Lima Cómo Vamos – Encuesta Lima Cómo Vamos 2023 (Informe de percepción sobre calidad de vida)",
-          "url": "https://www.limacomovamos.org/wp-content/uploads/2024/02/Encuesta-Lima-Como-Vamos-2023.pdf",
-          "fecha_consulta": "2026-09-13",
-          "metodologia": "DATUM, 1,109 encuestas Lima+Callao, 15 nov-2 dic 2023.",
-          "observaciones": null,
-          "tipo": "primaria"
-        },
-        {
-          "nombre": "Lima Cómo Vamos – Encuesta Lima Cómo Vamos 2024 (Informe de percepción sobre calidad de vida)",
-          "url": "https://www.limacomovamos.org/wp-content/uploads/2025/02/Encuesta-Lima-Como-Vamos-2024.pdf",
-          "fecha_consulta": "2026-09-13",
-          "metodologia": "DATUM, 1,122 encuestas Lima+Callao, 21 nov-1 dic 2024.",
-          "observaciones": null,
-          "tipo": "primaria"
-        },
-        {
-          "nombre": "Lima Cómo Vamos – Encuesta Lima Cómo Vamos 2025 (Informe de percepción sobre calidad de vida)",
-          "url": "https://www.limacomovamos.org/wp-content/uploads/2026/02/Encuesta-Lima-Como-Vamos-2025.pdf",
-          "fecha_consulta": "2026-09-13",
-          "metodologia": "DATUM, 1,140 encuestas Lima+Callao, 5-21 dic 2025.",
-          "observaciones": null,
-          "tipo": "primaria"
-        }
-      ],
-      "discrepancias": null,
-      "nota": "La pregunta de evaluación de la gestión metropolitana se aplicó hasta 2019; desde 2021 los informes LCV se centran en satisfacción con aspectos urbanos. 2019: solo Lima Metropolitana (IOP-PUCP). 2021-2025: Lima Metropolitana y Callao en conjunto (DATUM); no hubo encuesta en 2020 por la pandemia. Cambio de encuestadora y ámbito rompe la comparabilidad estricta 2019 vs 2021+."
+     "anio": 2020,
+     "valor": null,
+     "parcial": false,
+     "nota": "Jorge Muñoz. Pendiente."
     },
     {
-      "id": "lcv_lima_mejora",
-      "nombre": "Percepción de que la ciudad mejoró (Lima Cómo Vamos)",
-      "descripcion": "% que considera que la calidad de vida en la ciudad mejoró respecto al año anterior",
-      "unidad": "%",
-      "mejor_si": "sube",
-      "competencia": "compartida",
-      "responsable_principal": "MML / Gobierno nacional / municipios",
-      "confiabilidad": "baja",
-      "ambito": "Lima Metropolitana",
-      "serie": [
-        {
-          "anio": 2019,
-          "valor": null,
-          "parcial": false,
-          "nota": "No se identificó esta pregunta en el informe LCV del año (los informes 2021 y 2024 preguntan por la situación económica del hogar, no por la ciudad)."
-        },
-        {
-          "anio": 2020,
-          "valor": null,
-          "parcial": false,
-          "nota": "No se identificó esta pregunta en el informe LCV del año (los informes 2021 y 2024 preguntan por la situación económica del hogar, no por la ciudad)."
-        },
-        {
-          "anio": 2021,
-          "valor": null,
-          "parcial": false,
-          "nota": "No se identificó esta pregunta en el informe LCV del año (los informes 2021 y 2024 preguntan por la situación económica del hogar, no por la ciudad)."
-        },
-        {
-          "anio": 2022,
-          "valor": null,
-          "parcial": false,
-          "nota": "No se identificó esta pregunta en el informe LCV del año (los informes 2021 y 2024 preguntan por la situación económica del hogar, no por la ciudad)."
-        },
-        {
-          "anio": 2023,
-          "valor": null,
-          "parcial": false,
-          "nota": "No se identificó esta pregunta en el informe LCV del año (los informes 2021 y 2024 preguntan por la situación económica del hogar, no por la ciudad)."
-        },
-        {
-          "anio": 2024,
-          "valor": null,
-          "parcial": false,
-          "nota": "No se identificó esta pregunta en el informe LCV del año (los informes 2021 y 2024 preguntan por la situación económica del hogar, no por la ciudad)."
-        },
-        {
-          "anio": 2025,
-          "valor": null,
-          "parcial": false,
-          "nota": "No se identificó esta pregunta en el informe LCV del año (los informes 2021 y 2024 preguntan por la situación económica del hogar, no por la ciudad)."
-        },
-        {
-          "anio": 2026,
-          "valor": null,
-          "parcial": true,
-          "nota": "No se identificó esta pregunta en el informe LCV del año (los informes 2021 y 2024 preguntan por la situación económica del hogar, no por la ciudad)."
-        }
-      ],
-      "fuentes": [
-        {
-          "nombre": "Lima Cómo Vamos – Encuesta Lima Cómo Vamos 2019 (Informe de percepción sobre calidad de vida)",
-          "url": "https://www.limacomovamos.org/wp-content/uploads/2019/11/Encuesta-2019_.pdf",
-          "fecha_consulta": "2026-09-13",
-          "metodologia": "IOP-PUCP, 1,920 entrevistas en Lima (400 en Callao), ±2.24%, Lima reportada por separado.",
-          "observaciones": null,
-          "tipo": "primaria"
-        },
-        {
-          "nombre": "Lima Cómo Vamos – Encuesta Lima Cómo Vamos 2021 (Informe de percepción sobre calidad de vida)",
-          "url": "https://www.limacomovamos.org/wp-content/uploads/2022/01/Encuesta-Lima-Como-Vamos-2021.pdf",
-          "fecha_consulta": "2026-09-13",
-          "metodologia": "DATUM, 1,100 encuestas Lima+Callao, 17-25 set 2021. Desde 2021 los resultados se reportan para Lima y Callao en conjunto (no comparables con 2010-2019).",
-          "observaciones": null,
-          "tipo": "primaria"
-        },
-        {
-          "nombre": "Lima Cómo Vamos – Encuesta Lima Cómo Vamos 2022 (Informe de percepción sobre calidad de vida)",
-          "url": "https://www.limacomovamos.org/wp-content/uploads/2023/01/Encuesta-Lima-Como-Vamos-2022.pdf",
-          "fecha_consulta": "2026-09-13",
-          "metodologia": "DATUM, 1,123 encuestas Lima+Callao, 4-12 oct 2022.",
-          "observaciones": null,
-          "tipo": "primaria"
-        },
-        {
-          "nombre": "Lima Cómo Vamos – Encuesta Lima Cómo Vamos 2023 (Informe de percepción sobre calidad de vida)",
-          "url": "https://www.limacomovamos.org/wp-content/uploads/2024/02/Encuesta-Lima-Como-Vamos-2023.pdf",
-          "fecha_consulta": "2026-09-13",
-          "metodologia": "DATUM, 1,109 encuestas Lima+Callao, 15 nov-2 dic 2023.",
-          "observaciones": null,
-          "tipo": "primaria"
-        },
-        {
-          "nombre": "Lima Cómo Vamos – Encuesta Lima Cómo Vamos 2024 (Informe de percepción sobre calidad de vida)",
-          "url": "https://www.limacomovamos.org/wp-content/uploads/2025/02/Encuesta-Lima-Como-Vamos-2024.pdf",
-          "fecha_consulta": "2026-09-13",
-          "metodologia": "DATUM, 1,122 encuestas Lima+Callao, 21 nov-1 dic 2024.",
-          "observaciones": null,
-          "tipo": "primaria"
-        },
-        {
-          "nombre": "Lima Cómo Vamos – Encuesta Lima Cómo Vamos 2025 (Informe de percepción sobre calidad de vida)",
-          "url": "https://www.limacomovamos.org/wp-content/uploads/2026/02/Encuesta-Lima-Como-Vamos-2025.pdf",
-          "fecha_consulta": "2026-09-13",
-          "metodologia": "DATUM, 1,140 encuestas Lima+Callao, 5-21 dic 2025.",
-          "observaciones": null,
-          "tipo": "primaria"
-        }
-      ],
-      "discrepancias": null,
-      "nota": "Indicador no disponible en los informes revisados; se mantiene con null para no inventar. Proxy disponible: satisfacción con la ciudad como lugar para vivir (lcv_satisfaccion_vivir_lima)."
+     "anio": 2021,
+     "valor": null,
+     "parcial": false,
+     "nota": "Jorge Muñoz. Pendiente."
     },
     {
-      "id": "lcv_satisfaccion_vivir_lima",
-      "nombre": "Satisfacción con la ciudad como lugar para vivir (Lima Cómo Vamos)",
-      "descripcion": "% satisfecho o muy satisfecho con Lima (2019) / Lima y Callao (2025) como una ciudad para vivir",
-      "unidad": "%",
-      "mejor_si": "sube",
-      "competencia": "compartida",
-      "responsable_principal": "MML / Gobierno nacional / municipios",
-      "confiabilidad": "media",
-      "ambito": "Lima Metropolitana",
-      "serie": [
-        {
-          "anio": 2019,
-          "valor": 37.5,
-          "parcial": false,
-          "nota": "Lima Metropolitana. Además, 55.8% se siente orgulloso de vivir en Lima."
-        },
-        {
-          "anio": 2020,
-          "valor": null,
-          "parcial": false,
-          "nota": "No hubo encuesta."
-        },
-        {
-          "anio": 2021,
-          "valor": null,
-          "parcial": false,
-          "nota": "Pregunta no incluida en el informe 2021."
-        },
-        {
-          "anio": 2022,
-          "valor": null,
-          "parcial": false,
-          "nota": "Pregunta no incluida en el informe 2022."
-        },
-        {
-          "anio": 2023,
-          "valor": null,
-          "parcial": false,
-          "nota": "Pregunta no incluida en el informe 2023."
-        },
-        {
-          "anio": 2024,
-          "valor": null,
-          "parcial": false,
-          "nota": "Pregunta no incluida en el informe 2024."
-        },
-        {
-          "anio": 2025,
-          "valor": 29.0,
-          "parcial": false,
-          "nota": "Lima y Callao: satisfecho 29.0%, insatisfecho 37.9%, ni/ni 32.9%. Lima Norte 14.3% satisfechos; Lima Centro 53.3% insatisfechos."
-        },
-        {
-          "anio": 2026,
-          "valor": null,
-          "parcial": true,
-          "nota": "Sin dato."
-        }
-      ],
-      "fuentes": [
-        {
-          "nombre": "Lima Cómo Vamos – Encuesta Lima Cómo Vamos 2019 (Informe de percepción sobre calidad de vida)",
-          "url": "https://www.limacomovamos.org/wp-content/uploads/2019/11/Encuesta-2019_.pdf",
-          "fecha_consulta": "2026-09-13",
-          "metodologia": "IOP-PUCP, 1,920 entrevistas en Lima (400 en Callao), ±2.24%, Lima reportada por separado.",
-          "observaciones": null,
-          "tipo": "primaria"
-        },
-        {
-          "nombre": "Lima Cómo Vamos – Encuesta Lima Cómo Vamos 2021 (Informe de percepción sobre calidad de vida)",
-          "url": "https://www.limacomovamos.org/wp-content/uploads/2022/01/Encuesta-Lima-Como-Vamos-2021.pdf",
-          "fecha_consulta": "2026-09-13",
-          "metodologia": "DATUM, 1,100 encuestas Lima+Callao, 17-25 set 2021. Desde 2021 los resultados se reportan para Lima y Callao en conjunto (no comparables con 2010-2019).",
-          "observaciones": null,
-          "tipo": "primaria"
-        },
-        {
-          "nombre": "Lima Cómo Vamos – Encuesta Lima Cómo Vamos 2022 (Informe de percepción sobre calidad de vida)",
-          "url": "https://www.limacomovamos.org/wp-content/uploads/2023/01/Encuesta-Lima-Como-Vamos-2022.pdf",
-          "fecha_consulta": "2026-09-13",
-          "metodologia": "DATUM, 1,123 encuestas Lima+Callao, 4-12 oct 2022.",
-          "observaciones": null,
-          "tipo": "primaria"
-        },
-        {
-          "nombre": "Lima Cómo Vamos – Encuesta Lima Cómo Vamos 2023 (Informe de percepción sobre calidad de vida)",
-          "url": "https://www.limacomovamos.org/wp-content/uploads/2024/02/Encuesta-Lima-Como-Vamos-2023.pdf",
-          "fecha_consulta": "2026-09-13",
-          "metodologia": "DATUM, 1,109 encuestas Lima+Callao, 15 nov-2 dic 2023.",
-          "observaciones": null,
-          "tipo": "primaria"
-        },
-        {
-          "nombre": "Lima Cómo Vamos – Encuesta Lima Cómo Vamos 2024 (Informe de percepción sobre calidad de vida)",
-          "url": "https://www.limacomovamos.org/wp-content/uploads/2025/02/Encuesta-Lima-Como-Vamos-2024.pdf",
-          "fecha_consulta": "2026-09-13",
-          "metodologia": "DATUM, 1,122 encuestas Lima+Callao, 21 nov-1 dic 2024.",
-          "observaciones": null,
-          "tipo": "primaria"
-        },
-        {
-          "nombre": "Lima Cómo Vamos – Encuesta Lima Cómo Vamos 2025 (Informe de percepción sobre calidad de vida)",
-          "url": "https://www.limacomovamos.org/wp-content/uploads/2026/02/Encuesta-Lima-Como-Vamos-2025.pdf",
-          "fecha_consulta": "2026-09-13",
-          "metodologia": "DATUM, 1,140 encuestas Lima+Callao, 5-21 dic 2025.",
-          "observaciones": null,
-          "tipo": "primaria"
-        }
-      ],
-      "discrepancias": null,
-      "nota": "2019: solo Lima Metropolitana (IOP-PUCP). 2021-2025: Lima Metropolitana y Callao en conjunto (DATUM); no hubo encuesta en 2020 por la pandemia. Cambio de encuestadora y ámbito rompe la comparabilidad estricta 2019 vs 2021+."
+     "anio": 2022,
+     "valor": null,
+     "parcial": false,
+     "nota": "Miguel Romero (alcalde transitorio desde abr-2022). Ipsos no publicó serie regular de aprobación de Romero en los PDFs revisados."
     },
     {
-      "id": "lcv_principal_problema",
-      "nombre": "Inseguridad ciudadana como principal problema (Lima Cómo Vamos)",
-      "descripcion": "% que menciona la inseguridad ciudadana entre los tres problemas más importantes que afectan la calidad de vida en la ciudad (fue el problema más mencionado todos los años)",
-      "unidad": "%",
-      "mejor_si": "baja",
-      "competencia": "compartida",
-      "responsable_principal": "Gobierno nacional (PNP/Mininter) / MML / municipios",
-      "confiabilidad": "alta",
-      "ambito": "Lima Metropolitana",
-      "serie": [
-        {
-          "anio": 2019,
-          "valor": 87.8,
-          "parcial": false,
-          "nota": "Lima. 2°: transporte público 46.2%; 3°: corrupción 38.6%."
-        },
-        {
-          "anio": 2020,
-          "valor": null,
-          "parcial": false,
-          "nota": "No hubo encuesta."
-        },
-        {
-          "anio": 2021,
-          "valor": null,
-          "parcial": false,
-          "nota": "Lima+Callao: inseguridad primer problema ('7 de cada 10'); la cifra total exacta no es legible en el PDF (solo por NSE: A 67.5%, B 55.9%, C 44.2%…, gráfico ilegible). 2° limpieza pública, 3° acceso a salud; transporte cayó a 5°."
-        },
-        {
-          "anio": 2022,
-          "valor": 76.5,
-          "parcial": false,
-          "nota": "Lima+Callao. 2°: transporte público 39.9%; 3°: corrupción 31.1% y limpieza 31.0%."
-        },
-        {
-          "anio": 2023,
-          "valor": 70.9,
-          "parcial": false,
-          "nota": "Lima+Callao. 2°: limpieza pública 34.9%; 3°: corrupción 33.8%; transporte 24.7%."
-        },
-        {
-          "anio": 2024,
-          "valor": 80.2,
-          "parcial": false,
-          "nota": "Lima+Callao. 2°: transporte público 34.2%; 3°: limpieza 29.3%."
-        },
-        {
-          "anio": 2025,
-          "valor": 75.2,
-          "parcial": false,
-          "nota": "Lima+Callao. 2°: transporte público 39.8%; 3°: corrupción 25.6%."
-        },
-        {
-          "anio": 2026,
-          "valor": null,
-          "parcial": true,
-          "nota": "Sin dato."
-        }
-      ],
-      "fuentes": [
-        {
-          "nombre": "Lima Cómo Vamos – Encuesta Lima Cómo Vamos 2019 (Informe de percepción sobre calidad de vida)",
-          "url": "https://www.limacomovamos.org/wp-content/uploads/2019/11/Encuesta-2019_.pdf",
-          "fecha_consulta": "2026-09-13",
-          "metodologia": "IOP-PUCP, 1,920 entrevistas en Lima (400 en Callao), ±2.24%, Lima reportada por separado.",
-          "observaciones": null,
-          "tipo": "primaria"
-        },
-        {
-          "nombre": "Lima Cómo Vamos – Encuesta Lima Cómo Vamos 2021 (Informe de percepción sobre calidad de vida)",
-          "url": "https://www.limacomovamos.org/wp-content/uploads/2022/01/Encuesta-Lima-Como-Vamos-2021.pdf",
-          "fecha_consulta": "2026-09-13",
-          "metodologia": "DATUM, 1,100 encuestas Lima+Callao, 17-25 set 2021. Desde 2021 los resultados se reportan para Lima y Callao en conjunto (no comparables con 2010-2019).",
-          "observaciones": null,
-          "tipo": "primaria"
-        },
-        {
-          "nombre": "Lima Cómo Vamos – Encuesta Lima Cómo Vamos 2022 (Informe de percepción sobre calidad de vida)",
-          "url": "https://www.limacomovamos.org/wp-content/uploads/2023/01/Encuesta-Lima-Como-Vamos-2022.pdf",
-          "fecha_consulta": "2026-09-13",
-          "metodologia": "DATUM, 1,123 encuestas Lima+Callao, 4-12 oct 2022.",
-          "observaciones": null,
-          "tipo": "primaria"
-        },
-        {
-          "nombre": "Lima Cómo Vamos – Encuesta Lima Cómo Vamos 2023 (Informe de percepción sobre calidad de vida)",
-          "url": "https://www.limacomovamos.org/wp-content/uploads/2024/02/Encuesta-Lima-Como-Vamos-2023.pdf",
-          "fecha_consulta": "2026-09-13",
-          "metodologia": "DATUM, 1,109 encuestas Lima+Callao, 15 nov-2 dic 2023.",
-          "observaciones": null,
-          "tipo": "primaria"
-        },
-        {
-          "nombre": "Lima Cómo Vamos – Encuesta Lima Cómo Vamos 2024 (Informe de percepción sobre calidad de vida)",
-          "url": "https://www.limacomovamos.org/wp-content/uploads/2025/02/Encuesta-Lima-Como-Vamos-2024.pdf",
-          "fecha_consulta": "2026-09-13",
-          "metodologia": "DATUM, 1,122 encuestas Lima+Callao, 21 nov-1 dic 2024.",
-          "observaciones": null,
-          "tipo": "primaria"
-        },
-        {
-          "nombre": "Lima Cómo Vamos – Encuesta Lima Cómo Vamos 2025 (Informe de percepción sobre calidad de vida)",
-          "url": "https://www.limacomovamos.org/wp-content/uploads/2026/02/Encuesta-Lima-Como-Vamos-2025.pdf",
-          "fecha_consulta": "2026-09-13",
-          "metodologia": "DATUM, 1,140 encuestas Lima+Callao, 5-21 dic 2025.",
-          "observaciones": null,
-          "tipo": "primaria"
-        }
-      ],
-      "discrepancias": null,
-      "nota": "2019: solo Lima Metropolitana (IOP-PUCP). 2021-2025: Lima Metropolitana y Callao en conjunto (DATUM); no hubo encuesta en 2020 por la pandemia. Cambio de encuestadora y ámbito rompe la comparabilidad estricta 2019 vs 2021+."
+     "anio": 2023,
+     "valor": 39,
+     "parcial": false,
+     "nota": "Rafael López Aliaga, Ipsos dic-2023 (desaprueba 53%, no precisa 8%). Serie mensual 2023 (aprueba): ene 39, mar 36, may 44*, jul 40, ago 44*, set 40, nov 38, dic 39 (*lectura de gráfico, ver nota)."
     },
     {
-      "id": "deuda_mml_saldo",
-      "nombre": "Saldo de Deuda Total (SDT) de la MML",
-      "descripcion": "Saldo de Deuda Total de la Municipalidad Metropolitana de Lima al cierre del año según la regla fiscal subnacional (DL 1275): pasivos financieros y por endeudamiento, sentencias judiciales, deuda exigible y real, cuentas por pagar.",
-      "unidad": "millones de soles",
-      "mejor_si": "baja",
-      "competencia": "mml",
-      "responsable_principal": "MML (Gerencia de Finanzas) / MEF",
-      "confiabilidad": "alta",
-      "ambito": "Provincia de Lima",
-      "serie": [
-        {
-          "anio": 2019,
-          "valor": 1788,
-          "parcial": false,
-          "nota": "SDT/ingresos corrientes promedio 4 años: 140.9% (límite legal 100%)."
-        },
-        {
-          "anio": 2020,
-          "valor": 1926,
-          "parcial": false,
-          "nota": "Ratio 162.8%. Máximo histórico hasta entonces."
-        },
-        {
-          "anio": 2021,
-          "valor": 1872,
-          "parcial": false,
-          "nota": "Ratio 160.3%."
-        },
-        {
-          "anio": 2022,
-          "valor": 1393,
-          "parcial": false,
-          "nota": "Ratio 120.7%."
-        },
-        {
-          "anio": 2023,
-          "valor": 2434,
-          "parcial": false,
-          "nota": "Ratio 212.6%. Incluye 1ra emisión de bonos (dic-2023, S/ 1,205 mill.). Endeudamiento S/ 1,417 mill.; sentencias judiciales S/ 640 mill."
-        },
-        {
-          "anio": 2024,
-          "valor": 3454,
-          "parcial": false,
-          "nota": "Ratio 275.5% (máximo histórico). Endeudamiento S/ 2,493 mill. (72%); sentencias judiciales y laudos S/ 643 mill."
-        },
-        {
-          "anio": 2025,
-          "valor": null,
-          "parcial": false,
-          "nota": "Cierre 2025 aún no publicado por MEF/CF al corte. El CF estimó que con la 3ra emisión (jun-2025) el SDT se acercaría a S/ 5,000 mill. (~399% del límite)."
-        },
-        {
-          "anio": 2026,
-          "valor": null,
-          "parcial": true,
-          "nota": "Sin dato."
-        }
-      ],
-      "fuentes": [
-        {
-          "nombre": "Consejo Fiscal – Reporte Técnico N° 03-2025-CF/ST: Evolución de las finanzas públicas y cumplimiento de reglas fiscales de GR y GL en 2024 (sección 4: MML)",
-          "url": "https://cf.gob.pe/documentos/reporte-tecnico-03-2025-cf-st/",
-          "fecha_consulta": "2026-09-13",
-          "metodologia": "Saldo de Deuda Total (SDT) según MEF: pasivos + deuda real + deuda exigible",
-          "observaciones": "Gráfico 3 (SDT 2017-2024), Tabla 9 (condiciones de los bonos), Gráfico 8 (calificaciones)",
-          "tipo": "primaria"
-        },
-        {
-          "nombre": "Consejo Fiscal – Reporte Técnico N° 01-2024-CF/ST: Análisis de las finanzas públicas de la Municipalidad Metropolitana de Lima",
-          "url": "https://cf.gob.pe/documentos/reporte-tecnico-01-2024-cf-st/",
-          "fecha_consulta": "2026-09-13",
-          "metodologia": "Elaborado por la Secretaría Técnica del CF con datos MEF, MML y Contraloría",
-          "observaciones": "Cronología de la 1ra emisión de bonos (27-dic-2023) y DU 003-2024/006-2024",
-          "tipo": "primaria"
-        }
-      ],
-      "discrepancias": null,
-      "nota": "La MML está exceptuada de la regla fiscal por tener dos calificaciones locales ≥ A (Apoyo AA-, PCR AA). El ratio SDT supera el 100% desde 2017. Valores 2017-2018: 1,580 y 1,599."
+     "anio": 2024,
+     "valor": 24,
+     "parcial": false,
+     "nota": "Rafael López Aliaga, Ipsos dic-2024 (desaprueba 70%, no precisa 6%). Mínimo de la serie. Lecturas 2024 (aprueba): ene 36, feb 37, abr 31, may 32, jun 30, sep 32, oct 30, nov 33, ago 25, dic 24."
     },
     {
-      "id": "bonos_mml_emitidos",
-      "nombre": "Bonos titulizados emitidos por la MML",
-      "descripcion": "Monto nominal de bonos titulizados sin garantía del Gobierno Nacional colocados por la MML en el año (moneda: soles; tasa y plazo en nota)",
-      "unidad": "millones de soles",
-      "mejor_si": "baja",
-      "competencia": "mml",
-      "responsable_principal": "MML",
-      "confiabilidad": "alta",
-      "ambito": "Provincia de Lima",
-      "serie": [
-        {
-          "anio": 2023,
-          "valor": 1205,
-          "parcial": false,
-          "nota": "1ra emisión 27-dic-2023: S/ 1,205 mill. (S/ 1,008 para inversión, S/ 197 para prepagar deuda), 20 años, gracia 2.5 años, tasa fija 10.1% anual (110 pb sobre el 9% previsto), garantía: alcabala e impuesto vehicular."
-        },
-        {
-          "anio": 2024,
-          "valor": 1250,
-          "parcial": false,
-          "nota": "2da emisión sep-2024: S/ 1,250 mill., 20 años, gracia 2.5 años, tasa fija 9.5%, misma garantía. Precedida por DU 003-2024 (suspendió la excepción), Ordenanza MML 2604 y DU 006-2024 (rehabilitó con tope 3.5x ingresos)."
-        },
-        {
-          "anio": 2025,
-          "valor": 1300,
-          "parcial": false,
-          "nota": "3ra emisión jun-2025: S/ 1,300 mill., 20 años, tasa prevista 9.7%, garantía: FONCOMUN, predial e impuesto a casinos/tragamonedas. Total acumulado 2023-2025: S/ 3,755 mill."
-        },
-        {
-          "anio": 2026,
-          "valor": null,
-          "parcial": true,
-          "nota": "Sin nueva emisión identificada al corte."
-        }
-      ],
-      "fuentes": [
-        {
-          "nombre": "Consejo Fiscal – Reporte Técnico N° 03-2025-CF/ST: Evolución de las finanzas públicas y cumplimiento de reglas fiscales de GR y GL en 2024 (sección 4: MML)",
-          "url": "https://cf.gob.pe/documentos/reporte-tecnico-03-2025-cf-st/",
-          "fecha_consulta": "2026-09-13",
-          "metodologia": "Saldo de Deuda Total (SDT) según MEF: pasivos + deuda real + deuda exigible",
-          "observaciones": "Gráfico 3 (SDT 2017-2024), Tabla 9 (condiciones de los bonos), Gráfico 8 (calificaciones)",
-          "tipo": "primaria"
-        },
-        {
-          "nombre": "Consejo Fiscal – Reporte Técnico N° 01-2024-CF/ST: Análisis de las finanzas públicas de la Municipalidad Metropolitana de Lima",
-          "url": "https://cf.gob.pe/documentos/reporte-tecnico-01-2024-cf-st/",
-          "fecha_consulta": "2026-09-13",
-          "metodologia": "Elaborado por la Secretaría Técnica del CF con datos MEF, MML y Contraloría",
-          "observaciones": "Cronología de la 1ra emisión de bonos (27-dic-2023) y DU 003-2024/006-2024",
-          "tipo": "primaria"
-        }
-      ],
-      "discrepancias": null,
-      "nota": "Calificaciones de riesgo de la MML (CF 2025): Apoyo & Asociados AA- (2025), Pacific Credit Rating AA (2025), Fitch Ratings BBB (oct-2024), Moody's Ba1 (jun-2025; Ba2 sin aval implícito del Gobierno Nacional). En 2024 el CF calificaba a las locales como 'AA con perspectiva estable'."
+     "anio": 2025,
+     "valor": 38,
+     "parcial": false,
+     "nota": "Renzo Reggiardo, Ipsos dic-2025 (desaprueba 45%, no precisa 17%). López Aliaga: ene-2025 35%, feb-2025 36% (desaprueba 56%). Reggiardo: oct-2025 39%, nov-2025 41%, dic-2025 38%."
     },
     {
-      "id": "personal_mml",
-      "nombre": "Personal de la MML",
-      "descripcion": "Número de trabajadores de la MML (todas las modalidades) según Portal de Transparencia Estándar",
-      "unidad": "personas",
-      "mejor_si": "baja",
-      "competencia": "mml",
-      "responsable_principal": "MML",
-      "confiabilidad": "media",
-      "ambito": "Provincia de Lima",
-      "serie": [
-        {
-          "anio": 2019,
-          "valor": null,
-          "parcial": false,
-          "nota": "Pendiente de verificación."
-        },
-        {
-          "anio": 2020,
-          "valor": null,
-          "parcial": false,
-          "nota": "Pendiente de verificación."
-        },
-        {
-          "anio": 2021,
-          "valor": null,
-          "parcial": false,
-          "nota": "Pendiente de verificación."
-        },
-        {
-          "anio": 2022,
-          "valor": null,
-          "parcial": false,
-          "nota": "Pendiente de verificación."
-        },
-        {
-          "anio": 2023,
-          "valor": null,
-          "parcial": false,
-          "nota": "Pendiente de verificación."
-        },
-        {
-          "anio": 2024,
-          "valor": null,
-          "parcial": false,
-          "nota": "Pendiente de verificación."
-        },
-        {
-          "anio": 2025,
-          "valor": null,
-          "parcial": false,
-          "nota": "Pendiente de verificación."
-        },
-        {
-          "anio": 2026,
-          "valor": null,
-          "parcial": true,
-          "nota": "Pendiente de verificación."
-        }
-      ],
-      "fuentes": [],
-      "discrepancias": null,
-      "nota": "Pendiente."
-    },
-    {
-      "id": "contraloria_informes_mml",
-      "nombre": "Informes de control de la Contraloría sobre la MML",
-      "descripcion": "Número de informes de control emitidos sobre la MML en el año, con hallazgos relevantes en nota",
-      "unidad": "informes",
-      "mejor_si": "baja",
-      "competencia": "otra_entidad",
-      "responsable_principal": "Contraloría General de la República",
-      "confiabilidad": "media",
-      "ambito": "Provincia de Lima",
-      "serie": [
-        {
-          "anio": 2019,
-          "valor": null,
-          "parcial": false,
-          "nota": "Pendiente de verificación."
-        },
-        {
-          "anio": 2020,
-          "valor": null,
-          "parcial": false,
-          "nota": "Pendiente de verificación."
-        },
-        {
-          "anio": 2021,
-          "valor": null,
-          "parcial": false,
-          "nota": "Pendiente de verificación."
-        },
-        {
-          "anio": 2022,
-          "valor": null,
-          "parcial": false,
-          "nota": "Pendiente de verificación."
-        },
-        {
-          "anio": 2023,
-          "valor": null,
-          "parcial": false,
-          "nota": "Pendiente de verificación."
-        },
-        {
-          "anio": 2024,
-          "valor": null,
-          "parcial": false,
-          "nota": "Pendiente de verificación."
-        },
-        {
-          "anio": 2025,
-          "valor": null,
-          "parcial": false,
-          "nota": "Pendiente de verificación."
-        },
-        {
-          "anio": 2026,
-          "valor": null,
-          "parcial": true,
-          "nota": "Pendiente de verificación."
-        }
-      ],
-      "fuentes": [],
-      "discrepancias": null,
-      "nota": "Pendiente."
+     "anio": 2026,
+     "valor": 42,
+     "parcial": true,
+     "nota": "Renzo Reggiardo, Ipsos jul-2026 (desaprueba 44%, no precisa 14%). Mensual 2026 (aprueba): ene 39, feb 42, mar 42, abr 37, may 41, jun 40, jul 42."
     }
-  ],
-  "gestiones": [
+   ],
+   "fuentes": [
     {
-      "id": "munoz",
-      "alcalde": "Jorge Muñoz Wells",
-      "inicio": "2019-01-01",
-      "fin": null,
-      "nota": "Vacado; fecha exacta pendiente de verificar (JNE/El Peruano).",
-      "fuentes": []
+     "nombre": "Ipsos Perú – Bus Express / Opinión Data, febrero 2025 (Evaluación en Lima: aprobación de Rafael López Aliaga, serie ene-2023 a feb-2025)",
+     "url": "https://www.ipsos.com/es-pe/encuesta-de-opinion-febrero-2025",
+     "fecha_consulta": "2026-09-13",
+     "metodologia": "Encuesta cara a cara en Lima, ~450 entrevistados, margen ±4.6%",
+     "observaciones": "PDF descargado; la serie mensual 2023-2025 se leyó del gráfico de la p.16-17",
+     "tipo": "primaria"
     },
     {
-      "id": "romero",
-      "alcalde": "Miguel Romero Sotelo",
-      "inicio": null,
-      "fin": "2022-12-31",
-      "nota": "Gestión transitoria tras vacancia de Muñoz; fecha exacta de asunción pendiente.",
-      "fuentes": []
+     "nombre": "Ipsos Perú – Bus Express, enero 2026 (Encuesta en Lima: aprobación de Renzo Reggiardo)",
+     "url": "https://www.ipsos.com/es-pe/encuesta-de-opinion-enero-2026",
+     "fecha_consulta": "2026-09-13",
+     "metodologia": "Encuesta en Lima, 463 entrevistados",
+     "observaciones": "Serie oct-2025 a ene-2026",
+     "tipo": "primaria"
     },
     {
-      "id": "lopez_aliaga",
-      "alcalde": "Rafael López Aliaga Cazorla",
-      "inicio": "2023-01-01",
-      "fin": null,
-      "nota": "Pendiente verificar renuncia para candidatura presidencial 2026.",
-      "fuentes": []
-    },
-    {
-      "id": "reggiardo",
-      "alcalde": "Renzo Reggiardo Barreto",
-      "inicio": null,
-      "fin": null,
-      "nota": "Pendiente verificar asunción como alcalde tras renuncia de López Aliaga.",
-      "fuentes": []
+     "nombre": "Ipsos Perú – Bus Express, julio 2026 (Encuesta en Lima: aprobación de Renzo Reggiardo)",
+     "url": "https://www.ipsos.com/es-pe/encuesta-de-opinion-julio-2026",
+     "fecha_consulta": "2026-09-13",
+     "metodologia": "Encuesta en Lima, 460 entrevistados",
+     "observaciones": "Serie oct-2025 a jul-2026",
+     "tipo": "primaria"
     }
-  ]
+   ],
+   "discrepancias": "Lima Cómo Vamos 2019 (IOP-PUCP) midió a Jorge Muñoz con otra escala: 20.3% buena/muy buena, 30.2% mala/muy mala, 43.9% ni buena ni mala (no comparable con 'aprueba/desaprueba' de Ipsos).",
+   "nota": "Los valores 2023-2024 se leyeron del gráfico de serie del PDF de Ipsos feb-2025 (pdftotext); los meses con asterisco tienen ambigüedad de lectura. Los valores de dic-2025 y 2026 provienen de las tablas y gráficos de los PDF ene-2026 y jul-2026. 2019-2022 quedan pendientes de fuente primaria."
+  },
+  {
+   "id": "lcv_satisfaccion_gestion_mml",
+   "nombre": "Evaluación positiva de la gestión de la MML (Lima Cómo Vamos)",
+   "descripcion": "% que califica como buena o muy buena la gestión de la Municipalidad Metropolitana de Lima",
+   "unidad": "%",
+   "mejor_si": "sube",
+   "competencia": "mml",
+   "responsable_principal": "MML",
+   "confiabilidad": "media",
+   "ambito": "Lima Metropolitana",
+   "serie": [
+    {
+     "anio": 2019,
+     "valor": 16.3,
+     "parcial": false,
+     "nota": "Buena/muy buena 16.3%; mala/muy mala 32.8%; ni buena ni mala 45.9%. Gestión del alcalde Muñoz: 20.3% buena, 30.2% mala."
+    },
+    {
+     "anio": 2020,
+     "valor": null,
+     "parcial": false,
+     "nota": "No hubo encuesta LCV en 2020."
+    },
+    {
+     "anio": 2021,
+     "valor": null,
+     "parcial": false,
+     "nota": "El informe 2021 no incluye evaluación de la gestión de la MML."
+    },
+    {
+     "anio": 2022,
+     "valor": null,
+     "parcial": false,
+     "nota": "El informe 2022 no incluye evaluación de la gestión de la MML."
+    },
+    {
+     "anio": 2023,
+     "valor": null,
+     "parcial": false,
+     "nota": "El informe 2023 no incluye evaluación de la gestión de la MML."
+    },
+    {
+     "anio": 2024,
+     "valor": null,
+     "parcial": false,
+     "nota": "El informe 2024 no incluye evaluación de la gestión de la MML."
+    },
+    {
+     "anio": 2025,
+     "valor": null,
+     "parcial": false,
+     "nota": "El informe 2025 no incluye evaluación de la gestión de la MML."
+    },
+    {
+     "anio": 2026,
+     "valor": null,
+     "parcial": true,
+     "nota": "Sin dato."
+    }
+   ],
+   "fuentes": [
+    {
+     "nombre": "Lima Cómo Vamos – Encuesta Lima Cómo Vamos 2019 (Informe de percepción sobre calidad de vida)",
+     "url": "https://www.limacomovamos.org/wp-content/uploads/2019/11/Encuesta-2019_.pdf",
+     "fecha_consulta": "2026-09-13",
+     "metodologia": "IOP-PUCP, 1,920 entrevistas en Lima (400 en Callao), ±2.24%, Lima reportada por separado.",
+     "observaciones": null,
+     "tipo": "primaria"
+    },
+    {
+     "nombre": "Lima Cómo Vamos – Encuesta Lima Cómo Vamos 2021 (Informe de percepción sobre calidad de vida)",
+     "url": "https://www.limacomovamos.org/wp-content/uploads/2022/01/Encuesta-Lima-Como-Vamos-2021.pdf",
+     "fecha_consulta": "2026-09-13",
+     "metodologia": "DATUM, 1,100 encuestas Lima+Callao, 17-25 set 2021. Desde 2021 los resultados se reportan para Lima y Callao en conjunto (no comparables con 2010-2019).",
+     "observaciones": null,
+     "tipo": "primaria"
+    },
+    {
+     "nombre": "Lima Cómo Vamos – Encuesta Lima Cómo Vamos 2022 (Informe de percepción sobre calidad de vida)",
+     "url": "https://www.limacomovamos.org/wp-content/uploads/2023/01/Encuesta-Lima-Como-Vamos-2022.pdf",
+     "fecha_consulta": "2026-09-13",
+     "metodologia": "DATUM, 1,123 encuestas Lima+Callao, 4-12 oct 2022.",
+     "observaciones": null,
+     "tipo": "primaria"
+    },
+    {
+     "nombre": "Lima Cómo Vamos – Encuesta Lima Cómo Vamos 2023 (Informe de percepción sobre calidad de vida)",
+     "url": "https://www.limacomovamos.org/wp-content/uploads/2024/02/Encuesta-Lima-Como-Vamos-2023.pdf",
+     "fecha_consulta": "2026-09-13",
+     "metodologia": "DATUM, 1,109 encuestas Lima+Callao, 15 nov-2 dic 2023.",
+     "observaciones": null,
+     "tipo": "primaria"
+    },
+    {
+     "nombre": "Lima Cómo Vamos – Encuesta Lima Cómo Vamos 2024 (Informe de percepción sobre calidad de vida)",
+     "url": "https://www.limacomovamos.org/wp-content/uploads/2025/02/Encuesta-Lima-Como-Vamos-2024.pdf",
+     "fecha_consulta": "2026-09-13",
+     "metodologia": "DATUM, 1,122 encuestas Lima+Callao, 21 nov-1 dic 2024.",
+     "observaciones": null,
+     "tipo": "primaria"
+    },
+    {
+     "nombre": "Lima Cómo Vamos – Encuesta Lima Cómo Vamos 2025 (Informe de percepción sobre calidad de vida)",
+     "url": "https://www.limacomovamos.org/wp-content/uploads/2026/02/Encuesta-Lima-Como-Vamos-2025.pdf",
+     "fecha_consulta": "2026-09-13",
+     "metodologia": "DATUM, 1,140 encuestas Lima+Callao, 5-21 dic 2025.",
+     "observaciones": null,
+     "tipo": "primaria"
+    }
+   ],
+   "discrepancias": null,
+   "nota": "La pregunta de evaluación de la gestión metropolitana se aplicó hasta 2019; desde 2021 los informes LCV se centran en satisfacción con aspectos urbanos. 2019: solo Lima Metropolitana (IOP-PUCP). 2021-2025: Lima Metropolitana y Callao en conjunto (DATUM); no hubo encuesta en 2020 por la pandemia. Cambio de encuestadora y ámbito rompe la comparabilidad estricta 2019 vs 2021+."
+  },
+  {
+   "id": "lcv_lima_mejora",
+   "nombre": "Percepción de que la ciudad mejoró (Lima Cómo Vamos)",
+   "descripcion": "% que considera que la calidad de vida en la ciudad mejoró respecto al año anterior",
+   "unidad": "%",
+   "mejor_si": "sube",
+   "competencia": "compartida",
+   "responsable_principal": "MML / Gobierno nacional / municipios",
+   "confiabilidad": "baja",
+   "ambito": "Lima Metropolitana",
+   "serie": [
+    {
+     "anio": 2019,
+     "valor": null,
+     "parcial": false,
+     "nota": "No se identificó esta pregunta en el informe LCV del año (los informes 2021 y 2024 preguntan por la situación económica del hogar, no por la ciudad)."
+    },
+    {
+     "anio": 2020,
+     "valor": null,
+     "parcial": false,
+     "nota": "No se identificó esta pregunta en el informe LCV del año (los informes 2021 y 2024 preguntan por la situación económica del hogar, no por la ciudad)."
+    },
+    {
+     "anio": 2021,
+     "valor": null,
+     "parcial": false,
+     "nota": "No se identificó esta pregunta en el informe LCV del año (los informes 2021 y 2024 preguntan por la situación económica del hogar, no por la ciudad)."
+    },
+    {
+     "anio": 2022,
+     "valor": null,
+     "parcial": false,
+     "nota": "No se identificó esta pregunta en el informe LCV del año (los informes 2021 y 2024 preguntan por la situación económica del hogar, no por la ciudad)."
+    },
+    {
+     "anio": 2023,
+     "valor": null,
+     "parcial": false,
+     "nota": "No se identificó esta pregunta en el informe LCV del año (los informes 2021 y 2024 preguntan por la situación económica del hogar, no por la ciudad)."
+    },
+    {
+     "anio": 2024,
+     "valor": null,
+     "parcial": false,
+     "nota": "No se identificó esta pregunta en el informe LCV del año (los informes 2021 y 2024 preguntan por la situación económica del hogar, no por la ciudad)."
+    },
+    {
+     "anio": 2025,
+     "valor": null,
+     "parcial": false,
+     "nota": "No se identificó esta pregunta en el informe LCV del año (los informes 2021 y 2024 preguntan por la situación económica del hogar, no por la ciudad)."
+    },
+    {
+     "anio": 2026,
+     "valor": null,
+     "parcial": true,
+     "nota": "No se identificó esta pregunta en el informe LCV del año (los informes 2021 y 2024 preguntan por la situación económica del hogar, no por la ciudad)."
+    }
+   ],
+   "fuentes": [
+    {
+     "nombre": "Lima Cómo Vamos – Encuesta Lima Cómo Vamos 2019 (Informe de percepción sobre calidad de vida)",
+     "url": "https://www.limacomovamos.org/wp-content/uploads/2019/11/Encuesta-2019_.pdf",
+     "fecha_consulta": "2026-09-13",
+     "metodologia": "IOP-PUCP, 1,920 entrevistas en Lima (400 en Callao), ±2.24%, Lima reportada por separado.",
+     "observaciones": null,
+     "tipo": "primaria"
+    },
+    {
+     "nombre": "Lima Cómo Vamos – Encuesta Lima Cómo Vamos 2021 (Informe de percepción sobre calidad de vida)",
+     "url": "https://www.limacomovamos.org/wp-content/uploads/2022/01/Encuesta-Lima-Como-Vamos-2021.pdf",
+     "fecha_consulta": "2026-09-13",
+     "metodologia": "DATUM, 1,100 encuestas Lima+Callao, 17-25 set 2021. Desde 2021 los resultados se reportan para Lima y Callao en conjunto (no comparables con 2010-2019).",
+     "observaciones": null,
+     "tipo": "primaria"
+    },
+    {
+     "nombre": "Lima Cómo Vamos – Encuesta Lima Cómo Vamos 2022 (Informe de percepción sobre calidad de vida)",
+     "url": "https://www.limacomovamos.org/wp-content/uploads/2023/01/Encuesta-Lima-Como-Vamos-2022.pdf",
+     "fecha_consulta": "2026-09-13",
+     "metodologia": "DATUM, 1,123 encuestas Lima+Callao, 4-12 oct 2022.",
+     "observaciones": null,
+     "tipo": "primaria"
+    },
+    {
+     "nombre": "Lima Cómo Vamos – Encuesta Lima Cómo Vamos 2023 (Informe de percepción sobre calidad de vida)",
+     "url": "https://www.limacomovamos.org/wp-content/uploads/2024/02/Encuesta-Lima-Como-Vamos-2023.pdf",
+     "fecha_consulta": "2026-09-13",
+     "metodologia": "DATUM, 1,109 encuestas Lima+Callao, 15 nov-2 dic 2023.",
+     "observaciones": null,
+     "tipo": "primaria"
+    },
+    {
+     "nombre": "Lima Cómo Vamos – Encuesta Lima Cómo Vamos 2024 (Informe de percepción sobre calidad de vida)",
+     "url": "https://www.limacomovamos.org/wp-content/uploads/2025/02/Encuesta-Lima-Como-Vamos-2024.pdf",
+     "fecha_consulta": "2026-09-13",
+     "metodologia": "DATUM, 1,122 encuestas Lima+Callao, 21 nov-1 dic 2024.",
+     "observaciones": null,
+     "tipo": "primaria"
+    },
+    {
+     "nombre": "Lima Cómo Vamos – Encuesta Lima Cómo Vamos 2025 (Informe de percepción sobre calidad de vida)",
+     "url": "https://www.limacomovamos.org/wp-content/uploads/2026/02/Encuesta-Lima-Como-Vamos-2025.pdf",
+     "fecha_consulta": "2026-09-13",
+     "metodologia": "DATUM, 1,140 encuestas Lima+Callao, 5-21 dic 2025.",
+     "observaciones": null,
+     "tipo": "primaria"
+    }
+   ],
+   "discrepancias": null,
+   "nota": "Indicador no disponible en los informes revisados; se mantiene con null para no inventar. Proxy disponible: satisfacción con la ciudad como lugar para vivir (lcv_satisfaccion_vivir_lima)."
+  },
+  {
+   "id": "lcv_satisfaccion_vivir_lima",
+   "nombre": "Satisfacción con la ciudad como lugar para vivir (Lima Cómo Vamos)",
+   "descripcion": "% satisfecho o muy satisfecho con Lima (2019) / Lima y Callao (2025) como una ciudad para vivir",
+   "unidad": "%",
+   "mejor_si": "sube",
+   "competencia": "compartida",
+   "responsable_principal": "MML / Gobierno nacional / municipios",
+   "confiabilidad": "media",
+   "ambito": "Lima Metropolitana",
+   "serie": [
+    {
+     "anio": 2019,
+     "valor": 37.5,
+     "parcial": false,
+     "nota": "Lima Metropolitana. Además, 55.8% se siente orgulloso de vivir en Lima."
+    },
+    {
+     "anio": 2020,
+     "valor": null,
+     "parcial": false,
+     "nota": "No hubo encuesta."
+    },
+    {
+     "anio": 2021,
+     "valor": null,
+     "parcial": false,
+     "nota": "Pregunta no incluida en el informe 2021."
+    },
+    {
+     "anio": 2022,
+     "valor": null,
+     "parcial": false,
+     "nota": "Pregunta no incluida en el informe 2022."
+    },
+    {
+     "anio": 2023,
+     "valor": null,
+     "parcial": false,
+     "nota": "Pregunta no incluida en el informe 2023."
+    },
+    {
+     "anio": 2024,
+     "valor": null,
+     "parcial": false,
+     "nota": "Pregunta no incluida en el informe 2024."
+    },
+    {
+     "anio": 2025,
+     "valor": 29.0,
+     "parcial": false,
+     "nota": "Lima y Callao: satisfecho 29.0%, insatisfecho 37.9%, ni/ni 32.9%. Lima Norte 14.3% satisfechos; Lima Centro 53.3% insatisfechos."
+    },
+    {
+     "anio": 2026,
+     "valor": null,
+     "parcial": true,
+     "nota": "Sin dato."
+    }
+   ],
+   "fuentes": [
+    {
+     "nombre": "Lima Cómo Vamos – Encuesta Lima Cómo Vamos 2019 (Informe de percepción sobre calidad de vida)",
+     "url": "https://www.limacomovamos.org/wp-content/uploads/2019/11/Encuesta-2019_.pdf",
+     "fecha_consulta": "2026-09-13",
+     "metodologia": "IOP-PUCP, 1,920 entrevistas en Lima (400 en Callao), ±2.24%, Lima reportada por separado.",
+     "observaciones": null,
+     "tipo": "primaria"
+    },
+    {
+     "nombre": "Lima Cómo Vamos – Encuesta Lima Cómo Vamos 2021 (Informe de percepción sobre calidad de vida)",
+     "url": "https://www.limacomovamos.org/wp-content/uploads/2022/01/Encuesta-Lima-Como-Vamos-2021.pdf",
+     "fecha_consulta": "2026-09-13",
+     "metodologia": "DATUM, 1,100 encuestas Lima+Callao, 17-25 set 2021. Desde 2021 los resultados se reportan para Lima y Callao en conjunto (no comparables con 2010-2019).",
+     "observaciones": null,
+     "tipo": "primaria"
+    },
+    {
+     "nombre": "Lima Cómo Vamos – Encuesta Lima Cómo Vamos 2022 (Informe de percepción sobre calidad de vida)",
+     "url": "https://www.limacomovamos.org/wp-content/uploads/2023/01/Encuesta-Lima-Como-Vamos-2022.pdf",
+     "fecha_consulta": "2026-09-13",
+     "metodologia": "DATUM, 1,123 encuestas Lima+Callao, 4-12 oct 2022.",
+     "observaciones": null,
+     "tipo": "primaria"
+    },
+    {
+     "nombre": "Lima Cómo Vamos – Encuesta Lima Cómo Vamos 2023 (Informe de percepción sobre calidad de vida)",
+     "url": "https://www.limacomovamos.org/wp-content/uploads/2024/02/Encuesta-Lima-Como-Vamos-2023.pdf",
+     "fecha_consulta": "2026-09-13",
+     "metodologia": "DATUM, 1,109 encuestas Lima+Callao, 15 nov-2 dic 2023.",
+     "observaciones": null,
+     "tipo": "primaria"
+    },
+    {
+     "nombre": "Lima Cómo Vamos – Encuesta Lima Cómo Vamos 2024 (Informe de percepción sobre calidad de vida)",
+     "url": "https://www.limacomovamos.org/wp-content/uploads/2025/02/Encuesta-Lima-Como-Vamos-2024.pdf",
+     "fecha_consulta": "2026-09-13",
+     "metodologia": "DATUM, 1,122 encuestas Lima+Callao, 21 nov-1 dic 2024.",
+     "observaciones": null,
+     "tipo": "primaria"
+    },
+    {
+     "nombre": "Lima Cómo Vamos – Encuesta Lima Cómo Vamos 2025 (Informe de percepción sobre calidad de vida)",
+     "url": "https://www.limacomovamos.org/wp-content/uploads/2026/02/Encuesta-Lima-Como-Vamos-2025.pdf",
+     "fecha_consulta": "2026-09-13",
+     "metodologia": "DATUM, 1,140 encuestas Lima+Callao, 5-21 dic 2025.",
+     "observaciones": null,
+     "tipo": "primaria"
+    }
+   ],
+   "discrepancias": null,
+   "nota": "2019: solo Lima Metropolitana (IOP-PUCP). 2021-2025: Lima Metropolitana y Callao en conjunto (DATUM); no hubo encuesta en 2020 por la pandemia. Cambio de encuestadora y ámbito rompe la comparabilidad estricta 2019 vs 2021+."
+  },
+  {
+   "id": "lcv_principal_problema",
+   "nombre": "Inseguridad ciudadana como principal problema (Lima Cómo Vamos)",
+   "descripcion": "% que menciona la inseguridad ciudadana entre los tres problemas más importantes que afectan la calidad de vida en la ciudad (fue el problema más mencionado todos los años)",
+   "unidad": "%",
+   "mejor_si": "baja",
+   "competencia": "compartida",
+   "responsable_principal": "Gobierno nacional (PNP/Mininter) / MML / municipios",
+   "confiabilidad": "alta",
+   "ambito": "Lima Metropolitana",
+   "serie": [
+    {
+     "anio": 2019,
+     "valor": 87.8,
+     "parcial": false,
+     "nota": "Lima. 2°: transporte público 46.2%; 3°: corrupción 38.6%."
+    },
+    {
+     "anio": 2020,
+     "valor": null,
+     "parcial": false,
+     "nota": "No hubo encuesta."
+    },
+    {
+     "anio": 2021,
+     "valor": null,
+     "parcial": false,
+     "nota": "Lima+Callao: inseguridad primer problema ('7 de cada 10'); la cifra total exacta no es legible en el PDF (solo por NSE: A 67.5%, B 55.9%, C 44.2%…, gráfico ilegible). 2° limpieza pública, 3° acceso a salud; transporte cayó a 5°."
+    },
+    {
+     "anio": 2022,
+     "valor": 76.5,
+     "parcial": false,
+     "nota": "Lima+Callao. 2°: transporte público 39.9%; 3°: corrupción 31.1% y limpieza 31.0%."
+    },
+    {
+     "anio": 2023,
+     "valor": 70.9,
+     "parcial": false,
+     "nota": "Lima+Callao. 2°: limpieza pública 34.9%; 3°: corrupción 33.8%; transporte 24.7%."
+    },
+    {
+     "anio": 2024,
+     "valor": 80.2,
+     "parcial": false,
+     "nota": "Lima+Callao. 2°: transporte público 34.2%; 3°: limpieza 29.3%."
+    },
+    {
+     "anio": 2025,
+     "valor": 75.2,
+     "parcial": false,
+     "nota": "Lima+Callao. 2°: transporte público 39.8%; 3°: corrupción 25.6%."
+    },
+    {
+     "anio": 2026,
+     "valor": null,
+     "parcial": true,
+     "nota": "Sin dato."
+    }
+   ],
+   "fuentes": [
+    {
+     "nombre": "Lima Cómo Vamos – Encuesta Lima Cómo Vamos 2019 (Informe de percepción sobre calidad de vida)",
+     "url": "https://www.limacomovamos.org/wp-content/uploads/2019/11/Encuesta-2019_.pdf",
+     "fecha_consulta": "2026-09-13",
+     "metodologia": "IOP-PUCP, 1,920 entrevistas en Lima (400 en Callao), ±2.24%, Lima reportada por separado.",
+     "observaciones": null,
+     "tipo": "primaria"
+    },
+    {
+     "nombre": "Lima Cómo Vamos – Encuesta Lima Cómo Vamos 2021 (Informe de percepción sobre calidad de vida)",
+     "url": "https://www.limacomovamos.org/wp-content/uploads/2022/01/Encuesta-Lima-Como-Vamos-2021.pdf",
+     "fecha_consulta": "2026-09-13",
+     "metodologia": "DATUM, 1,100 encuestas Lima+Callao, 17-25 set 2021. Desde 2021 los resultados se reportan para Lima y Callao en conjunto (no comparables con 2010-2019).",
+     "observaciones": null,
+     "tipo": "primaria"
+    },
+    {
+     "nombre": "Lima Cómo Vamos – Encuesta Lima Cómo Vamos 2022 (Informe de percepción sobre calidad de vida)",
+     "url": "https://www.limacomovamos.org/wp-content/uploads/2023/01/Encuesta-Lima-Como-Vamos-2022.pdf",
+     "fecha_consulta": "2026-09-13",
+     "metodologia": "DATUM, 1,123 encuestas Lima+Callao, 4-12 oct 2022.",
+     "observaciones": null,
+     "tipo": "primaria"
+    },
+    {
+     "nombre": "Lima Cómo Vamos – Encuesta Lima Cómo Vamos 2023 (Informe de percepción sobre calidad de vida)",
+     "url": "https://www.limacomovamos.org/wp-content/uploads/2024/02/Encuesta-Lima-Como-Vamos-2023.pdf",
+     "fecha_consulta": "2026-09-13",
+     "metodologia": "DATUM, 1,109 encuestas Lima+Callao, 15 nov-2 dic 2023.",
+     "observaciones": null,
+     "tipo": "primaria"
+    },
+    {
+     "nombre": "Lima Cómo Vamos – Encuesta Lima Cómo Vamos 2024 (Informe de percepción sobre calidad de vida)",
+     "url": "https://www.limacomovamos.org/wp-content/uploads/2025/02/Encuesta-Lima-Como-Vamos-2024.pdf",
+     "fecha_consulta": "2026-09-13",
+     "metodologia": "DATUM, 1,122 encuestas Lima+Callao, 21 nov-1 dic 2024.",
+     "observaciones": null,
+     "tipo": "primaria"
+    },
+    {
+     "nombre": "Lima Cómo Vamos – Encuesta Lima Cómo Vamos 2025 (Informe de percepción sobre calidad de vida)",
+     "url": "https://www.limacomovamos.org/wp-content/uploads/2026/02/Encuesta-Lima-Como-Vamos-2025.pdf",
+     "fecha_consulta": "2026-09-13",
+     "metodologia": "DATUM, 1,140 encuestas Lima+Callao, 5-21 dic 2025.",
+     "observaciones": null,
+     "tipo": "primaria"
+    }
+   ],
+   "discrepancias": null,
+   "nota": "2019: solo Lima Metropolitana (IOP-PUCP). 2021-2025: Lima Metropolitana y Callao en conjunto (DATUM); no hubo encuesta en 2020 por la pandemia. Cambio de encuestadora y ámbito rompe la comparabilidad estricta 2019 vs 2021+."
+  },
+  {
+   "id": "deuda_mml_saldo",
+   "nombre": "Saldo de Deuda Total (SDT) de la MML",
+   "descripcion": "Saldo de Deuda Total de la Municipalidad Metropolitana de Lima al cierre del año según la regla fiscal subnacional (DL 1275): pasivos financieros y por endeudamiento, sentencias judiciales, deuda exigible y real, cuentas por pagar.",
+   "unidad": "millones de soles",
+   "mejor_si": "baja",
+   "competencia": "mml",
+   "responsable_principal": "MML (Gerencia de Finanzas) / MEF",
+   "confiabilidad": "alta",
+   "ambito": "Provincia de Lima",
+   "serie": [
+    {
+     "anio": 2019,
+     "valor": 1788,
+     "parcial": false,
+     "nota": "SDT/ingresos corrientes promedio 4 años: 140.9% (límite legal 100%)."
+    },
+    {
+     "anio": 2020,
+     "valor": 1926,
+     "parcial": false,
+     "nota": "Ratio 162.8%. Máximo histórico hasta entonces."
+    },
+    {
+     "anio": 2021,
+     "valor": 1872,
+     "parcial": false,
+     "nota": "Ratio 160.3%."
+    },
+    {
+     "anio": 2022,
+     "valor": 1393,
+     "parcial": false,
+     "nota": "Ratio 120.7%."
+    },
+    {
+     "anio": 2023,
+     "valor": 2434,
+     "parcial": false,
+     "nota": "Ratio 212.6%. Incluye 1ra emisión de bonos (dic-2023, S/ 1,205 mill.). Endeudamiento S/ 1,417 mill.; sentencias judiciales S/ 640 mill."
+    },
+    {
+     "anio": 2024,
+     "valor": 3454,
+     "parcial": false,
+     "nota": "Ratio 275.5% (máximo histórico). Endeudamiento S/ 2,493 mill. (72%); sentencias judiciales y laudos S/ 643 mill."
+    },
+    {
+     "anio": 2025,
+     "valor": null,
+     "parcial": false,
+     "nota": "Cierre 2025 aún no publicado por MEF/CF al corte. El CF estimó que con la 3ra emisión (jun-2025) el SDT se acercaría a S/ 5,000 mill. (~399% del límite)."
+    },
+    {
+     "anio": 2026,
+     "valor": null,
+     "parcial": true,
+     "nota": "Sin dato."
+    }
+   ],
+   "fuentes": [
+    {
+     "nombre": "Consejo Fiscal – Reporte Técnico N° 03-2025-CF/ST: Evolución de las finanzas públicas y cumplimiento de reglas fiscales de GR y GL en 2024 (sección 4: MML)",
+     "url": "https://cf.gob.pe/documentos/reporte-tecnico-03-2025-cf-st/",
+     "fecha_consulta": "2026-09-13",
+     "metodologia": "Saldo de Deuda Total (SDT) según MEF: pasivos + deuda real + deuda exigible",
+     "observaciones": "Gráfico 3 (SDT 2017-2024), Tabla 9 (condiciones de los bonos), Gráfico 8 (calificaciones)",
+     "tipo": "primaria"
+    },
+    {
+     "nombre": "Consejo Fiscal – Reporte Técnico N° 01-2024-CF/ST: Análisis de las finanzas públicas de la Municipalidad Metropolitana de Lima",
+     "url": "https://cf.gob.pe/documentos/reporte-tecnico-01-2024-cf-st/",
+     "fecha_consulta": "2026-09-13",
+     "metodologia": "Elaborado por la Secretaría Técnica del CF con datos MEF, MML y Contraloría",
+     "observaciones": "Cronología de la 1ra emisión de bonos (27-dic-2023) y DU 003-2024/006-2024",
+     "tipo": "primaria"
+    }
+   ],
+   "discrepancias": null,
+   "nota": "La MML está exceptuada de la regla fiscal por tener dos calificaciones locales ≥ A (Apoyo AA-, PCR AA). El ratio SDT supera el 100% desde 2017. Valores 2017-2018: 1,580 y 1,599."
+  },
+  {
+   "id": "bonos_mml_emitidos",
+   "nombre": "Bonos titulizados emitidos por la MML",
+   "descripcion": "Monto nominal de bonos titulizados sin garantía del Gobierno Nacional colocados por la MML en el año (moneda: soles; tasa y plazo en nota)",
+   "unidad": "millones de soles",
+   "mejor_si": "baja",
+   "competencia": "mml",
+   "responsable_principal": "MML",
+   "confiabilidad": "alta",
+   "ambito": "Provincia de Lima",
+   "serie": [
+    {
+     "anio": 2023,
+     "valor": 1205,
+     "parcial": false,
+     "nota": "1ra emisión 27-dic-2023: S/ 1,205 mill. (S/ 1,008 para inversión, S/ 197 para prepagar deuda), 20 años, gracia 2.5 años, tasa fija 10.1% anual (110 pb sobre el 9% previsto), garantía: alcabala e impuesto vehicular."
+    },
+    {
+     "anio": 2024,
+     "valor": 1250,
+     "parcial": false,
+     "nota": "2da emisión sep-2024: S/ 1,250 mill., 20 años, gracia 2.5 años, tasa fija 9.5%, misma garantía. Precedida por DU 003-2024 (suspendió la excepción), Ordenanza MML 2604 y DU 006-2024 (rehabilitó con tope 3.5x ingresos)."
+    },
+    {
+     "anio": 2025,
+     "valor": 1300,
+     "parcial": false,
+     "nota": "3ra emisión jun-2025: S/ 1,300 mill., 20 años, tasa prevista 9.7%, garantía: FONCOMUN, predial e impuesto a casinos/tragamonedas. Total acumulado 2023-2025: S/ 3,755 mill."
+    },
+    {
+     "anio": 2026,
+     "valor": null,
+     "parcial": true,
+     "nota": "Sin nueva emisión identificada al corte."
+    }
+   ],
+   "fuentes": [
+    {
+     "nombre": "Consejo Fiscal – Reporte Técnico N° 03-2025-CF/ST: Evolución de las finanzas públicas y cumplimiento de reglas fiscales de GR y GL en 2024 (sección 4: MML)",
+     "url": "https://cf.gob.pe/documentos/reporte-tecnico-03-2025-cf-st/",
+     "fecha_consulta": "2026-09-13",
+     "metodologia": "Saldo de Deuda Total (SDT) según MEF: pasivos + deuda real + deuda exigible",
+     "observaciones": "Gráfico 3 (SDT 2017-2024), Tabla 9 (condiciones de los bonos), Gráfico 8 (calificaciones)",
+     "tipo": "primaria"
+    },
+    {
+     "nombre": "Consejo Fiscal – Reporte Técnico N° 01-2024-CF/ST: Análisis de las finanzas públicas de la Municipalidad Metropolitana de Lima",
+     "url": "https://cf.gob.pe/documentos/reporte-tecnico-01-2024-cf-st/",
+     "fecha_consulta": "2026-09-13",
+     "metodologia": "Elaborado por la Secretaría Técnica del CF con datos MEF, MML y Contraloría",
+     "observaciones": "Cronología de la 1ra emisión de bonos (27-dic-2023) y DU 003-2024/006-2024",
+     "tipo": "primaria"
+    }
+   ],
+   "discrepancias": null,
+   "nota": "Calificaciones de riesgo de la MML (CF 2025): Apoyo & Asociados AA- (2025), Pacific Credit Rating AA (2025), Fitch Ratings BBB (oct-2024), Moody's Ba1 (jun-2025; Ba2 sin aval implícito del Gobierno Nacional). En 2024 el CF calificaba a las locales como 'AA con perspectiva estable'."
+  },
+  {
+   "id": "personal_mml",
+   "nombre": "Servidores de la MML publicados en Transparencia (CAS)",
+   "descripcion": "Número de servidores de la Municipalidad Metropolitana de Lima publicados en el Portal de Transparencia Estándar (sobre todo régimen CAS). Snapshot de diciembre de cada año (2026 a abril).",
+   "unidad": "servidores",
+   "mejor_si": "sube",
+   "competencia": "mml",
+   "responsable_principal": "MML",
+   "confiabilidad": "media",
+   "ambito": "MML (personal publicado)",
+   "serie": [
+    {
+     "anio": 2019,
+     "valor": 6000,
+     "parcial": false,
+     "nota": "Snapshot 2019-12; planilla mensual S/ 15 953 242"
+    },
+    {
+     "anio": 2021,
+     "valor": 3530,
+     "parcial": false,
+     "nota": "Snapshot 2021-12; planilla mensual S/ 9 596 208"
+    },
+    {
+     "anio": 2022,
+     "valor": 2968,
+     "parcial": false,
+     "nota": "Snapshot 2022-12; planilla mensual S/ 10 589 182"
+    },
+    {
+     "anio": 2024,
+     "valor": 971,
+     "parcial": false,
+     "nota": "Snapshot 2024-12; planilla mensual S/ 2 740 800"
+    },
+    {
+     "anio": 2025,
+     "valor": 1371,
+     "parcial": false,
+     "nota": "Snapshot 2025-12; planilla mensual S/ 3 604 033"
+    },
+    {
+     "anio": 2026,
+     "valor": 2009,
+     "parcial": true,
+     "nota": "Snapshot 2026-04; planilla mensual S/ 4 855 207"
+    }
+   ],
+   "fuentes": [
+    {
+     "nombre": "Portal de Transparencia Estándar — Personal, MML (id_entidad 1434)",
+     "url": "https://www.transparencia.gob.pe/personal/pte_transparencia_personal.aspx?id_entidad=1434",
+     "fecha_consulta": "2026-09-14",
+     "tipo": "primaria"
+    }
+   ],
+   "discrepancias": null,
+   "nota": "Vista PARCIAL: el PTE publica principalmente CAS, no el total de trabajadores (obreros, nombrados 276/728 y locadores quedan fuera). Faltan 2020 y 2023 por ausencia de publicación. Fuente cruzada con el repo peru-transparente (id_entidad 1434). Ver la sección 'Personal y economía' para el detalle.",
+   "contexto": true
+  },
+  {
+   "id": "contraloria_informes_mml",
+   "nombre": "Informes de control de la Contraloría sobre la MML",
+   "descripcion": "Número de informes de control emitidos sobre la MML en el año, con hallazgos relevantes en nota",
+   "unidad": "informes",
+   "mejor_si": "baja",
+   "competencia": "otra_entidad",
+   "responsable_principal": "Contraloría General de la República",
+   "confiabilidad": "media",
+   "ambito": "Provincia de Lima",
+   "serie": [
+    {
+     "anio": 2019,
+     "valor": null,
+     "parcial": false,
+     "nota": "Pendiente de verificación."
+    },
+    {
+     "anio": 2020,
+     "valor": null,
+     "parcial": false,
+     "nota": "Pendiente de verificación."
+    },
+    {
+     "anio": 2021,
+     "valor": null,
+     "parcial": false,
+     "nota": "Pendiente de verificación."
+    },
+    {
+     "anio": 2022,
+     "valor": null,
+     "parcial": false,
+     "nota": "Pendiente de verificación."
+    },
+    {
+     "anio": 2023,
+     "valor": null,
+     "parcial": false,
+     "nota": "Pendiente de verificación."
+    },
+    {
+     "anio": 2024,
+     "valor": null,
+     "parcial": false,
+     "nota": "Pendiente de verificación."
+    },
+    {
+     "anio": 2025,
+     "valor": null,
+     "parcial": false,
+     "nota": "Pendiente de verificación."
+    },
+    {
+     "anio": 2026,
+     "valor": null,
+     "parcial": true,
+     "nota": "Pendiente de verificación."
+    }
+   ],
+   "fuentes": [],
+   "discrepancias": null,
+   "nota": "Pendiente."
+  }
+ ],
+ "gestiones": [
+  {
+   "id": "munoz",
+   "alcalde": "Jorge Muñoz Wells",
+   "inicio": "2019-01-01",
+   "fin": null,
+   "nota": "Vacado; fecha exacta pendiente de verificar (JNE/El Peruano).",
+   "fuentes": []
+  },
+  {
+   "id": "romero",
+   "alcalde": "Miguel Romero Sotelo",
+   "inicio": null,
+   "fin": "2022-12-31",
+   "nota": "Gestión transitoria tras vacancia de Muñoz; fecha exacta de asunción pendiente.",
+   "fuentes": []
+  },
+  {
+   "id": "lopez_aliaga",
+   "alcalde": "Rafael López Aliaga Cazorla",
+   "inicio": "2023-01-01",
+   "fin": null,
+   "nota": "Pendiente verificar renuncia para candidatura presidencial 2026.",
+   "fuentes": []
+  },
+  {
+   "id": "reggiardo",
+   "alcalde": "Renzo Reggiardo Barreto",
+   "inicio": null,
+   "fin": null,
+   "nota": "Pendiente verificar asunción como alcalde tras renuncia de López Aliaga.",
+   "fuentes": []
+  }
+ ]
 }
