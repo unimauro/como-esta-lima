@@ -1,4 +1,4 @@
-import { indicadores, DIMENSIONES } from '../data'
+import { indicadores, indicadoresNucleo, DIMENSIONES } from '../data'
 import { cambioTotal, cambiosPorGestion, tendenciaLineal, colorDireccion, etiquetaDireccion, type Direccion } from '../lib/trend'
 import { signed, valorConUnidad } from '../lib/format'
 import { CompetenciaChip } from '../components/Chips'
@@ -15,9 +15,9 @@ function textoCambio(i: (typeof indicadores)[number]) {
 
 export function Diagnostico() {
   const grupos: Record<Direccion, typeof indicadores> = { mejora: [], empeora: [], estable: [], sin_datos: [] }
-  for (const i of indicadores) grupos[cambioTotal(i).direccion].push(i)
+  for (const i of indicadoresNucleo) grupos[cambioTotal(i).direccion].push(i)
 
-  const prioridades = indicadores
+  const prioridades = indicadoresNucleo
     .map((i) => {
       const c = cambioTotal(i); const t = tendenciaLineal(i.serie)
       if (c.pct === null) return null
@@ -33,7 +33,7 @@ export function Diagnostico() {
 
   const porGestion = (['munoz', 'lopez_aliaga'] as const).map((g) => {
     const cnt: Record<Direccion, number> = { mejora: 0, empeora: 0, estable: 0, sin_datos: 0 }
-    for (const i of indicadores) cnt[cambiosPorGestion(i)[g].direccion]++
+    for (const i of indicadoresNucleo) cnt[cambiosPorGestion(i)[g].direccion]++
     return { g, cnt }
   })
 

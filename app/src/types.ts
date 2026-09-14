@@ -33,7 +33,9 @@ export interface Indicador {
   fuentes: Fuente[]
   discrepancias?: string | null
   nota?: string | null
-  por_distrito?: { ubigeo: string; distrito: string; anio: number; poblacion?: number; valor?: number }[]
+  contexto?: boolean
+  comparable_desde?: number
+  por_distrito?: { ubigeo?: string; distrito: string; anio?: number; poblacion?: number; valor?: number }[]
 }
 
 export interface DimensionJson {

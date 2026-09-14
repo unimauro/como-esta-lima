@@ -40,11 +40,12 @@ def norm_serie(serie):
     return sorted(out, key=lambda x: x["anio"])
 
 
-indicadores, resumenes, gestiones = [], {}, None
+indicadores, resumenes, advertencias, gestiones = [], {}, {}, None
 for d in DIMENSIONES:
     j = load(d)
     if not j: continue
     resumenes[d] = j.get("resumen_hallazgos")
+    if j.get("advertencia"): advertencias[d] = j["advertencia"]
     if j.get("gestiones"): gestiones = j["gestiones"]
     for ind in j.get("indicadores", []):
         ind = dict(ind); ind["dimension"] = d
@@ -56,7 +57,7 @@ for d in DIMENSIONES:
         if n == 0: print(f"  [sin datos] {d}/{ind.get('id')}")
         indicadores.append(ind)
 
-(OUT / "indicadores.json").write_text(json.dumps(dict(indicadores=indicadores, resumenes=resumenes), ensure_ascii=False))
+(OUT / "indicadores.json").write_text(json.dumps(dict(indicadores=indicadores, resumenes=resumenes, advertencias=advertencias), ensure_ascii=False))
 print(f"indicadores: {len(indicadores)}")
 
 for name, key in (("proyectos", "proyectos"), ("promesas", "promesas"), ("timeline", "eventos")):

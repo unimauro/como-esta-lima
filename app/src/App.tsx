@@ -9,6 +9,7 @@ import { Timeline } from './sections/Timeline'
 import { Lima2030 } from './sections/Lima2030'
 import { Diagnostico } from './sections/Diagnostico'
 import { Metodologia } from './sections/Metodologia'
+import { Chat } from './components/Chat'
 import { FECHA_CORTE } from './data'
 
 function leerHash() {
@@ -61,6 +62,7 @@ export default function App() {
           <a href="https://github.com/unimauro/como-esta-lima" target="_blank" rel="noopener noreferrer">Código y datos abiertos</a>
         </div>
       </footer>
+      <Chat />
     </>
   )
 }

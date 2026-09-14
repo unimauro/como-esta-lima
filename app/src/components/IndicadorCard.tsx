@@ -52,7 +52,23 @@ export function IndicadorCard({ ind, abierto = false }: { ind: Indicador; abiert
         <CompetenciaChip c={ind.competencia} responsable={ind.responsable_principal} />
         <ConfiabilidadChip c={ind.confiabilidad} />
         <span className="chip">{ind.mejor_si === 'baja' ? 'Mejor si baja' : 'Mejor si sube'}</span>
+        {ind.contexto && <span className="chip" title="Dato de contexto: se muestra como referencia pero no cuenta para el índice ni el diagnóstico de Lima."><span className="chip-dot" style={{ background: 'var(--color-arena)' }} />Contexto (fuera del índice)</span>}
+        {ind.comparable_desde && <span className="chip" title={`La serie cambia de ámbito o metodología; el cambio se calcula desde ${ind.comparable_desde}.`}>Comparable desde {ind.comparable_desde}</span>}
       </div>
+
+      {ind.por_distrito && ind.por_distrito.length > 0 && (
+        <div className="scroll-x hair pt-3">
+          <div className="font-semibold text-sm mb-1">Por distrito</div>
+          <table className="tbl">
+            <thead><tr><th>Distrito</th><th className="r">{ind.unidad === 'S/' ? 'S/ por m²' : 'Valor'}</th></tr></thead>
+            <tbody>
+              {ind.por_distrito.slice().sort((a, b) => (b.valor ?? 0) - (a.valor ?? 0)).map((r) => (
+                <tr key={r.distrito}><td>{r.distrito}</td><td className="r num">{valorConUnidad(r.valor ?? null, ind.unidad)}</td></tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )}
 
       <button className="btn self-start" onClick={() => setOpen((o) => !o)} aria-expanded={open}>
         {open ? 'Ocultar detalle' : 'Ver serie, fuentes y notas'}

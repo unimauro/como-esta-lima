@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { indicadores, DIMENSIONES, gestiones, FECHA_CORTE, mef } from '../data'
+import { indicadores, indicadoresNucleo, DIMENSIONES, gestiones, FECHA_CORTE, mef } from '../data'
 import { scoresPorDimension, indiceCompuesto, PRESETS, type Modo } from '../lib/indice'
 import { cambioTotal, colorDireccion, etiquetaDireccion, type Direccion } from '../lib/trend'
 import { Sparkline } from '../components/Sparkline'
@@ -11,7 +11,7 @@ function Skyline({ onIr }: { onIr: (id: string) => void }) {
   return (
     <div className="grid gap-3" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))' }}>
       {dims.map((d) => {
-        const inds = indicadores.filter((i) => i.dimension === d.id)
+        const inds = indicadoresNucleo.filter((i) => i.dimension === d.id)
         const conteo: Record<Direccion, number> = { mejora: 0, empeora: 0, estable: 0, sin_datos: 0 }
         for (const i of inds) conteo[cambioTotal(i).direccion]++
         const total = conteo.mejora + conteo.empeora + conteo.estable
@@ -47,7 +47,7 @@ function Skyline({ onIr }: { onIr: (id: string) => void }) {
 }
 
 function fraseDiagnostico() {
-  const con = indicadores.map((i) => ({ i, c: cambioTotal(i) })).filter((x) => x.c.direccion !== 'sin_datos')
+  const con = indicadoresNucleo.map((i) => ({ i, c: cambioTotal(i) })).filter((x) => x.c.direccion !== 'sin_datos')
   const m = con.filter((x) => x.c.direccion === 'mejora').length
   const e = con.filter((x) => x.c.direccion === 'empeora').length
   const s = con.filter((x) => x.c.direccion === 'estable').length

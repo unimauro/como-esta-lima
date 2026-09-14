@@ -13,6 +13,7 @@ export const proyectos = proyectosJson as unknown as Proyecto[]
 export const promesas = promesasJson as unknown as Promesa[]
 export const eventos = (timelineJson as unknown as Evento[]).slice().sort((a, b) => a.fecha.localeCompare(b.fecha))
 export const resumenes = (indicadoresJson as { resumenes: Record<string, string | undefined> }).resumenes
+export const advertencias = (indicadoresJson as { advertencias?: Record<string, string | undefined> }).advertencias ?? {}
 
 /** Periodos de gestión (de data/research/institucional.json; con respaldo documentado si falta). */
 const gestionesRaw = gestionesJson as unknown as GestionInfo[]
@@ -95,3 +96,5 @@ export const indicadores: Indicador[] = [
 ]
 
 export const porDimension = (d: string) => indicadores.filter((i) => i.dimension === d)
+/** Indicadores que cuentan para tendencias/índice/diagnóstico (excluye contexto). */
+export const indicadoresNucleo = indicadores.filter((i) => !i.contexto)

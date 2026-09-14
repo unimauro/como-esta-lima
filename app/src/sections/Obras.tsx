@@ -23,7 +23,7 @@ export function Obras() {
   const [q, setQ] = useState('')
   const [abierto, setAbierto] = useState<string | null>(null)
   const [geo, setGeo] = useState<FeatureCollection | null>(null)
-  const [capa, setCapa] = useState<'dev' | 'devpc' | 'seg'>('devpc')
+  const [capa, setCapa] = useState<'dev' | 'devpc' | 'seg'>('dev')
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}geo/lima_distritos.geojson`).then((r) => (r.ok ? r.json() : null)).then(setGeo).catch(() => setGeo(null))
@@ -39,10 +39,12 @@ export function Obras() {
   // Choropleth: último año completo del MEF por distrito + población por distrito (demografía)
   const anioMef = useMemo(() => Math.max(...mef.distritos.filter((d) => d.anio < 2026).map((d) => d.anio), 0), [])
   const pobl = useMemo(() => {
-    const ind = indicadores.find((i) => i.por_distrito?.length)
+    // Solo el indicador de población por distrito (entradas con ubigeo + poblacion).
+    const ind = indicadores.find((i) => i.por_distrito?.some((d) => d.ubigeo && d.poblacion))
     const m = new Map<string, number>()
-    const mx = ind?.por_distrito ? Math.max(...ind.por_distrito.map((d) => d.anio)) : 0
-    for (const d of ind?.por_distrito ?? []) if (d.anio === mx && d.poblacion) m.set(d.ubigeo, d.poblacion)
+    const entradas = (ind?.por_distrito ?? []).filter((d) => d.ubigeo && d.poblacion && d.anio)
+    const mx = entradas.length ? Math.max(...entradas.map((d) => d.anio as number)) : 0
+    for (const d of entradas) if (d.anio === mx) m.set(d.ubigeo as string, d.poblacion as number)
     return { m, anio: mx }
   }, [])
   const porDist = useMemo(() => {
@@ -100,7 +102,7 @@ export function Obras() {
         <p className="text-xs faint m-0">Coropleta: devengado {anioMef || 's/d'} de cada municipalidad distrital según el MEF (la MML se muestra como Lima Cercado). Puntos: proyectos filtrados, coloreados por estado. Azul más oscuro = mayor valor (cuantiles).</p>
         <div style={{ height: 520 }}>
           <MapContainer center={[-12.05, -77.0]} zoom={10} style={{ height: '100%', width: '100%' }} scrollWheelZoom={false}>
-            <TileLayer attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>' url="https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png" />
+            <TileLayer attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>' url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" maxZoom={19} />
             {geo && <GeoJSON key={capa + anioMef} data={geo} style={estilo} onEachFeature={onEach} />}
             {lista.filter((p) => p.lat && p.lon).map((p) => (
               <CircleMarker key={p.id} center={[p.lat as number, p.lon as number]} radius={7} pathOptions={{ color: 'var(--bg-2)', weight: 1.5, fillColor: (etiquetaEstado[p.estado]?.c ?? 'var(--ink-3)'), fillOpacity: 0.95 }}>

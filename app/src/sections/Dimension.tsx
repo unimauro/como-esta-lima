@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { porDimension, resumenes, DIMENSIONES } from '../data'
+import { porDimension, resumenes, advertencias, DIMENSIONES } from '../data'
 import { IndicadorCard } from '../components/IndicadorCard'
 import { etiquetaCompetencia } from '../components/Chips'
 import { cambioTotal } from '../lib/trend'
@@ -17,6 +17,17 @@ export function Dimension({ id }: { id: string }) {
         <h2 className="m-0">{d?.nombre ?? id}</h2>
         {resumenes[id] && <p className="muted mt-2 mb-0 max-w-[85ch]">{resumenes[id]}</p>}
       </header>
+      {advertencias[id] && (
+        <aside className="card p-4" style={{ borderColor: 'var(--color-serio)', background: 'color-mix(in srgb, var(--color-serio) 8%, var(--bg-2))' }} role="note">
+          <div className="flex items-start gap-2">
+            <span aria-hidden style={{ fontSize: 18, lineHeight: 1.2 }}>⚠️</span>
+            <div>
+              <div className="font-semibold text-sm mb-0.5">Cómo leer estos datos</div>
+              <p className="text-sm muted m-0 max-w-[90ch]">{advertencias[id]}</p>
+            </div>
+          </div>
+        </aside>
+      )}
       <div className="flex flex-wrap gap-2 items-center">
         <span className="text-sm muted">Competencia:</span>
         <button className="btn" aria-pressed={comp === 'todas'} onClick={() => setComp('todas')}>Todas</button>

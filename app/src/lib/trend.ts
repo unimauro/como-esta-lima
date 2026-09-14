@@ -65,12 +65,15 @@ export function cambioEntre(ind: Indicador, desdeAnio: number, hastaAnio: number
   return { desde, hasta, abs, pct: pctv, direccion: direccion(orient, ind.mejor_si), parcial: !!hasta.parcial }
 }
 
-/** 2019 → último dato completo (o parcial si no hay otro). */
+/** 2019 → último dato completo (o parcial si no hay otro). Respeta comparable_desde
+ *  (año a partir del cual la serie es comparable tras un cambio de ámbito/metodología). */
 export function cambioTotal(ind: Indicador): Cambio {
   const fin = ultimo(ind.serie, true) ?? ultimo(ind.serie)
-  const ini = primero(ind.serie)
-  if (!fin || !ini) return { desde: ini, hasta: fin, abs: null, pct: null, direccion: 'sin_datos', parcial: false }
-  return cambioEntre(ind, ini.anio, fin.anio, 0)
+  const base = ind.comparable_desde
+    ? puntosValidos(ind.serie).find((p) => p.anio >= (ind.comparable_desde as number)) ?? primero(ind.serie)
+    : primero(ind.serie)
+  if (!fin || !base) return { desde: base, hasta: fin, abs: null, pct: null, direccion: 'sin_datos', parcial: false }
+  return cambioEntre(ind, base.anio, fin.anio, 0)
 }
 
 /** Cambio durante la gestión Muñoz (2019→2022) y López Aliaga (2022→último completo). */

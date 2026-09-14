@@ -29,7 +29,7 @@ export interface ScoreDimension {
 
 export function scoresPorDimension(indicadores: Indicador[], modo: Modo): ScoreDimension[] {
   return DIMENSIONES.filter((d) => d.enIndice).map((d) => {
-    const inds = indicadores.filter((i) => i.dimension === d.id)
+    const inds = indicadores.filter((i) => i.dimension === d.id && !i.contexto)
     const detalle = inds.map((ind) => {
       const cambio = cambioSegunModo(ind, modo)
       return { ind, cambio, score: scoreIndicador(ind, cambio) }
