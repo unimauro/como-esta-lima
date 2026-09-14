@@ -59,6 +59,25 @@ export function Personal() {
         ))}
       </div>
 
+      {(() => {
+        const mefUlt = mef.anios.filter((a) => !a.parcial).at(-1)
+        if (!mefUlt) return null
+        const planillaAnual = P.planilla_mensual_actual * 12
+        const share = (planillaAnual / mefUlt.personal.dev) * 100
+        return (
+          <aside className="card p-4" style={{ borderColor: 'var(--accent)', background: 'color-mix(in srgb, var(--accent) 7%, var(--bg-2))' }}>
+            <div className="font-semibold text-sm mb-1">Conciliación: planilla publicada vs. gasto de personal del MEF</div>
+            <p className="text-sm muted m-0 max-w-[95ch]">
+              La planilla del personal publicado en Transparencia equivale a unos <strong>{soles(planillaAnual)} al año</strong> (S/ {fmt(P.planilla_mensual_actual, 0)} mensuales × 12).
+              El gasto de personal devengado por la Municipalidad según el MEF fue <strong>{soles(mefUlt.personal.dev)} en {mefUlt.anio}</strong>.
+              Es decir, lo publicado en el Portal cubre solo alrededor del <strong>{share.toFixed(0)}%</strong> del gasto real de personal:
+              el resto corresponde a otros regímenes (nombrados 276, obreros), pensiones, obligaciones sociales y cargos directivos que el PTE no lista completos.
+              Confirma que estos {fmt(P.total_actual, 0)} servidores son una parte, no el total de la fuerza laboral municipal.
+            </p>
+          </aside>
+        )
+      })()}
+
       <div className="grid gap-4" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))' }}>
         <section className="card p-4">
           <h3 className="m-0 mb-1">Servidores publicados por año</h3>
