@@ -3,7 +3,7 @@ import { indicadores, indicadoresNucleo, DIMENSIONES, gestiones, FECHA_CORTE, me
 import { scoresPorDimension, indiceCompuesto, PRESETS, type Modo } from '../lib/indice'
 import { cambioTotal, colorDireccion, etiquetaDireccion, type Direccion } from '../lib/trend'
 import { Sparkline } from '../components/Sparkline'
-import { signed } from '../lib/format'
+import { signed, soles } from '../lib/format'
 import { LeyendaGestiones } from '../components/SerieChart'
 
 function Skyline({ onIr }: { onIr: (id: string) => void }) {
@@ -122,15 +122,32 @@ export function Indice() {
 
 export function Inicio({ onIr }: { onIr: (id: string) => void }) {
   const ultimoMef = mef.anios.filter((a) => !a.parcial).at(-1)
+  const pobl = indicadores.find((i) => i.id === 'poblacion_lima_metropolitana')?.serie.filter((p) => p.valor).at(-1)
+  const nDatos = indicadoresNucleo.filter((i) => i.serie.some((p) => p.valor !== null)).length
+  const stats: [string, string, string][] = [
+    ['Población de Lima', pobl ? `${(pobl.valor as number / 1e6).toFixed(2).replace('.', ',')} M` : 's/d', pobl ? `provincia de Lima, ${pobl.anio}` : ''],
+    ['Presupuesto municipal', ultimoMef ? soles(ultimoMef.pim) : 's/d', ultimoMef ? `PIM ${ultimoMef.anio}, ejecución ${ultimoMef.ejecucion_pct}%` : ''],
+    ['Indicadores con serie', String(nDatos), 'de 7 dimensiones, con fuente'],
+    ['Corte de datos', FECHA_CORTE.split('-').reverse().join('/'), '43 distritos'],
+  ]
   return (
     <div className="flex flex-col gap-8">
       <header className="pt-10 pb-2">
+        <div className="text-xs faint mb-3" style={{ letterSpacing: '.04em' }}>LIMA METROPOLITANA · 2019 → 2026</div>
         <h1 className="m-0">¿Está Lima mejor que en 2019?</h1>
-        <p className="text-[18px] muted max-w-[72ch] mt-3 mb-4">{fraseDiagnostico()}</p>
-        <p className="text-sm faint max-w-[80ch] m-0">
-          Fotografía de Lima Metropolitana al cierre de cada gestión municipal y hacia dónde va, con datos oficiales rastreables.
-          Corte: {FECHA_CORTE}. Cada indicador indica quién tiene competencia sobre él: la ciudad no depende solo del alcalde.
-          {ultimoMef && <> Último año presupuestal cerrado: {ultimoMef.anio}.</>}
+        <p className="text-[18px] muted max-w-[72ch] mt-3 mb-5">{fraseDiagnostico()}</p>
+        <div className="grid gap-px rounded-lg overflow-hidden" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', background: 'var(--line)' }}>
+          {stats.map(([k, v, s]) => (
+            <div key={k} className="p-3" style={{ background: 'var(--bg-2)' }}>
+              <div className="text-xs faint">{k}</div>
+              <div className="big num" style={{ fontSize: 26 }}>{v}</div>
+              <div className="text-xs faint mt-0.5">{s}</div>
+            </div>
+          ))}
+        </div>
+        <p className="text-sm faint max-w-[80ch] mt-4 mb-0">
+          Fotografía de la ciudad al cierre de cada gestión municipal y hacia dónde va, con datos oficiales rastreables.
+          Cada indicador señala quién tiene competencia sobre él: la ciudad no depende solo del alcalde.
         </p>
       </header>
 

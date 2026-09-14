@@ -9,13 +9,25 @@ export function Dimension({ id }: { id: string }) {
   const inds = porDimension(id)
   const [comp, setComp] = useState<string>('todas')
   const [dir, setDir] = useState<string>('todas')
+  const [verResumen, setVerResumen] = useState(false)
   const comps = Array.from(new Set(inds.map((i) => i.competencia)))
   const lista = inds.filter((i) => (comp === 'todas' || i.competencia === comp) && (dir === 'todas' || cambioTotal(i).direccion === dir))
+  const conDato = inds.filter((i) => !i.contexto && i.serie.some((p) => p.valor !== null)).length
+  const resumen = resumenes[id]
+  const resumenLargo = resumen && resumen.length > 320
   return (
     <div className="flex flex-col gap-5">
       <header className="pt-8">
-        <h2 className="m-0">{d?.nombre ?? id}</h2>
-        {resumenes[id] && <p className="muted mt-2 mb-0 max-w-[85ch]">{resumenes[id]}</p>}
+        <div className="flex items-baseline gap-3 flex-wrap">
+          <h2 className="m-0">{d?.nombre ?? id}</h2>
+          <span className="chip">{inds.length} indicadores · {conDato} con serie</span>
+        </div>
+        {resumen && (
+          <div className="mt-2 max-w-[85ch]">
+            <p className="muted m-0">{resumenLargo && !verResumen ? resumen.slice(0, 300).replace(/\s\S*$/, '') + '…' : resumen}</p>
+            {resumenLargo && <button className="btn mt-2" style={{ fontSize: 12, padding: '3px 8px' }} onClick={() => setVerResumen((v) => !v)}>{verResumen ? 'Ver menos' : 'Ver metodología completa'}</button>}
+          </div>
+        )}
       </header>
       {advertencias[id] && (
         <aside className="card p-4" style={{ borderColor: 'var(--color-serio)', background: 'color-mix(in srgb, var(--color-serio) 8%, var(--bg-2))' }} role="note">

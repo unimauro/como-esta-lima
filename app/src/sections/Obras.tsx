@@ -23,7 +23,7 @@ export function Obras() {
   const [q, setQ] = useState('')
   const [abierto, setAbierto] = useState<string | null>(null)
   const [geo, setGeo] = useState<FeatureCollection | null>(null)
-  const [capa, setCapa] = useState<'dev' | 'devpc' | 'seg'>('dev')
+  const [capa, setCapa] = useState<'dev' | 'devpc' | 'seg'>('devpc')
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}geo/lima_distritos.geojson`).then((r) => (r.ok ? r.json() : null)).then(setGeo).catch(() => setGeo(null))

@@ -1,58 +1,411 @@
 {
-  "dimension": "demografia",
-  "fecha_corte": "2026-09-13",
-  "resumen_hallazgos": "Población de la provincia de Lima (Lima Metropolitana sin Callao) según las estimaciones y proyecciones del INEI difundidas cada enero por el aniversario de fundación de Lima. INEI usa indistintamente 'Lima Metropolitana' (2023) y 'provincia de Lima' (2024) para el mismo ámbito de 43 distritos. Cifras 2019, 2020 y 2026 no estaban en el material disponible y quedan en null. La población por distrito no se cargó (fuente distrital pendiente).",
-  "indicadores": [
+ "dimension": "demografia",
+ "fecha_corte": "2026-09-13",
+ "resumen_hallazgos": "Población de la provincia de Lima (Lima Metropolitana sin Callao) según las estimaciones y proyecciones del INEI difundidas cada enero por el aniversario de fundación de Lima. INEI usa indistintamente 'Lima Metropolitana' (2023) y 'provincia de Lima' (2024) para el mismo ámbito de 43 distritos. Cifras 2019, 2020 y 2026 no estaban en el material disponible y quedan en null. La población por distrito no se cargó (fuente distrital pendiente).",
+ "indicadores": [
+  {
+   "id": "poblacion_lima_metropolitana",
+   "nombre": "Población de la provincia de Lima (Lima Metropolitana)",
+   "descripcion": "Población proyectada de la provincia de Lima (43 distritos, sin Callao) según INEI, difundida cada 18 de enero por el aniversario de Lima.",
+   "unidad": "habitantes",
+   "mejor_si": "sube",
+   "competencia": "externo",
+   "responsable_principal": "INEI (proyecciones); dinámica demográfica",
+   "confiabilidad": "media",
+   "ambito": "Provincia de Lima",
+   "serie": [
     {
-      "id": "poblacion_lima_metropolitana",
-      "nombre": "Población de la provincia de Lima (Lima Metropolitana)",
-      "descripcion": "Población proyectada de la provincia de Lima (43 distritos, sin Callao) según INEI, difundida cada 18 de enero por el aniversario de Lima.",
-      "unidad": "habitantes",
-      "mejor_si": "sube",
-      "competencia": "externo",
-      "responsable_principal": "INEI (proyecciones); dinámica demográfica",
-      "confiabilidad": "media",
-      "ambito": "Provincia de Lima",
-      "serie": [
-        {"anio": 2019, "valor": null, "parcial": false, "nota": "No disponible en el material; en enero 2018 el INEI estimó 9 millones 320 mil para 'Lima'."},
-        {"anio": 2020, "valor": null, "parcial": false, "nota": "No difundida una cifra específica de Lima ese año en el material disponible."},
-        {"anio": 2021, "valor": 9846000, "parcial": false, "nota": "Titular INEI 'supera los 9 millones 846 mil habitantes' (486° aniversario); cifra redondeada."},
-        {"anio": 2022, "valor": 10000000, "parcial": false, "nota": "Titular INEI 'Lima supera los 10 millones de habitantes al año 2022'; cifra redondeada del titular."},
-        {"anio": 2023, "valor": 10151000, "parcial": false, "nota": "Titular INEI 'Lima Metropolitana supera los 10 millones 151 mil habitantes' (488° aniversario)."},
-        {"anio": 2024, "valor": 10292408, "parcial": false, "nota": "INEI: población de la provincia de Lima 10 291 mil (titular 10 millones 292 mil), proyección al 30 de junio."},
-        {"anio": 2025, "valor": 10400000, "parcial": false, "nota": "Titular INEI 'Lima supera los 10 millones 400 mil habitantes' (490° aniversario, 17-ene-2025); cifra redondeada."},
-        {"anio": 2026, "valor": null, "parcial": true, "nota": "Nota INEI de aniversario 2026 no disponible en el material; los Censos 2025 dieron 34 millones 157 mil 732 para el país."}
-      ],
-      "fuentes": [
-        {"nombre": "INEI — Lima supera los 9 millones 846 mil habitantes (2021)", "url": "https://www.gob.pe/institucion/inei/noticias/534949-lima-supera-los-9-millones-846-mil-habitantes-en-el-ano-del-bicentenario-de-la-independencia-del-peru", "fecha_consulta": "2026-09-13", "tipo": "primaria"},
-        {"nombre": "INEI — Lima supera los 10 millones de habitantes al año 2022", "url": "https://www.gob.pe/institucion/inei/noticias/576899-lima-supera-los-10-millones-de-habitantes-al-ano-2022", "fecha_consulta": "2026-09-13", "tipo": "primaria"},
-        {"nombre": "INEI — Población de Lima Metropolitana supera los 10 millones 151 mil habitantes (2023)", "url": "https://www.gob.pe/institucion/inei/noticias/689179-poblacion-de-lima-metropolitana-supera-los-10-millones-151-mil-habitantes", "fecha_consulta": "2026-09-13", "tipo": "primaria"},
-        {"nombre": "INEI — Población de la provincia de Lima supera los 10 millones 292 mil habitantes (2024)", "url": "https://www.gob.pe/institucion/inei/noticias/894611-poblacion-de-la-provincia-de-lima-supera-los-10-millones-292-mil-habitantes", "fecha_consulta": "2026-09-13", "tipo": "primaria"},
-        {"nombre": "INEI — Lima supera los 10 millones 400 mil habitantes (2025)", "url": "https://www.gob.pe/institucion/inei/noticias/1092367-lima-supera-los-10-millones-400-mil-habitantes", "fecha_consulta": "2026-09-13", "tipo": "primaria"}
-      ],
-      "discrepancias": "INEI rotula el mismo ámbito como 'Lima Metropolitana' (2023) y 'provincia de Lima' (2024). Los titulares redondean; solo 2024 trae cifra exacta (10 292 408).",
-      "nota": "Proyecciones basadas en el Censo 2017; los Censos 2025 podrían revisar la serie. No incluye la Provincia Constitucional del Callao (~1,1 millones), que a veces se suma para 'Lima Metropolitana y Callao'."
+     "anio": 2019,
+     "valor": null,
+     "parcial": false,
+     "nota": "No disponible en el material; en enero 2018 el INEI estimó 9 millones 320 mil para 'Lima'."
     },
     {
-      "id": "tasa_crecimiento_poblacional",
-      "nombre": "Tasa de crecimiento anual de la población de Lima",
-      "descripcion": "Variación porcentual interanual calculada a partir de la serie INEI de población de la provincia de Lima.",
-      "unidad": "%",
-      "mejor_si": "sube",
-      "competencia": "externo",
-      "responsable_principal": "Dinámica demográfica",
-      "confiabilidad": "baja",
-      "ambito": "Provincia de Lima",
-      "serie": [
-        {"anio": 2023, "valor": 1.5, "parcial": false, "nota": "Calculado 2022→2023 sobre titulares redondeados; referencial."},
-        {"anio": 2024, "valor": 1.4, "parcial": false, "nota": "Calculado 2023→2024; referencial."},
-        {"anio": 2025, "valor": 1.0, "parcial": false, "nota": "Calculado 2024→2025 sobre titular redondeado; referencial."}
-      ],
-      "fuentes": [
-        {"nombre": "Cálculo propio sobre la serie INEI de población de la provincia de Lima", "url": "https://www.gob.pe/institucion/inei/noticias/1092367-lima-supera-los-10-millones-400-mil-habitantes", "fecha_consulta": "2026-09-13", "tipo": "secundaria", "metodologia": "(pob_t / pob_{t-1} − 1) × 100 sobre los titulares INEI."}
-      ],
-      "discrepancias": null,
-      "nota": "Confiabilidad baja: se calcula sobre cifras redondeadas de titulares, no sobre las tablas de proyección detalladas."
+     "anio": 2020,
+     "valor": null,
+     "parcial": false,
+     "nota": "No difundida una cifra específica de Lima ese año en el material disponible."
+    },
+    {
+     "anio": 2021,
+     "valor": 9846000,
+     "parcial": false,
+     "nota": "Titular INEI 'supera los 9 millones 846 mil habitantes' (486° aniversario); cifra redondeada."
+    },
+    {
+     "anio": 2022,
+     "valor": 10000000,
+     "parcial": false,
+     "nota": "Titular INEI 'Lima supera los 10 millones de habitantes al año 2022'; cifra redondeada del titular."
+    },
+    {
+     "anio": 2023,
+     "valor": 10151000,
+     "parcial": false,
+     "nota": "Titular INEI 'Lima Metropolitana supera los 10 millones 151 mil habitantes' (488° aniversario)."
+    },
+    {
+     "anio": 2024,
+     "valor": 10292408,
+     "parcial": false,
+     "nota": "INEI: población de la provincia de Lima 10 291 mil (titular 10 millones 292 mil), proyección al 30 de junio."
+    },
+    {
+     "anio": 2025,
+     "valor": 10400000,
+     "parcial": false,
+     "nota": "Titular INEI 'Lima supera los 10 millones 400 mil habitantes' (490° aniversario, 17-ene-2025); cifra redondeada."
+    },
+    {
+     "anio": 2026,
+     "valor": null,
+     "parcial": true,
+     "nota": "Nota INEI de aniversario 2026 no disponible en el material; los Censos 2025 dieron 34 millones 157 mil 732 para el país."
     }
-  ]
+   ],
+   "fuentes": [
+    {
+     "nombre": "INEI — Lima supera los 9 millones 846 mil habitantes (2021)",
+     "url": "https://www.gob.pe/institucion/inei/noticias/534949-lima-supera-los-9-millones-846-mil-habitantes-en-el-ano-del-bicentenario-de-la-independencia-del-peru",
+     "fecha_consulta": "2026-09-13",
+     "tipo": "primaria"
+    },
+    {
+     "nombre": "INEI — Lima supera los 10 millones de habitantes al año 2022",
+     "url": "https://www.gob.pe/institucion/inei/noticias/576899-lima-supera-los-10-millones-de-habitantes-al-ano-2022",
+     "fecha_consulta": "2026-09-13",
+     "tipo": "primaria"
+    },
+    {
+     "nombre": "INEI — Población de Lima Metropolitana supera los 10 millones 151 mil habitantes (2023)",
+     "url": "https://www.gob.pe/institucion/inei/noticias/689179-poblacion-de-lima-metropolitana-supera-los-10-millones-151-mil-habitantes",
+     "fecha_consulta": "2026-09-13",
+     "tipo": "primaria"
+    },
+    {
+     "nombre": "INEI — Población de la provincia de Lima supera los 10 millones 292 mil habitantes (2024)",
+     "url": "https://www.gob.pe/institucion/inei/noticias/894611-poblacion-de-la-provincia-de-lima-supera-los-10-millones-292-mil-habitantes",
+     "fecha_consulta": "2026-09-13",
+     "tipo": "primaria"
+    },
+    {
+     "nombre": "INEI — Lima supera los 10 millones 400 mil habitantes (2025)",
+     "url": "https://www.gob.pe/institucion/inei/noticias/1092367-lima-supera-los-10-millones-400-mil-habitantes",
+     "fecha_consulta": "2026-09-13",
+     "tipo": "primaria"
+    },
+    {
+     "nombre": "CPI — Perú: Población 2026 (Market Report), población por distrito",
+     "url": "https://www.cpi.pe/",
+     "fecha_consulta": "2026-09-14",
+     "tipo": "secundaria",
+     "observaciones": "Estimación CPI en base al Censo 2017 INEI; en miles de personas."
+    }
+   ],
+   "discrepancias": "INEI rotula el mismo ámbito como 'Lima Metropolitana' (2023) y 'provincia de Lima' (2024). Los titulares redondean; solo 2024 trae cifra exacta (10 292 408).",
+   "nota": "Proyecciones basadas en el Censo 2017; los Censos 2025 podrían revisar la serie. No incluye la Provincia Constitucional del Callao (~1,1 millones), que a veces se suma para 'Lima Metropolitana y Callao'. La población por distrito (2026) proviene de CPI (base Censo 2017 INEI), en el campo por_distrito, y se usa para el mapa de gasto per cápita.",
+   "por_distrito": [
+    {
+     "ubigeo": "150101",
+     "distrito": "Lima",
+     "anio": 2026,
+     "poblacion": 326700
+    },
+    {
+     "ubigeo": "150102",
+     "distrito": "Ancón",
+     "anio": 2026,
+     "poblacion": 74300
+    },
+    {
+     "ubigeo": "150103",
+     "distrito": "Ate",
+     "anio": 2026,
+     "poblacion": 706700
+    },
+    {
+     "ubigeo": "150104",
+     "distrito": "Barranco",
+     "anio": 2026,
+     "poblacion": 42500
+    },
+    {
+     "ubigeo": "150105",
+     "distrito": "Breña",
+     "anio": 2026,
+     "poblacion": 104000
+    },
+    {
+     "ubigeo": "150106",
+     "distrito": "Carabayllo",
+     "anio": 2026,
+     "poblacion": 387100
+    },
+    {
+     "ubigeo": "150107",
+     "distrito": "Chaclacayo",
+     "anio": 2026,
+     "poblacion": 51800
+    },
+    {
+     "ubigeo": "150108",
+     "distrito": "Chorrillos",
+     "anio": 2026,
+     "poblacion": 376000
+    },
+    {
+     "ubigeo": "150109",
+     "distrito": "Cieneguilla",
+     "anio": 2026,
+     "poblacion": 40500
+    },
+    {
+     "ubigeo": "150110",
+     "distrito": "Comas",
+     "anio": 2026,
+     "poblacion": 623300
+    },
+    {
+     "ubigeo": "150111",
+     "distrito": "El Agustino",
+     "anio": 2026,
+     "poblacion": 236300
+    },
+    {
+     "ubigeo": "150112",
+     "distrito": "Independencia",
+     "anio": 2026,
+     "poblacion": 252600
+    },
+    {
+     "ubigeo": "150113",
+     "distrito": "Jesús María",
+     "anio": 2026,
+     "poblacion": 93200
+    },
+    {
+     "ubigeo": "150114",
+     "distrito": "La Molina",
+     "anio": 2026,
+     "poblacion": 172400
+    },
+    {
+     "ubigeo": "150115",
+     "distrito": "La Victoria",
+     "anio": 2026,
+     "poblacion": 209500
+    },
+    {
+     "ubigeo": "150116",
+     "distrito": "Lince",
+     "anio": 2026,
+     "poblacion": 67500
+    },
+    {
+     "ubigeo": "150117",
+     "distrito": "Los Olivos",
+     "anio": 2026,
+     "poblacion": 390800
+    },
+    {
+     "ubigeo": "150118",
+     "distrito": "Lurigancho",
+     "anio": 2026,
+     "poblacion": 283800
+    },
+    {
+     "ubigeo": "150119",
+     "distrito": "Lurín",
+     "anio": 2026,
+     "poblacion": 103100
+    },
+    {
+     "ubigeo": "150120",
+     "distrito": "Magdalena del Mar",
+     "anio": 2026,
+     "poblacion": 74100
+    },
+    {
+     "ubigeo": "150121",
+     "distrito": "Pueblo Libre",
+     "anio": 2026,
+     "poblacion": 102700
+    },
+    {
+     "ubigeo": "150122",
+     "distrito": "Miraflores",
+     "anio": 2026,
+     "poblacion": 123900
+    },
+    {
+     "ubigeo": "150123",
+     "distrito": "Pachacámac",
+     "anio": 2026,
+     "poblacion": 126800
+    },
+    {
+     "ubigeo": "150124",
+     "distrito": "Pucusana",
+     "anio": 2026,
+     "poblacion": 17500
+    },
+    {
+     "ubigeo": "150125",
+     "distrito": "Puente Piedra",
+     "anio": 2026,
+     "poblacion": 386100
+    },
+    {
+     "ubigeo": "150126",
+     "distrito": "Punta Hermosa",
+     "anio": 2026,
+     "poblacion": 18800
+    },
+    {
+     "ubigeo": "150127",
+     "distrito": "Punta Negra",
+     "anio": 2026,
+     "poblacion": 8500
+    },
+    {
+     "ubigeo": "150128",
+     "distrito": "Rímac",
+     "anio": 2026,
+     "poblacion": 211000
+    },
+    {
+     "ubigeo": "150129",
+     "distrito": "San Bartolo",
+     "anio": 2026,
+     "poblacion": 8800
+    },
+    {
+     "ubigeo": "150130",
+     "distrito": "San Borja",
+     "anio": 2026,
+     "poblacion": 140700
+    },
+    {
+     "ubigeo": "150131",
+     "distrito": "San Isidro",
+     "anio": 2026,
+     "poblacion": 76100
+    },
+    {
+     "ubigeo": "150132",
+     "distrito": "San Juan de Lurigancho",
+     "anio": 2026,
+     "poblacion": 1229600
+    },
+    {
+     "ubigeo": "150133",
+     "distrito": "San Juan de Miraflores",
+     "anio": 2026,
+     "poblacion": 425200
+    },
+    {
+     "ubigeo": "150134",
+     "distrito": "San Luis",
+     "anio": 2026,
+     "poblacion": 62900
+    },
+    {
+     "ubigeo": "150135",
+     "distrito": "San Martín de Porres",
+     "anio": 2026,
+     "poblacion": 783600
+    },
+    {
+     "ubigeo": "150136",
+     "distrito": "San Miguel",
+     "anio": 2026,
+     "poblacion": 189800
+    },
+    {
+     "ubigeo": "150137",
+     "distrito": "Santa Anita",
+     "anio": 2026,
+     "poblacion": 232500
+    },
+    {
+     "ubigeo": "150138",
+     "distrito": "Santa María del Mar",
+     "anio": 2026,
+     "poblacion": 1300
+    },
+    {
+     "ubigeo": "150139",
+     "distrito": "Santa Rosa",
+     "anio": 2026,
+     "poblacion": 32700
+    },
+    {
+     "ubigeo": "150140",
+     "distrito": "Santiago de Surco",
+     "anio": 2026,
+     "poblacion": 403400
+    },
+    {
+     "ubigeo": "150141",
+     "distrito": "Surquillo",
+     "anio": 2026,
+     "poblacion": 111400
+    },
+    {
+     "ubigeo": "150142",
+     "distrito": "Villa El Salvador",
+     "anio": 2026,
+     "poblacion": 466500
+    },
+    {
+     "ubigeo": "150143",
+     "distrito": "Villa María del Triunfo",
+     "anio": 2026,
+     "poblacion": 473000
+    }
+   ]
+  },
+  {
+   "id": "tasa_crecimiento_poblacional",
+   "nombre": "Tasa de crecimiento anual de la población de Lima",
+   "descripcion": "Variación porcentual interanual calculada a partir de la serie INEI de población de la provincia de Lima.",
+   "unidad": "%",
+   "mejor_si": "sube",
+   "competencia": "externo",
+   "responsable_principal": "Dinámica demográfica",
+   "confiabilidad": "baja",
+   "ambito": "Provincia de Lima",
+   "serie": [
+    {
+     "anio": 2023,
+     "valor": 1.5,
+     "parcial": false,
+     "nota": "Calculado 2022→2023 sobre titulares redondeados; referencial."
+    },
+    {
+     "anio": 2024,
+     "valor": 1.4,
+     "parcial": false,
+     "nota": "Calculado 2023→2024; referencial."
+    },
+    {
+     "anio": 2025,
+     "valor": 1.0,
+     "parcial": false,
+     "nota": "Calculado 2024→2025 sobre titular redondeado; referencial."
+    }
+   ],
+   "fuentes": [
+    {
+     "nombre": "Cálculo propio sobre la serie INEI de población de la provincia de Lima",
+     "url": "https://www.gob.pe/institucion/inei/noticias/1092367-lima-supera-los-10-millones-400-mil-habitantes",
+     "fecha_consulta": "2026-09-13",
+     "tipo": "secundaria",
+     "metodologia": "(pob_t / pob_{t-1} − 1) × 100 sobre los titulares INEI."
+    }
+   ],
+   "discrepancias": null,
+   "nota": "Confiabilidad baja: se calcula sobre cifras redondeadas de titulares, no sobre las tablas de proyección detalladas."
+  }
+ ]
 }
