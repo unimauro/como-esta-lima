@@ -28,10 +28,10 @@ export function LeyendaGestiones() {
   const col: Record<string, string> = { munoz: 'var(--s-munoz)', romero: 'var(--s-romero)', lopez_aliaga: 'var(--s-la)', reggiardo: 'var(--s-la)' }
   return (
     <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs muted">
-      {gestiones.map((g) => (
+      {gestiones.filter((g) => g.inicio || g.fin).map((g) => (
         <span key={g.id} className="inline-flex items-center gap-1.5">
           <span style={{ width: 14, height: 8, background: col[g.id], opacity: 0.35, borderRadius: 2, display: 'inline-block' }} />
-          {g.alcalde} · {g.inicio.slice(0, 7)}–{g.fin ? g.fin.slice(0, 7) : 'hoy'}
+          {g.alcalde} · {g.inicio ? g.inicio.slice(0, 7) : '¿?'}–{g.fin ? g.fin.slice(0, 7) : 'hoy'}
         </span>
       ))}
     </div>

@@ -1,502 +1,58 @@
 {
   "dimension": "demografia",
-  "fecha_corte": "2026-09-12",
-  "resumen_hallazgos": "En elaboración.",
+  "fecha_corte": "2026-09-13",
+  "resumen_hallazgos": "Población de la provincia de Lima (Lima Metropolitana sin Callao) según las estimaciones y proyecciones del INEI difundidas cada enero por el aniversario de fundación de Lima. INEI usa indistintamente 'Lima Metropolitana' (2023) y 'provincia de Lima' (2024) para el mismo ámbito de 43 distritos. Cifras 2019, 2020 y 2026 no estaban en el material disponible y quedan en null. La población por distrito no se cargó (fuente distrital pendiente).",
   "indicadores": [
     {
       "id": "poblacion_lima_metropolitana",
-      "nombre": "Población de Lima Metropolitana",
-      "descripcion": "Población total estimada/proyectada al 30 de junio, Provincia de Lima (43 distritos)",
+      "nombre": "Población de la provincia de Lima (Lima Metropolitana)",
+      "descripcion": "Población proyectada de la provincia de Lima (43 distritos, sin Callao) según INEI, difundida cada 18 de enero por el aniversario de Lima.",
       "unidad": "habitantes",
       "mejor_si": "sube",
       "competencia": "externo",
-      "responsable_principal": "INEI",
-      "confiabilidad": "alta",
+      "responsable_principal": "INEI (proyecciones); dinámica demográfica",
+      "confiabilidad": "media",
       "ambito": "Provincia de Lima",
       "serie": [
-        {
-          "anio": 2019,
-          "valor": null,
-          "parcial": false,
-          "nota": "pendiente"
-        },
-        {
-          "anio": 2020,
-          "valor": null,
-          "parcial": false,
-          "nota": "pendiente"
-        },
-        {
-          "anio": 2021,
-          "valor": null,
-          "parcial": false,
-          "nota": "pendiente"
-        },
-        {
-          "anio": 2022,
-          "valor": null,
-          "parcial": false,
-          "nota": "pendiente"
-        },
-        {
-          "anio": 2023,
-          "valor": null,
-          "parcial": false,
-          "nota": "pendiente"
-        },
-        {
-          "anio": 2024,
-          "valor": null,
-          "parcial": false,
-          "nota": "pendiente"
-        },
-        {
-          "anio": 2025,
-          "valor": null,
-          "parcial": false,
-          "nota": "pendiente"
-        },
-        {
-          "anio": 2026,
-          "valor": null,
-          "parcial": true,
-          "nota": "pendiente"
-        }
+        {"anio": 2019, "valor": null, "parcial": false, "nota": "No disponible en el material; en enero 2018 el INEI estimó 9 millones 320 mil para 'Lima'."},
+        {"anio": 2020, "valor": null, "parcial": false, "nota": "No difundida una cifra específica de Lima ese año en el material disponible."},
+        {"anio": 2021, "valor": 9846000, "parcial": false, "nota": "Titular INEI 'supera los 9 millones 846 mil habitantes' (486° aniversario); cifra redondeada."},
+        {"anio": 2022, "valor": 10000000, "parcial": false, "nota": "Titular INEI 'Lima supera los 10 millones de habitantes al año 2022'; cifra redondeada del titular."},
+        {"anio": 2023, "valor": 10151000, "parcial": false, "nota": "Titular INEI 'Lima Metropolitana supera los 10 millones 151 mil habitantes' (488° aniversario)."},
+        {"anio": 2024, "valor": 10292408, "parcial": false, "nota": "INEI: población de la provincia de Lima 10 291 mil (titular 10 millones 292 mil), proyección al 30 de junio."},
+        {"anio": 2025, "valor": 10400000, "parcial": false, "nota": "Titular INEI 'Lima supera los 10 millones 400 mil habitantes' (490° aniversario, 17-ene-2025); cifra redondeada."},
+        {"anio": 2026, "valor": null, "parcial": true, "nota": "Nota INEI de aniversario 2026 no disponible en el material; los Censos 2025 dieron 34 millones 157 mil 732 para el país."}
       ],
-      "fuentes": [],
-      "discrepancias": null,
-      "nota": "pendiente"
+      "fuentes": [
+        {"nombre": "INEI — Lima supera los 9 millones 846 mil habitantes (2021)", "url": "https://www.gob.pe/institucion/inei/noticias/534949-lima-supera-los-9-millones-846-mil-habitantes-en-el-ano-del-bicentenario-de-la-independencia-del-peru", "fecha_consulta": "2026-09-13", "tipo": "primaria"},
+        {"nombre": "INEI — Lima supera los 10 millones de habitantes al año 2022", "url": "https://www.gob.pe/institucion/inei/noticias/576899-lima-supera-los-10-millones-de-habitantes-al-ano-2022", "fecha_consulta": "2026-09-13", "tipo": "primaria"},
+        {"nombre": "INEI — Población de Lima Metropolitana supera los 10 millones 151 mil habitantes (2023)", "url": "https://www.gob.pe/institucion/inei/noticias/689179-poblacion-de-lima-metropolitana-supera-los-10-millones-151-mil-habitantes", "fecha_consulta": "2026-09-13", "tipo": "primaria"},
+        {"nombre": "INEI — Población de la provincia de Lima supera los 10 millones 292 mil habitantes (2024)", "url": "https://www.gob.pe/institucion/inei/noticias/894611-poblacion-de-la-provincia-de-lima-supera-los-10-millones-292-mil-habitantes", "fecha_consulta": "2026-09-13", "tipo": "primaria"},
+        {"nombre": "INEI — Lima supera los 10 millones 400 mil habitantes (2025)", "url": "https://www.gob.pe/institucion/inei/noticias/1092367-lima-supera-los-10-millones-400-mil-habitantes", "fecha_consulta": "2026-09-13", "tipo": "primaria"}
+      ],
+      "discrepancias": "INEI rotula el mismo ámbito como 'Lima Metropolitana' (2023) y 'provincia de Lima' (2024). Los titulares redondean; solo 2024 trae cifra exacta (10 292 408).",
+      "nota": "Proyecciones basadas en el Censo 2017; los Censos 2025 podrían revisar la serie. No incluye la Provincia Constitucional del Callao (~1,1 millones), que a veces se suma para 'Lima Metropolitana y Callao'."
     },
     {
       "id": "tasa_crecimiento_poblacional",
-      "nombre": "Tasa de crecimiento poblacional anual",
-      "descripcion": "Variación % anual de la población de la Provincia de Lima",
+      "nombre": "Tasa de crecimiento anual de la población de Lima",
+      "descripcion": "Variación porcentual interanual calculada a partir de la serie INEI de población de la provincia de Lima.",
       "unidad": "%",
       "mejor_si": "sube",
       "competencia": "externo",
-      "responsable_principal": "INEI",
-      "confiabilidad": "alta",
+      "responsable_principal": "Dinámica demográfica",
+      "confiabilidad": "baja",
       "ambito": "Provincia de Lima",
       "serie": [
-        {
-          "anio": 2019,
-          "valor": null,
-          "parcial": false,
-          "nota": "pendiente"
-        },
-        {
-          "anio": 2020,
-          "valor": null,
-          "parcial": false,
-          "nota": "pendiente"
-        },
-        {
-          "anio": 2021,
-          "valor": null,
-          "parcial": false,
-          "nota": "pendiente"
-        },
-        {
-          "anio": 2022,
-          "valor": null,
-          "parcial": false,
-          "nota": "pendiente"
-        },
-        {
-          "anio": 2023,
-          "valor": null,
-          "parcial": false,
-          "nota": "pendiente"
-        },
-        {
-          "anio": 2024,
-          "valor": null,
-          "parcial": false,
-          "nota": "pendiente"
-        },
-        {
-          "anio": 2025,
-          "valor": null,
-          "parcial": false,
-          "nota": "pendiente"
-        },
-        {
-          "anio": 2026,
-          "valor": null,
-          "parcial": true,
-          "nota": "pendiente"
-        }
+        {"anio": 2023, "valor": 1.5, "parcial": false, "nota": "Calculado 2022→2023 sobre titulares redondeados; referencial."},
+        {"anio": 2024, "valor": 1.4, "parcial": false, "nota": "Calculado 2023→2024; referencial."},
+        {"anio": 2025, "valor": 1.0, "parcial": false, "nota": "Calculado 2024→2025 sobre titular redondeado; referencial."}
       ],
-      "fuentes": [],
-      "discrepancias": null,
-      "nota": "pendiente"
-    },
-    {
-      "id": "poblacion_venezolana_lima",
-      "nombre": "Población venezolana en Lima (contexto)",
-      "descripcion": "Personas venezolanas residentes en Lima Metropolitana y Callao",
-      "unidad": "personas",
-      "mejor_si": "sube",
-      "competencia": "externo",
-      "responsable_principal": "INEI / Migraciones / R4V",
-      "confiabilidad": "alta",
-      "ambito": "Lima y Callao",
-      "serie": [
-        {
-          "anio": 2019,
-          "valor": null,
-          "parcial": false,
-          "nota": "pendiente"
-        },
-        {
-          "anio": 2020,
-          "valor": null,
-          "parcial": false,
-          "nota": "pendiente"
-        },
-        {
-          "anio": 2021,
-          "valor": null,
-          "parcial": false,
-          "nota": "pendiente"
-        },
-        {
-          "anio": 2022,
-          "valor": null,
-          "parcial": false,
-          "nota": "pendiente"
-        },
-        {
-          "anio": 2023,
-          "valor": null,
-          "parcial": false,
-          "nota": "pendiente"
-        },
-        {
-          "anio": 2024,
-          "valor": null,
-          "parcial": false,
-          "nota": "pendiente"
-        },
-        {
-          "anio": 2025,
-          "valor": null,
-          "parcial": false,
-          "nota": "pendiente"
-        },
-        {
-          "anio": 2026,
-          "valor": null,
-          "parcial": true,
-          "nota": "pendiente"
-        }
+      "fuentes": [
+        {"nombre": "Cálculo propio sobre la serie INEI de población de la provincia de Lima", "url": "https://www.gob.pe/institucion/inei/noticias/1092367-lima-supera-los-10-millones-400-mil-habitantes", "fecha_consulta": "2026-09-13", "tipo": "secundaria", "metodologia": "(pob_t / pob_{t-1} − 1) × 100 sobre los titulares INEI."}
       ],
-      "fuentes": [],
       "discrepancias": null,
-      "nota": "pendiente"
-    }
-  ],
-  "por_distrito": [
-    {
-      "ubigeo": "150101",
-      "distrito": "Lima",
-      "anio": 2019,
-      "poblacion": 269769,
-      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
-    },
-    {
-      "ubigeo": "150102",
-      "distrito": "Ancón",
-      "anio": 2019,
-      "poblacion": 76357,
-      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
-    },
-    {
-      "ubigeo": "150103",
-      "distrito": "Ate",
-      "anio": 2019,
-      "poblacion": 652900,
-      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
-    },
-    {
-      "ubigeo": "150104",
-      "distrito": "Barranco",
-      "anio": 2019,
-      "poblacion": 35745,
-      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
-    },
-    {
-      "ubigeo": "150105",
-      "distrito": "Breña",
-      "anio": 2019,
-      "poblacion": 92153,
-      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
-    },
-    {
-      "ubigeo": "150106",
-      "distrito": "Carabayllo",
-      "anio": 2019,
-      "poblacion": 380890,
-      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
-    },
-    {
-      "ubigeo": "150107",
-      "distrito": "Chaclacayo",
-      "anio": 2019,
-      "poblacion": 43897,
-      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
-    },
-    {
-      "ubigeo": "150108",
-      "distrito": "Chorrillos",
-      "anio": 2019,
-      "poblacion": 349855,
-      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
-    },
-    {
-      "ubigeo": "150109",
-      "distrito": "Cieneguilla",
-      "anio": 2019,
-      "poblacion": 37815,
-      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
-    },
-    {
-      "ubigeo": "150110",
-      "distrito": "Comas",
-      "anio": 2019,
-      "poblacion": 566314,
-      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
-    },
-    {
-      "ubigeo": "150111",
-      "distrito": "El Agustino",
-      "anio": 2019,
-      "poblacion": 218277,
-      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
-    },
-    {
-      "ubigeo": "150112",
-      "distrito": "Independencia",
-      "anio": 2019,
-      "poblacion": 221551,
-      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
-    },
-    {
-      "ubigeo": "150113",
-      "distrito": "Jesús María",
-      "anio": 2019,
-      "poblacion": 80377,
-      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
-    },
-    {
-      "ubigeo": "150114",
-      "distrito": "La Molina",
-      "anio": 2019,
-      "poblacion": 157820,
-      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
-    },
-    {
-      "ubigeo": "150115",
-      "distrito": "La Victoria",
-      "anio": 2019,
-      "poblacion": 188900,
-      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
-    },
-    {
-      "ubigeo": "150116",
-      "distrito": "Lince",
-      "anio": 2019,
-      "poblacion": 59213,
-      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
-    },
-    {
-      "ubigeo": "150117",
-      "distrito": "Los Olivos",
-      "anio": 2019,
-      "poblacion": 349100,
-      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
-    },
-    {
-      "ubigeo": "150118",
-      "distrito": "Lurigancho",
-      "anio": 2019,
-      "poblacion": 271822,
-      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
-    },
-    {
-      "ubigeo": "150119",
-      "distrito": "Lurín",
-      "anio": 2019,
-      "poblacion": 104770,
-      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
-    },
-    {
-      "ubigeo": "150120",
-      "distrito": "Magdalena del Mar",
-      "anio": 2019,
-      "poblacion": 63856,
-      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
-    },
-    {
-      "ubigeo": "150121",
-      "distrito": "Pueblo Libre",
-      "anio": 2019,
-      "poblacion": 92250,
-      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
-    },
-    {
-      "ubigeo": "150122",
-      "distrito": "Miraflores",
-      "anio": 2019,
-      "poblacion": 106735,
-      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
-    },
-    {
-      "ubigeo": "150123",
-      "distrito": "Pachacamac",
-      "anio": 2019,
-      "poblacion": 134104,
-      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
-    },
-    {
-      "ubigeo": "150124",
-      "distrito": "Pucusana",
-      "anio": 2019,
-      "poblacion": 16032,
-      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
-    },
-    {
-      "ubigeo": "150125",
-      "distrito": "Puente Piedra",
-      "anio": 2019,
-      "poblacion": 379550,
-      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
-    },
-    {
-      "ubigeo": "150126",
-      "distrito": "Punta Hermosa",
-      "anio": 2019,
-      "poblacion": 19966,
-      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
-    },
-    {
-      "ubigeo": "150127",
-      "distrito": "Punta Negra",
-      "anio": 2019,
-      "poblacion": 7955,
-      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
-    },
-    {
-      "ubigeo": "150128",
-      "distrito": "Rímac",
-      "anio": 2019,
-      "poblacion": 179892,
-      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
-    },
-    {
-      "ubigeo": "150129",
-      "distrito": "San Bartolo",
-      "anio": 2019,
-      "poblacion": 8442,
-      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
-    },
-    {
-      "ubigeo": "150130",
-      "distrito": "San Borja",
-      "anio": 2019,
-      "poblacion": 125183,
-      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
-    },
-    {
-      "ubigeo": "150131",
-      "distrito": "San Isidro",
-      "anio": 2019,
-      "poblacion": 66878,
-      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
-    },
-    {
-      "ubigeo": "150132",
-      "distrito": "San Juan de Lurigancho",
-      "anio": 2019,
-      "poblacion": 1152258,
-      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
-    },
-    {
-      "ubigeo": "150133",
-      "distrito": "San Juan de Miraflores",
-      "anio": 2019,
-      "poblacion": 408538,
-      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
-    },
-    {
-      "ubigeo": "150134",
-      "distrito": "San Luis",
-      "anio": 2019,
-      "poblacion": 55688,
-      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
-    },
-    {
-      "ubigeo": "150135",
-      "distrito": "San Martín de Porres",
-      "anio": 2019,
-      "poblacion": 729268,
-      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
-    },
-    {
-      "ubigeo": "150136",
-      "distrito": "San Miguel",
-      "anio": 2019,
-      "poblacion": 169282,
-      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
-    },
-    {
-      "ubigeo": "150137",
-      "distrito": "Santa Anita",
-      "anio": 2019,
-      "poblacion": 218514,
-      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
-    },
-    {
-      "ubigeo": "150138",
-      "distrito": "Santa María del Mar",
-      "anio": 2019,
-      "poblacion": 1106,
-      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
-    },
-    {
-      "ubigeo": "150139",
-      "distrito": "Santa Rosa",
-      "anio": 2019,
-      "poblacion": 34361,
-      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
-    },
-    {
-      "ubigeo": "150140",
-      "distrito": "Santiago de Surco",
-      "anio": 2019,
-      "poblacion": 397082,
-      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
-    },
-    {
-      "ubigeo": "150141",
-      "distrito": "Surquillo",
-      "anio": 2019,
-      "poblacion": 99397,
-      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
-    },
-    {
-      "ubigeo": "150142",
-      "distrito": "Villa El Salvador",
-      "anio": 2019,
-      "poblacion": 420278,
-      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
-    },
-    {
-      "ubigeo": "150143",
-      "distrito": "Villa María del Triunfo",
-      "anio": 2019,
-      "poblacion": 432835,
-      "fuente": "INEI Boletín Especial N°27 (Lib1860), proyección al 30-jun-2019"
+      "nota": "Confiabilidad baja: se calcula sobre cifras redondeadas de titulares, no sobre las tablas de proyección detalladas."
     }
   ]
 }

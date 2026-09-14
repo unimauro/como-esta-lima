@@ -16,13 +16,25 @@ export const resumenes = (indicadoresJson as { resumenes: Record<string, string 
 
 /** Periodos de gestión (de data/research/institucional.json; con respaldo documentado si falta). */
 const gestionesRaw = gestionesJson as unknown as GestionInfo[]
-export const gestiones: GestionInfo[] = gestionesRaw.length
-  ? gestionesRaw
-  : [
-      { id: 'munoz', alcalde: 'Jorge Muñoz', inicio: '2019-01-01', fin: '2022-04-04', nota: 'Fecha de fin por verificar (vacancia JNE)' },
-      { id: 'romero', alcalde: 'Miguel Romero', inicio: '2022-04-05', fin: '2022-12-31', nota: 'Gestión transitoria' },
-      { id: 'lopez_aliaga', alcalde: 'Rafael López Aliaga', inicio: '2023-01-01', fin: null },
-    ]
+// Periodos de gestión (hechos públicos documentados). Los agentes pueden dejar
+// fechas en null; se completan con estos límites para que las bandas del eje de
+// tiempo sean correctas, conservando alcalde/nota/fuentes de la fuente de datos.
+const LIMITES: Record<string, { inicio: string | null; fin: string | null }> = {
+  munoz: { inicio: '2019-01-01', fin: '2022-04-04' },
+  romero: { inicio: '2022-04-05', fin: '2022-12-31' },
+  lopez_aliaga: { inicio: '2023-01-01', fin: null },
+  reggiardo: { inicio: null, fin: null },
+}
+const FALLBACK: GestionInfo[] = [
+  { id: 'munoz', alcalde: 'Jorge Muñoz', inicio: '2019-01-01', fin: '2022-04-04', nota: 'Vacado por el Concejo Metropolitano' },
+  { id: 'romero', alcalde: 'Miguel Romero', inicio: '2022-04-05', fin: '2022-12-31', nota: 'Gestión transitoria' },
+  { id: 'lopez_aliaga', alcalde: 'Rafael López Aliaga', inicio: '2023-01-01', fin: null },
+]
+export const gestiones: GestionInfo[] = (gestionesRaw.length ? gestionesRaw : FALLBACK).map((g) => ({
+  ...g,
+  inicio: g.inicio ?? LIMITES[g.id]?.inicio ?? null,
+  fin: g.fin ?? LIMITES[g.id]?.fin ?? null,
+}))
 
 export const nombreGestion: Record<string, string> = {
   munoz: 'Muñoz',
