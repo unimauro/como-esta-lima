@@ -121,18 +121,22 @@ a:hover { text-decoration: underline; }
 .num { font-variant-numeric: tabular-nums; font-feature-settings: "tnum" 1; }
 .big { font-family: var(--font-display); font-weight: 600; font-size: 30px; line-height: 1; letter-spacing: -0.02em; }
 
+/* Etiqueta cívica: tag rectangular con esquina apenas redondeada (no píldora SaaS) */
 .chip {
   display: inline-flex; align-items: center; gap: 5px;
-  font-size: 12px; line-height: 1; padding: 4px 8px; border-radius: 999px;
+  font-size: 12px; line-height: 1; padding: 4px 8px; border-radius: 5px;
   border: 1px solid var(--line); color: var(--ink-2); background: var(--bg);
   white-space: nowrap;
 }
-.chip-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+.chip-dot { width: 8px; height: 8px; border-radius: 2px; display: inline-block; }
 
-.tbl { width: 100%; border-collapse: collapse; font-size: 14px; }
-.tbl th { text-align: left; font-weight: 600; color: var(--ink-2); padding: 8px 10px; border-bottom: 1px solid var(--line); font-size: 13px; }
+/* Tablas con aire de anuario estadístico: encabezado con regla fuerte, cifras
+   tabulares alineadas, filas separadas por hairlines. */
+.tbl { width: 100%; border-collapse: collapse; font-size: 14px; font-variant-numeric: tabular-nums; }
+.tbl thead th { text-align: left; font-weight: 600; color: var(--ink-2); padding: 7px 10px; border-bottom: 1.5px solid var(--ink-2); font-size: 12.5px; }
 .tbl td { padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
-.tbl td.r, .tbl th.r { text-align: right; }
+.tbl tbody tr:hover td { background: var(--bg-3); }
+.tbl td.r, .tbl th.r { text-align: right; font-variant-numeric: tabular-nums; }
 .tbl tr:last-child td { border-bottom: 0; }
 .scroll-x { overflow-x: auto; }
 
