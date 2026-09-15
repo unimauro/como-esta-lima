@@ -5,6 +5,8 @@ import { cambioTotal, colorDireccion, etiquetaDireccion, type Direccion } from '
 import { Sparkline } from '../components/Sparkline'
 import { signed, soles } from '../lib/format'
 import { LeyendaGestiones } from '../components/SerieChart'
+import { LimaSkyline } from '../components/LimaSkyline'
+import { EjecucionAvance } from '../components/EjecucionAvance'
 
 function Skyline({ onIr }: { onIr: (id: string) => void }) {
   const dims = DIMENSIONES.filter((d) => d.enIndice)
@@ -78,7 +80,7 @@ export function Indice() {
         </div>
       </div>
 
-      <div className="grid gap-5 items-start" style={{ gridTemplateColumns: 'minmax(220px, 300px) 1fr' }}>
+      <div className="grid gap-5 items-start indice-cols">
         <div className="card p-4 flex flex-col items-start gap-1" style={{ background: 'var(--bg)' }}>
           <div className="text-sm muted">Índice ponderado</div>
           <div className="display num" style={{ fontSize: 56, fontWeight: 600, lineHeight: 1, color: total === null ? 'var(--ink-3)' : total > 3 ? colorDireccion.mejora : total < -3 ? colorDireccion.empeora : colorDireccion.estable }}>
@@ -93,7 +95,7 @@ export function Indice() {
         </div>
         <div className="flex flex-col gap-2">
           {scores.map((s) => (
-            <div key={s.id} className="grid items-center gap-3" style={{ gridTemplateColumns: '1fr 120px 70px' }}>
+            <div key={s.id} className="grid items-center gap-3" style={{ gridTemplateColumns: 'minmax(0, 1fr) 90px 56px' }}>
               <div>
                 <div className="flex items-baseline justify-between gap-2">
                   <span className="font-semibold text-sm">{s.nombre}</span>
@@ -132,7 +134,8 @@ export function Inicio({ onIr }: { onIr: (id: string) => void }) {
   ]
   return (
     <div className="flex flex-col gap-8">
-      <header className="pt-10 pb-2">
+      <header className="pt-6 pb-2">
+        <div className="mb-5"><LimaSkyline alto={180} /></div>
         <div className="text-xs faint mb-3" style={{ letterSpacing: '.04em' }}>LIMA METROPOLITANA · 2019 → 2026</div>
         <h1 className="m-0">¿Está Lima mejor que en 2019?</h1>
         <p className="text-[18px] muted max-w-[72ch] mt-3 mb-5">{fraseDiagnostico()}</p>
@@ -140,7 +143,7 @@ export function Inicio({ onIr }: { onIr: (id: string) => void }) {
           {stats.map(([k, v, s]) => (
             <div key={k} className="p-3" style={{ background: 'var(--bg-2)' }}>
               <div className="text-xs faint">{k}</div>
-              <div className="big num" style={{ fontSize: 26 }}>{v}</div>
+              <div className="big num" style={{ fontSize: 'clamp(20px, 5.2vw, 26px)', overflowWrap: 'anywhere' }}>{v}</div>
               <div className="text-xs faint mt-0.5">{s}</div>
             </div>
           ))}
@@ -164,6 +167,8 @@ export function Inicio({ onIr }: { onIr: (id: string) => void }) {
       </section>
 
       <Indice />
+
+      <EjecucionAvance />
 
       <section className="grid gap-3" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))' }}>
         {[

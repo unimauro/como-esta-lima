@@ -94,8 +94,8 @@ h1, h2, h3, .display {
   letter-spacing: -0.015em;
   line-height: 1.08;
 }
-h1 { font-size: clamp(34px, 5.2vw, 56px); font-weight: 600; }
-h2 { font-size: clamp(24px, 3vw, 34px); font-weight: 600; }
+h1 { font-size: clamp(28px, 6.4vw, 56px); font-weight: 600; overflow-wrap: break-word; }
+h2 { font-size: clamp(22px, 3vw, 34px); font-weight: 600; overflow-wrap: break-word; }
 h3 { font-size: 20px; font-weight: 600; }
 
 a { color: var(--accent); text-decoration: none; }
@@ -125,6 +125,25 @@ a:hover { text-decoration: underline; }
 .tbl td.r, .tbl th.r { text-align: right; }
 .tbl tr:last-child td { border-bottom: 0; }
 .scroll-x { overflow-x: auto; }
+
+/* Ilustración de Lima: colores por tema (vencen al <style> interno del SVG) */
+:root[data-theme="dark"] .lima-svg-scope,
+:root:where(:not([data-theme="light"])) .lima-svg-scope {
+  --sky-1: #1c242c; --sky-2: #141a20; --sea-1: #124e58; --sea-2: #0c3b42;
+  --hill: #3a4048; --hill2: #2e343b; --city: #2a323a; --city2: #232b33; --sun: #c98500;
+}
+@media (prefers-color-scheme: dark) {
+  :root:where(:not([data-theme="light"])) .lima-svg-scope {
+    --sky-1: #1c242c; --sky-2: #141a20; --sea-1: #124e58; --sea-2: #0c3b42;
+    --hill: #3a4048; --hill2: #2e343b; --city: #2a323a; --city2: #232b33; --sun: #c98500;
+  }
+}
+
+/* Índice: apila en móvil, dos columnas desde 720px */
+.indice-cols { grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 720px) {
+  .indice-cols { grid-template-columns: minmax(220px, 300px) minmax(0, 1fr); }
+}
 
 /* Navegación responsive (control explícito para vencer el display de .btn) */
 .nav-desk-only { display: none; }

@@ -5,6 +5,7 @@ import { soles, pct, MESES } from '../lib/format'
 import { IndicadorCard } from '../components/IndicadorCard'
 import { porDimension } from '../data'
 import { LeyendaGestiones } from '../components/SerieChart'
+import { EjecucionAvance } from '../components/EjecucionAvance'
 
 const TT = ({ active, payload, label, fmt = soles }: { active?: boolean; payload?: { name: string; value: number; color?: string }[]; label?: string | number; fmt?: (n: number) => string }) => {
   if (!active || !payload?.length) return null
@@ -52,6 +53,8 @@ export function Finanzas() {
           y solo debe compararse con el devengado acumulado al mismo mes de los otros años.
         </p>
       </header>
+
+      <EjecucionAvance />
 
       <div className="scroll-x card p-4">
         <table className="tbl">
