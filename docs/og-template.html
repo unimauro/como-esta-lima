@@ -1,0 +1,57 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#12181a;--ink:#f0eee7;--ink2:#b2b8b1;--ink3:#7b827c;
+    --bueno:#3fbf5a;--critico:#e0574f;--alerta:#f0b429;
+    --sea2:#0c3b42;--hill:#3a4048;--hill2:#2e343b;--city:#2a323a;}
+  *{margin:0;box-sizing:border-box}
+  html,body{width:1200px;height:630px;background:var(--bg);color:var(--ink);font-family:"Public Sans",sans-serif;overflow:hidden}
+  .wrap{position:relative;width:1200px;height:630px;padding:44px 64px;display:flex;flex-direction:column;z-index:2}
+  .masthead{display:flex;justify-content:space-between;align-items:baseline;border-top:3px solid var(--ink);padding-top:14px;font-size:20px;font-weight:600}
+  .masthead .r{color:var(--ink3);font-weight:400}
+  h1{font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:70px;line-height:1.03;letter-spacing:-.02em;margin-top:26px;max-width:1000px}
+  .sub{font-size:25px;color:var(--ink2);margin-top:16px;max-width:1020px;line-height:1.32}
+  .verdict{display:flex;gap:44px;margin-top:26px}
+  .v{display:flex;flex-direction:column;gap:3px}
+  .v .n{font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:50px;line-height:1;font-variant-numeric:tabular-nums}
+  .v .l{font-size:19px;color:var(--ink2);display:flex;align-items:center;gap:7px}
+  .dot{width:13px;height:13px;border-radius:3px;display:inline-block}
+  .foot{margin-top:24px;display:flex;gap:44px;font-size:21px;color:var(--ink2)}
+  .foot b{color:var(--ink);font-weight:600}
+  .brand{margin-top:auto;font-size:18px;color:var(--ink3)}
+  svg.sky{position:absolute;left:0;bottom:0;width:1200px;height:132px;display:block;z-index:1;opacity:.9}
+</style></head>
+<body>
+  <svg class="sky" viewBox="0 0 1200 132" preserveAspectRatio="xMidYMax slice">
+    <g fill="var(--city)">
+      <rect x="60" y="30" width="26" height="102"/><rect x="92" y="12" width="18" height="120"/><rect x="118" y="42" width="30" height="90"/>
+      <rect x="156" y="20" width="16" height="112"/><rect x="180" y="48" width="34" height="84"/><rect x="222" y="26" width="20" height="106"/>
+      <rect x="250" y="36" width="26" height="96"/><rect x="286" y="16" width="14" height="116"/>
+      <rect x="912" y="34" width="22" height="98"/><rect x="940" y="18" width="16" height="114"/><rect x="962" y="46" width="30" height="86"/>
+      <rect x="1000" y="26" width="18" height="106"/><rect x="1026" y="50" width="28" height="82"/><rect x="1062" y="32" width="22" height="100"/>
+    </g>
+    <path d="M340 132 Q480 6 650 132 Z" fill="var(--hill2)"/>
+    <path d="M350 132 Q470 30 570 132 Z" fill="var(--hill)"/>
+    <g stroke="var(--hill2)" stroke-width="4"><line x1="496" y1="24" x2="496" y2="50"/><line x1="484" y1="34" x2="508" y2="34"/></g>
+    <rect x="0" y="106" width="1200" height="26" fill="var(--sea2)"/>
+    <g stroke="#ffffff" stroke-opacity=".28" stroke-width="2" fill="none">
+      <path d="M60 118 q22 -6 44 0 t44 0 t44 0"/><path d="M430 121 q22 -6 44 0 t44 0 t44 0"/><path d="M830 119 q22 -6 44 0 t44 0 t44 0"/>
+    </g>
+  </svg>
+  <div class="wrap">
+    <div class="masthead"><span>Observatorio ciudadano de Lima Metropolitana</span><span class="r">Datos oficiales 2019–2026</span></div>
+    <h1>¿Está Lima mejor que en 2019?</h1>
+    <div class="sub">Balance con datos rastreables al cierre de cada gestión. La ciudad no depende solo del alcalde.</div>
+    <div class="verdict">
+      <div class="v"><span class="n" style="color:var(--bueno)">12</span><span class="l"><i class="dot" style="background:var(--bueno)"></i>mejoraron</span></div>
+      <div class="v"><span class="n" style="color:var(--critico)">16</span><span class="l"><i class="dot" style="background:var(--critico)"></i>empeoraron</span></div>
+      <div class="v"><span class="n" style="color:var(--alerta)">11</span><span class="l"><i class="dot" style="background:var(--alerta)"></i>se mantuvieron</span></div>
+    </div>
+    <div class="foot">
+      <span>Presupuesto ejecutado a agosto 2026: <b>56%</b></span>
+      <span>Sensación de inseguridad: <b>63% a 78%</b></span>
+    </div>
+    <div class="brand">unimauro.github.io/como-esta-lima</div>
+  </div>
+</body></html>
