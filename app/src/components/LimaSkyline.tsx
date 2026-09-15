@@ -21,7 +21,7 @@ export function LimaSkyline({ alto = 200 }: { alto?: number }) {
           {/* cielo garúa */}
           <rect width="1200" height="220" fill="url(#garua)" />
           {/* sol tenue */}
-          <circle cx="980" cy="60" r="34" fill="var(--sun)" opacity="0.18" />
+          <circle cx="980" cy="60" r="34" fill="var(--sun)" opacity="0.12" />
           {/* skyline lejano de la ciudad */}
           <g fill="var(--city)" opacity="0.55">
             <rect x="60" y="96" width="26" height="70" />

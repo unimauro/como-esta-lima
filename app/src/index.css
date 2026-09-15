@@ -4,13 +4,13 @@
 
 @theme {
   --font-display: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif;
-  --font-body: "Source Sans 3", "Segoe UI", Roboto, sans-serif;
-  --color-garua: #edeff1;
-  --color-tinta: #172029;
-  --color-arena: #c9b79a;
-  --color-mar: #0f5f6b;
-  --color-noche: #11161b;
-  --color-piedra: #5a6570;
+  --font-body: "Public Sans", "Segoe UI", Roboto, sans-serif;
+  --color-garua: #e8e6df;
+  --color-tinta: #1b2124;
+  --color-arena: #b98a5e;
+  --color-mar: #0d5c66;
+  --color-noche: #12181a;
+  --color-piedra: #575e5c;
   --color-munoz: #2a78d6;
   --color-romero: #8a949e;
   --color-la: #eb6834;
@@ -20,25 +20,27 @@
   --color-critico: #d03b3b;
 }
 
+/* Paleta "Garúa y Costa Verde": piedra caliza cálida + verde-mar + ocre adobe.
+   Deliberadamente NO es ni crema-terracota ni gris-azulado de dashboard. */
 :root {
   color-scheme: light;
-  --bg: #edeff1;
-  --bg-2: #ffffff;
-  --bg-3: #e2e6ea;
-  --ink: #172029;
-  --ink-2: #5a6570;
-  --ink-3: #8a949e;
-  --line: #d3d9de;
-  --accent: #0f5f6b;
-  --accent-ink: #ffffff;
-  --grid: #dfe3e7;
+  --bg: #e7e4dc;
+  --bg-2: #f5f3ed;
+  --bg-3: #dbd7cc;
+  --ink: #1b2124;
+  --ink-2: #565d5b;
+  --ink-3: #898e86;
+  --line: #d1ccbf;
+  --accent: #0d5c66;
+  --accent-ink: #f7f5ef;
+  --grid: #d9d5c9;
   --band-munoz: rgba(42, 120, 214, 0.08);
   --band-romero: rgba(138, 148, 158, 0.12);
   --band-la: rgba(235, 104, 52, 0.08);
   --s-munoz: #2a78d6;
   --s-romero: #8a949e;
   --s-la: #eb6834;
-  --s-city: #172029;
+  --s-city: #1b2124;
   --s-seq-1: #cde2fb;
   --s-seq-2: #9ec5f4;
   --s-seq-3: #6da7ec;
@@ -50,23 +52,23 @@
 
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --bg: #11161b;
-  --bg-2: #1a2027;
-  --bg-3: #232b33;
-  --ink: #f2f4f6;
-  --ink-2: #b7c0c8;
-  --ink-3: #7f8a94;
-  --line: #2e3740;
-  --accent: #4fb3bf;
-  --accent-ink: #0b1418;
-  --grid: #2a323a;
+  --bg: #12181a;
+  --bg-2: #1a2325;
+  --bg-3: #232e30;
+  --ink: #f0eee7;
+  --ink-2: #b2b8b1;
+  --ink-3: #7b827c;
+  --line: #2c3739;
+  --accent: #4fb8b0;
+  --accent-ink: #0b1516;
+  --grid: #283234;
   --band-munoz: rgba(57, 135, 229, 0.12);
   --band-romero: rgba(138, 148, 158, 0.14);
   --band-la: rgba(217, 89, 38, 0.13);
   --s-munoz: #3987e5;
   --s-romero: #8a949e;
   --s-la: #d95926;
-  --s-city: #f2f4f6;
+  --s-city: #f0eee7;
   --s-seq-1: #0d366b;
   --s-seq-2: #104281;
   --s-seq-3: #184f95;
@@ -103,6 +105,14 @@ a:hover { text-decoration: underline; }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
 
 .wrap { max-width: 1180px; margin: 0 auto; padding-inline: 20px; }
+
+/* Cabecera de boletín (masthead): regla superior fuerte + identidad + dateline */
+.masthead {
+  display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between;
+  gap: 4px 16px; padding-top: 10px; border-top: 2px solid var(--ink);
+  font-size: 13px; line-height: 1.35;
+}
+.masthead > span:first-child { font-weight: 600; color: var(--ink); }
 .card { background: var(--bg-2); border: 1px solid var(--line); border-radius: 10px; }
 .muted { color: var(--ink-2); }
 .faint { color: var(--ink-3); }

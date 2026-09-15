@@ -136,7 +136,10 @@ export function Inicio({ onIr }: { onIr: (id: string) => void }) {
     <div className="flex flex-col gap-8">
       <header className="pt-6 pb-2">
         <div className="mb-5"><LimaSkyline alto={180} /></div>
-        <div className="text-xs faint mb-3" style={{ letterSpacing: '.04em' }}>LIMA METROPOLITANA · 2019 → 2026</div>
+        <div className="masthead mb-4">
+          <span>Observatorio ciudadano de Lima Metropolitana</span>
+          <span className="faint">Datos oficiales de 2019 a 2026, con corte al 12 de septiembre de 2026</span>
+        </div>
         <h1 className="m-0">¿Está Lima mejor que en 2019?</h1>
         <p className="text-[18px] muted max-w-[72ch] mt-3 mb-5">{fraseDiagnostico()}</p>
         <div className="grid gap-px rounded-lg overflow-hidden" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', background: 'var(--line)' }}>
@@ -156,7 +159,7 @@ export function Inicio({ onIr }: { onIr: (id: string) => void }) {
 
       <section aria-labelledby="skyline-t" className="flex flex-col gap-3">
         <div className="flex items-baseline justify-between flex-wrap gap-2">
-          <h2 id="skyline-t" className="m-0">Tendencias 2019 → hoy</h2>
+          <h2 id="skyline-t" className="m-0">Cómo cambió cada dimensión desde 2019</h2>
           <span className="text-xs faint">Cada tarjeta muestra el indicador de mayor cambio y el conteo de indicadores que mejoraron ▲, se mantuvieron ■ o empeoraron ▼.</span>
         </div>
         <Skyline onIr={onIr} />
