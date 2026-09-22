@@ -161,6 +161,23 @@
    ]
   },
   {
+   "fecha": "2022-11-04",
+   "titulo": "Se inaugura el primer tramo de la Costa Verde del Callao",
+   "descripcion": "Entra en servicio el tramo de la Costa Verde del Callao con la salida de los viaductos de la av. Haya de la Torre y la av. Santa Rosa, como nueva conexión entre el Callao y Lima. Obra del Gobierno Regional del Callao / Autoridad del Proyecto Costa Verde, no de la MML.",
+   "gestion": "romero",
+   "categoria": "obra",
+   "fuentes": [
+    {
+     "nombre": "Wikipedia: Circuito de playas de la Costa Verde",
+     "url": "https://es.wikipedia.org/wiki/Circuito_de_playas_de_la_Costa_Verde",
+     "fecha_consulta": "2026-09-22",
+     "metodologia": null,
+     "observaciones": "Wikipedia (secundaria); verificar contra fuente primaria del Gobierno Regional del Callao.",
+     "tipo": "secundaria"
+    }
+   ]
+  },
+  {
    "fecha": "2023-01-01",
    "titulo": "Rafael López Aliaga asume la alcaldía de Lima",
    "descripcion": "Inicio de la gestión municipal 2023-2026 (Renovación Popular).",
@@ -173,6 +190,23 @@
      "fecha_consulta": "2026-09-13",
      "metodologia": null,
      "observaciones": "por verificar",
+     "tipo": "secundaria"
+    }
+   ]
+  },
+  {
+   "fecha": "2023-12-05",
+   "titulo": "López Aliaga cuestiona los peajes de Rutas de Lima en Puente Piedra",
+   "descripcion": "El alcalde calificó de lesivo el contrato de concesión de Rutas de Lima y anunció acciones contra el alza del peaje de Puente Piedra (Panamericana Norte). Inicio público del conflicto MML–Rutas de Lima.",
+   "gestion": "lopez_aliaga",
+   "categoria": "politico",
+   "fuentes": [
+    {
+     "nombre": "El Comercio, 05-12-2023 (citado en Wikipedia: Rafael López-Aliaga)",
+     "url": "https://es.wikipedia.org/wiki/Rafael_L%C3%B3pez-Aliaga",
+     "fecha_consulta": "2026-09-22",
+     "metodologia": null,
+     "observaciones": "Referencia periodística citada por Wikipedia; verificar URL y texto originales de El Comercio.",
      "tipo": "secundaria"
     }
    ]
@@ -216,6 +250,40 @@
      "metodologia": null,
      "observaciones": "Página institucional con adendas 3 (25-03-2024) y 4 (02-08-2024)",
      "tipo": "primaria"
+    }
+   ]
+  },
+  {
+   "fecha": "2024-02-22",
+   "titulo": "López Aliaga se declara dispuesto a pagar para liberar peajes de Rutas de Lima",
+   "descripcion": "En el marco del conflicto con la concesionaria, el alcalde manifestó estar dispuesto a un acuerdo económico para liberar peajes concesionados a Rutas de Lima. Un tribunal de arbitraje falló luego a favor de la concesionaria (fecha del laudo por verificar).",
+   "gestion": "lopez_aliaga",
+   "categoria": "presupuesto",
+   "fuentes": [
+    {
+     "nombre": "El Comercio, 22-02-2024 (citado en Wikipedia: Rafael López-Aliaga)",
+     "url": "https://es.wikipedia.org/wiki/Rafael_L%C3%B3pez-Aliaga",
+     "fecha_consulta": "2026-09-22",
+     "metodologia": null,
+     "observaciones": "Referencia periodística citada por Wikipedia; verificar URL y texto originales de El Comercio. Fecha exacta del laudo arbitral pendiente.",
+     "tipo": "secundaria"
+    }
+   ]
+  },
+  {
+   "fecha": "2024-03-01",
+   "titulo": "El Corredor Morado cesa operaciones tras un paro de 48 horas",
+   "descripcion": "A inicios de marzo de 2024 las concesionarias del Corredor Morado (Próceres–Abancay–Brasil) paralizaron el servicio; tras un paro de 48 horas la ATU permitió que buses de otras empresas cubrieran la ruta y luego se retomó el servicio. La fecha exacta es aproximada (inicios de marzo).",
+   "gestion": "lopez_aliaga",
+   "categoria": "transporte",
+   "fuentes": [
+    {
+     "nombre": "Wikipedia: Corredores complementarios",
+     "url": "https://es.wikipedia.org/wiki/Corredores_complementarios",
+     "fecha_consulta": "2026-09-22",
+     "metodologia": null,
+     "observaciones": "Wikipedia (secundaria); verificar fecha exacta y comunicados con la ATU.",
+     "tipo": "secundaria"
     }
    ]
   },

@@ -1,76 +1,107 @@
 {
+  "fecha_corte": "2026-09-12",
+  "nota_general": "Estados verificados el 22-set-2026 con prensa peruana (El Comercio, Gestión, Infobae, La República, RPP, Diario Expreso, Agencia Andina) localizada vía agregador Google News; titulares y fechas verificados. Las URL apuntan al dominio del medio (los enlaces del agregador son redirecciones). Criterio de estado: cumplido = entregado y operativo; parcial = ejecutado en parte o entregado pero no plenamente operativo; en_ejecucion = obra/gestión en curso sin culminar; no_cumplido = abandonado o sin avance. Observaciones de control se citan de forma neutral (la Contraloría 'observó', no 'acusó').",
   "promesas": [
     {
       "gestion": "munoz",
       "promesa": "Construir la Vía Expresa Sur",
       "fecha": "2018-10",
       "presupuesto_anunciado": null,
-      "estado": "no_verificable",
-      "evidencia": "Pendiente de verificación.",
-      "fuentes": []
+      "estado": "parcial",
+      "evidencia": "Obra iniciada en la gestión de Jorge Muñoz y continuada por la MML. La MML abrió tramos y carriles centrales en septiembre de 2025, ya bajo la gestión de Rafael López Aliaga; La República señaló que se inauguraron tramos 'pese a que la obra no está terminada' (11-set-2025). En agosto de 2026 seguían ejecutándose obras complementarias (cuatro puentes peatonales, desvíos). Entregada parcialmente y en uso, con obras pendientes.",
+      "fuentes": [
+        {"nombre": "Gestión — 'Inauguran tramo de Vía Expresa Sur que conectará con la Panamericana Sur' (09-set-2025)", "url": "https://gestion.pe/", "fecha_consulta": "2026-09-22", "tipo": "secundaria"},
+        {"nombre": "La República — 'Rafael López Aliaga inaugura tramos de la Vía Expresa Sur, pese a que la obra no está terminada' (11-set-2025)", "url": "https://larepublica.pe/", "fecha_consulta": "2026-09-22", "tipo": "secundaria"},
+        {"nombre": "El Comercio — 'Vía Expresa Sur: estos serán los desvíos por obras de cuatro puentes peatonales' (26-ago-2026)", "url": "https://elcomercio.pe/", "fecha_consulta": "2026-09-22", "tipo": "secundaria"}
+      ]
     },
     {
       "gestion": "munoz",
       "promesa": "Ampliar red de ciclovías",
       "fecha": "2018-10",
       "presupuesto_anunciado": null,
-      "estado": "no_verificable",
-      "evidencia": "Pendiente de verificación.",
-      "fuentes": []
+      "estado": "parcial",
+      "evidencia": "La gestión Muñoz amplió la red de ciclovías, incluidas ciclovías de emergencia durante la pandemia, y anunció en 2020 la meta de 374 km de ciclovías interconectadas para 2022 (Agencia Andina, 23-jun-2020). No se localizó una cifra oficial verificable del kilometraje final efectivamente ejecutado en la gestión, por lo que el nivel de cumplimiento de la meta anunciada no puede confirmarse. Ver la dimensión de movilidad para el detalle de kilómetros de ciclovías.",
+      "fuentes": [
+        {"nombre": "Agencia Andina — 'Serán 374 kilómetros de ciclovías interconectadas en la ciudad de Lima para el 2022' (23-jun-2020)", "url": "https://andina.pe/", "fecha_consulta": "2026-09-22", "tipo": "secundaria"}
+      ]
     },
     {
       "gestion": "munoz",
       "promesa": "Recuperar el Centro Histórico de Lima",
       "fecha": "2018-10",
       "presupuesto_anunciado": null,
-      "estado": "no_verificable",
-      "evidencia": "Pendiente de verificación.",
-      "fuentes": []
+      "estado": "parcial",
+      "evidencia": "La MML aprobó en diciembre de 2019 un plan para la recuperación del Centro Histórico (Agencia Andina, 06-dic-2019), anunció la peatonalización de 41 cuadras (abr-2021), remozó la Plaza Francia (oct-2021) y ejecutó una segunda etapa de peatonalización hacia mediados de 2022. Avances concretos dentro de un programa de largo plazo, no una recuperación integral culminada en la gestión.",
+      "fuentes": [
+        {"nombre": "Agencia Andina — 'Municipalidad de Lima aprobó plan para recuperación del centro histórico' (06-dic-2019)", "url": "https://andina.pe/", "fecha_consulta": "2026-09-22", "tipo": "secundaria"},
+        {"nombre": "Agencia Andina — 'Jorge Muñoz: vamos a peatonalizar 41 cuadras del centro histórico de Lima' (22-abr-2021)", "url": "https://andina.pe/", "fecha_consulta": "2026-09-22", "tipo": "secundaria"},
+        {"nombre": "Agencia Andina — 'Municipalidad de Lima presenta Plaza Francia completamente remozada' (15-oct-2021)", "url": "https://andina.pe/", "fecha_consulta": "2026-09-22", "tipo": "secundaria"}
+      ]
     },
     {
       "gestion": "munoz",
       "promesa": "Ampliación del Metropolitano hacia Lima Norte",
       "fecha": "2018-10",
       "presupuesto_anunciado": null,
-      "estado": "no_verificable",
-      "evidencia": "Pendiente de verificación.",
-      "fuentes": []
+      "estado": "parcial",
+      "evidencia": "La infraestructura de la Ampliación Norte del Metropolitano se construyó, pero a diciembre de 2025 y hasta septiembre de 2026 alrededor de 10 a 12 estaciones seguían cerradas por falta de buses y por una adenda contractual estancada (Infobae, 28-dic-2025; La República y Canal N, ago-set-2026, las llaman 'estaciones fantasma'). Competencia compartida: la operación depende de la ATU y el MTC, no solo de la MML. Obra física entregada pero servicio no plenamente operativo.",
+      "fuentes": [
+        {"nombre": "Infobae — 'Ampliación Norte del Metropolitano tiene 10 estaciones listas que continúan sin funcionar' (28-dic-2025)", "url": "https://www.infobae.com/peru/", "fecha_consulta": "2026-09-22", "tipo": "secundaria"},
+        {"nombre": "La República — 'Las estaciones fantasma del Metropolitano: ampliación norte sigue inconclusa por falta de buses y una adenda estancada' (08-ago-2026)", "url": "https://larepublica.pe/", "fecha_consulta": "2026-09-22", "tipo": "secundaria"},
+        {"nombre": "Canal N — 'Doce estaciones de la ampliación norte del Metropolitano siguen cerradas debido a la falta de 60 buses' (02-set-2026)", "url": "https://canaln.pe/", "fecha_consulta": "2026-09-22", "tipo": "secundaria"}
+      ]
     },
     {
       "gestion": "lopez_aliaga",
       "promesa": "Anular/renegociar el contrato de peajes de Rutas de Lima",
       "fecha": "2022-10",
       "presupuesto_anunciado": null,
-      "estado": "no_verificable",
-      "evidencia": "Pendiente de verificación.",
-      "fuentes": []
+      "estado": "parcial",
+      "evidencia": "El cobro de peajes de Rutas de Lima quedó suspendido de facto en noviembre de 2025 y la concesionaria (del grupo Brookfield) cesó operaciones en diciembre de 2025, en el marco de un fallo de una corte de Nueva York (nov-2025) y de litigios/arbitrajes internacionales aún en curso. En abril de 2026, S&P reportó que Rutas de Lima incumplió una deuda de US$ 500 millones. El resultado buscado (fin de los cobros) se alcanzó en la práctica, pero por la vía judicial/arbitral y con disputas abiertas, no mediante una anulación municipal firme y cerrada.",
+      "fuentes": [
+        {"nombre": "Diario Expreso — 'Rafael López Aliaga constata suspensión de peajes de Rutas de Lima: promete demanda internacional' (10-nov-2025)", "url": "https://www.expreso.com.pe/", "fecha_consulta": "2026-09-22", "tipo": "secundaria"},
+        {"nombre": "RPP Noticias — 'Rafael López Aliaga calificó como delito flagrante cese de operaciones de Rutas de Lima' (04-dic-2025)", "url": "https://rpp.pe/", "fecha_consulta": "2026-09-22", "tipo": "secundaria"},
+        {"nombre": "Gestión — 'Rutas de Lima, de Brookfield, incumplió una deuda de US$ 500 millones en Perú, dice S&P' (01-abr-2026)", "url": "https://gestion.pe/", "fecha_consulta": "2026-09-22", "tipo": "secundaria"}
+      ]
     },
     {
       "gestion": "lopez_aliaga",
       "promesa": "Construir la Vía Expresa Grau",
       "fecha": "2022-10",
       "presupuesto_anunciado": null,
-      "estado": "no_verificable",
-      "evidencia": "Pendiente de verificación.",
-      "fuentes": []
+      "estado": "en_ejecucion",
+      "evidencia": "Se otorgó la buena pro de la nueva Vía Expresa Grau en octubre de 2024 y la obra avanzó durante 2025-2026. Hacia 2026 la MML reportó un avance cercano al 90% y anunció el inicio de la marcha blanca en unos 60 días. Obra en curso, no culminada ni inaugurada al corte.",
+      "fuentes": [
+        {"nombre": "Infobae — 'Otorgan buena pro de nueva Vía Expresa Grau: ¿Cuándo estará lista la obra?' (19-oct-2024)", "url": "https://www.infobae.com/peru/", "fecha_consulta": "2026-09-22", "tipo": "secundaria"},
+        {"nombre": "Gestión — 'Vía Expresa Grau tiene avance del 90%: Cuándo estaría lista, según la MML' (2026)", "url": "https://gestion.pe/", "fecha_consulta": "2026-09-22", "tipo": "secundaria"}
+      ]
     },
     {
       "gestion": "lopez_aliaga",
       "promesa": "Tren Lima-Chosica",
       "fecha": "2022-10",
       "presupuesto_anunciado": null,
-      "estado": "no_verificable",
-      "evidencia": "Pendiente de verificación.",
-      "fuentes": []
+      "estado": "en_ejecucion",
+      "evidencia": "La MML adquirió y trasladó coches (material rodante de Caltrain, EE.UU.), pero al corte no había servicio de pasajeros. En 2025-2026 el proyecto dependía de la homologación técnica y de una adenda al contrato ferroviario; en septiembre de 2026, ProInversión y el MTC dirigían las negociaciones con la meta de firmar la adenda dentro del año. En junio de 2026 La República reportó que los coches permanecían sin uso en el Parque de la Muralla. Sin operación comercial iniciada.",
+      "fuentes": [
+        {"nombre": "RPP Noticias — 'Tren Lima-Chosica: ProInversión afirma que la meta es firmar la adenda este año' (03-set-2026)", "url": "https://rpp.pe/", "fecha_consulta": "2026-09-22", "tipo": "secundaria"},
+        {"nombre": "Gestión — 'Tren Lima-Chosica: MTC formaliza delegar a ProInversión el futuro del proyecto' (02-set-2026)", "url": "https://gestion.pe/", "fecha_consulta": "2026-09-22", "tipo": "secundaria"},
+        {"nombre": "La República — 'El tren de Rafael López Aliaga acumula polvo en el Parque de La Muralla y ya dejó pérdidas' (21-jun-2026)", "url": "https://larepublica.pe/", "fecha_consulta": "2026-09-22", "tipo": "secundaria"}
+      ]
     },
     {
       "gestion": "lopez_aliaga",
       "promesa": "Programa Hambre Cero",
       "fecha": "2022-10",
       "presupuesto_anunciado": null,
-      "estado": "no_verificable",
-      "evidencia": "Pendiente de verificación.",
-      "fuentes": []
+      "estado": "en_ejecucion",
+      "evidencia": "La MML puso en marcha la asistencia alimentaria a ollas comunes: en agosto de 2024 entregó 300 congeladoras a ollas comunes (RPP). El programa siguió operando, pero fue objeto de observaciones difundidas por medios de investigación en 2025: gasto superior a S/ 100 millones en productos cuestionados por su calidad y el pago de S/ 5 millones a un consorcio observado por falta de experiencia (Salud con Lupa, jul-2025). El programa está en ejecución, con observaciones de control y prensa pendientes de resolución; se citan de forma neutral.",
+      "fuentes": [
+        {"nombre": "RPP Noticias — 'Rafael López Aliaga entregó 300 congeladoras a ollas comunes' (23-ago-2024)", "url": "https://rpp.pe/", "fecha_consulta": "2026-09-22", "tipo": "secundaria"},
+        {"nombre": "Salud con Lupa — 'Municipalidad de Lima gastó más de S/ 100 millones en productos de mala calidad para las ollas comunes' (17-feb-2025)", "url": "https://saludconlupa.com/", "fecha_consulta": "2026-09-22", "tipo": "secundaria"},
+        {"nombre": "Salud con Lupa — 'Municipalidad de Lima pagó S/ 5 millones a consorcio sin experiencia para repartir sangre de pollo refrigerada' (09-jul-2025)", "url": "https://saludconlupa.com/", "fecha_consulta": "2026-09-22", "tipo": "secundaria"}
+      ]
     }
   ]
 }

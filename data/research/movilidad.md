@@ -11,8 +11,11 @@
 - Pasajeros anuales de Metropolitano y corredores (ATU): las páginas de noticias gob.pe no exponen cifras anuales y Andina devolvió 404. Pendiente: boletín estadístico ATU / solicitud de acceso a la información.
 - INRIX: sin cifra para Lima (Gestión sin resultados; portal INRIX sin listado accesible).
 - Km de ciclovías: solo anuncios de la MML (147 km proyectados 2019; 114 km con KfW 2021; mantenimiento de 25 km 2020). Falta el inventario total.
-- Parque automotor Lima: la página del MTC capturada llega a 2018.
-- Tarifa Línea 1: no se extrajo de una fuente en esta consulta (se cree S/ 1,50 constante).
+- Parque automotor Lima: la página del MTC (portal.mtc.gob.pe/estadisticas/transportes.html) solo expone cuadros hasta ~2018; el anuario estadístico MTC en cdn.gob.pe y datosabiertos.gob.pe devolvieron 403/404. Pendiente: INEI (informe técnico o compendio) o SUNARP.
+
+## Actualización 2026-09-22 (curl + pdftotext)
+- Tarifa Línea 1 RESUELTA: S/ 1,50 (adulto) todo 2019–2025. Fuente primaria: Ositran, Informe de desempeño Línea 1 2025 (PDF descargado por curl, HTTP 200, 2,1 MB). El informe indica que la tarifa social «no ha sido objeto de ninguna modificación por parte del Concedente desde el inicio de las operaciones en 2012» y que en 2025 se mantuvo en S/ 1,50 (adulto) / S/ 0,75 (medio y universitario). `confiabilidad` subida a alta.
+- Reintentos sin éxito (curl+pdftotext funcionan; el problema es acceso a la fuente): pasajeros Metropolitano y corredores (búsquedas ATU/INEI en gob.pe solo devuelven notas de prensa, sin serie anual), INRIX, minutos LCV, parque automotor (MTC/INEI/datosabiertos bloqueados o desactualizados), km de ciclovías (gob.pe solo devuelve notas de tramos, no un stock total). Quedan null con nota.
 
 ## Limitaciones de la sesión
 - Presupuesto de WebSearch agotado (200/200) antes de esta consulta; Bing y DuckDuckGo vía curl devolvieron páginas anti-bot; búsquedas internas de La República y El Comercio no fueron útiles.

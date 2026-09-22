@@ -1,7 +1,7 @@
 {
   "dimension": "servicios_ambiente",
   "fecha_corte": "2026-09-12",
-  "resumen_hallazgos": "EN CONSTRUCCIÓN. Completado con material local: residuos (INEI/SIGERSOL 2019-2023), agua y alcantarillado (INEI-ENAPRES 2019-2023 y SUNASS 2019-2023), áreas verdes RENAMU (2022-2023), percepción LCV (áreas verdes, aire, alumbrado 2021, ciudad para vivir 2019 y 2025), PM2.5 2025 (AAP/IQAir). Pendiente web: IQAir 2019-2024, SEDAPAL 2024, SERPAR/árboles, espacios públicos MML.",
+  "resumen_hallazgos": "Completado con material local: residuos (INEI/SIGERSOL 2019-2023), agua y alcantarillado (INEI-ENAPRES 2019-2023 y SUNASS 2019-2023), áreas verdes RENAMU (2022-2023), percepción LCV (áreas verdes, aire, alumbrado 2021, ciudad para vivir 2019 y 2025), PM2.5 2025 (AAP/IQAir). Verificación web 2026-09-22 (curl+extracción, sin WebSearch): SERPAR administra 10 clubes y 9 parques metropolitanos (dato cualitativo, serpar.gob.pe), pero NO existe serie oficial anual de hectáreas ni de árboles plantados por MML/SERPAR, ni de espacios públicos recuperados por la MML/PROLIMA en formato comparable; ambos indicadores quedan en null con nota. LCV satisfacción-limpieza: sin serie de satisfacción total (proxy 'mención como problema' documentado en notas 2019-2025). Sin datos web nuevos para IQAir 2019-2024 ni SEDAPAL 2024 (bloqueos anti-bot).",
   "indicadores": [
     {
       "id": "pm25_promedio_anual",
@@ -225,9 +225,18 @@
           "nota": "PENDIENTE búsqueda web"
         }
       ],
-      "fuentes": [],
+      "fuentes": [
+        {
+          "nombre": "SERPAR - Servicio de Parques de Lima (MML), sección 'Parques y Clubes', portal oficial",
+          "url": "https://www.serpar.gob.pe/parques-y-clubes",
+          "fecha_consulta": "2026-09-22",
+          "metodologia": "Descripción institucional: SERPAR administra 10 clubes metropolitanos y 9 parques metropolitanos en Lima Metropolitana (denominación vigente de los antiguos 'parques zonales'). No publica en el portal una serie anual de hectáreas ni de árboles plantados.",
+          "observaciones": "Dato cualitativo, no serie numérica. Verificado por curl+extracción de texto el 2026-09-22.",
+          "tipo": "primaria"
+        }
+      ],
       "discrepancias": null,
-      "nota": "Pendiente."
+      "nota": "No se halló una serie oficial anual de hectáreas de parques zonales/metropolitanos ni de árboles plantados por la MML/SERPAR (búsqueda vía curl en serpar.gob.pe, gob.pe, Wikipedia y buscadores el 2026-09-22; los buscadores generales devolvieron resultados no oficiales o bloqueos anti-bot). Dato cualitativo confirmado: SERPAR administra 10 clubes metropolitanos y 9 parques metropolitanos (antes 'parques zonales'). Wikipedia menciona una reserva histórica de más de 21 000 ha de los años 1960, no equiparable a la superficie de parques actuales. Serie numérica queda en null por falta de fuente oficial comparable."
     },
     {
       "id": "residuos_generados_t_dia",
@@ -1173,7 +1182,7 @@
       ],
       "fuentes": [],
       "discrepancias": null,
-      "nota": "Pendiente."
+      "nota": "No se halló una serie oficial anual de espacios públicos recuperados por la MML (Centro Histórico, Rímac, Costa Verde) en formato comparable (búsqueda vía curl en gob.pe, serpar.gob.pe, PROLIMA y buscadores el 2026-09-22; los buscadores generales devolvieron resultados no relacionados o bloqueos anti-bot, y gob.pe no expone un tablero con la serie). El programa PROLIMA (Programa Municipal para la Recuperación del Centro Histórico de Lima) es el responsable institucional, pero sus cifras se publican de forma dispersa en notas de prensa por intervención, no como conteo anual homogéneo. Indicador queda en null por ausencia de fuente oficial con serie comparable; requiere consulta directa a memorias de gestión MML/PROLIMA/EMILIMA."
     }
   ]
 }

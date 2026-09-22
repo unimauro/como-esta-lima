@@ -1,7 +1,7 @@
 {
   "dimension": "movilidad",
   "fecha_corte": "2026-09-12",
-  "resumen_hallazgos": "Congestión: TomTom muestra que el tiempo para recorrer 10 km en el centro de Lima pasó de ~25 min (2021) a ~35 min (2025) y las horas perdidas en hora punta de 130 (2022) a 195 (2025), tras la caída pandémica (209 h en 2019). El nivel de congestión en % no es comparable entre ediciones (3 metodologías). Transporte masivo: Línea 1 pasó de 170,3 M (2019) a 70 M (2020) y a 201,5 M (2025), récord histórico (Ositran); Línea 2 opera 5 estaciones desde dic-2023 con 17,9 M de pasajeros en 2025. Seguridad vial: fallecidos en provincia de Lima subieron de 351 (2021) a 431 (2023) y 429 (2024); siniestros en región Lima cayeron a 29 mil en 2020 y volvieron a ~44 mil en 2023–2024. LCV: insatisfacción con el transporte público estable en 60–65 %; 65 % usaba transporte público colectivo en 2019. No se obtuvo serie verificable para Metropolitano y corredores (ATU), INRIX, km de ciclovías, parque automotor ni tarifa de Línea 1: quedan en null. Presupuesto de búsqueda web de la sesión agotado (WebSearch 200/200) y buscadores vía curl bloqueados.",
+  "resumen_hallazgos": "Congestión: TomTom muestra que el tiempo para recorrer 10 km en el centro de Lima pasó de ~25 min (2021) a ~35 min (2025) y las horas perdidas en hora punta de 130 (2022) a 195 (2025), tras la caída pandémica (209 h en 2019). El nivel de congestión en % no es comparable entre ediciones (3 metodologías). Transporte masivo: Línea 1 pasó de 170,3 M (2019) a 70 M (2020) y a 201,5 M (2025), récord histórico (Ositran); Línea 2 opera 5 estaciones desde dic-2023 con 17,9 M de pasajeros en 2025. Seguridad vial: fallecidos en provincia de Lima subieron de 351 (2021) a 431 (2023) y 429 (2024); siniestros en región Lima cayeron a 29 mil en 2020 y volvieron a ~44 mil en 2023–2024. LCV: insatisfacción con el transporte público estable en 60–65 %; 65 % usaba transporte público colectivo en 2019. Tarifa Línea 1: S/ 1,50 (adulto) estable en 2019–2025, confirmada con el informe de desempeño Ositran 2025 (la tarifa social no se ha modificado desde el inicio de operaciones en 2012). No se obtuvo serie verificable para Metropolitano y corredores (ATU), INRIX, minutos de viaje LCV, km de ciclovías ni parque automotor: quedan en null (fuentes ATU/INEI/MTC no exponen la serie anual o devuelven 403/404). Actualización 2026-09-22 con curl+pdftotext; presupuesto de WebSearch de la sesión previa agotado (200/200).",
   "indicadores": [
     {
       "id": "tomtom_nivel_congestion",
@@ -1462,70 +1462,70 @@
       "mejor_si": "baja",
       "competencia": "otra_entidad",
       "responsable_principal": "MTC / ATU",
-      "confiabilidad": "baja",
+      "confiabilidad": "alta",
       "ambito": "Lima Metropolitana",
       "serie": [
         {
           "anio": 2019,
-          "valor": null,
+          "valor": 1.5,
           "parcial": false,
-          "nota": null
+          "nota": "Tarifa social adulto S/ 1,50 (medio/universitario S/ 0,75)."
         },
         {
           "anio": 2020,
-          "valor": null,
+          "valor": 1.5,
           "parcial": false,
-          "nota": null
+          "nota": "Sin modificación."
         },
         {
           "anio": 2021,
-          "valor": null,
+          "valor": 1.5,
           "parcial": false,
-          "nota": null
+          "nota": "Sin modificación."
         },
         {
           "anio": 2022,
-          "valor": null,
+          "valor": 1.5,
           "parcial": false,
-          "nota": null
+          "nota": "Sin modificación."
         },
         {
           "anio": 2023,
-          "valor": null,
+          "valor": 1.5,
           "parcial": false,
-          "nota": null
+          "nota": "Sin modificación."
         },
         {
           "anio": 2024,
-          "valor": null,
+          "valor": 1.5,
           "parcial": false,
-          "nota": null
+          "nota": "Sin modificación."
         },
         {
           "anio": 2025,
-          "valor": null,
+          "valor": 1.5,
           "parcial": false,
-          "nota": null
+          "nota": "El informe Ositran 2025 confirma: adulto S/ 1,50, medio/universitario S/ 0,75, sin variación en el año."
         },
         {
           "anio": 2026,
-          "valor": null,
+          "valor": 1.5,
           "parcial": true,
-          "nota": null
+          "nota": "Parcial: sin cambios reportados a la fecha de corte."
         }
       ],
       "fuentes": [
         {
-          "nombre": "Ositran – Informe de desempeño 2025, Línea 1",
+          "nombre": "Ositran – Informe de desempeño 2025, Línea 1 del Metro de Lima",
           "url": "https://www.ositran.gob.pe/anterior/wp-content/uploads/2018/04/informe-desempeno-linea-1-2025.pdf",
-          "fecha_consulta": "2026-09-13",
-          "metodologia": "",
-          "observaciones": "No se extrajo la tarifa del informe en esta consulta.",
+          "fecha_consulta": "2026-09-22",
+          "metodologia": "Tarifa social fijada por el Concedente en el Contrato de Concesión, exonerada del IGV. El informe indica textualmente que la tarifa 'no ha sido objeto de ninguna modificación por parte del Concedente desde el inicio de las operaciones en 2012' y que durante 2025 se mantuvo en S/ 1,50 (adulto) y S/ 0,75 (medio y universitario).",
+          "observaciones": "PDF descargado por curl+pdftotext (HTTP 200, 2,1 MB); sección 'TARIFAS' y Cuadro N° 4 'Tarifa Social'.",
           "tipo": "primaria"
         }
       ],
       "discrepancias": null,
-      "nota": "Sin fuente verificada en esta consulta; se cree que la tarifa general se mantuvo en S/ 1,50 todo el periodo, pero no se registra sin fuente."
+      "nota": "Tarifa social adulto estable en S/ 1,50 durante todo 2019–2025 (sin modificación contractual desde el inicio de operaciones en 2012, según Ositran). Medio/escolar/universitario S/ 0,75."
     }
   ]
 }

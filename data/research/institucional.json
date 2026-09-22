@@ -1,7 +1,7 @@
 {
  "dimension": "institucional",
  "fecha_corte": "2026-09-12",
- "resumen_hallazgos": "EN CONSTRUCCIÓN. Hallado: aprobación Ipsos 2023-2026 (López Aliaga cayó de ~39% a 24% en dic-2024; Reggiardo 38-42% en 2025-26); LCV problema principal (inseguridad 70.9%-87.8%), satisfacción con vivir en Lima 37.5% (2019) → 29% (2025, Lima+Callao); deuda MML de S/ 1,788 mill. (2019) a S/ 3,454 mill. (2024) por tres emisiones de bonos (S/ 3,755 mill. 2023-2025). No hallado: LCV dejó de medir gestión MML tras 2019; 'Lima mejora' no existe en LCV.",
+ "resumen_hallazgos": "Hallado: aprobación Ipsos 2023-2026 (López Aliaga cayó de ~39% a 24% en dic-2024; Reggiardo 38-42% en 2025-26); LCV problema principal (inseguridad 70.9%-87.8%), satisfacción con vivir en Lima 37.5% (2019) → 29% (2025, Lima+Callao); deuda MML de S/ 1,788 mill. (2019) a S/ 3,454 mill. (2024) por tres emisiones de bonos (S/ 3,755 mill. 2023-2025). Confirmado que no existe serie: LCV dejó de medir gestión MML tras 2019 y no pregunta si 'la ciudad mejoró' (indicadores lcv_satisfaccion_gestion_mml y lcv_lima_mejora quedan en null, con proxy lcv_satisfaccion_vivir_lima). Contraloría: el número anual de informes de control sobre la MML no es scrapeable (Buscador/INFOBRAS son SPA), se deja null y se citan observaciones puntuales de prensa de forma neutral.",
  "indicadores": [
   {
    "id": "aprobacion_alcalde_lima",
@@ -793,18 +793,33 @@
      "anio": 2025,
      "valor": null,
      "parcial": false,
-     "nota": "Pendiente de verificación."
+     "nota": "Sin conteo anual verificable. Observaciones de la Contraloría a la MML difundidas en 2025: por obras sin información sustentada por ~S/ 46 millones (jun-2025)."
     },
     {
      "anio": 2026,
      "valor": null,
      "parcial": true,
-     "nota": "Pendiente de verificación."
+     "nota": "Sin conteo anual verificable al corte."
     }
    ],
-   "fuentes": [],
+   "fuentes": [
+    {
+     "nombre": "Contraloría General de la República — Buscador de Informes de Control",
+     "url": "https://buscadorinformes.contraloria.gob.pe/",
+     "fecha_consulta": "2026-09-22",
+     "observaciones": "El buscador es una aplicación JavaScript (SPA) que no expone un listado descargable por entidad/año mediante curl; no se pudo construir la serie anual de informes sobre la MML.",
+     "tipo": "primaria"
+    },
+    {
+     "nombre": "La República — 'Contraloría reporta a López Aliaga falta de información de obras por S/ 46 millones' (19-jun-2025)",
+     "url": "https://larepublica.pe/",
+     "fecha_consulta": "2026-09-22",
+     "observaciones": "Titular verificado vía agregador Google News el 22-set-2026. La Contraloría observó falta de sustento documentario de obras; no constituye una acusación penal.",
+     "tipo": "secundaria"
+    }
+   ],
    "discrepancias": null,
-   "nota": "Pendiente."
+   "nota": "No se logró construir una serie anual del número de informes de control de la Contraloría sobre la MML: el Buscador de Informes de Control e INFOBRAS son aplicaciones web dinámicas que no se pueden scrapear por curl sin sesión/JS. Se deja la serie en null (no inventar). En prensa se registran observaciones puntuales de control (p. ej., falta de información de obras por ~S/ 46 mill. en jun-2025), citadas de forma neutral como observaciones, no como acusaciones."
   }
  ],
  "gestiones": [
