@@ -1,7 +1,7 @@
 {
  "dimension": "costo_vida",
  "fecha_corte": "2026-09-12",
- "resumen_hallazgos": "En elaboración.",
+ "resumen_hallazgos": "Empleo informal de Lima con ruptura de serie en 2022 (ENAHO/Provincia de Lima: 58,7% en 2019, 58,1% en 2020, 62,0% en 2021; EPEN/Lima Metropolitana con Callao: 60,6% en 2022, 56,7% en 2023, 56,9% en 2024; 2025-2026 aún no publicados). Déficit habitacional sin serie anual: es censal; última medición oficial CPV 2017 = 431 943 hogares en Lima-Callao (205 286 cuantitativo). Tarifa troncal del Metropolitano: S/2,50 hasta el 16-jul-2022 y S/3,20 desde entonces, sin cambios en la troncal hasta 2026 (los reajustes 2025-2026 fueron en alimentadores).",
  "indicadores": [
   {
    "id": "inflacion_anual_lima",
@@ -275,56 +275,73 @@
    "serie": [
     {
      "anio": 2019,
-     "valor": null,
+     "valor": 58.7,
      "parcial": false,
-     "nota": "pendiente"
+     "nota": "Provincia de Lima (43 distritos), ENAHO. Cuenta Satélite 2007-2019."
     },
     {
      "anio": 2020,
-     "valor": null,
+     "valor": 58.1,
      "parcial": false,
-     "nota": "pendiente"
+     "nota": "Provincia de Lima (43 distritos), ENAHO. Cuenta Satélite 2007-2020. La tasa baja levemente vs 2019 porque en la pandemia se destruyó empleo informal (muchos pasaron a inactivos/desocupados)."
     },
     {
      "anio": 2021,
-     "valor": null,
+     "valor": 62.0,
      "parcial": false,
-     "nota": "pendiente"
+     "nota": "Provincia de Lima (43 distritos), ENAHO. Cuenta Satélite 2007-2021. Callao ese año fue 62,1%."
     },
     {
      "anio": 2022,
-     "valor": null,
+     "valor": 60.6,
      "parcial": false,
-     "nota": "pendiente"
+     "nota": "Lima Metropolitana (Provincia de Lima + Callao), EPEN. Publicado en la Cuenta Satélite 2022 y consistente con el cuadro B3.4 de la Cuenta Satélite 2022-2024 (3 040 mil informales / 5 019 mil PEA ocupada). Cambio de fuente (ENAHO->EPEN) y de ámbito (se incorpora Callao) respecto a 2019-2021."
     },
     {
      "anio": 2023,
-     "valor": null,
+     "valor": 56.7,
      "parcial": false,
-     "nota": "pendiente"
+     "nota": "Lima Metropolitana (Provincia de Lima + Callao), EPEN. Calculado del cuadro B3.4 de la Cuenta Satélite 2022-2024 (2 958 mil informales / 5 217 mil PEA ocupada = 56,7%). La Cuenta Satélite 2022-2023 había publicado 60,6% para 2023; INEI revisó a la baja en el reporte 2022-2024 (rebase con Cuentas Nacionales al 2024). Ver discrepancias."
     },
     {
      "anio": 2024,
-     "valor": null,
+     "valor": 56.9,
      "parcial": false,
-     "nota": "pendiente"
+     "nota": "Lima Metropolitana (Provincia de Lima + Callao), EPEN. Publicado en la Cuenta Satélite 2022-2024 (Región Lima 73,4%; Lima Metropolitana 56,9%)."
     },
     {
      "anio": 2025,
      "valor": null,
      "parcial": false,
-     "nota": "pendiente"
+     "nota": "No disponible: la Cuenta Satélite más reciente cubre hasta 2024 (publicada en 2025); el dato de 2025 se publicaría en 2026."
     },
     {
      "anio": 2026,
      "valor": null,
      "parcial": true,
-     "nota": "pendiente"
+     "nota": "No disponible en la fecha de corte."
     }
    ],
-   "fuentes": [],
-   "discrepancias": null,
-   "nota": "pendiente"
+   "fuentes": [
+    {
+     "nombre": "INEI - Producción y Empleo Informal en el Perú, Cuenta Satélite de la Economía Informal 2022-2024",
+     "url": "https://www.gob.pe/institucion/inei/informes-publicaciones/7564428-produccion-y-empleo-informal-en-el-peru-cuenta-satelite-de-la-economia-informal-2022-2024",
+     "fecha_consulta": "2026-09-22",
+     "metodologia": "Empleo informal de la PEA ocupada (ocupación principal), base EPEN y Cuentas Nacionales al 2024. Lima Metropolitana = Provincia de Lima + Provincia Constitucional del Callao. Valores 2022 y 2023 tomados del cuadro anexo B3.4 (miles de personas): tasa = empleo informal / PEA ocupada total; 2024 del texto (56,9%).",
+     "observaciones": "PDF: https://cdn.www.gob.pe/uploads/document/file/9215525/7564428-libro.pdf. Fuente única para 2022-2024 por consistencia metodológica.",
+     "tipo": "primaria"
+    },
+    {
+     "nombre": "INEI - Cuenta Satélite de la Economía Informal 2007-2019, 2007-2020 y 2007-2021 (serie ENAHO)",
+     "url": "https://www.gob.pe/institucion/inei/informes-publicaciones/3799186-produccion-y-empleo-informal-en-el-peru-cuenta-satelite-de-la-economia-informal-2007-2021",
+     "fecha_consulta": "2026-09-22",
+     "metodologia": "ENAHO. Incidencia del empleo informal para 'Provincia de Lima' (43 distritos): 2019 = 58,7% (reporte 2007-2019), 2020 = 58,1% (reporte 2007-2020), 2021 = 62,0% (reporte 2007-2021). El texto reporta Región Lima, Callao y Provincia de Lima por separado.",
+     "observaciones": "Provincia de Lima coincide con la definición de Lima Metropolitana del proyecto (43 distritos), sin Callao.",
+     "tipo": "primaria"
+    }
+   ],
+   "discrepancias": "Ruptura de serie en 2022: 2019-2021 son ENAHO y ámbito 'Provincia de Lima' (sin Callao); 2022-2024 son EPEN y ámbito 'Lima Metropolitana' (Provincia de Lima + Callao). Además, INEI revisó el dato 2023: la Cuenta Satélite 2022-2023 publicó 60,6% para Lima Metropolitana en 2023, pero la Cuenta Satélite 2022-2024 (rebase con Cuentas Nacionales al 2024) implica 56,7%. Se usa el reporte más reciente.",
+   "nota": "Tasa de empleo informal de la PEA ocupada. Comparar años con cautela por el cambio ENAHO->EPEN y la incorporación de Callao a partir de 2022. La informalidad de Lima está muy por debajo del promedio nacional (~71% en 2024)."
   },
   {
    "id": "empleo_adecuado_pct",
@@ -657,54 +674,71 @@
      "anio": 2019,
      "valor": null,
      "parcial": false,
-     "nota": "pendiente"
+     "nota": "Sin medición anual: el déficit habitacional se estima con los Censos de Población y Vivienda (CPV). Última medición oficial = CPV 2017."
     },
     {
      "anio": 2020,
      "valor": null,
      "parcial": false,
-     "nota": "pendiente"
+     "nota": "Sin medición anual (fuente censal). Vigente el dato del CPV 2017."
     },
     {
      "anio": 2021,
      "valor": null,
      "parcial": false,
-     "nota": "pendiente"
+     "nota": "Sin medición anual (fuente censal). Vigente el dato del CPV 2017."
     },
     {
      "anio": 2022,
      "valor": null,
      "parcial": false,
-     "nota": "pendiente"
+     "nota": "Sin medición anual (fuente censal). Vigente el dato del CPV 2017."
     },
     {
      "anio": 2023,
      "valor": null,
      "parcial": false,
-     "nota": "pendiente"
+     "nota": "Sin medición anual (fuente censal). Vigente el dato del CPV 2017."
     },
     {
      "anio": 2024,
      "valor": null,
      "parcial": false,
-     "nota": "pendiente"
+     "nota": "Sin medición anual (fuente censal). Vigente el dato del CPV 2017."
     },
     {
      "anio": 2025,
      "valor": null,
      "parcial": false,
-     "nota": "pendiente"
+     "nota": "INEI ejecuta los Censos Nacionales 2025 (XIII de Población, VIII de Vivienda); actualizarán el déficit cuando publiquen resultados."
     },
     {
      "anio": 2026,
      "valor": null,
      "parcial": true,
-     "nota": "pendiente"
+     "nota": "Resultados del Censo 2025 aún no publicados en la fecha de corte."
     }
    ],
-   "fuentes": [],
-   "discrepancias": null,
-   "nota": "pendiente"
+   "fuentes": [
+    {
+     "nombre": "MVCS - Expansión urbana en el Perú: proyección del déficit habitacional en tres ciudades principales (propuesta metodológica), con datos de los Censos INEI 2007 y 2017",
+     "url": "https://www.gob.pe/institucion/vivienda/informes-publicaciones/5960863-expansion-urbana-en-el-peru-proyeccion-del-deficit-habitacional-en-tres-ciudades-principales-mediante-el-analisis-espaciotemporal-del-cambio-de-uso-de-suelo-utilizando-metodos-de-machine-learning",
+     "fecha_consulta": "2026-09-22",
+     "metodologia": "Déficit habitacional (cuantitativo + cualitativo) de la ciudad de Lima-Callao según Censos de Población y Vivienda. CPV 2007: 365 687 hogares (cuantitativo 164 488, cualitativo 201 199). CPV 2017: 431 943 hogares (cuantitativo 205 286, cualitativo 226 657).",
+     "observaciones": "PDF: https://cdn.www.gob.pe/uploads/document/file/6900325/5960863-propuesta-metodologica.pdf. El estudio proyecta +92 mil hogares en déficit por expansión urbana hacia 2046 en ausencia de intervención. Ámbito Lima-Callao (incluye Callao).",
+     "tipo": "primaria"
+    },
+    {
+     "nombre": "MVCS - Nota de prensa: 'Ministerio de Vivienda y el sector inmobiliario unen esfuerzos para cerrar la brecha habitacional' (2025)",
+     "url": "https://www.gob.pe/institucion/vivienda/noticias/1442748-ministerio-de-vivienda-y-el-sector-inmobiliario-unen-esfuerzos-para-cerrar-la-brecha-habitacional-en-el-pais",
+     "fecha_consulta": "2026-09-22",
+     "metodologia": "Declaración del ministro de Vivienda: déficit habitacional nacional afecta a cerca de 1,9 millones de familias.",
+     "observaciones": "Cifra nacional, no de Lima; referencial.",
+     "tipo": "secundaria"
+    }
+   ],
+   "discrepancias": "El déficit se mide por censo, no anualmente. La cifra oficial más reciente para Lima-Callao es del CPV 2017 (431 943 hogares). CAPECO y otros usan estimaciones distintas. Ámbito Lima-Callao (con Callao), no solo los 43 distritos de la Provincia de Lima.",
+   "nota": "No existe serie anual de déficit habitacional: es un indicador censal. Última medición oficial (CPV 2017): 431 943 hogares en déficit en Lima-Callao, de los cuales 205 286 en déficit cuantitativo y 226 657 en déficit cualitativo; en 2007 eran 365 687. Próxima actualización con los Censos 2025. Referencia nacional: ~1,9 millones de familias (MVCS, 2025)."
   },
   {
    "id": "linea_pobreza_per_capita",
@@ -792,56 +826,65 @@
    "serie": [
     {
      "anio": 2019,
-     "valor": null,
+     "valor": 2.5,
      "parcial": false,
-     "nota": "pendiente"
+     "nota": "Tarifa troncal adulto S/2,50, vigente desde 2014."
     },
     {
      "anio": 2020,
-     "valor": null,
+     "valor": 2.5,
      "parcial": false,
-     "nota": "pendiente"
+     "nota": null
     },
     {
      "anio": 2021,
-     "valor": null,
+     "valor": 2.5,
      "parcial": false,
-     "nota": "pendiente"
+     "nota": null
     },
     {
      "anio": 2022,
-     "valor": null,
+     "valor": 3.2,
      "parcial": false,
-     "nota": "pendiente"
+     "nota": "Subió a S/3,20 el 16 de julio de 2022 (rigió desde el lunes 18 de julio de 2022). Antes de esa fecha, en 2022, era S/2,50."
     },
     {
      "anio": 2023,
-     "valor": null,
+     "valor": 3.2,
      "parcial": false,
-     "nota": "pendiente"
+     "nota": null
     },
     {
      "anio": 2024,
-     "valor": null,
+     "valor": 3.2,
      "parcial": false,
-     "nota": "pendiente"
+     "nota": null
     },
     {
      "anio": 2025,
-     "valor": null,
+     "valor": 3.2,
      "parcial": false,
-     "nota": "pendiente"
+     "nota": "La troncal se mantiene en S/3,20. Los aumentos de nov-2025 (alimentador Villa El Salvador) a S/3,50 afectan a servicios alimentadores, no a la tarifa troncal."
     },
     {
      "anio": 2026,
-     "valor": null,
+     "valor": 3.2,
      "parcial": true,
-     "nota": "pendiente"
+     "nota": "Troncal adulto sigue en S/3,20 a la fecha de corte. Cambios de ene-2026 aplican a alimentadores del norte (a S/3,50), no a la troncal."
     }
    ],
-   "fuentes": [],
+   "fuentes": [
+    {
+     "nombre": "Wikipedia - Metropolitano (Lima), sección Tarifas (cita El Comercio, 18-jul-2022, y la ATU)",
+     "url": "https://es.wikipedia.org/wiki/Metropolitano_(Lima)",
+     "fecha_consulta": "2026-09-22",
+     "metodologia": "Tarifa general adulto del servicio troncal. 'La tarifa vigente desde el 16 de julio de 2022 es de S/3,20 para los servicios troncales'; antes era S/2,50. Combinación troncal+alimentador: S/3,50.",
+     "observaciones": "La ATU (Autoridad de Transporte Urbano) es la entidad responsable. Fuente terciaria que cita nota de El Comercio del 18-jul-2022 y comunicados de la ATU.",
+     "tipo": "secundaria"
+    }
+   ],
    "discrepancias": null,
-   "nota": "pendiente"
+   "nota": "Tarifa troncal adulto en soles corrientes. Un solo aumento en el periodo: de S/2,50 a S/3,20 el 16-jul-2022 (+28%). Los reajustes de 2025-2026 elevaron tarifas de servicios alimentadores (a S/3,50), no la troncal. Con tarjeta preferencial (escolar/universitario) se cobra la mitad. Responsable: ATU, no la MML."
   },
   {
    "id": "precio_m2_por_distrito",
