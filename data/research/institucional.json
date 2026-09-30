@@ -1,7 +1,7 @@
 {
  "dimension": "institucional",
  "fecha_corte": "2026-09-12",
- "resumen_hallazgos": "Hallado: aprobación Ipsos 2023-2026 (López Aliaga cayó de ~39% a 24% en dic-2024; Reggiardo 38-42% en 2025-26); LCV problema principal (inseguridad 70.9%-87.8%), satisfacción con vivir en Lima 37.5% (2019) → 29% (2025, Lima+Callao); deuda MML de S/ 1,788 mill. (2019) a S/ 3,454 mill. (2024) por tres emisiones de bonos (S/ 3,755 mill. 2023-2025). Confirmado que no existe serie: LCV dejó de medir gestión MML tras 2019 y no pregunta si 'la ciudad mejoró' (indicadores lcv_satisfaccion_gestion_mml y lcv_lima_mejora quedan en null, con proxy lcv_satisfaccion_vivir_lima). Contraloría: el número anual de informes de control sobre la MML no es scrapeable (Buscador/INFOBRAS son SPA), se deja null y se citan observaciones puntuales de prensa de forma neutral.",
+ "resumen_hallazgos": "Hallado: aprobación Ipsos 2023-2026 (López Aliaga cayó de ~39% a 24% en dic-2024; Reggiardo 38-42% en 2025-26); LCV problema principal (inseguridad 70.9%-87.8%), satisfacción con vivir en Lima 37.5% (2019) → 29% (2025, Lima+Callao); deuda MML (SDT) de S/ 1 788 mill. (2019) a un máximo histórico de S/ 5 045 mill. al cierre de 2025 (347,6% de sus ingresos corrientes promedio, cerca de 3,5 veces el límite prudencial), por las cuatro emisiones del programa de bonos de titulización por S/ 4 000 mill. (2023-2025); adicionalmente el MEF reporta pasivos por sentencias judiciales y laudos arbitrales por S/ 5 900 mill. al cierre de 2025 (S/ 993 mill. firmes + S/ 4 907 mill. contingentes), registrados aparte en pasivos_contingentes_mml. Confirmado que no existe serie: LCV dejó de medir gestión MML tras 2019 y no pregunta si 'la ciudad mejoró' (indicadores lcv_satisfaccion_gestion_mml y lcv_lima_mejora quedan en null, con proxy lcv_satisfaccion_vivir_lima). Contraloría: el número anual de informes de control sobre la MML no es scrapeable (Buscador/INFOBRAS son SPA), se deja null y se citan observaciones puntuales de prensa de forma neutral. [Actualización 2026-09-30] El Informe N° 03-2026-CF del Consejo Fiscal (23-jul-2026) cierra la serie de deuda 2025: el SDT de la MML llegó a S/ 5 045 millones (347,6% de sus ingresos corrientes promedio, cerca de 3,5 veces el límite prudencial) y documenta la cuarta y última emisión de bonos (S/ 245 millones, 30-set-2025) que completó el programa de S/ 4 000 millones.",
  "indicadores": [
   {
    "id": "aprobacion_alcalde_lima",
@@ -593,18 +593,26 @@
     },
     {
      "anio": 2025,
-     "valor": null,
+     "valor": 5045,
      "parcial": false,
-     "nota": "Cierre 2025 aún no publicado por MEF/CF al corte. El CF estimó que con la 3ra emisión (jun-2025) el SDT se acercaría a S/ 5,000 mill. (~399% del límite)."
+     "nota": "Máximo histórico. Ratio SDT / ingresos corrientes promedio de 4 años: 347,6%, es decir cerca de 3,5 veces el límite prudencial de 100% del MRTF-SN. Saldo al cierre de 2025, tras culminar el Programa de Emisión de Bonos de Titulización por S/ 4 000 millones (4ta y última emisión el 30-set-2025). No incorpora S/ 312 millones de pasivos firmes por sentencias judiciales y laudos arbitrales que, según información del MEF, aún no estaban registrados en el SDT al cierre de 2025 (ver indicador pasivos_contingentes_mml). Fuente: Consejo Fiscal, Informe N° 03-2026-CF (23-jul-2026)."
     },
     {
      "anio": 2026,
      "valor": null,
      "parcial": true,
-     "nota": "Sin dato."
+     "nota": "Sin dato al corte. El SDT se determina al cierre del ejercicio fiscal y el Consejo Fiscal lo publica hacia julio del año siguiente (el cierre 2025 se publicó el 23-jul-2026). Las cifras de prensa difundidas durante 2026 sobre una deuda de 'más de S/ 5 000 millones' de la MML corresponden a este saldo de cierre de 2025 (S/ 5 045 millones) y no a una medición nueva de 2026."
     }
    ],
    "fuentes": [
+    {
+     "nombre": "Consejo Fiscal - Nota de Prensa N° 02-2026-CF: 'El Consejo Fiscal advierte riesgos para la sostenibilidad fiscal subnacional, pese al alto cumplimiento de las reglas fiscales'",
+     "url": "https://cf.gob.pe/wp-content/uploads/2026/07/nortadeprensa02.pdf",
+     "fecha_consulta": "2026-09-30",
+     "metodologia": null,
+     "observaciones": "Lima, 23 de julio de 2026. Resume el Informe N° 03-2026-CF: 'Tras culminar su programa de bonos, su SDT alcanzó cerca de 3,5 veces el límite prudencial aplicable a los demás gobiernos subnacionales'.",
+     "tipo": "primaria"
+    },
     {
      "nombre": "Consejo Fiscal – Reporte Técnico N° 03-2025-CF/ST: Evolución de las finanzas públicas y cumplimiento de reglas fiscales de GR y GL en 2024 (sección 4: MML)",
      "url": "https://cf.gob.pe/documentos/reporte-tecnico-03-2025-cf-st/",
@@ -620,10 +628,76 @@
      "metodologia": "Elaborado por la Secretaría Técnica del CF con datos MEF, MML y Contraloría",
      "observaciones": "Cronología de la 1ra emisión de bonos (27-dic-2023) y DU 003-2024/006-2024",
      "tipo": "primaria"
+    },
+    {
+     "nombre": "Consejo Fiscal - Informe N° 03-2026-CF: Opinión del Consejo Fiscal sobre la situación de las finanzas públicas subnacionales y el cumplimiento de sus reglas fiscales en 2025 (sección: Municipalidad Metropolitana de Lima)",
+     "url": "https://cf.gob.pe/wp-content/uploads/2026/07/Informe-003-2026-CF.pdf",
+     "fecha_consulta": "2026-09-30",
+     "metodologia": "Saldo de Deuda Total (SDT) reportado por el MEF; ratio SDT sobre ingresos corrientes promedio de 4 años (límite prudencial 100% del MRTF-SN).",
+     "observaciones": "Publicado el 23-jul-2026 junto con la Nota de Prensa N° 02-2026-CF (https://cf.gob.pe/wp-content/uploads/2026/07/nortadeprensa02.pdf). Nota al pie 23: serie completa de ratios SDT 2017-2025. Nota al pie 26: las cuatro emisiones del programa de bonos con fechas y montos.",
+     "tipo": "primaria"
     }
    ],
    "discrepancias": null,
-   "nota": "La MML está exceptuada de la regla fiscal por tener dos calificaciones locales ≥ A (Apoyo AA-, PCR AA). El ratio SDT supera el 100% desde 2017. Valores 2017-2018: 1,580 y 1,599."
+   "nota": "La MML está exceptuada del cumplimiento de las reglas fiscales subnacionales, de sus medidas correctivas y de las restricciones de endeudamiento del DL 1437 por contar con dos calificaciones crediticias vigentes iguales o superiores a 'A' (AA-(pe) de Apoyo y Asociados y PEAA de Pacific Credit Rating, comunicadas al MEF por Oficio N° D000141-2026-MML-OGPF del 01-abr-2026). El ratio SDT supera el límite de 100% desde 2017: 124,6% (2017), 125,0% (2018), 140,9% (2019), 162,8% (2020), 160,3% (2021), 120,7% (2022), 212,6% (2023), 275,5% (2024) y 347,6% (2025). Valores del saldo 2017-2018: S/ 1 580 y S/ 1 599 millones. El SDT comprende deuda financiera y por endeudamiento, sentencias judiciales, deuda exigible y deuda real, y cuentas por pagar; el salto de 2023-2025 se explica principalmente por las cuatro emisiones de bonos de titulización (S/ 4 000 millones en total). El Consejo Fiscal advirtió que una proporción significativa de los ingresos futuros de la MML está comprometida en un fideicomiso de pago de deuda (alcabala, impuesto vehicular, FONCOMUN, predial e impuesto a casinos y tragamonedas) y que, cuando el servicio de deuda incluya la amortización del principal entre 2028 y 2035, superaría los S/ 500 millones anuales, por encima del gasto promedio en inversión de la MML (S/ 495 millones entre 2003 y 2025). Este indicador mide deuda financiera y obligaciones ya registradas en el SDT; los pasivos por procesos judiciales y arbitrales en curso se registran aparte en pasivos_contingentes_mml."
+  },
+  {
+   "id": "pasivos_contingentes_mml",
+   "nombre": "Pasivos por sentencias judiciales y laudos arbitrales de la MML (firmes y contingentes)",
+   "descripcion": "Suma de los pasivos firmes (obligaciones ya determinadas por sentencias judiciales y laudos arbitrales) y los pasivos contingentes (demandas judiciales y procesos de arbitraje en curso, cuyo pago depende del resultado del proceso) de la Municipalidad Metropolitana de Lima, según información remitida por el MEF y reportada por el Consejo Fiscal. Es un pasivo de naturaleza distinta a la deuda financiera del Saldo de Deuda Total (SDT).",
+   "unidad": "millones de soles",
+   "mejor_si": "baja",
+   "competencia": "mml",
+   "responsable_principal": "MML (Procuraduría Pública Municipal y Gerencia de Finanzas) / MEF",
+   "confiabilidad": "alta",
+   "ambito": "Provincia de Lima",
+   "contexto": true,
+   "serie": [
+    {
+     "anio": 2023,
+     "valor": null,
+     "parcial": false,
+     "nota": "No comparable. Para 2023 el Consejo Fiscal publicó solo el componente de sentencias judiciales ya incorporado al SDT (S/ 640 millones), no el inventario de pasivos firmes y contingentes."
+    },
+    {
+     "anio": 2024,
+     "valor": null,
+     "parcial": false,
+     "nota": "No comparable. Para 2024 el Consejo Fiscal publicó solo el componente de sentencias judiciales y laudos ya incorporado al SDT (S/ 643 millones), no el inventario de pasivos firmes y contingentes."
+    },
+    {
+     "anio": 2025,
+     "valor": 5900,
+     "parcial": false,
+     "nota": "Al cierre de 2025, según información remitida por el MEF: pasivos FIRMES por sentencias judiciales y laudos arbitrales por S/ 993 millones (de los cuales S/ 312 millones aún no se habían incorporado al SDT) y pasivos CONTINGENTES por demandas judiciales y procesos de arbitraje por S/ 4 907 millones. Total S/ 5 900 millones. Entre los contingentes destacan los procesos con Rutas de Lima S.A.C. por S/ 1 431 millones, de los cuales S/ 261 millones corresponden a procesos en calidad de cosa juzgada. Fuente: Consejo Fiscal, Informe N° 03-2026-CF, nota al pie 29."
+    },
+    {
+     "anio": 2026,
+     "valor": null,
+     "parcial": true,
+     "nota": "Sin dato al corte. El inventario corresponde al cierre del ejercicio y se conoce a través del reporte anual del Consejo Fiscal sobre finanzas subnacionales."
+    }
+   ],
+   "fuentes": [
+    {
+     "nombre": "Consejo Fiscal - Informe N° 03-2026-CF: Opinión del Consejo Fiscal sobre la situación de las finanzas públicas subnacionales en 2025 (sección: Sobre la Municipalidad Metropolitana de Lima)",
+     "url": "https://cf.gob.pe/wp-content/uploads/2026/07/Informe-003-2026-CF.pdf",
+     "fecha_consulta": "2026-09-30",
+     "metodologia": "Saldo de Deuda Total (SDT) reportado por el MEF conforme al DL 1275 (MRTF-SN); el ratio se calcula sobre el promedio de ingresos corrientes de los cuatro últimos años, con límite prudencial de 100%.",
+     "observaciones": "Publicado el 23-jul-2026, con Nota de Prensa N° 02-2026-CF (https://cf.gob.pe/wp-content/uploads/2026/07/nortadeprensa02.pdf). Nota al pie 23: ratios SDT 2017-2025. Nota al pie 26: las cuatro emisiones del programa de bonos. Nota al pie 29: pasivos firmes y contingentes por sentencias y laudos.",
+     "tipo": "primaria"
+    },
+    {
+     "nombre": "Consejo Fiscal - Nota de Prensa N° 02-2026-CF: 'El Consejo Fiscal advierte riesgos para la sostenibilidad fiscal subnacional, pese al alto cumplimiento de las reglas fiscales'",
+     "url": "https://cf.gob.pe/wp-content/uploads/2026/07/nortadeprensa02.pdf",
+     "fecha_consulta": "2026-09-30",
+     "metodologia": null,
+     "observaciones": "Lima, 23 de julio de 2026. Resume el Informe N° 03-2026-CF: 'Tras culminar su programa de bonos, su SDT alcanzó cerca de 3,5 veces el límite prudencial aplicable a los demás gobiernos subnacionales'.",
+     "tipo": "primaria"
+    }
+   ],
+   "discrepancias": "La cifra de S/ 5 900 millones difundida por prensa (Gato Encerrado, 05-ago-2026, 'Consejo Fiscal: MML tiene pasivos por sentencias judiciales y laudos arbitrales por S/ 5 900 millones') no aparece como agregado en el Informe N° 03-2026-CF: el Consejo Fiscal reporta por separado S/ 993 millones de pasivos firmes y S/ 4 907 millones de pasivos contingentes, cuya suma es S/ 5 900 millones. Se registra el agregado por ser la cifra de circulación pública, con el desglose explícito en la nota de la serie.",
+   "nota": "Diferencia con deuda_mml_saldo: el SDT mide deuda financiera y obligaciones ya exigibles y registradas (bonos, endeudamiento, cuentas por pagar y las sentencias ya incorporadas). Este indicador mide la exposición de la MML a litigios: los pasivos firmes son obligaciones ya determinadas, mientras que los contingentes son demandas y arbitrajes en curso cuyo desembolso ocurrirá solo si los procesos se resuelven en contra de la municipalidad, por lo que NO deben leerse como deuda cierta. Los dos indicadores no son sumables: de los S/ 993 millones de pasivos firmes, S/ 681 millones ya estaban dentro del SDT de 2025 y solo S/ 312 millones quedaban fuera, de modo que sumar S/ 5 045 y S/ 5 900 millones duplicaría ese componente. El Consejo Fiscal consideró necesario que la MML, con participación del MEF, transparente la evolución y el tratamiento contable de estos pasivos firmes y contingentes y evalúe su posible efecto sobre la capacidad financiera de la municipalidad para atenderlos."
   },
   {
    "id": "bonos_mml_emitidos",
@@ -650,15 +724,15 @@
     },
     {
      "anio": 2025,
-     "valor": 1300,
+     "valor": 1545,
      "parcial": false,
-     "nota": "3ra emisión jun-2025: S/ 1,300 mill., 20 años, tasa prevista 9.7%, garantía: FONCOMUN, predial e impuesto a casinos/tragamonedas. Total acumulado 2023-2025: S/ 3,755 mill."
+     "nota": "Dos emisiones en 2025: la 3ra el 15-jun-2025 por S/ 1 300 millones y la 4ta y última el 30-set-2025 por S/ 245 millones (total del año: S/ 1 545 millones). Con ello culminó el Programa de Emisión de Bonos de Titulización por S/ 4 000 millones, ejecutado en cuatro emisiones: S/ 1 205 millones (27-dic-2023), S/ 1 250 millones (19-set-2024), S/ 1 300 millones (15-jun-2025) y S/ 245 millones (30-set-2025). CORRECCIÓN 2026-09-30: el valor anterior de esta serie era S/ 1 300 millones, que solo recogía la 3ra emisión; la 4ta fue documentada por el Consejo Fiscal en el Informe N° 03-2026-CF (nota al pie 26). Condiciones de la 3ra emisión: 20 años, tasa prevista 9,7%, garantía FONCOMUN, predial e impuesto a casinos y tragamonedas."
     },
     {
      "anio": 2026,
-     "valor": null,
+     "valor": 0,
      "parcial": true,
-     "nota": "Sin nueva emisión identificada al corte."
+     "nota": "Sin emisiones en 2026: el Consejo Fiscal confirma que el programa de bonos de titulización por S/ 4 000 millones culminó en 2025 con la cuarta emisión del 30-set-2025 (Informe N° 03-2026-CF, 23-jul-2026). Parcial: año en curso."
     }
    ],
    "fuentes": [
@@ -676,6 +750,14 @@
      "fecha_consulta": "2026-09-13",
      "metodologia": "Elaborado por la Secretaría Técnica del CF con datos MEF, MML y Contraloría",
      "observaciones": "Cronología de la 1ra emisión de bonos (27-dic-2023) y DU 003-2024/006-2024",
+     "tipo": "primaria"
+    },
+    {
+     "nombre": "Consejo Fiscal - Informe N° 03-2026-CF: Opinión del Consejo Fiscal sobre la situación de las finanzas públicas subnacionales y el cumplimiento de sus reglas fiscales en 2025 (sección: Municipalidad Metropolitana de Lima)",
+     "url": "https://cf.gob.pe/wp-content/uploads/2026/07/Informe-003-2026-CF.pdf",
+     "fecha_consulta": "2026-09-30",
+     "metodologia": "Saldo de Deuda Total (SDT) reportado por el MEF; ratio SDT sobre ingresos corrientes promedio de 4 años (límite prudencial 100% del MRTF-SN).",
+     "observaciones": "Publicado el 23-jul-2026 junto con la Nota de Prensa N° 02-2026-CF (https://cf.gob.pe/wp-content/uploads/2026/07/nortadeprensa02.pdf). Nota al pie 23: serie completa de ratios SDT 2017-2025. Nota al pie 26: las cuatro emisiones del programa de bonos con fechas y montos.",
      "tipo": "primaria"
     }
    ],

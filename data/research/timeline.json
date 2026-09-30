@@ -330,6 +330,23 @@
    ]
   },
   {
+   "fecha": "2025-09-30",
+   "titulo": "La MML coloca la cuarta y última emisión de bonos y cierra el programa de S/ 4 000 millones",
+   "descripcion": "La Municipalidad Metropolitana de Lima emitió S/ 245 millones en bonos de titulización, cuarta y última colocación del programa de S/ 4 000 millones. Las cuatro emisiones fueron S/ 1 205 millones (27-dic-2023), S/ 1 250 millones (19-set-2024), S/ 1 300 millones (15-jun-2025) y S/ 245 millones (30-set-2025).",
+   "gestion": "lopez_aliaga",
+   "categoria": "presupuesto",
+   "fuentes": [
+    {
+     "nombre": "Consejo Fiscal - Informe N° 03-2026-CF: Opinión del Consejo Fiscal sobre la situación de las finanzas públicas subnacionales y el cumplimiento de sus reglas fiscales en 2025 (sección: Municipalidad Metropolitana de Lima)",
+     "url": "https://cf.gob.pe/wp-content/uploads/2026/07/Informe-003-2026-CF.pdf",
+     "fecha_consulta": "2026-09-30",
+     "metodologia": "Saldo de Deuda Total (SDT) reportado por el MEF; ratio SDT sobre ingresos corrientes promedio de 4 años (límite prudencial 100% del MRTF-SN).",
+     "observaciones": "Publicado el 23-jul-2026 junto con la Nota de Prensa N° 02-2026-CF (https://cf.gob.pe/wp-content/uploads/2026/07/nortadeprensa02.pdf). Nota al pie 23: serie completa de ratios SDT 2017-2025. Nota al pie 26: las cuatro emisiones del programa de bonos con fechas y montos.",
+     "tipo": "primaria"
+    }
+   ]
+  },
+  {
    "fecha": "2025-10-13",
    "titulo": "Rafael López Aliaga deja la alcaldía para postular a la presidencia",
    "descripcion": "Renuncia al cargo para candidatear en las elecciones generales 2026; Wikipedia registra fin de mandato el 13-10-2025 y asunción de Renzo Reggiardo el 21-10-2025 (fecha de juramentación por verificar con acta/El Peruano).",
@@ -444,6 +461,23 @@
      "metodologia": null,
      "observaciones": "Wikipedia (secundaria) que cita fuente primaria indicada en observaciones; verificar contra la primaria.",
      "tipo": "secundaria"
+    }
+   ]
+  },
+  {
+   "fecha": "2026-07-23",
+   "titulo": "El Consejo Fiscal advierte que la deuda de la MML llegó a S/ 5 045 millones",
+   "descripcion": "En el Informe N° 03-2026-CF, el Consejo Fiscal informó que, tras culminar el programa de bonos, el Saldo de Deuda Total de la MML alcanzó un máximo histórico de S/ 5 045 millones al cierre de 2025, equivalente al 347,6% de sus ingresos corrientes promedio y cerca de 3,5 veces el límite prudencial aplicable al resto de gobiernos subnacionales. El CF advirtió que una proporción significativa de los ingresos futuros está comprometida en un fideicomiso para el servicio de la deuda, que en 2025 el costo financiero neto fue de S/ 152 millones y que la MML sigue exceptuada de las reglas fiscales por sus calificaciones crediticias.",
+   "gestion": "lopez_aliaga",
+   "categoria": "presupuesto",
+   "fuentes": [
+    {
+     "nombre": "Consejo Fiscal - Informe N° 03-2026-CF: Opinión del Consejo Fiscal sobre la situación de las finanzas públicas subnacionales y el cumplimiento de sus reglas fiscales en 2025 (sección: Municipalidad Metropolitana de Lima)",
+     "url": "https://cf.gob.pe/wp-content/uploads/2026/07/Informe-003-2026-CF.pdf",
+     "fecha_consulta": "2026-09-30",
+     "metodologia": "Saldo de Deuda Total (SDT) reportado por el MEF; ratio SDT sobre ingresos corrientes promedio de 4 años (límite prudencial 100% del MRTF-SN).",
+     "observaciones": "Publicado el 23-jul-2026 junto con la Nota de Prensa N° 02-2026-CF (https://cf.gob.pe/wp-content/uploads/2026/07/nortadeprensa02.pdf). Nota al pie 23: serie completa de ratios SDT 2017-2025. Nota al pie 26: las cuatro emisiones del programa de bonos con fechas y montos.",
+     "tipo": "primaria"
     }
    ]
   },

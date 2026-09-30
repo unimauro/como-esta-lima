@@ -1,7 +1,7 @@
 {
  "dimension": "seguridad",
  "fecha_corte": "2026-09-12",
- "resumen_hallazgos": "SEGURIDAD OBJETIVA (ENAPRES-INEI, semestre jul-dic de cada año): victimización en Lima Metropolitana 32,6% (ago19-ene20) → 26,8% (2020) → 22,5% (2021) → 25,9% (2022); desde 2023 INEI publica Lima Metropolitana + Callao: 32,5% (2023) → 29,3% (2024) → 25,5% (2025) → 26,0% (feb-jul 2026). Ruptura de comparabilidad 2022/2023 (ámbito y tentativas de extorsión). Denuncia: 14-21% de víctimas. Víctimas con arma de fuego (LM+Callao): 14,8 (2023), 13,1 (2024), 13,8 (jul-dic 2025), 10,9 (feb-jul 2026) por 100 hab. SEGURIDAD PERCIBIDA: percepción de inseguridad ENAPRES 90,3% (2019) → 93,0% (2021, máximo) → 84,9% (jul-dic 2025) → 87,0% (feb-jul 2026); Lima Cómo Vamos: inseguridad principal problema 72,8% (2021) → 80,2% (2024) → 75,2% (2025); se siente inseguro 63,2% (2019) → 79,6% (2023) → 78,3% (2025). NUEVO (fuentes primarias INEI vía gob.pe/cdn, consulta 2026-09-22): HOMICIDIOS Lima Metropolitana (INEI-CEIC 'uno a uno 2019 y 2020') 676 en 2019 (tasa 7,1) y 544 en 2020 (tasa 5,6); nacional 7,4 y 5,8. SERENOS Lima Metropolitana (RENAMU/Anuario de la Criminalidad): 15 237 (2023) y 16 201 (2024); nacional 28 702→42 333 (2019-2025). SERENOS del Cercado/distrito Lima (MML): 1 417 (2023), 977 (2024). ESTADOS DE EMERGENCIA por criminalidad: 2023, 2024, 2025 y 2026 = 1 (2023 distritos SJL/SMP/Cercado/Lince; 2024 11 distritos+Ventanilla 26-set; 2026 D.S. 123-2026-PCM). SIGUE NULL: homicidios Lima 2021-2025 (la edición 'uno a uno 2021' solo publica su cap. metodológico; los anuarios no traen homicidios por departamento), serenos Lima 2019-2022 y 2025 (INEI solo difunde nacional esos años), extorsión anual comparable de Lima (registros SIDPOL del anuario 515/467/720/1 835/2 396 nacional 2019-2023 no son comparables con los boletines trimestrales ni con el Ministerio Público), cámaras y vehículos del Cercado MML. Método: WebSearch agotado; se usó WebFetch + descarga directa por curl de PDFs del INEI (www.inei.gob.pe/media y cdn.www.gob.pe) leídos con pdftotext. gob.pe bloquea WebFetch (HTTP 418) pero responde a curl con User-Agent de navegador.",
+ "resumen_hallazgos": "SEGURIDAD OBJETIVA (ENAPRES-INEI, semestre jul-dic de cada año): victimización en Lima Metropolitana 32,6% (ago19-ene20) → 26,8% (2020) → 22,5% (2021) → 25,9% (2022); desde 2023 INEI publica Lima Metropolitana + Callao: 32,5% (2023) → 29,3% (2024) → 25,5% (2025) → 26,0% (feb-jul 2026). Ruptura de comparabilidad 2022/2023 (ámbito y tentativas de extorsión). Denuncia: 14-21% de víctimas. Víctimas con arma de fuego (LM+Callao): 14,8 (2023), 13,1 (2024), 13,8 (jul-dic 2025), 10,9 (feb-jul 2026) por 100 hab. SEGURIDAD PERCIBIDA: percepción de inseguridad ENAPRES 90,3% (2019) → 93,0% (2021, máximo) → 84,9% (jul-dic 2025) → 87,0% (feb-jul 2026); Lima Cómo Vamos: inseguridad principal problema 72,8% (2021) → 80,2% (2024) → 75,2% (2025); se siente inseguro 63,2% (2019) → 79,6% (2023) → 78,3% (2025). NUEVO (fuentes primarias INEI vía gob.pe/cdn, consulta 2026-09-22): HOMICIDIOS Lima Metropolitana (INEI-CEIC 'uno a uno 2019 y 2020') 676 en 2019 (tasa 7,1) y 544 en 2020 (tasa 5,6); nacional 7,4 y 5,8. SERENOS Lima Metropolitana (RENAMU/Anuario de la Criminalidad): 15 237 (2023) y 16 201 (2024); nacional 28 702→42 333 (2019-2025). SERENOS del Cercado/distrito Lima (MML): 1 417 (2023), 977 (2024). ESTADOS DE EMERGENCIA por criminalidad: 2023, 2024, 2025 y 2026 = 1 (2023 distritos SJL/SMP/Cercado/Lince; 2024 11 distritos+Ventanilla 26-set; 2026 D.S. 123-2026-PCM). SIGUE NULL: homicidios Lima 2021-2025 (la edición 'uno a uno 2021' solo publica su cap. metodológico; los anuarios no traen homicidios por departamento), serenos Lima 2019-2022 y 2025 (INEI solo difunde nacional esos años), extorsión anual comparable de Lima (registros SIDPOL del anuario 515/467/720/1 835/2 396 nacional 2019-2023 no son comparables con los boletines trimestrales ni con el Ministerio Público), cámaras y vehículos del Cercado MML. Método: WebSearch agotado; se usó WebFetch + descarga directa por curl de PDFs del INEI (www.inei.gob.pe/media y cdn.www.gob.pe) leídos con pdftotext. gob.pe bloquea WebFetch (HTTP 418) pero responde a curl con User-Agent de navegador. [Actualización 2026-09-30] Sin datos nuevos: el boletín ENAPRES más reciente sigue siendo el del semestre móvil febrero-julio 2026 y no hay cifra oficial nueva de homicidios de Lima para 2026. Solo se amplió el contexto de extorsión con las cifras del Observatorio de Criminalidad del Ministerio Público para enero-julio 2026.",
  "indicadores": [
   {
    "id": "enapres_victimizacion",
@@ -95,10 +95,18 @@
      "metodologia": "ENAPRES; ámbito 'Lima Metropolitana y la Provincia Constitucional del Callao'; series de semestres móviles Feb 2025-Jul 2025 a Feb 2026-Jul 2026 (incluye Jul 2025-Dic 2025)",
      "observaciones": "Datos 2026 preliminares (P/).",
      "tipo": "primaria"
+    },
+    {
+     "nombre": "INEI - Biblioteca virtual, listado de boletines de Estadísticas de Seguridad Ciudadana",
+     "url": "https://www.inei.gob.pe/biblioteca-virtual/boletines/estadisticas-de-seguridad-ciudadana/1/",
+     "fecha_consulta": "2026-09-30",
+     "metodologia": null,
+     "observaciones": "Consultado el 2026-09-30 para verificar si existía un boletín posterior al semestre móvil febrero-julio 2026. El listado no registra ninguno más reciente: el más nuevo sigue siendo boletin-seguridad-ciudadana-feb-jul-2026.pdf.",
+     "tipo": "primaria"
     }
    ],
    "discrepancias": "Otros semestres del mismo año difieren: Nov 2019-Abr 2020 = 31,6% y Nov 2020-Abr 2021 = 23,2% (boletín nov20-abr21). Se eligió el semestre jul-dic por consistencia.",
-   "nota": "Serie de semestres móviles ENAPRES: para cada año se toma el semestre julio-diciembre que cierra el año (2019: agosto 2019-enero 2020, único disponible en el material). RUPTURA DE COMPARABILIDAD: hasta 2022 el ámbito es 'Lima Metropolitana' (43 distritos); desde 2023 INEI publica 'Lima Metropolitana y Provincia Constitucional del Callao' en conjunto y el indicador incluye tentativas de extorsión. 2026 es el semestre febrero-julio 2026 (preliminar). Datos 2020-2021 afectados por pandemia (menor movilidad).",
+   "nota": "Serie de semestres móviles ENAPRES: para cada año se toma el semestre julio-diciembre que cierra el año (2019: agosto 2019-enero 2020, único disponible en el material). RUPTURA DE COMPARABILIDAD: hasta 2022 el ámbito es 'Lima Metropolitana' (43 distritos); desde 2023 INEI publica 'Lima Metropolitana y Provincia Constitucional del Callao' en conjunto y el indicador incluye tentativas de extorsión. 2026 es el semestre febrero-julio 2026 (preliminar). Datos 2020-2021 afectados por pandemia (menor movilidad). Verificado el 2026-09-30: el boletín del semestre móvil febrero-julio 2026 sigue siendo el más reciente publicado por el INEI; no existe boletín de un semestre que cierre en agosto o setiembre de 2026, por lo que el valor de 2026 no cambia.",
    "comparable_desde": 2023
   },
   {
@@ -201,10 +209,18 @@
      "metodologia": "ENAPRES; ámbito 'Lima Metropolitana y la Provincia Constitucional del Callao'; series de semestres móviles Feb 2025-Jul 2025 a Feb 2026-Jul 2026 (incluye Jul 2025-Dic 2025)",
      "observaciones": "Datos 2026 preliminares (P/).",
      "tipo": "primaria"
+    },
+    {
+     "nombre": "INEI - Biblioteca virtual, listado de boletines de Estadísticas de Seguridad Ciudadana",
+     "url": "https://www.inei.gob.pe/biblioteca-virtual/boletines/estadisticas-de-seguridad-ciudadana/1/",
+     "fecha_consulta": "2026-09-30",
+     "metodologia": null,
+     "observaciones": "Consultado el 2026-09-30 para verificar si existía un boletín posterior al semestre móvil febrero-julio 2026. El listado no registra ninguno más reciente: el más nuevo sigue siendo boletin-seguridad-ciudadana-feb-jul-2026.pdf.",
+     "tipo": "primaria"
     }
    ],
    "discrepancias": "Nov 2020-Abr 2021 = 90,7% vs jul-dic 2020 = 89,7%: distintos semestres móviles.",
-   "nota": "Serie de semestres móviles ENAPRES: para cada año se toma el semestre julio-diciembre que cierra el año (2019: agosto 2019-enero 2020, único disponible en el material). RUPTURA DE COMPARABILIDAD: hasta 2022 el ámbito es 'Lima Metropolitana' (43 distritos); desde 2023 INEI publica 'Lima Metropolitana y Provincia Constitucional del Callao' en conjunto y el indicador incluye tentativas de extorsión. 2026 es el semestre febrero-julio 2026 (preliminar). Datos 2020-2021 afectados por pandemia (menor movilidad). Indicador complementario 'inseguridad al caminar solo de noche en su barrio' (LM+Callao): 60,8% (jul-dic 2023), 59,8% (jul-dic 2024), 60,8% (jul-dic 2025), 59,1% (feb-jul 2026).",
+   "nota": "Serie de semestres móviles ENAPRES: para cada año se toma el semestre julio-diciembre que cierra el año (2019: agosto 2019-enero 2020, único disponible en el material). RUPTURA DE COMPARABILIDAD: hasta 2022 el ámbito es 'Lima Metropolitana' (43 distritos); desde 2023 INEI publica 'Lima Metropolitana y Provincia Constitucional del Callao' en conjunto y el indicador incluye tentativas de extorsión. 2026 es el semestre febrero-julio 2026 (preliminar). Datos 2020-2021 afectados por pandemia (menor movilidad). Indicador complementario 'inseguridad al caminar solo de noche en su barrio' (LM+Callao): 60,8% (jul-dic 2023), 59,8% (jul-dic 2024), 60,8% (jul-dic 2025), 59,1% (feb-jul 2026). Verificado el 2026-09-30: el boletín del semestre móvil febrero-julio 2026 sigue siendo el más reciente publicado por el INEI; no existe boletín de un semestre que cierre en agosto o setiembre de 2026, por lo que el valor de 2026 no cambia.",
    "comparable_desde": 2023
   },
   {
@@ -291,10 +307,18 @@
      "metodologia": "ENAPRES; ámbito 'Lima Metropolitana y la Provincia Constitucional del Callao'; series de semestres móviles Feb 2025-Jul 2025 a Feb 2026-Jul 2026 (incluye Jul 2025-Dic 2025)",
      "observaciones": "Datos 2026 preliminares (P/).",
      "tipo": "primaria"
+    },
+    {
+     "nombre": "INEI - Biblioteca virtual, listado de boletines de Estadísticas de Seguridad Ciudadana",
+     "url": "https://www.inei.gob.pe/biblioteca-virtual/boletines/estadisticas-de-seguridad-ciudadana/1/",
+     "fecha_consulta": "2026-09-30",
+     "metodologia": null,
+     "observaciones": "Consultado el 2026-09-30 para verificar si existía un boletín posterior al semestre móvil febrero-julio 2026. El listado no registra ninguno más reciente: el más nuevo sigue siendo boletin-seguridad-ciudadana-feb-jul-2026.pdf.",
+     "tipo": "primaria"
     }
    ],
    "discrepancias": null,
-   "nota": "Serie de semestres móviles ENAPRES: para cada año se toma el semestre julio-diciembre que cierra el año (2019: agosto 2019-enero 2020, único disponible en el material). RUPTURA DE COMPARABILIDAD: hasta 2022 el ámbito es 'Lima Metropolitana' (43 distritos); desde 2023 INEI publica 'Lima Metropolitana y Provincia Constitucional del Callao' en conjunto y el indicador incluye tentativas de extorsión. 2026 es el semestre febrero-julio 2026 (preliminar). Datos 2020-2021 afectados por pandemia (menor movilidad). Denuncia = registrada ante PNP en cuaderno de ocurrencias, atestado o acta. Alrededor de 8 de cada 10 víctimas no denuncia. IMPORTANTE: solo alrededor de 1 de cada 5 víctimas denuncia. Que la tasa de denuncia suba no implica necesariamente 'mejor seguridad': la baja denuncia puede deberse a desconfianza en la policía y el sistema de justicia."
+   "nota": "Serie de semestres móviles ENAPRES: para cada año se toma el semestre julio-diciembre que cierra el año (2019: agosto 2019-enero 2020, único disponible en el material). RUPTURA DE COMPARABILIDAD: hasta 2022 el ámbito es 'Lima Metropolitana' (43 distritos); desde 2023 INEI publica 'Lima Metropolitana y Provincia Constitucional del Callao' en conjunto y el indicador incluye tentativas de extorsión. 2026 es el semestre febrero-julio 2026 (preliminar). Datos 2020-2021 afectados por pandemia (menor movilidad). Denuncia = registrada ante PNP en cuaderno de ocurrencias, atestado o acta. Alrededor de 8 de cada 10 víctimas no denuncia. IMPORTANTE: solo alrededor de 1 de cada 5 víctimas denuncia. Que la tasa de denuncia suba no implica necesariamente 'mejor seguridad': la baja denuncia puede deberse a desconfianza en la policía y el sistema de justicia. Verificado el 2026-09-30: el boletín del semestre móvil febrero-julio 2026 sigue siendo el más reciente publicado por el INEI; no existe boletín de un semestre que cierre en agosto o setiembre de 2026, por lo que el valor de 2026 no cambia."
   },
   {
    "id": "homicidios_tasa",
@@ -369,7 +393,7 @@
     }
    ],
    "discrepancias": "El Gobierno (PNP/INEI, dic-2025) presentó una 'disminución' de homicidios 2025 vs 2024 que medios (El Comercio 9-jul-2026, La República 6-jul-2026) cuestionan por inconsistencias en registros PNP; INEI reporta tasa nacional al alza (10,1 → 10,7).",
-   "nota": "Serie NACIONAL (contexto), no de Lima, salvo la referencia de Lima incluida en las notas. Fuente primaria INEI-CEIC 'Homicidios en el Perú, contándolos uno a uno' para 2019 (7,4) y 2020 (5,8); Lima Metropolitana fue 7,1 (2019) y 5,6 (2020). Para 2021-2025 se usan tasas nacionales (2021: 8,6; 2023: 9,3; 2024: 10,1; 2025: 10,7 preliminar) porque la publicación oficial 'uno a uno' más reciente cubre datos hasta 2021 y solo su capítulo metodológico está disponible; los anuarios de criminalidad INEI 2019-2023 y 2024 no reproducen homicidios por departamento. La tendencia nacional es al alza (récords 2023-2025). No entra en el índice de Lima (es contexto).",
+   "nota": "Serie NACIONAL (contexto), no de Lima, salvo la referencia de Lima incluida en las notas. Fuente primaria INEI-CEIC 'Homicidios en el Perú, contándolos uno a uno' para 2019 (7,4) y 2020 (5,8); Lima Metropolitana fue 7,1 (2019) y 5,6 (2020). Para 2021-2025 se usan tasas nacionales (2021: 8,6; 2023: 9,3; 2024: 10,1; 2025: 10,7 preliminar) porque la publicación oficial 'uno a uno' más reciente cubre datos hasta 2021 y solo su capítulo metodológico está disponible; los anuarios de criminalidad INEI 2019-2023 y 2024 no reproducen homicidios por departamento. La tendencia nacional es al alza (récords 2023-2025). No entra en el índice de Lima (es contexto). Verificado el 2026-09-30: no se halló cifra oficial nueva de homicidios para 2026. El INEI-CEIC publica el consolidado anual en enero del año siguiente (la tasa nacional 2025 de 10,7 se presentó en enero de 2026). Las cifras difundidas por el Mininter durante 2026 (reducción de 23% anunciada en mayo y de unos 500 homicidios en agosto) fueron cuestionadas públicamente por presuntas anomalías en el registro de la PNP y no se incorporan a la serie.",
    "contexto": true,
    "fecha_consulta": null
   },
@@ -512,7 +536,7 @@
      "anio": 2026,
      "valor": null,
      "parcial": true,
-     "nota": "Parcial: 1er semestre 2026 (Ministerio Público) distritos fiscales Lima Norte+Centro+Sur = 3 829 y Lima Este > 1 800; no comparable con denuncias policiales (SIDPOL)."
+     "nota": "Parcial: 1er semestre 2026 (Observatorio de Criminalidad del Ministerio Público), distritos fiscales Lima Norte + Lima Centro + Lima Sur = 3 829 denuncias y Lima Este más de 1 800 (el distrito fiscal con mayor concentración del país); no comparable con las denuncias policiales (SIDPOL) usadas para 2025. Contexto nacional verificado el 2026-09-30: 13 800 denuncias por extorsión entre enero y julio de 2026 en todo el país, con una proyección de cierre superior a 32 600 casos (1 985 al mes, 66 al día, cerca de 3 por hora) según el Observatorio de Criminalidad; La Libertad es la segunda región con 1 625 denuncias en el primer semestre. Se mantiene el valor nulo porque no existe una cifra oficial de Lima Metropolitana comparable con el resto de la serie."
     }
    ],
    "fuentes": [

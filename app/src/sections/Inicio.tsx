@@ -133,12 +133,16 @@ export function Inicio({ onIr }: { onIr: (id: string) => void }) {
   const deuda = deudaPts.at(-1)
   const deuda0 = deudaPts[0]
   const deudaVar = deuda && deuda0 && deuda0.valor ? ((deuda.valor as number) / (deuda0.valor as number) - 1) * 100 : null
-  const stats: [string, string, string][] = [
-    ['Deuda de la Municipalidad', deuda ? soles((deuda.valor as number) * 1e6) : 's/d',
-      deuda ? `saldo ${deuda.anio}${deudaVar !== null ? `, ${deudaVar > 0 ? '+' : '−'}${Math.abs(deudaVar).toFixed(0)}% desde ${deuda0.anio}` : ''}` : ''],
-    ['Presupuesto municipal', ultimoMef ? soles(ultimoMef.pim) : 's/d', ultimoMef ? `PIM ${ultimoMef.anio}, ejecución ${ultimoMef.ejecucion_pct}%` : ''],
-    ['Población de Lima', pobl ? `${(pobl.valor as number / 1e6).toFixed(2).replace('.', ',')} M` : 's/d', pobl ? `provincia de Lima, ${pobl.anio}` : ''],
-    ['Indicadores con serie', String(nDatos), `de 7 dimensiones, corte ${FECHA_CORTE.split('-').reverse().join('/')}`],
+  const stats: { k: string; v: string; s: string; color?: string }[] = [
+    {
+      k: 'Deuda de la Municipalidad',
+      v: deuda ? soles((deuda.valor as number) * 1e6) : 's/d',
+      s: deuda ? `cierre ${deuda.anio}${deudaVar !== null ? `, ${deudaVar > 0 ? '+' : '−'}${Math.abs(deudaVar).toFixed(0)}% desde ${deuda0.anio}` : ''}` : '',
+      color: 'var(--color-critico)',
+    },
+    { k: 'Presupuesto municipal', v: ultimoMef ? soles(ultimoMef.pim) : 's/d', s: ultimoMef ? `PIM ${ultimoMef.anio}, ejecución ${ultimoMef.ejecucion_pct}%` : '' },
+    { k: 'Población de Lima', v: pobl ? `${(pobl.valor as number / 1e6).toFixed(2).replace('.', ',')} M` : 's/d', s: pobl ? `provincia de Lima, ${pobl.anio}` : '' },
+    { k: 'Indicadores con serie', v: String(nDatos), s: `de 7 dimensiones, corte ${FECHA_CORTE.split('-').reverse().join('/')}` },
   ]
   return (
     <div className="flex flex-col gap-8">
@@ -151,11 +155,11 @@ export function Inicio({ onIr }: { onIr: (id: string) => void }) {
         <h1 className="m-0">¿Está Lima mejor que en 2019?</h1>
         <p className="text-[18px] muted max-w-[72ch] mt-3 mb-5">{fraseDiagnostico()}</p>
         <div className="grid gap-px rounded-lg overflow-hidden" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', background: 'var(--line)' }}>
-          {stats.map(([k, v, s]) => (
+          {stats.map(({ k, v, s, color }) => (
             <div key={k} className="p-3" style={{ background: 'var(--bg-2)' }}>
               <div className="text-xs faint">{k}</div>
-              <div className="big num" style={{ fontSize: 'clamp(20px, 5.2vw, 26px)', overflowWrap: 'anywhere' }}>{v}</div>
-              <div className="text-xs faint mt-0.5">{s}</div>
+              <div className="big num" style={{ fontSize: 'clamp(20px, 5.2vw, 26px)', overflowWrap: 'anywhere', color }}>{v}</div>
+              <div className="text-xs mt-0.5" style={{ color: color ?? 'var(--ink-3)' }}>{s}</div>
             </div>
           ))}
         </div>

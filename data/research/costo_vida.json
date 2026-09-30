@@ -1,7 +1,7 @@
 {
  "dimension": "costo_vida",
  "fecha_corte": "2026-09-12",
- "resumen_hallazgos": "Empleo informal de Lima con ruptura de serie en 2022 (ENAHO/Provincia de Lima: 58,7% en 2019, 58,1% en 2020, 62,0% en 2021; EPEN/Lima Metropolitana con Callao: 60,6% en 2022, 56,7% en 2023, 56,9% en 2024; 2025-2026 aún no publicados). Déficit habitacional sin serie anual: es censal; última medición oficial CPV 2017 = 431 943 hogares en Lima-Callao (205 286 cuantitativo). Tarifa troncal del Metropolitano: S/2,50 hasta el 16-jul-2022 y S/3,20 desde entonces, sin cambios en la troncal hasta 2026 (los reajustes 2025-2026 fueron en alimentadores).",
+ "resumen_hallazgos": "Empleo informal de Lima con ruptura de serie en 2022 (ENAHO/Provincia de Lima: 58,7% en 2019, 58,1% en 2020, 62,0% en 2021; EPEN/Lima Metropolitana con Callao: 60,6% en 2022, 56,7% en 2023, 56,9% en 2024; 2025-2026 aún no publicados). Déficit habitacional sin serie anual: es censal; última medición oficial CPV 2017 = 431 943 hogares en Lima-Callao (205 286 cuantitativo). Tarifa troncal del Metropolitano: S/2,50 hasta el 16-jul-2022 y S/3,20 desde entonces, sin cambios en la troncal hasta 2026 (los reajustes 2025-2026 fueron en alimentadores). [Actualización 2026-09-30] Empleo e ingreso 2026 actualizados al trimestre móvil junio-julio-agosto 2026 (INEI, Informe Técnico N°9 de setiembre 2026): ingreso promedio S/ 2 308,4; desempleo 4,8%; empleo adecuado 62,1%. Inflación sin dato nuevo: el acumulado más reciente sigue siendo enero-agosto 2026 (4,16%).",
  "indicadores": [
   {
    "id": "inflacion_anual_lima",
@@ -60,14 +60,14 @@
      "anio": 2026,
      "valor": 4.16,
      "parcial": true,
-     "nota": "Acumulada enero-agosto 2026 (4,16%); la variación a 12 meses en agosto 2026 fue 4,44%. Parcial."
+     "nota": "Acumulada enero-agosto 2026 (4,16%); la variación a 12 meses en agosto 2026 fue 4,44%. Parcial. Reverificado el 2026-09-30 en la serie PN01272PM del BCRP: agosto 2026 sigue siendo el último mes disponible (el IPC de setiembre 2026 se publica el 1-oct-2026), por lo que no existe aún acumulado a setiembre."
     }
    ],
    "fuentes": [
     {
      "nombre": "BCRP - Serie PN01273PM: Índice de precios Lima Metropolitana (var% 12 meses) - IPC",
      "url": "https://estadisticas.bcrp.gob.pe/estadisticas/series/mensuales/resultados/PN01273PM/html",
-     "fecha_consulta": "2026-09-13",
+     "fecha_consulta": "2026-09-30",
      "metodologia": "IPC de Lima Metropolitana elaborado por INEI (base dic-2021=100), variación porcentual respecto al mismo mes del año anterior; dato de diciembre = inflación dic/dic.",
      "observaciones": "Consultado vía API JSON https://estadisticas.bcrp.gob.pe/estadisticas/series/api/PN01273PM/json/2018-12/2026-8/esp",
      "tipo": "primaria"
@@ -75,7 +75,7 @@
     {
      "nombre": "BCRP - Serie PN01272PM: Índice de precios Lima Metropolitana (var% acumulada) - IPC",
      "url": "https://estadisticas.bcrp.gob.pe/estadisticas/series/mensuales/resultados/PN01272PM/html",
-     "fecha_consulta": "2026-09-13",
+     "fecha_consulta": "2026-09-30",
      "metodologia": "Variación acumulada del IPC de Lima Metropolitana desde diciembre del año anterior.",
      "observaciones": "Usada para la cifra parcial 2026 (enero-agosto).",
      "tipo": "primaria"
@@ -139,9 +139,9 @@
     },
     {
      "anio": 2026,
-     "valor": 2312.6,
+     "valor": 2308.4,
      "parcial": true,
-     "nota": "Trimestre móvil mayo-junio-julio 2026: S/ 2 312,6 (+4,6% vs may-jul 2025 = S/ 2 211,6)."
+     "nota": "Trimestre móvil junio-julio-agosto 2026: S/ 2 308,4 (+2,6% = +S/ 58,8 frente a jun-jul-ago 2025 = S/ 2 249,6). Hombres S/ 2 585,4 y mujeres S/ 1 976,3 (las mujeres ganan el 76,4% del ingreso de los hombres). Por edad, cayó 1,4% entre los de 45 y más años. Dato anterior de esta serie: S/ 2 312,6 del trimestre móvil mayo-junio-julio 2026 (Informe Técnico N°8, agosto 2026). Parcial: año en curso."
     }
    ],
    "fuentes": [
@@ -167,6 +167,14 @@
      "fecha_consulta": "2026-09-13",
      "metodologia": "EPEN trimestre móvil nov2022-dic2022-ene2023.",
      "observaciones": "Usado como proxy del año 2022 porque el cuadro anual del INEI no publica 2022.",
+     "tipo": "primaria"
+    },
+    {
+     "nombre": "INEI - Situación del Mercado Laboral en Lima Metropolitana, Informe Técnico N°9 setiembre 2026 (Informe de Empleo N° 9, trimestre móvil junio-julio-agosto 2026)",
+     "url": "https://cdn.www.gob.pe/uploads/document/file/10621578/8596299-informe-de-empleo-n-9-trimestre-jun-jul-ago-2026.pdf",
+     "fecha_consulta": "2026-09-30",
+     "metodologia": "Encuesta Permanente de Empleo Nacional (EPEN). Muestra del trimestre: 4 800 viviendas particulares (1 600 mensuales distribuidas en 400 conglomerados), Provincia de Lima y Provincia Constitucional del Callao.",
+     "observaciones": "Cuadros N° 10 y N° 11 (niveles y tasas de empleo) y Cuadro N° 25 (ingreso promedio mensual). Ficha del informe en https://www.gob.pe/institucion/inei/informes-publicaciones/8596299-informe-de-empleo-n-9-trimestre-jun-jul-ago-2026",
      "tipo": "primaria"
     }
    ],
@@ -228,9 +236,9 @@
     },
     {
      "anio": 2026,
-     "valor": 4.7,
+     "valor": 4.8,
      "parcial": true,
-     "nota": "Trimestre móvil mayo-junio-julio 2026 (4,7%); mismo trimestre 2025 fue 6,1%."
+     "nota": "Trimestre móvil junio-julio-agosto 2026: 4,8% (301 mil desocupados), frente a 6,0% en jun-jul-ago 2025 (-1,2 p.p.). La tasa femenina es superior a la masculina (4,0%). Dato anterior de esta serie: 4,7% del trimestre móvil mayo-junio-julio 2026. Parcial: año en curso."
     }
    ],
    "fuentes": [
@@ -256,6 +264,14 @@
      "fecha_consulta": "2026-09-13",
      "metodologia": "EPEN trimestre móvil nov2022-dic2022-ene2023.",
      "observaciones": "Usado como proxy del año 2022 porque el cuadro anual del INEI no publica 2022.",
+     "tipo": "primaria"
+    },
+    {
+     "nombre": "INEI - Situación del Mercado Laboral en Lima Metropolitana, Informe Técnico N°9 setiembre 2026 (Informe de Empleo N° 9, trimestre móvil junio-julio-agosto 2026)",
+     "url": "https://cdn.www.gob.pe/uploads/document/file/10621578/8596299-informe-de-empleo-n-9-trimestre-jun-jul-ago-2026.pdf",
+     "fecha_consulta": "2026-09-30",
+     "metodologia": "Encuesta Permanente de Empleo Nacional (EPEN). Muestra del trimestre: 4 800 viviendas particulares (1 600 mensuales distribuidas en 400 conglomerados), Provincia de Lima y Provincia Constitucional del Callao.",
+     "observaciones": "Cuadros N° 10 y N° 11 (niveles y tasas de empleo) y Cuadro N° 25 (ingreso promedio mensual). Ficha del informe en https://www.gob.pe/institucion/inei/informes-publicaciones/8596299-informe-de-empleo-n-9-trimestre-jun-jul-ago-2026",
      "tipo": "primaria"
     }
    ],
@@ -398,9 +414,9 @@
     },
     {
      "anio": 2026,
-     "valor": 62.2,
+     "valor": 62.1,
      "parcial": true,
-     "nota": "Trimestre móvil mayo-junio-julio 2026 (62,2%); mismo trimestre 2025 fue 61,3%."
+     "nota": "Trimestre móvil junio-julio-agosto 2026: 62,1% de la PEA (3 millones 891 mil 100 personas, +5,7% frente a jun-jul-ago 2025 = 61,6%). Tasa de ocupación 95,2% y subempleo 33,1% (6,1% por insuficiencia de horas y 27,0% por ingresos). Dato anterior de esta serie: 62,2% del trimestre móvil mayo-junio-julio 2026. Parcial: año en curso."
     }
    ],
    "fuentes": [
@@ -418,6 +434,14 @@
      "fecha_consulta": "2026-09-13",
      "metodologia": "EPEN, trimestre móvil mayo-junio-julio 2026 comparado con mismo trimestre 2023-2025.",
      "observaciones": "Dato 2026 es parcial (trimestre móvil), no comparable estrictamente con los promedios anuales.",
+     "tipo": "primaria"
+    },
+    {
+     "nombre": "INEI - Situación del Mercado Laboral en Lima Metropolitana, Informe Técnico N°9 setiembre 2026 (Informe de Empleo N° 9, trimestre móvil junio-julio-agosto 2026)",
+     "url": "https://cdn.www.gob.pe/uploads/document/file/10621578/8596299-informe-de-empleo-n-9-trimestre-jun-jul-ago-2026.pdf",
+     "fecha_consulta": "2026-09-30",
+     "metodologia": "Encuesta Permanente de Empleo Nacional (EPEN). Muestra del trimestre: 4 800 viviendas particulares (1 600 mensuales distribuidas en 400 conglomerados), Provincia de Lima y Provincia Constitucional del Callao.",
+     "observaciones": "Cuadros N° 10 y N° 11 (niveles y tasas de empleo) y Cuadro N° 25 (ingreso promedio mensual). Ficha del informe en https://www.gob.pe/institucion/inei/informes-publicaciones/8596299-informe-de-empleo-n-9-trimestre-jun-jul-ago-2026",
      "tipo": "primaria"
     }
    ],

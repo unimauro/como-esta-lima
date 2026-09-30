@@ -6,9 +6,9 @@ import { useState } from 'react'
    ───────────────────────────────────────────────────────────── */
 export const APOYO = {
   yape: '940584307',                 // número Yape/Plin
-  yapeNombre: 'Carlos Cárdenas',
-  paypal: '',                        // p. ej. 'https://paypal.me/usuario'
-  cafe: '',                          // p. ej. 'https://buymeacoffee.com/usuario'
+  yapeNombre: 'Carlos Cárdenas',  // Yape y Plin usan el mismo número
+  paypal: 'https://www.paypal.com/paypalme/unimauro',
+  cafe: 'https://buymeacoffee.com/unimauro',
   github: 'https://github.com/unimauro/como-esta-lima',
 }
 
