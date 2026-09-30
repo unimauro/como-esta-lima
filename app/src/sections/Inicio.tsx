@@ -133,16 +133,30 @@ export function Inicio({ onIr }: { onIr: (id: string) => void }) {
   const deuda = deudaPts.at(-1)
   const deuda0 = deudaPts[0]
   const deudaVar = deuda && deuda0 && deuda0.valor ? ((deuda.valor as number) / (deuda0.valor as number) - 1) * 100 : null
-  const stats: { k: string; v: string; s: string; color?: string }[] = [
+  const stats: { k: string; v: string; s: string; color?: string; fuente?: string; url?: string }[] = [
     {
       k: 'Deuda de la Municipalidad',
       v: deuda ? soles((deuda.valor as number) * 1e6) : 's/d',
       s: deuda ? `cierre ${deuda.anio}${deudaVar !== null ? `, ${deudaVar > 0 ? '+' : '−'}${Math.abs(deudaVar).toFixed(0)}% desde ${deuda0.anio}` : ''}` : '',
       color: 'var(--color-critico)',
+      fuente: 'Consejo Fiscal, Informe 03-2026-CF',
+      url: 'https://cf.gob.pe/wp-content/uploads/2026/07/Informe-003-2026-CF.pdf',
     },
-    { k: 'Presupuesto municipal', v: ultimoMef ? soles(ultimoMef.pim) : 's/d', s: ultimoMef ? `PIM ${ultimoMef.anio}, ejecución ${ultimoMef.ejecucion_pct}%` : '' },
-    { k: 'Población de Lima', v: pobl ? `${(pobl.valor as number / 1e6).toFixed(2).replace('.', ',')} M` : 's/d', s: pobl ? `provincia de Lima, ${pobl.anio}` : '' },
-    { k: 'Indicadores con serie', v: String(nDatos), s: `de 7 dimensiones, corte ${FECHA_CORTE.split('-').reverse().join('/')}` },
+    {
+      k: 'Presupuesto municipal', v: ultimoMef ? soles(ultimoMef.pim) : 's/d',
+      s: ultimoMef ? `PIM ${ultimoMef.anio}, ejecución ${ultimoMef.ejecucion_pct}%` : '',
+      fuente: 'MEF, Datos Abiertos', url: 'https://fs.datosabiertos.mef.gob.pe/datastorefiles/',
+    },
+    {
+      k: 'Población de Lima', v: pobl ? `${(pobl.valor as number / 1e6).toFixed(2).replace('.', ',')} M` : 's/d',
+      s: pobl ? `provincia de Lima, ${pobl.anio}` : '',
+      fuente: 'INEI', url: 'https://www.gob.pe/institucion/inei/noticias/1092367-lima-supera-los-10-millones-400-mil-habitantes',
+    },
+    {
+      k: 'Indicadores con serie', v: String(nDatos),
+      s: `de 7 dimensiones, corte ${FECHA_CORTE.split('-').reverse().join('/')}`,
+      fuente: 'Cada cifra cita su fuente', url: undefined,
+    },
   ]
   return (
     <div className="flex flex-col gap-8">
@@ -155,11 +169,18 @@ export function Inicio({ onIr }: { onIr: (id: string) => void }) {
         <h1 className="m-0">¿Está Lima mejor que en 2019?</h1>
         <p className="text-[18px] muted max-w-[72ch] mt-3 mb-5">{fraseDiagnostico()}</p>
         <div className="grid gap-px rounded-lg overflow-hidden" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', background: 'var(--line)' }}>
-          {stats.map(({ k, v, s, color }) => (
-            <div key={k} className="p-3" style={{ background: 'var(--bg-2)' }}>
+          {stats.map(({ k, v, s, color, fuente, url }) => (
+            <div key={k} className="p-3 flex flex-col" style={{ background: 'var(--bg-2)' }}>
               <div className="text-xs faint">{k}</div>
               <div className="big num" style={{ fontSize: 'clamp(20px, 5.2vw, 26px)', overflowWrap: 'anywhere', color }}>{v}</div>
               <div className="text-xs mt-0.5" style={{ color: color ?? 'var(--ink-3)' }}>{s}</div>
+              {fuente && (
+                <div className="text-xs faint mt-auto pt-2">
+                  {url
+                    ? <>Fuente: <a href={url} target="_blank" rel="noopener noreferrer">{fuente}</a></>
+                    : fuente}
+                </div>
+              )}
             </div>
           ))}
         </div>

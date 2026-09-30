@@ -390,25 +390,34 @@
   },
   {
    "fecha": "2026-03-21",
-   "titulo": "Fiscalía anuncia investigación por endeudamiento de la MML",
-   "descripcion": "Investigación por presuntos delitos contra la administración pública vinculados a la emisión de bonos para financiar obras; prensa cita un déficit/endeudamiento de S/ 4000 millones (cifra periodística, por verificar).",
+   "titulo": "La Fiscalía dispone investigar a López Aliaga por el endeudamiento de la MML",
+   "descripcion": "La Fiscalía Superior Anticorrupción dispuso investigar al exalcalde Rafael López Aliaga por presunta colusión y negociación incompatible en el proceso de endeudamiento de la MML por S/ 4 000 millones mediante bonos de titulización. Se trata de una investigación preliminar: no hay acusación ni condena, y el investigado mantiene la presunción de inocencia.",
    "gestion": "lopez_aliaga",
    "categoria": "presupuesto",
    "fuentes": [
     {
-     "nombre": "LP (Pasión por el Derecho), 21-03-2026",
-     "url": "https://lpderecho.pe/",
-     "fecha_consulta": "2026-09-13",
+     "nombre": "Infobae Perú, 21-03-2026: 'Fiscalía anticorrupción dispone investigar a Rafael López Aliaga por endeudamiento de S/ 4 mil millones en MML'",
+     "url": "https://www.infobae.com/peru/2026/03/21/fiscalia-anticorrupcion-dispone-investigar-a-rafael-lopez-aliaga-por-endeudamiento-de-s-4-mil-millones-en-mml/",
+     "fecha_consulta": "2026-09-30",
      "metodologia": null,
-     "observaciones": "URL exacta pendiente",
+     "observaciones": "La disposición fue emitida por la fiscal superior anticorrupción Scarlet Laura Escalante y difundida por Epicentro TV. Infobae fecha la decisión el 20-03-2026 por la noche y publica el 21-03-2026. Cobertura equivalente en RPP, La República y LP (Pasión por el Derecho).",
      "tipo": "secundaria"
-    },
+    }
+   ]
+  },
+  {
+   "fecha": "2026-04-05",
+   "titulo": "Tras la caducidad del contrato de Rutas de Lima, se reporta que la MML asumiría una deuda de S/ 1 500 millones",
+   "descripcion": "La MML declaró caduco el contrato de concesión de Rutas de Lima en diciembre de 2025, luego de que la concesionaria cesara operaciones el 03-12-2025 y entrara en liquidación. Gestión informó que, por la cláusula 17.16 del contrato, la caducidad habría trasladado a la MML el saldo no amortizado de una emisión de bonos de Rutas de Lima de 2014 por S/ 1 500 millones, suscrita principalmente por AFP y aseguradoras. La cifra corresponde a un pasivo reportado por el diario a partir del contrato y de fuentes del sector, aún no reconocido en las cuentas de la MML.",
+   "gestion": "lopez_aliaga",
+   "categoria": "presupuesto",
+   "fuentes": [
     {
-     "nombre": "Ojo Público, 16-11-2025 (deudas MML)",
-     "url": "https://ojo-publico.com/",
-     "fecha_consulta": "2026-09-13",
+     "nombre": "Gestión, 05-04-2026: 'Caducidad de Rutas de Lima deja a Municipalidad de Lima deuda de S/ 1,500 millones'",
+     "url": "https://gestion.pe/economia/caso-rutas-de-lima-despues-que-mml-caduco-contrato-habria-heredado-pago-de-s-1500-millones-noticia/",
+     "fecha_consulta": "2026-09-30",
      "metodologia": null,
-     "observaciones": "URL exacta pendiente",
+     "observaciones": "Nota de Whitney Miñán, publicada 05-04-2026. El diario usa condicional ('asumiría', 'habría heredado') y cita el contrato de concesión más fuentes del sector. Contexto: S&P/Bloomberg reportaron el incumplimiento de bonos de Rutas de Lima por US$ 500 millones. Cifra distinta y no sumable a los S/ 1 431 millones de procesos con Rutas de Lima que el Consejo Fiscal registra como pasivos contingentes al cierre de 2025.",
      "tipo": "secundaria"
     }
    ]
@@ -426,6 +435,23 @@
      "fecha_consulta": "2026-09-13",
      "metodologia": null,
      "observaciones": "por verificar",
+     "tipo": "secundaria"
+    }
+   ]
+  },
+  {
+   "fecha": "2026-05-19",
+   "titulo": "La Fiscalía abre 60 días de diligencias preliminares por el endeudamiento de la MML",
+   "descripcion": "El Ministerio Público dispuso 60 días de diligencias preliminares contra Rafael López Aliaga por presunta colusión y negociación incompatible en el endeudamiento de la MML por S/ 4 000 millones mediante bonos, y lo citó a declarar el 04-06-2026. La Fiscalía requirió información a la MML, la SMV, la Contraloría, Credicorp Capital Sociedad Titulizadora, Bank of America Securities y los estudios Milbank LLP y Lazo Abogados. La pesquisa se abrió a partir de una denuncia del auditor independiente Julio Sifuentes. Es una etapa preliminar sin acusación ni condena.",
+   "gestion": "lopez_aliaga",
+   "categoria": "presupuesto",
+   "fuentes": [
+    {
+     "nombre": "Infobae Perú, 19-05-2026: 'Fiscalía ordena diligencias por 60 días contra Rafael López Aliaga por presunta corrupción y lo cita a declarar el 4 de junio'",
+     "url": "https://www.infobae.com/peru/2026/05/19/fiscalia-ordena-diligencias-por-60-dias-contra-rafael-lopez-aliaga-por-presunta-corrupcion-y-lo-cita-a-declarar-el-4-de-junio/",
+     "fecha_consulta": "2026-09-30",
+     "metodologia": null,
+     "observaciones": "Fiscal Janny Sánchez Porturas, Tercer Despacho de la Primera Fiscalía Provincial Anticorrupción; documentos difundidos por Epicentro TV. Cobertura equivalente en RPP, La República, Perú 21 y LP (Pasión por el Derecho).",
      "tipo": "secundaria"
     }
    ]
@@ -466,18 +492,51 @@
   },
   {
    "fecha": "2026-07-23",
-   "titulo": "El Consejo Fiscal advierte que la deuda de la MML llegó a S/ 5 045 millones",
-   "descripcion": "En el Informe N° 03-2026-CF, el Consejo Fiscal informó que, tras culminar el programa de bonos, el Saldo de Deuda Total de la MML alcanzó un máximo histórico de S/ 5 045 millones al cierre de 2025, equivalente al 347,6% de sus ingresos corrientes promedio y cerca de 3,5 veces el límite prudencial aplicable al resto de gobiernos subnacionales. El CF advirtió que una proporción significativa de los ingresos futuros está comprometida en un fideicomiso para el servicio de la deuda, que en 2025 el costo financiero neto fue de S/ 152 millones y que la MML sigue exceptuada de las reglas fiscales por sus calificaciones crediticias.",
+   "titulo": "El Consejo Fiscal alerta que la deuda de la MML alcanzó S/ 5 045 millones al cierre de 2025",
+   "descripcion": "En el Informe N° 03-2026-CF, el Consejo Fiscal advirtió que, tras culminar el programa de bonos de titulización por S/ 4 000 millones, el Saldo de Deuda Total de la MML alcanzó un máximo histórico de S/ 5 045 millones al cierre de 2025, equivalente al 347,6% de sus ingresos corrientes promedio, cerca de 3,5 veces el límite prudencial de la regla fiscal. El Consejo Fiscal señaló que el elevado endeudamiento reduce los recursos que las futuras gestiones podrán destinar a infraestructura, que una proporción significativa de los ingresos futuros está comprometida en un fideicomiso de pago de deuda, y que el servicio de deuda superaría los S/ 500 millones anuales entre 2028 y 2035. Reiteró que no considera adecuado exceptuar del cumplimiento de las reglas fiscales a entidades por sus calificaciones crediticias, excepción de la que la MML sigue beneficiándose. En 2025 la MML pagó S/ 276 millones por intereses de la deuda y recibió S/ 124 millones por intereses de los depósitos aún no ejecutados, con un costo financiero neto de S/ 152 millones; al 13-07-2026 los 58 proyectos asociados al programa de bonos registraban 24,6% de avance financiero y 33 de ellos 0% de avance físico.",
    "gestion": "lopez_aliaga",
    "categoria": "presupuesto",
    "fuentes": [
     {
-     "nombre": "Consejo Fiscal - Informe N° 03-2026-CF: Opinión del Consejo Fiscal sobre la situación de las finanzas públicas subnacionales y el cumplimiento de sus reglas fiscales en 2025 (sección: Municipalidad Metropolitana de Lima)",
+     "nombre": "Consejo Fiscal – Informe N° 03-2026-CF: Opinión del Consejo Fiscal sobre la situación de las finanzas públicas subnacionales en 2025",
      "url": "https://cf.gob.pe/wp-content/uploads/2026/07/Informe-003-2026-CF.pdf",
      "fecha_consulta": "2026-09-30",
-     "metodologia": "Saldo de Deuda Total (SDT) reportado por el MEF; ratio SDT sobre ingresos corrientes promedio de 4 años (límite prudencial 100% del MRTF-SN).",
-     "observaciones": "Publicado el 23-jul-2026 junto con la Nota de Prensa N° 02-2026-CF (https://cf.gob.pe/wp-content/uploads/2026/07/nortadeprensa02.pdf). Nota al pie 23: serie completa de ratios SDT 2017-2025. Nota al pie 26: las cuatro emisiones del programa de bonos con fechas y montos.",
+     "metodologia": "Saldo de Deuda Total (SDT) reportado por el MEF conforme al DL 1275; ratio sobre ingresos corrientes promedio de 4 años (límite prudencial 100%).",
+     "observaciones": "Sección 'Sobre la Municipalidad Metropolitana de Lima'. Notas al pie 23 (ratios SDT 2017-2025), 26 (las cuatro emisiones de bonos) y 29 (pasivos firmes y contingentes).",
      "tipo": "primaria"
+    },
+    {
+     "nombre": "Consejo Fiscal – Nota de Prensa N° 02-2026-CF",
+     "url": "https://cf.gob.pe/wp-content/uploads/2026/07/nortadeprensa02.pdf",
+     "fecha_consulta": "2026-09-30",
+     "metodologia": null,
+     "observaciones": "Lima, 23 de julio de 2026.",
+     "tipo": "primaria"
+    }
+   ]
+  },
+  {
+   "fecha": "2026-08-05",
+   "titulo": "Se difunden los pasivos de la MML por sentencias judiciales y laudos arbitrales: S/ 5 900 millones",
+   "descripcion": "La cobertura del Informe N° 03-2026-CF puso en circulación el inventario de litigios de la MML al cierre de 2025 que el Consejo Fiscal consignó a partir de información del MEF: S/ 993 millones de pasivos firmes por sentencias judiciales y laudos arbitrales (S/ 312 millones de ellos aún no incorporados al Saldo de Deuda Total) y S/ 4 907 millones de pasivos contingentes por demandas judiciales y procesos de arbitraje en curso, que suman S/ 5 900 millones. Destacan los procesos con Rutas de Lima S.A.C. por S/ 1 431 millones, de los cuales S/ 261 millones están en calidad de cosa juzgada. Los pasivos contingentes no son deuda cierta: su pago depende del resultado de cada proceso. El Consejo Fiscal consideró necesario que la MML, con participación del MEF, transparente la evolución y el tratamiento contable de estos pasivos.",
+   "gestion": "lopez_aliaga",
+   "categoria": "presupuesto",
+   "fuentes": [
+    {
+     "nombre": "Consejo Fiscal – Informe N° 03-2026-CF: Opinión del Consejo Fiscal sobre la situación de las finanzas públicas subnacionales en 2025",
+     "url": "https://cf.gob.pe/wp-content/uploads/2026/07/Informe-003-2026-CF.pdf",
+     "fecha_consulta": "2026-09-30",
+     "metodologia": "Saldo de Deuda Total (SDT) reportado por el MEF conforme al DL 1275; ratio sobre ingresos corrientes promedio de 4 años (límite prudencial 100%).",
+     "observaciones": "Sección 'Sobre la Municipalidad Metropolitana de Lima'. Notas al pie 23 (ratios SDT 2017-2025), 26 (las cuatro emisiones de bonos) y 29 (pasivos firmes y contingentes).",
+     "tipo": "primaria"
+    },
+    {
+     "nombre": "Gato Encerrado, 05-08-2026: 'Consejo Fiscal: MML tiene pasivos por sentencias judiciales y laudos arbitrales por S/ 5 900 millones'",
+     "url": "https://gatoencerrado.news/",
+     "fecha_consulta": "2026-09-30",
+     "metodologia": null,
+     "observaciones": "URL exacta de la nota no localizada (el buscador del medio no respondió y los enlaces de Google News RSS no resuelven); titular, medio y fecha verificados vía Google News RSS. La cifra de S/ 5 900 millones es el agregado de los S/ 993 millones firmes y S/ 4 907 millones contingentes que el Consejo Fiscal reporta por separado en la nota al pie 29 del Informe N° 03-2026-CF.",
+     "tipo": "secundaria"
     }
    ]
   },
