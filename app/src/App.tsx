@@ -62,6 +62,7 @@ export default function App() {
           <span>¿Cómo está Lima? · corte {FECHA_CORTE}</span>
           <span>Datos: MEF, INEI, ATU, MTC, MML, Contraloría, Lima Cómo Vamos y otras fuentes citadas en cada indicador.</span>
           <a href="https://github.com/unimauro/como-esta-lima" target="_blank" rel="noopener noreferrer">Código y datos abiertos</a>
+          <a href="#inicio" onClick={(e) => { e.preventDefault(); ir('inicio'); setTimeout(() => document.getElementById('apoyo')?.scrollIntoView({ behavior: 'smooth' }), 60) }}>Apoya el proyecto</a>
         </div>
       </footer>
       <Chat />

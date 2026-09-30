@@ -7,6 +7,7 @@ import { signed, soles } from '../lib/format'
 import { LeyendaGestiones } from '../components/SerieChart'
 import { LimaSkyline } from '../components/LimaSkyline'
 import { EjecucionAvance } from '../components/EjecucionAvance'
+import { Apoyo } from '../components/Apoyo'
 
 function Skyline({ onIr }: { onIr: (id: string) => void }) {
   const dims = DIMENSIONES.filter((d) => d.enIndice)
@@ -126,11 +127,18 @@ export function Inicio({ onIr }: { onIr: (id: string) => void }) {
   const ultimoMef = mef.anios.filter((a) => !a.parcial).at(-1)
   const pobl = indicadores.find((i) => i.id === 'poblacion_lima_metropolitana')?.serie.filter((p) => p.valor).at(-1)
   const nDatos = indicadoresNucleo.filter((i) => i.serie.some((p) => p.valor !== null)).length
+  // Deuda de la MML: último saldo publicado y su variación desde 2019
+  const deudaInd = indicadores.find((i) => i.id === 'deuda_mml_saldo')
+  const deudaPts = deudaInd?.serie.filter((p) => p.valor !== null) ?? []
+  const deuda = deudaPts.at(-1)
+  const deuda0 = deudaPts[0]
+  const deudaVar = deuda && deuda0 && deuda0.valor ? ((deuda.valor as number) / (deuda0.valor as number) - 1) * 100 : null
   const stats: [string, string, string][] = [
-    ['Población de Lima', pobl ? `${(pobl.valor as number / 1e6).toFixed(2).replace('.', ',')} M` : 's/d', pobl ? `provincia de Lima, ${pobl.anio}` : ''],
+    ['Deuda de la Municipalidad', deuda ? soles((deuda.valor as number) * 1e6) : 's/d',
+      deuda ? `saldo ${deuda.anio}${deudaVar !== null ? `, ${deudaVar > 0 ? '+' : '−'}${Math.abs(deudaVar).toFixed(0)}% desde ${deuda0.anio}` : ''}` : ''],
     ['Presupuesto municipal', ultimoMef ? soles(ultimoMef.pim) : 's/d', ultimoMef ? `PIM ${ultimoMef.anio}, ejecución ${ultimoMef.ejecucion_pct}%` : ''],
-    ['Indicadores con serie', String(nDatos), 'de 7 dimensiones, con fuente'],
-    ['Corte de datos', FECHA_CORTE.split('-').reverse().join('/'), '43 distritos'],
+    ['Población de Lima', pobl ? `${(pobl.valor as number / 1e6).toFixed(2).replace('.', ',')} M` : 's/d', pobl ? `provincia de Lima, ${pobl.anio}` : ''],
+    ['Indicadores con serie', String(nDatos), `de 7 dimensiones, corte ${FECHA_CORTE.split('-').reverse().join('/')}`],
   ]
   return (
     <div className="flex flex-col gap-8">
@@ -138,7 +146,7 @@ export function Inicio({ onIr }: { onIr: (id: string) => void }) {
         <div className="mb-5"><LimaSkyline alto={180} /></div>
         <div className="masthead mb-4">
           <span>Observatorio ciudadano de Lima Metropolitana</span>
-          <span className="faint">Datos oficiales de 2019 a 2026, con corte al 12 de septiembre de 2026</span>
+          <span className="faint">Datos oficiales de 2019 a 2026, con corte al 30 de septiembre de 2026</span>
         </div>
         <h1 className="m-0">¿Está Lima mejor que en 2019?</h1>
         <p className="text-[18px] muted max-w-[72ch] mt-3 mb-5">{fraseDiagnostico()}</p>
@@ -186,6 +194,7 @@ export function Inicio({ onIr }: { onIr: (id: string) => void }) {
           </button>
         ))}
       </section>
+      <Apoyo />
       <p className="text-xs faint m-0">Vocabulario del tablero: subió, bajó, se mantuvo, sin datos. La dirección "{etiquetaDireccion.mejora}"/"{etiquetaDireccion.empeora}" se deriva del sentido deseable declarado en cada indicador, no de una valoración política.</p>
     </div>
   )

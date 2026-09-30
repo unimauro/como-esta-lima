@@ -6,7 +6,7 @@ import timelineJson from './timeline.json'
 import gestionesJson from './gestiones.json'
 import type { Indicador, MefJson, Proyecto, Promesa, Evento, GestionInfo } from '../types'
 
-export const FECHA_CORTE = '2026-09-12'
+export const FECHA_CORTE = '2026-09-30'
 
 export const mef = mefJson as unknown as MefJson
 export const proyectos = proyectosJson as unknown as Proyecto[]
